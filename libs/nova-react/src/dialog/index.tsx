@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +15,12 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
-import Message, { MessageProperties } from '../message';
+import type { ComponentPropsWithRef, ElementType } from 'react';
+import Message, { type MessageProperties } from '../message';
 
 const CSS_PREFIX = 'v-dialog';
 
-export type DialogProperties<ET extends ElementType = 'dialog',> = {
+export type DialogProperties<ET extends ElementType = 'dialog'> = {
   /** Message Type */
   messageType?: MessageProperties['messageType'];
   /** Tag of Component */
@@ -29,14 +29,17 @@ export type DialogProperties<ET extends ElementType = 'dialog',> = {
 
 /**
  * Pop-up windows that overlay page content to facilitate user interactions or show important information.
- * @docs {@link https://design.visa.com/react/components/dialog | See Docs}
+ * @docs {@link https://design.visa.com/components/dialog/?code_library=react | See Docs}
  * @related dialog-close-button, dialog-header, message-content, use-focus-trap
  * @vgar TODO
  * @wcag TODO
  */
-const Dialog = <ET extends ElementType = 'dialog',>(
-  { className, messageType, tag = 'dialog', ...remainingProps }: DialogProperties<ET>,
-) => (
+const Dialog = <ET extends ElementType = 'dialog'>({
+  className,
+  messageType,
+  tag = 'dialog',
+  ...remainingProps
+}: DialogProperties<ET>) => (
   <Message
     className={cn(CSS_PREFIX, !messageType && `${CSS_PREFIX}-default`, className)}
     messageType={messageType}
@@ -46,9 +49,5 @@ const Dialog = <ET extends ElementType = 'dialog',>(
 );
 
 export default Dialog;
-
-Dialog.defaultProps = {
-  tag: 'dialog',
-};
 
 Dialog.displayName = 'Dialog';

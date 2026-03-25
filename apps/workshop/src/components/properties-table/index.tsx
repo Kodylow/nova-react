@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@ import { noCase, kebabCase } from 'change-case';
 import { Suspense, lazy, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Paths } from '../../routes';
-import { LibMetaData, LibPropType } from '../../types';
+import type { LibMetaData, LibPropType } from '../../types';
 
 const LazyCode = lazy(() => import('../../components/code'));
 
@@ -143,7 +143,7 @@ const PropertiesTable = ({
               {properties.map((prop, index) => (
                 <Tr key={`property-table-row-${prop.name}`}>
                   {isParamType && <Td>{index + 1}</Td>}
-                  <Td>{prop.name}</Td>
+                  <Th scope="row">{prop.name}</Th>
                   <Td>
                     <Typography variant="label-large-active">
                       {prop.type?.replace(/<.*$/, '')?.replace(/\|/gi, ',')}

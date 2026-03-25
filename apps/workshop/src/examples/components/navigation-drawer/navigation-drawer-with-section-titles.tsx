@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ import {
   UtilityFragment,
   VisaLogo,
 } from '@visa/nova-react';
-import { CSSProperties, useState, useRef } from 'react';
+import { useState, useRef, type CSSProperties } from 'react';
 
 // TIP: Customize this ID, pass it as a prop, or auto-generate it with useId() from @react
 const id = 'navigation-drawer-with-section-titles';

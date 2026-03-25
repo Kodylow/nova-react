@@ -5,8 +5,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Error banner with button",
-    "testAvg": 100
+    "title": "Error banner with button"
   },
   "button-information-banner": {
     "file": "button-information-banner.tsx",
@@ -14,8 +13,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Informational banner with button",
-    "testAvg": 100
+    "title": "Informational banner with button"
   },
   "button-success-banner": {
     "file": "button-success-banner.tsx",
@@ -23,8 +21,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Success banner with button",
-    "testAvg": 100
+    "title": "Success banner with button"
   },
   "button-warning-banner": {
     "file": "button-warning-banner.tsx",
@@ -32,8 +29,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Warning banner with button",
-    "testAvg": 100
+    "title": "Warning banner with button"
   },
   "default-error-banner": {
     "file": "default-error-banner.tsx",
@@ -41,8 +37,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default error banner",
-    "testAvg": 100
+    "title": "Default error banner"
   },
   "default-information-banner": {
     "file": "default-information-banner.tsx",
@@ -50,8 +45,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default informational banner",
-    "testAvg": 100
+    "title": "Default informational banner"
   },
   "default-success-banner": {
     "file": "default-success-banner.tsx",
@@ -59,8 +53,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default success banner",
-    "testAvg": 100
+    "title": "Default success banner"
   },
   "default-warning-banner": {
     "file": "default-warning-banner.tsx",
@@ -68,8 +61,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default warning banner",
-    "testAvg": 100
+    "title": "Default warning banner"
   },
   "empty-error-banner": {
     "file": "empty-error-banner.tsx",
@@ -77,8 +69,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Empty error banner",
-    "testAvg": 100
+    "title": "Empty error banner"
   },
   "empty-information-banner": {
     "file": "empty-information-banner.tsx",
@@ -86,8 +77,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Empty informational banner",
-    "testAvg": 100
+    "title": "Empty informational banner"
   },
   "empty-success-banner": {
     "file": "empty-success-banner.tsx",
@@ -95,8 +85,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Empty success banner",
-    "testAvg": 100
+    "title": "Empty success banner"
   },
   "empty-warning-banner": {
     "file": "empty-warning-banner.tsx",
@@ -104,8 +93,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Empty warning banner",
-    "testAvg": 100
+    "title": "Empty warning banner"
   },
   "link-error-banner": {
     "file": "link-error-banner.tsx",
@@ -113,8 +101,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Error banner with link",
-    "testAvg": 100
+    "title": "Error banner with link"
   },
   "link-information-banner": {
     "file": "link-information-banner.tsx",
@@ -122,8 +109,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Informational banner with link",
-    "testAvg": 100
+    "title": "Informational banner with link"
   },
   "link-success-banner": {
     "file": "link-success-banner.tsx",
@@ -131,8 +117,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Success banner with link",
-    "testAvg": 100
+    "title": "Success banner with link"
   },
   "link-warning-banner": {
     "file": "link-warning-banner.tsx",
@@ -140,8 +125,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Warning banner with link",
-    "testAvg": 100
+    "title": "Warning banner with link"
   },
   "persistent-error-banner": {
     "file": "persistent-error-banner.tsx",
@@ -149,8 +133,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Error banner without close icon button",
-    "testAvg": 100
+    "title": "Error banner without close icon button"
   },
   "persistent-information-banner": {
     "file": "persistent-information-banner.tsx",
@@ -158,8 +141,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Informational banner without close icon button",
-    "testAvg": 100
+    "title": "Informational banner without close icon button"
   },
   "persistent-success-banner": {
     "file": "persistent-success-banner.tsx",
@@ -167,8 +149,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Success banner without close icon button",
-    "testAvg": 100
+    "title": "Success banner without close icon button"
   },
   "persistent-warning-banner": {
     "file": "persistent-warning-banner.tsx",
@@ -176,8 +157,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Warning banner without close icon button",
-    "testAvg": 100
+    "title": "Warning banner without close icon button"
   },
   "title-error-banner": {
     "file": "title-error-banner.tsx",
@@ -185,8 +165,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Error banner with title",
-    "testAvg": 100
+    "title": "Error banner with title"
   },
   "title-information-banner": {
     "file": "title-information-banner.tsx",
@@ -194,8 +173,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Informational banner with title",
-    "testAvg": 100
+    "title": "Informational banner with title"
   },
   "title-success-banner": {
     "file": "title-success-banner.tsx",
@@ -203,8 +181,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Success banner with title",
-    "testAvg": 100
+    "title": "Success banner with title"
   },
   "title-warning-banner": {
     "file": "title-warning-banner.tsx",
@@ -212,7 +189,15 @@
     "tags": {
       "docs": true
     },
-    "title": "Warning banner with title",
-    "testAvg": 100
+    "title": "Warning banner with title"
+  },
+  "reusable": {
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable banner"
   }
 }

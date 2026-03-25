@@ -2,7 +2,7 @@
   "description": "Compact elements used to filter content or display user input.",
   "displayName": "chip",
   "filePath": "/chip/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/chip/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//chip/index.tsx",
   "props": [
     {
       "description": "Chip Size",
@@ -26,6 +26,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/chip See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/chips/?code_library=react See Docs}"
 }

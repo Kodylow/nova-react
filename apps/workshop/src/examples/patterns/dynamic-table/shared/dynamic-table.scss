@@ -1,0 +1,228 @@
+/**
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ **/
+.v-table {
+  thead {
+    .v-th {
+      // column header buttons should be extra small and less rounded
+      // this abides by the minimum size guidelines from WCAG for web
+      .v-button-icon {
+        --v-button-default-block-size: var(--size-scalable-26);
+        --v-button-default-border-radius: var(--size-rounded-small);
+      }
+    }
+  }
+
+  /** Apply to columns that should be as compact in width as possible */
+  .compact-column {
+    &.v-th {
+      /** This is a trick to make the column as small as possible.
+          Setting min-content or fit-content does not work. */
+      inline-size: 1%;
+    }
+
+    &.v-td {
+      inline-size: 1%;
+      --v-table-data-padding-inline: var(--size-scalable-6);
+    }
+
+    &.v-td {
+      /** Center content in compact columns */
+      text-align: center;
+    }
+  }
+
+  /** Allow button actions to be inline, even when in compact column */
+  .actions-wrapper {
+    display: inline-flex;
+    gap: 0.5rem;
+    inline-size: max-content;
+  }
+
+  &.fixed-table {
+    .sticky-row {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+
+      // Drop shadow for sticky row
+      &::after {
+        content: '';
+        top: 0;
+        left: 0;
+        box-shadow: var(--elevation-large);
+        block-size: 100%;
+        inline-size: 100%;
+        position: absolute;
+        pointer-events: none; // allow clicks to pass through
+      }
+
+      .v-th,
+      .v-td {
+        // border-inline: 0 removes extra spacing caused by border-collapse: separate
+        border-inline: 0;
+        z-index: 2;
+      }
+    }
+
+    &:has(.sticky-row) {
+      // to keep the border between header and body when scrolling,
+      // border-collapse must be separate
+      --v-table-border-collapse: separate;
+    }
+
+    .pinned-column {
+      --v-table-header-bg-color: var(--palette-default-surface-3);
+      inset-inline-start: 0;
+      position: sticky;
+      z-index: 1;
+
+      /** Drop shadow for pinned column */
+      &::before {
+        content: '';
+        top: 0;
+        left: 0;
+        box-shadow: var(--elevation-medium);
+        block-size: 100%;
+        inline-size: 100%;
+        position: absolute;
+      }
+
+      &.v-td {
+        border: 0;
+      }
+    }
+
+    // maintain alternating row colors when pinned column is present
+    &.v-table-alt:has(.pinned-column) {
+      tr:nth-child(odd) td {
+        background-color: var(--v-table-background);
+      }
+      tr:nth-child(even) td {
+        background-color: var(--v-table-background-alt);
+      }
+    }
+
+    .v-th:has(.v-button.v-dropdown[aria-expanded='true']) {
+      // when a dropdown is open in the header, make sure it is above the shadow
+      z-index: 2;
+    }
+  }
+
+  &.accordion-style-table {
+    /**
+    * Override accordion display styles to work with table elements
+    * The directive names and class names don't always align,
+    * so we're using the directive selectors for clarity
+    **/
+    &.v-accordion {
+      display: table;
+    }
+
+    tbody {
+      display: table-row-group;
+
+      tr.v-accordion-heading {
+        display: table-row;
+        border: 0;
+
+        td {
+          // add a border to the start of each accordion header row
+          border-block-start: var(--v-accordion-panel-border-size) var(--v-accordion-panel-border-style)
+            var(--v-accordion-panel-border-color);
+        }
+
+        // for an open accordion item, add a border to bottom of row
+        &:has(.v-button[aria-expanded='true']) {
+          td {
+            border-block-end: var(--v-accordion-panel-border-size) var(--v-accordion-panel-border-style)
+              var(--v-accordion-panel-border-color);
+          }
+        }
+      }
+
+      &:first-of-type {
+        tr.v-accordion-heading td {
+          // remove border of first accordion header row
+          border-block-start: 0;
+        }
+      }
+    }
+
+    td.v-accordion-panel {
+      border: 0;
+    }
+  }
+
+  // selected row (row with checked checkbox)
+  tr:has(.row-selection-checkbox:checked) {
+    .v-td {
+      border-color: var(--palette-default-surface-lowlight);
+      background-color: var(--palette-default-surface-lowlight);
+      position: relative;
+
+      // blue highlight/indicator on inline-start of row
+      &:first-of-type {
+        &::before {
+          content: '';
+          /** push it up 1 border width, and make sure the height is 100% + 2 border widths (--size-scalable-1) */
+          block-size: calc(100% + 2 * var(--size-scalable-1));
+          inset-block-start: calc(-1 * var(--size-scalable-1));
+          position: absolute;
+          inset-block-start: 0;
+          inset-inline-start: 0;
+          border: 3px solid var(--palette-default-active);
+        }
+      }
+    }
+
+    &:last-of-type {
+      .v-td {
+        &:first-of-type {
+          &::before {
+            // On the last row, subtract 2px from the height to account for border radius.
+            // This prevents the extra height from causing a scrollbar to appear on the table.
+            block-size: calc(100% + (2 * var(--size-scalable-1)) - 2px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.v-accordion-heading {
+  &.v-button {
+    /** Make badges position correctly inside header buttons instead of as a notification badge */
+    .v-badge-number {
+      position: relative;
+      justify-content: center;
+    }
+  }
+}
+
+.v-action-bar {
+  // remove rounded corners for action bars in dynamic table examples
+  --v-surface-border-radius: var(--size-rounded-none);
+
+  .v-dropdown-menu.v-surface {
+    /**
+    * Reset background for dropdown menus in action bars.
+    * Some action bars may have a different surface background color
+    * that the dropdowns would otherwise inherit.
+    */
+    --v-surface-background: var(--palette-default-surface-1);
+  }
+}

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+
 import {
   Button,
   Flag,
@@ -39,13 +40,16 @@ import {
 
 import { UploadCard } from './shared/upload-card';
 import { UploadDialog } from './shared/upload-dialog';
-import { UploadFile } from './shared/types';
+import type { UploadFile } from './shared/types';
 import { mockUpload } from './shared/mock-upload';
 
 import { useRef, useState } from 'react';
 import { FileStatusButton } from './shared/file-status-button';
 
+// File size limit - customize as needed
 export const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
+
+// Accepted file types with corresponding icons - add/remove types as needed
 export const ACCEPTED_FILE_TYPES = [
   { type: 'image/jpeg', icon: <VisaDocumentJpgLow /> },
   { type: 'application/pdf', icon: <VisaDocumentPdfLow /> },
@@ -53,6 +57,13 @@ export const ACCEPTED_FILE_TYPES = [
   { type: 'application/vnd.ms-excel', icon: <VisaDocumentXlsLow /> },
 ];
 
+/**
+ * Validates and prepares a file for upload.
+ * Assigns appropriate icon based on file type and creates a unique ID for tracking.
+ *
+ * @param f - Native File object from browser
+ * @returns UploadFile object with icon, unique ID, and file reference
+ */
 const validateFile = (f: File): UploadFile => {
   let icon = undefined;
 
@@ -65,33 +76,57 @@ const validateFile = (f: File): UploadFile => {
 
   return {
     file: f,
-    // create an `id` which is a combination of name + size (only alphanumeric, no spaces)
-    // this will help with tracking and preventing duplicates
+    // Create unique ID combining sanitized filename and size for duplicate detection
     id: `${f.name.replace(/[^a-zA-Z0-9-_]/g, '-')}-${f.size}`,
     icon,
   };
 };
 
+// Dialog configuration - customize as needed
 const uploadQueueDialogId = 'manual-upload-dialog';
 const UPLOAD_DIALOG_TITLE = 'Upload files';
 const UPLOAD_DIALOG_DESCRIPTION =
   'Upload one or more files, up to 10 MB each. Accepted file types are .jpg, .pdf, .docx, and .xlsx. Only files that meet these requirements will be uploaded.';
 
+/**
+ * Multiple file upload with Dialog-based review before manual upload trigger.
+ * Files are queued for review in a Dialog and only uploaded when user confirms, allowing file removal before upload.
+ */
 const MultiFileManualUpload = () => {
+  // Hidden file input reference for programmatic triggering
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Refs for managing focus on retry buttons of failed files
   const retryRefs = useRef<Record<string, (element: HTMLDivElement | null) => void>>({});
   const retryElements = useRef<Record<string, HTMLDivElement | null>>({});
+
+  // Files that have been uploaded or are uploading
   const [uploadedFiles, setUploadedFiles] = useState<UploadFile[]>([]);
+
+  // Files awaiting user confirmation in dialog (not yet uploading)
   const [queuedFiles, setQueuedFiles] = useState<UploadFile[]>([]);
+
+  // Controls visibility of error section message
   const [showSectionMessage, setShowSectionMessage] = useState(true);
+
+  // Controls visibility of success flag notification
   const [showFlag, setShowFlag] = useState(true);
 
+  /**
+   * Triggers the hidden file input when Select button is clicked.
+   */
   const handleSelectFilesClick = () => {
     if (fileInputRef.current) {
       fileInputRef.current.click();
     }
   };
 
+  /**
+   * Handles file selection and adds files to queue.
+   * Important: Files are NOT uploaded immediately - they are queued in dialog.
+   *
+   * @param event - Change event from file input
+   */
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (files && files.length > 0) {
@@ -101,7 +136,7 @@ const MultiFileManualUpload = () => {
 
       setQueuedFiles((prevQueuedFiles: UploadFile[]) => {
         const newlyQueuedFiles = uploadFiles
-          // if we're already tracking the file, remove the new duplicate
+          // Filter out duplicates based on ID to prevent adding same file twice
           .filter(file => !prevQueuedFiles.some(f => f.id === file.id));
 
         return [...prevQueuedFiles, ...newlyQueuedFiles];
@@ -109,12 +144,16 @@ const MultiFileManualUpload = () => {
     }
   };
 
+  /**
+   * Handles upload button click in dialog.
+   * Closes dialog and initiates concurrent uploads for all queued files.
+   */
   const handleUploadClick = () => {
     handleCloseDialog();
 
     setUploadedFiles((oldUploadFiles: UploadFile[]) => {
       const newUploadFiles = queuedFiles
-        // if we're already tracking the file, remove the new duplicate
+        // Filter out files already tracked to prevent re-uploading
         .filter(file => !oldUploadFiles.some(f => f.id === file.id))
         .map(f => ({
           ...f,
@@ -122,7 +161,7 @@ const MultiFileManualUpload = () => {
         }));
 
       newUploadFiles.forEach(newFileItem => {
-        // mock an api request to simulate a file upload.
+        // Replace mockUpload with your actual upload API call
         mockUpload(newFileItem, {
           maxFileSize: MAX_FILE_SIZE,
           acceptedFileTypes: ACCEPTED_FILE_TYPES.map(t => t.type),
@@ -149,6 +188,12 @@ const MultiFileManualUpload = () => {
     });
   };
 
+  /**
+   * Removes a file from the uploaded files list.
+   * Hides success flag if deleting an errored file.
+   *
+   * @param fileToDelete - File to remove from tracking
+   */
   const handleDeleteFile = (fileToDelete: UploadFile) => {
     setUploadedFiles(files => files.filter(file => file.id !== fileToDelete.id));
     if (fileToDelete.error) {
@@ -156,18 +201,31 @@ const MultiFileManualUpload = () => {
     }
   };
 
+  /**
+   * Removes a file from the queue (before upload).
+   *
+   * @param fileToDelete - File to remove from queue
+   */
   const handleDeleteQueuedFile = (fileToDelete: UploadFile) => {
     setQueuedFiles(files => files.filter(file => file.id !== fileToDelete.id));
   };
 
+  /**
+   * Retries all failed file uploads.
+   */
   const handleRetryAll = () => {
     erroredFiles.forEach(f => handleRetryFile(f));
   };
 
+  /**
+   * Retries upload for a single failed file.
+   *
+   * @param fileToRetry - File with error state to retry
+   */
   const handleRetryFile = (fileToRetry: UploadFile) => {
     const validatedFile = validateFile(fileToRetry.file);
 
-    // set the file's status to uploading and clear error
+    // Update file state to uploading and clear previous error
     setUploadedFiles(files => files.map(f => (f.id === fileToRetry.id ? { ...validatedFile, uploading: true } : f)));
     setShowSectionMessage(true);
 
@@ -204,13 +262,14 @@ const MultiFileManualUpload = () => {
       });
   };
 
+  // Computed values for UI state
   const erroredFiles = uploadedFiles.filter(f => !!f.error);
   const uploadingFiles = uploadedFiles.filter(f => !!f.uploading);
 
   const allFilesUploaded =
     uploadedFiles.length > 0 && uploadedFiles.filter(f => f.uploaded).length === uploadedFiles.length;
 
-  // create callback refs for errored files
+  // Create callback refs for retry buttons to enable keyboard navigation to errors
   erroredFiles.forEach(f => {
     if (!retryRefs.current[f.id]) {
       retryRefs.current[f.id] = (element: HTMLDivElement | null) => {
@@ -219,30 +278,41 @@ const MultiFileManualUpload = () => {
     }
   });
 
+  /**
+   * Hides the error section message.
+   */
   const handleSectionMessageClose = () => {
     setShowSectionMessage(false);
   };
 
+  /**
+   * Hides the success flag notification.
+   */
   const handleFlagClose = () => {
     setShowFlag(false);
   };
 
+  /**
+   * Handles dialog close - clears queued files.
+   */
   const handleCloseDialog = () => {
     setQueuedFiles([]);
   };
 
   return (
     <Utility vFlex vFlexCol vGap={25}>
-      <Utility vFlex vFlexCol vGap={25} style={{ maxWidth: '400px' }}>
+      <Utility vFlex vFlexCol vGap={4} style={{ maxWidth: '400px' }}>
         <Utility vFlex vFlexCol vGap={16}>
           <Utility vFlex vFlexCol vGap={8}>
             <Typography tag="h4" variant="subtitle-1">
               Upload files
             </Typography>
+            {/* Update instructions to match your MAX_FILE_SIZE and ACCEPTED_FILE_TYPES */}
             <Typography variant="label-small">
               Choose one or more files to upload, up to 10MB each. Accepted file types are jpg, pdf, docx, and xlsx.
             </Typography>
           </Utility>
+          {/* Hidden file input with multiple file support */}
           <ScreenReader<'input'>
             tag={'input'}
             type="file"
@@ -257,56 +327,54 @@ const MultiFileManualUpload = () => {
             </Button>
           </UtilityFragment>
         </Utility>
-        <Utility
-          vFlex
-          vFlexCol
-          vGap={8}
-          role="status"
-          className={!uploadingFiles.length && !erroredFiles.length ? 'v-screen-reader' : undefined}
-        >
+        {/* Always-present live region */}
+        <Utility vFlex vFlexCol vGap={8} role="status" style={{ minHeight: '1rem' }}>
           {!!uploadingFiles.length && (
-            <Typography variant="label">{`Uploading ${uploadingFiles.length} file${uploadingFiles.length > 1 ? 's' : ''}...`}</Typography>
+            <Typography variant="label-small">{`Uploading ${uploadingFiles.length} file${uploadingFiles.length > 1 ? 's' : ''}...`}</Typography>
           )}
+          {/* Error message with clickable file links for keyboard navigation to retry buttons */}
           {!!erroredFiles.length && showSectionMessage && (
-            <SectionMessage messageType="error">
-              <MessageIcon messageType="error" />
-              <UtilityFragment vPaddingLeft={2} vPaddingBottom={2}>
-                <SectionMessageContent style={{ wordBreak: 'break-all' }}>
-                  <Typography>The following files have errors:</Typography>
-                  <UtilityFragment vPaddingLeft={20}>
-                    <ul style={{ listStyle: 'initial' }}>
-                      {erroredFiles.map(f => (
-                        <li key={f.file.name + f.file.size}>
-                          <Typography<'a'>
-                            tag="a"
-                            href="#"
-                            onClick={e => {
-                              e.preventDefault();
-                              retryElements.current[f.id]?.focus();
-                            }}
-                          >
-                            {f.file.name}
-                          </Typography>
-                        </li>
-                      ))}
-                    </ul>
-                  </UtilityFragment>
-                  {erroredFiles.length > 1 && (
-                    <UtilityFragment vMarginTop={8}>
-                      <Button colorScheme="secondary" onClick={handleRetryAll}>
-                        Retry all
-                      </Button>
+            <UtilityFragment vMarginVertical={21}>
+              <SectionMessage messageType="error">
+                <MessageIcon messageType="error" />
+                <UtilityFragment vPaddingLeft={2} vPaddingBottom={2}>
+                  <SectionMessageContent style={{ wordBreak: 'break-all' }}>
+                    <Typography>The following files have errors:</Typography>
+                    <UtilityFragment vPaddingLeft={20}>
+                      <ul style={{ listStyle: 'initial' }}>
+                        {erroredFiles.map(f => (
+                          <li key={f.file.name + f.file.size}>
+                            <Typography<'a'>
+                              tag="a"
+                              href="#"
+                              onClick={e => {
+                                e.preventDefault();
+                                retryElements.current[f.id]?.focus();
+                              }}
+                            >
+                              {f.file.name}
+                            </Typography>
+                          </li>
+                        ))}
+                      </ul>
                     </UtilityFragment>
-                  )}
-                </SectionMessageContent>
-              </UtilityFragment>
-              <SectionMessageCloseButton onClick={handleSectionMessageClose}>
-                {' '}
-                <VisaCloseTiny />{' '}
-              </SectionMessageCloseButton>
-            </SectionMessage>
+                    {erroredFiles.length > 1 && (
+                      <UtilityFragment vMarginTop={8}>
+                        <Button colorScheme="secondary" onClick={handleRetryAll}>
+                          Retry all
+                        </Button>
+                      </UtilityFragment>
+                    )}
+                  </SectionMessageContent>
+                </UtilityFragment>
+                <SectionMessageCloseButton onClick={handleSectionMessageClose}>
+                  <VisaCloseTiny />
+                </SectionMessageCloseButton>
+              </SectionMessage>
+            </UtilityFragment>
           )}
         </Utility>
+        {/* Display uploaded/uploading files with status and actions */}
         {!!uploadedFiles.length && (
           <Utility tag="ul" vFlex vFlexCol vGap={8}>
             {uploadedFiles.map(uploadFile => (
@@ -335,6 +403,7 @@ const MultiFileManualUpload = () => {
           </Utility>
         )}
       </Utility>
+      {/* Success notification - positioned at bottom right */}
       <Utility role="alert" vAlignSelf="end">
         {showFlag && allFilesUploaded && (
           <Flag messageType="success">
@@ -346,6 +415,7 @@ const MultiFileManualUpload = () => {
           </Flag>
         )}
       </Utility>
+      {/* Dialog shows when files are queued - opens automatically when queuedFiles has items */}
       <UploadDialog
         isOpen={queuedFiles.length > 0}
         title={UPLOAD_DIALOG_TITLE}

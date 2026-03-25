@@ -2,13 +2,13 @@
   "description": "Pop-up windows that overlay page content to facilitate user interactions or show important information.",
   "displayName": "dialog",
   "filePath": "/dialog/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/dialog/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//dialog/index.tsx",
   "props": [
     {
       "description": "Message Type",
       "name": "messageType",
       "required": false,
-      "type": "\"subtle\" | \"warning\" | \"error\" | \"success\""
+      "type": "\"subtle\" | \"warning\" | \"error\" | \"information\" | \"success\""
     },
     {
       "defaultValue": "dialog",
@@ -20,8 +20,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/dialog See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/dialog/?code_library=react See Docs}",
   "related": [
     "dialog-close-button",
     "dialog-header",

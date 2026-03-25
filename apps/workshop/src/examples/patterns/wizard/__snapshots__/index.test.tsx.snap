@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Wizard examples Default single-page wizard should render correctly 1`] = `
+exports[`Wizard examples > Default single-page wizard should render correctly 1`] = `
 <div>
   <nav
     aria-label="Single page wizard"
@@ -47,9 +47,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </summary>
@@ -129,7 +127,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                     >
                       <path
                         class="v-icon-primary"
-                        d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                        d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                       />
                       <defs>
                         <clippath>
@@ -157,9 +155,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                     >
                       <path
                         class="v-icon-primary"
-                        clip-rule="evenodd"
-                        d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                        fill-rule="evenodd"
+                        d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                       />
                       <defs>
                         <clippath>
@@ -220,9 +216,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </summary>
@@ -302,7 +296,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                     >
                       <path
                         class="v-icon-primary"
-                        d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                        d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                       />
                       <defs>
                         <clippath>
@@ -330,9 +324,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                     >
                       <path
                         class="v-icon-primary"
-                        clip-rule="evenodd"
-                        d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                        fill-rule="evenodd"
+                        d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                       />
                       <defs>
                         <clippath>
@@ -393,9 +385,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </summary>
@@ -475,7 +465,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                     >
                       <path
                         class="v-icon-primary"
-                        d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                        d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                       />
                       <defs>
                         <clippath>
@@ -503,9 +493,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                     >
                       <path
                         class="v-icon-primary"
-                        clip-rule="evenodd"
-                        d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                        fill-rule="evenodd"
+                        d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                       />
                       <defs>
                         <clippath>
@@ -566,9 +554,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </summary>
@@ -648,7 +634,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                     >
                       <path
                         class="v-icon-primary"
-                        d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                        d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                       />
                       <defs>
                         <clippath>
@@ -676,9 +662,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                     >
                       <path
                         class="v-icon-primary"
-                        clip-rule="evenodd"
-                        d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                        fill-rule="evenodd"
+                        d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                       />
                       <defs>
                         <clippath>
@@ -739,9 +723,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </summary>
@@ -792,9 +774,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                         >
                           <path
                             class="v-icon-primary"
-                            clip-rule="evenodd"
-                            d="M12.7071 0.292893C12.3166 -0.0976311 11.6834 -0.0976311 11.2929 0.292893L0 11.5858V16H4.41421L15.7071 4.70711C16.0976 4.31658 16.0976 3.68342 15.7071 3.29289L12.7071 0.292893ZM2 14V12.4142L8.99996 5.41425L10.5857 7.00004L3.58579 14H2ZM12 5.58582L13.5858 4L12 2.41421L10.4142 4.00004L12 5.58582Z"
-                            fill-rule="evenodd"
+                            d="M11.293 0.292969C11.6835 -0.0975556 12.3165 -0.0975556 12.707 0.292969L15.707 3.29297C16.0976 3.68349 16.0976 4.31651 15.707 4.70703L4.41406 16H0V11.5859L11.293 0.292969ZM2 12.4141V14H3.58594L10.5859 7L9 5.41406L2 12.4141ZM10.4141 4L12 5.58594L13.5859 4L12 2.41406L10.4141 4Z"
                           />
                           <defs>
                             <clippath>
@@ -838,9 +818,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                         >
                           <path
                             class="v-icon-primary"
-                            clip-rule="evenodd"
-                            d="M12.7071 0.292893C12.3166 -0.0976311 11.6834 -0.0976311 11.2929 0.292893L0 11.5858V16H4.41421L15.7071 4.70711C16.0976 4.31658 16.0976 3.68342 15.7071 3.29289L12.7071 0.292893ZM2 14V12.4142L8.99996 5.41425L10.5857 7.00004L3.58579 14H2ZM12 5.58582L13.5858 4L12 2.41421L10.4142 4.00004L12 5.58582Z"
-                            fill-rule="evenodd"
+                            d="M11.293 0.292969C11.6835 -0.0975556 12.3165 -0.0975556 12.707 0.292969L15.707 3.29297C16.0976 3.68349 16.0976 4.31651 15.707 4.70703L4.41406 16H0V11.5859L11.293 0.292969ZM2 12.4141V14H3.58594L10.5859 7L9 5.41406L2 12.4141ZM10.4141 4L12 5.58594L13.5859 4L12 2.41406L10.4141 4Z"
                           />
                           <defs>
                             <clippath>
@@ -884,9 +862,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                         >
                           <path
                             class="v-icon-primary"
-                            clip-rule="evenodd"
-                            d="M12.7071 0.292893C12.3166 -0.0976311 11.6834 -0.0976311 11.2929 0.292893L0 11.5858V16H4.41421L15.7071 4.70711C16.0976 4.31658 16.0976 3.68342 15.7071 3.29289L12.7071 0.292893ZM2 14V12.4142L8.99996 5.41425L10.5857 7.00004L3.58579 14H2ZM12 5.58582L13.5858 4L12 2.41421L10.4142 4.00004L12 5.58582Z"
-                            fill-rule="evenodd"
+                            d="M11.293 0.292969C11.6835 -0.0975556 12.3165 -0.0975556 12.707 0.292969L15.707 3.29297C16.0976 3.68349 16.0976 4.31651 15.707 4.70703L4.41406 16H0V11.5859L11.293 0.292969ZM2 12.4141V14H3.58594L10.5859 7L9 5.41406L2 12.4141ZM10.4141 4L12 5.58594L13.5859 4L12 2.41406L10.4141 4Z"
                           />
                           <defs>
                             <clippath>
@@ -930,9 +906,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                         >
                           <path
                             class="v-icon-primary"
-                            clip-rule="evenodd"
-                            d="M12.7071 0.292893C12.3166 -0.0976311 11.6834 -0.0976311 11.2929 0.292893L0 11.5858V16H4.41421L15.7071 4.70711C16.0976 4.31658 16.0976 3.68342 15.7071 3.29289L12.7071 0.292893ZM2 14V12.4142L8.99996 5.41425L10.5857 7.00004L3.58579 14H2ZM12 5.58582L13.5858 4L12 2.41421L10.4142 4.00004L12 5.58582Z"
-                            fill-rule="evenodd"
+                            d="M11.293 0.292969C11.6835 -0.0975556 12.3165 -0.0975556 12.707 0.292969L15.707 3.29297C16.0976 3.68349 16.0976 4.31651 15.707 4.70703L4.41406 16H0V11.5859L11.293 0.292969ZM2 12.4141V14H3.58594L10.5859 7L9 5.41406L2 12.4141ZM10.4141 4L12 5.58594L13.5859 4L12 2.41406L10.4141 4Z"
                           />
                           <defs>
                             <clippath>
@@ -993,7 +967,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                     >
                       <path
                         class="v-icon-primary"
-                        d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                        d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                       />
                       <defs>
                         <clippath>
@@ -1021,9 +995,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
                     >
                       <path
                         class="v-icon-primary"
-                        clip-rule="evenodd"
-                        d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                        fill-rule="evenodd"
+                        d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                       />
                       <defs>
                         <clippath>
@@ -1073,13 +1045,11 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
           >
             <path
               class="v-icon-secondary"
-              d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+              d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-              fill-rule="evenodd"
+              d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
             />
           </svg>
           Exit form?
@@ -1115,7 +1085,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
         >
           <path
             class="v-icon-primary"
-            d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
           />
           <defs>
             <clippath>
@@ -1133,7 +1103,7 @@ exports[`Wizard examples Default single-page wizard should render correctly 1`] 
 </div>
 `;
 
-exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`] = `
+exports[`Wizard examples > Horizontal multi-page wizard should render correctly 1`] = `
 <div>
   <div
     class="v-align-items-center v-flex v-flex-col v-gap-40"
@@ -1179,9 +1149,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
           </button>
@@ -1214,9 +1182,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </li>
@@ -1248,9 +1214,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </li>
@@ -1282,9 +1246,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </li>
@@ -1395,7 +1357,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                    d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                   />
                   <defs>
                     <clippath>
@@ -1423,9 +1385,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                    fill-rule="evenodd"
+                    d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                   />
                   <defs>
                     <clippath>
@@ -1532,7 +1492,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                    d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                   />
                   <defs>
                     <clippath>
@@ -1560,9 +1520,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                    fill-rule="evenodd"
+                    d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                   />
                   <defs>
                     <clippath>
@@ -1669,7 +1627,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                    d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                   />
                   <defs>
                     <clippath>
@@ -1697,9 +1655,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                    fill-rule="evenodd"
+                    d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                   />
                   <defs>
                     <clippath>
@@ -1806,7 +1762,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                    d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                   />
                   <defs>
                     <clippath>
@@ -1834,9 +1790,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                    fill-rule="evenodd"
+                    d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                   />
                   <defs>
                     <clippath>
@@ -1884,13 +1838,11 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
           >
             <path
               class="v-icon-secondary"
-              d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+              d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-              fill-rule="evenodd"
+              d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
             />
           </svg>
           Exit form?
@@ -1926,7 +1878,7 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
         >
           <path
             class="v-icon-primary"
-            d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
           />
           <defs>
             <clippath>
@@ -1944,10 +1896,11 @@ exports[`Wizard examples Horizontal multi-page wizard should render correctly 1`
 </div>
 `;
 
-exports[`Wizard examples Responsive horizontal wizard should render correctly 1`] = `
+exports[`Wizard examples > Responsive horizontal wizard should render correctly 1`] = `
 <div>
   <div
     class="v-align-items-center v-flex v-flex-col v-gap-40"
+    style="container-type: inline-size;"
   >
     <nav
       aria-label="Responsive horizontal wizard-desktop"
@@ -1990,9 +1943,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
           </button>
@@ -2025,9 +1976,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </li>
@@ -2059,9 +2008,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </li>
@@ -2093,9 +2040,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </li>
@@ -2263,7 +2208,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                    d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                   />
                   <defs>
                     <clippath>
@@ -2291,9 +2236,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                    fill-rule="evenodd"
+                    d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                   />
                   <defs>
                     <clippath>
@@ -2340,7 +2283,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
               />
               <defs>
                 <clippath>
@@ -2368,9 +2311,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                fill-rule="evenodd"
+                d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
               />
               <defs>
                 <clippath>
@@ -2475,7 +2416,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                    d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                   />
                   <defs>
                     <clippath>
@@ -2503,9 +2444,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                    fill-rule="evenodd"
+                    d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                   />
                   <defs>
                     <clippath>
@@ -2552,7 +2491,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
               />
               <defs>
                 <clippath>
@@ -2580,9 +2519,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                fill-rule="evenodd"
+                d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
               />
               <defs>
                 <clippath>
@@ -2687,7 +2624,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                    d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                   />
                   <defs>
                     <clippath>
@@ -2715,9 +2652,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                    fill-rule="evenodd"
+                    d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                   />
                   <defs>
                     <clippath>
@@ -2764,7 +2699,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
               />
               <defs>
                 <clippath>
@@ -2792,9 +2727,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                fill-rule="evenodd"
+                d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
               />
               <defs>
                 <clippath>
@@ -2899,7 +2832,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                    d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                   />
                   <defs>
                     <clippath>
@@ -2927,9 +2860,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
                 >
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                    fill-rule="evenodd"
+                    d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                   />
                   <defs>
                     <clippath>
@@ -2976,7 +2907,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
               />
               <defs>
                 <clippath>
@@ -3004,9 +2935,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                fill-rule="evenodd"
+                d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
               />
               <defs>
                 <clippath>
@@ -3052,13 +2981,11 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
           >
             <path
               class="v-icon-secondary"
-              d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+              d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-              fill-rule="evenodd"
+              d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
             />
           </svg>
           Exit form?
@@ -3094,7 +3021,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
         >
           <path
             class="v-icon-primary"
-            d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
           />
           <defs>
             <clippath>
@@ -3112,7 +3039,7 @@ exports[`Wizard examples Responsive horizontal wizard should render correctly 1`
 </div>
 `;
 
-exports[`Wizard examples Vertical multi-page wizard should render correctly 1`] = `
+exports[`Wizard examples > Vertical multi-page wizard should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-row v-flex-wrap v-gap-40"
@@ -3442,7 +3369,7 @@ exports[`Wizard examples Vertical multi-page wizard should render correctly 1`] 
               >
                 <path
                   class="v-icon-primary"
-                  d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+                  d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
                 />
                 <defs>
                   <clippath>
@@ -3470,9 +3397,7 @@ exports[`Wizard examples Vertical multi-page wizard should render correctly 1`] 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                  fill-rule="evenodd"
+                  d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                 />
                 <defs>
                   <clippath>
@@ -3519,13 +3444,11 @@ exports[`Wizard examples Vertical multi-page wizard should render correctly 1`] 
           >
             <path
               class="v-icon-secondary"
-              d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+              d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-              fill-rule="evenodd"
+              d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
             />
           </svg>
           Exit form?
@@ -3561,7 +3484,7 @@ exports[`Wizard examples Vertical multi-page wizard should render correctly 1`] 
         >
           <path
             class="v-icon-primary"
-            d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
           />
           <defs>
             <clippath>

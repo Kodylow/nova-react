@@ -2,7 +2,7 @@
   "description": "Tabs to be used with panel component.",
   "displayName": "paneltabs",
   "filePath": "/panel-tabs/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/panel-tabs/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//panel-tabs/index.tsx",
   "props": [
     {
       "description": "Orientation",
@@ -23,6 +23,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/panel See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/panel/?code_library=react See Docs}"
 }

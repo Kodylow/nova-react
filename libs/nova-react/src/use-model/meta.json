@@ -1,0 +1,9 @@
+{
+  "description": "Hook that prioritizes controlled state over useState if controlled state provided",
+  "displayName": "useModel",
+  "filePath": "/use-model/index.ts",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//use-model/index.ts",
+  "props": [],
+  "param": "propValue - Value for controlled state\nonChange - Setter for controlled state\ndefaultValue",
+  "returns": ""
+}

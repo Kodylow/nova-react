@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,25 +14,34 @@
  * limitations under the License.
  *
  **/
-import { ReactNode, useState } from "react";
-import ChatContext from "./chat-context";
+import { useState, type ReactNode } from 'react';
+import ChatContext from './chat-context';
 
+/**
+ * Message structure for conversation history
+ *
+ * @property timeStamp - Timestamp when the message was sent
+ * @property message - The text content of the message
+ * @property code - (optional) Code block for displaying code snippets. Ensure code format matches your syntax highlighter requirements
+ * @property role - Identifies sender (e.g., "User 1", "User 2", "AI Assistant")
+ */
 type ResponseType = {
   timeStamp: string;
   message: string;
-  // Optional code block, if applicable
-  // If you want to use code blocks, ensure to handle the code rendering in your chat bubble components.
-  // This is just a placeholder for demonstration purposes.
   code?: string;
   role: string;
 };
 
+/**
+ * React Context provider for sharing chat conversation state across multiple components.
+ * Wraps children with ChatContext to provide responses array and setter as a single source of truth for message history.
+ *
+ * @param children - React components to wrap with chat context
+ */
 const ChatProvider = ({ children }: { children: ReactNode }) => {
   const [responses, setResponses] = useState<ResponseType[]>([]);
 
-  return (
-    <ChatContext.Provider value={{ responses, setResponses }}>{children}</ChatContext.Provider>
-  );
+  return <ChatContext.Provider value={{ responses, setResponses }}>{children}</ChatContext.Provider>;
 };
 
 export default ChatProvider;

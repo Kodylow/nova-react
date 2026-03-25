@@ -5,8 +5,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default accordion",
-    "testAvg": 100
+    "title": "Default accordion"
   },
   "collapsed-disabled-accordion": {
     "file": "collapsed-disabled-accordion.tsx",
@@ -14,8 +13,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Disabled accordion",
-    "testAvg": 100
+    "title": "Disabled accordion"
   },
   "default-with-item-open-accordion": {
     "file": "default-with-item-open-accordion.tsx",
@@ -23,8 +21,7 @@
     "tags": {
       "custom": true
     },
-    "title": "Custom single-select accordion group with accordion expanded by default",
-    "testAvg": 100
+    "title": "Custom single-select accordion group with accordion expanded by default"
   },
   "disabled-subtle-accordion": {
     "file": "disabled-subtle-accordion.tsx",
@@ -32,8 +29,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Disabled subtle accordion",
-    "testAvg": 100
+    "title": "Disabled subtle accordion"
   },
   "disclosure-group-accordion": {
     "file": "disclosure-group-accordion.tsx",
@@ -41,8 +37,7 @@
     "tags": {
       "custom": true
     },
-    "title": "Custom multi-select accordion group with accordion expanded by default",
-    "testAvg": 100
+    "title": "Custom multi-select accordion group with accordion expanded by default"
   },
   "key-nav-group-accordion": {
     "file": "key-nav-group-accordion.tsx",
@@ -50,38 +45,41 @@
     "tags": {
       "custom": true
     },
-    "title": "Accordion group with arrow key navigation",
-    "testAvg": 100
+    "title": "Accordion group with arrow key navigation"
+  },
+  "reusable": {
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable accordion"
   },
   "subtle-single-select-accordion-group": {
     "id": "subtle-single-select-accordion-group",
     "file": "subtle-single-select-accordion-group.tsx",
-    "title": "Subtle single-select accordion group",
-    "testAvg": 100
+    "title": "Subtle single-select accordion group"
   },
   "subtle-accordion-with-icon": {
     "id": "subtle-accordion-with-icon",
     "file": "subtle-accordion-with-icon.tsx",
-    "title": "Subtle accordion with icon",
-    "testAvg": 100
+    "title": "Subtle accordion with icon"
   },
   "default-single-select-accordion-group": {
     "id": "default-single-select-accordion-group",
     "file": "default-single-select-accordion-group.tsx",
-    "title": "Default single-select accordion group",
-    "testAvg": 100
+    "title": "Default single-select accordion group"
   },
   "single-select-accordion-group-with-expanded": {
     "id": "single-select-accordion-group-with-expanded",
     "file": "single-select-accordion-group-with-expanded.tsx",
-    "title": "Single-select accordion group with accordion expanded by default",
-    "testAvg": 100
+    "title": "Single-select accordion group with accordion expanded by default"
   },
   "subtle-multi-select-accordion-group": {
     "file": "subtle-multi-select-accordion-group.tsx",
     "id": "subtle-multi-select-accordion-group",
-    "title": "Subtle multi-select accordion group",
-    "testAvg": 100
+    "title": "Subtle multi-select accordion group"
   },
   "default-multi-select-accordion-group": {
     "file": "default-multi-select-accordion-group.tsx",
@@ -89,27 +87,23 @@
     "tags": {
       "docs": true
     },
-    "title": "Default multi-select accordion group",
-    "testAvg": 100
+    "title": "Default multi-select accordion group"
   },
   "multi-select-accordion-group-with-expanded": {
     "file": "multi-select-accordion-group-with-expanded.tsx",
     "id": "multi-select-accordion-group-with-expanded",
-    "title": "Multi-select accordion group with accordion expanded by default",
-    "testAvg": 100
+    "title": "Multi-select accordion group with accordion expanded by default"
   },
   "multi-select-accordion-group-with-disabled": {
     "id": "multi-select-accordion-group-with-disabled",
     "file": "multi-select-accordion-group-with-disabled.tsx",
-    "title": "Multi-select accordion group with disabled accordion",
-    "testAvg": 100
+    "title": "Multi-select accordion group with disabled accordion"
   },
   "native-single-select-accordion-group": {
     "id": "native-single-select-accordion-group",
     "file": "native-single-select-accordion-group.tsx",
     "title": "Native single-select accordion group",
-    "devNote": "This behavior is not currently supported in all browsers.",
-    "testAvg": 100
+    "devNote": "This behavior is not currently supported in all browsers."
   },
   "subtle-accordion": {
     "file": "subtle-accordion.tsx",
@@ -117,8 +111,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Subtle accordion",
-    "testAvg": 100
+    "title": "Subtle accordion"
   },
   "with-badge-accordion": {
     "file": "with-badge-accordion.tsx",
@@ -126,8 +119,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Accordion with badge",
-    "testAvg": 100
+    "title": "Accordion with badge"
   },
   "with-icon-accordion": {
     "file": "with-icon-accordion.tsx",
@@ -135,10 +127,6 @@
     "tags": {
       "docs": true
     },
-    "title": "Accordion with icon",
-    "testAvg": 100
-  },
-  "meta": {
-    "designReviewDate": "2024-05-10"
+    "title": "Accordion with icon"
   }
 }

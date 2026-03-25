@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+
 import {
   MessageIcon,
   VisaArrowBackTiny,
@@ -43,16 +44,21 @@ import {
   useFocusTrap,
   useWizard,
 } from '@visa/nova-react';
-import { ChangeEvent, RefObject, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ChangeEvent, type RefObject } from 'react';
 import { ExitDialog } from './shared/exit-dialog';
 import { SaveFlag } from './shared/save-flag';
 import { SuccessMessage } from './shared/success-message';
 import { SummaryPage } from './shared/summary-page';
 
-// TIP: Customize this ID, pass it as a prop, or auto-generate it with useId() from @react
+// Unique ID for wizard elements. Customize this or use React.useId() for dynamic generation.
 const id = 'horizontal-multi-page-wizard';
 const navRegionAriaLabel = 'Horizontal multi-page wizard';
 
+/**
+ * Step configuration defining wizard structure.
+ * Each step requires: label (badge text), title, inputLabel, inputId, and buttonId.
+ * The final step (without inputId) is reserved for the summary page.
+ */
 const steps = [
   {
     label: '1',
@@ -92,6 +98,9 @@ const exitDialogId = `${id}-exit-warning-dialog`;
 
 const DEFAULT_INPUT_VALUES = Array(steps.length).fill('');
 
+/**
+ * Multi-step form with horizontal progress indicators, validation, auto-save, and summary review.
+ */
 export const HorizontalWizard = () => {
   const {
     currentStep,
@@ -106,8 +115,7 @@ export const HorizontalWizard = () => {
     onWizardReset,
   } = useWizard({ length: steps.length });
 
-  // Track whether the wizard has been interacted with in order
-  // to control focus within a useEffect
+  // Tracks step changes to trigger focus management in useEffect
   const [hasWizardStepChanged, setHasWizardStepChanged] = useState(false);
 
   const { onKeyNavigation, ref: exitDialogRef } = useFocusTrap();
@@ -118,8 +126,7 @@ export const HorizontalWizard = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [visibleErrorMessages, setVisibleErrorMessages] = useState<boolean[]>(Array(steps.length).fill(true));
 
-  // Create an array of refs to handle focusing input fields on error
-  // https://react.dev/learn/manipulating-the-dom-with-refs#how-to-manage-a-list-of-refs-using-a-ref-callback
+  // Ref maps for programmatic focus management when navigating or encountering errors
   const inputRefs = useRef(new Map());
   function getInputRefMap() {
     if (!inputRefs.current) {
@@ -138,6 +145,7 @@ export const HorizontalWizard = () => {
 
   const editButtonRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
+  // Manages focus after step changes for improved keyboard navigation
   useEffect(() => {
     if (!hasWizardStepChanged) {
       return;
@@ -158,6 +166,12 @@ export const HorizontalWizard = () => {
     setHasWizardStepChanged(false);
   }, [hasWizardStepChanged, currentStep]);
 
+  /**
+   * Updates form data for a specific step.
+   *
+   * @param index - Step index to update
+   * @param event - Input change event containing new value
+   */
   const handleInputChange = (index: number, event: ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     const newInputValues = [...inputValues];
@@ -165,7 +179,10 @@ export const HorizontalWizard = () => {
     setInputValues(newInputValues);
   };
 
-  // On next button click, simulate completion on all steps
+  /**
+   * Validates current step and advances to next.
+   * Shows error if validation fails.
+   */
   const handleClickNext = () => {
     if (!inputValues[currentStep]) {
       onStepError(currentStep);
@@ -185,18 +202,26 @@ export const HorizontalWizard = () => {
     onStepComplete(currentStep);
   };
 
-  // On previous button click, reset the current step status from the list of completed steps
+  /**
+   * Returns to previous step without validation.
+   */
   const handleClickPrevious = () => {
     setHasWizardStepChanged(true);
     setShowSavedFlag(false);
     onStepPrevious();
   };
 
+  /**
+   * Displays save confirmation flag.
+   */
   const handleSave = () => {
     setShowSavedFlag(true);
   };
 
-  // On next button click, simulate completion on all steps
+  /**
+   * Resets wizard to initial state.
+   * Typically called after submission to allow restarting the wizard.
+   */
   const handleResetWizard = () => {
     setHasWizardStepChanged(true);
     setInputValues(DEFAULT_INPUT_VALUES);
@@ -204,6 +229,10 @@ export const HorizontalWizard = () => {
     onWizardReset();
   };
 
+  /**
+   * Collects form data and marks wizard as submitted.
+   * Replace with your API integration.
+   */
   const handleSubmit = () => {
     const formValues: { [key: string]: string } = {};
     steps.forEach((step, i) => {
@@ -213,17 +242,30 @@ export const HorizontalWizard = () => {
     setFormSubmitted(true);
   };
 
+  /**
+   * Opens exit confirmation dialog.
+   */
   const handleExit = () => {
     exitDialogRef.current?.showModal();
   };
 
+  /**
+   * Hides error section message for a specific step.
+   *
+   * @param stepIndex - Index of the step whose error message should be hidden
+   */
   const handleErrorMessageClose = (stepIndex: number) => {
     const newVisibleErrorMessages = [...visibleErrorMessages];
     newVisibleErrorMessages[stepIndex] = false;
     setVisibleErrorMessages(newVisibleErrorMessages);
   };
 
-  // On step button click, change the current step and reset the status of all steps after the clicked step
+  /**
+   * Handles direct navigation to a step from the wizard nav or summary page.
+   * Validates current step when navigating forward.
+   *
+   * @param i - Target step index
+   */
   const handleClickStep = (i: number) => {
     setHasWizardStepChanged(true);
 
@@ -249,6 +291,9 @@ export const HorizontalWizard = () => {
     }
   };
 
+  /**
+   * Renders the final summary page with review and edit capabilities.
+   */
   const renderSummaryStep = () => (
     <SummaryPage
       steps={steps}
@@ -260,6 +305,9 @@ export const HorizontalWizard = () => {
     />
   );
 
+  /**
+   * Renders wizard action buttons (Save, Exit, Back, Next, Submit) with conditional visibility.
+   */
   const renderActionButtons = () => {
     return (
       <Utility vMarginTop={40}>
@@ -457,7 +505,11 @@ export const HorizontalWizard = () => {
           })}
         </Utility>
       )}
-      <ExitDialog exitDialogId={exitDialogId} exitDialogRef={exitDialogRef as RefObject<HTMLDialogElement>} onKeyNavigation={onKeyNavigation} />
+      <ExitDialog
+        exitDialogId={exitDialogId}
+        exitDialogRef={exitDialogRef as RefObject<HTMLDialogElement>}
+        onKeyNavigation={onKeyNavigation}
+      />
     </Utility>
   );
 };

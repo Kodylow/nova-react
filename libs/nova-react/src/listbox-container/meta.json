@@ -2,7 +2,7 @@
   "description": "Container for listbox component.",
   "displayName": "listboxcontainer",
   "filePath": "/listbox-container/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/listbox-container/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//listbox-container/index.tsx",
   "props": [
     {
       "description": "Is Disabled",
@@ -24,6 +24,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/listbox See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/listbox/?code_library=react See Docs}"
 }

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ import { PageContent, PageHeader, PageTitle } from '../../components/page';
 import PropertiesTable from '../../components/properties-table';
 import VSuspense from '../../components/v-suspense';
 import { Paths } from '../../routes/paths';
-import { DocType, ExampleIndex, ExampleMetaData, LibMetaData } from '../../types';
+import type { DocType, ExampleIndex, ExampleMetaData, LibMetaData } from '../../types';
 import meta from '../../examples/meta.json';
 
 const LazyCode = lazy(() => import('../../components/code'));

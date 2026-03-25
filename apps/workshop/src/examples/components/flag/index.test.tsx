@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,6 +43,7 @@ import { TitleErrorFlag } from './title-error-flag';
 import { TitleInformationFlag } from './title-information-flag';
 import { TitleSuccessFlag } from './title-success-flag';
 import { TitleWarningFlag } from './title-warning-flag';
+import NovaFlagDemo from './reusable';
 
 const examples = [
   { Component: ButtonErrorFlag, title: metaData['button-error-flag'].title },
@@ -69,6 +70,7 @@ const examples = [
   { Component: TitleInformationFlag, title: metaData['title-information-flag'].title },
   { Component: TitleSuccessFlag, title: metaData['title-success-flag'].title },
   { Component: TitleWarningFlag, title: metaData['title-warning-flag'].title },
+  { Component: NovaFlagDemo, title: metaData['reusable'].title },
 ];
 
 describe('Flag examples', () => {

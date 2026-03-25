@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-avatar';
 
-export type AvatarProperties<ET extends ElementType = 'span',> = {
-
+export type AvatarProperties<ET extends ElementType = 'span'> = {
   /** Small Avatar */
   small?: boolean;
   /** Tag of Component */
@@ -29,19 +28,20 @@ export type AvatarProperties<ET extends ElementType = 'span',> = {
 
 /**
  * Icons and/or text representing users or entities.
- * @docs {@link https://design.visa.com/react/components/avatar | See Docs}
+ * @docs {@link https://design.visa.com/components/avatar/?code_library=react | See Docs}
  * @related tab-suffix
  * @vgar TODO
  * @wcag TODO
  */
-const Avatar = <ET extends ElementType = 'button',>(
-  { className, small, tag: Tag = 'span', ...remainingProps }: AvatarProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, small && `${CSS_PREFIX}-small`, className)} {...remainingProps} />;
+const Avatar = <ET extends ElementType = 'button'>({
+  className,
+  small,
+  tag: Tag = 'span',
+  ...remainingProps
+}: AvatarProperties<ET>) => (
+  <Tag className={cn(CSS_PREFIX, small && `${CSS_PREFIX}-small`, className)} {...remainingProps} />
+);
 
 export default Avatar;
-
-Avatar.defaultProps = {
-  tag: 'span',
-};
 
 Avatar.displayName = 'Avatar';

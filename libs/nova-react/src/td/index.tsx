@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,18 +15,18 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-td';
 
-export type TdProperties<ET extends ElementType = 'td',> = ComponentPropsWithRef<ET>;
+export type TdProperties<ET extends ElementType = 'td'> = ComponentPropsWithRef<ET>;
 
 /**
  * Table data cell component typically used for displaying data and content.
- * @docs {@link https://design.visa.com/react/components/table | See Docs}
+ * @docs {@link https://design.visa.com/components/table/?code_library=react | See Docs}
  */
-const Td = <ET extends ElementType = 'td',>({ className, ...remainingProps }: TdProperties<ET>) => (
-  <td className={cn(CSS_PREFIX, className)}  {...remainingProps} />
+const Td = <ET extends ElementType = 'td'>({ className, ...remainingProps }: TdProperties<ET>) => (
+  <td className={cn(CSS_PREFIX, className)} {...remainingProps} />
 );
 
 export default Td;

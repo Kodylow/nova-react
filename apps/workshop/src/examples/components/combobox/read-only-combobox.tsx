@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,8 +15,9 @@
  *
  **/
 import { VisaChevronDownTiny } from '@visa/nova-icons-react';
-import { Button, Combobox, DropdownContainer, Input, InputContainer, Label, UtilityFragment } from '@visa/nova-react';
+import { Button, Combobox, DropdownContainer, Input, InputContainer, Label, Listbox, ListboxContainer, ListboxItem, Radio, UtilityFragment } from '@visa/nova-react';
 import { useCombobox } from 'downshift';
+import { useId } from 'react';
 
 type Item = { value: string };
 
@@ -31,11 +32,15 @@ const items: Item[] = [
 export const itemToString = (item: Item | null) => (item ? item.value : '');
 
 export const ReadOnlyCombobox = () => {
-  const { getInputProps, getLabelProps, getToggleButtonProps } = useCombobox({
+  const id = useId();
+  const { getInputProps, getLabelProps, getMenuProps, getItemProps, getToggleButtonProps, inputValue } = useCombobox({
+    id,
     items: items,
     itemToString,
     initialInputValue: 'Option A',
   });
+
+  const { id: listboxId, ...listboxProps } = getMenuProps();
 
   return (
     <Combobox>
@@ -65,6 +70,25 @@ export const ReadOnlyCombobox = () => {
           </UtilityFragment>
         </DropdownContainer>
       </UtilityFragment>
+      <ListboxContainer>
+        <Listbox id={listboxId} {...listboxProps}>
+          {items.map((item, index) => (
+            <ListboxItem
+              key={`disabled-example-${index}`}
+              {...getItemProps({
+                'aria-selected': inputValue === item.value,
+                index,
+                item,
+              })}
+            >
+              <UtilityFragment vFlexShrink0>
+                <Radio tag="span" />
+              </UtilityFragment>
+              {item.value}
+            </ListboxItem>
+          ))}
+        </Listbox>
+      </ListboxContainer>
     </Combobox>
   );
 };

@@ -2,7 +2,7 @@
   "description": "Text-based navigation elements that directs users to another destination.",
   "displayName": "link",
   "filePath": "/link/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/link/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//link/index.tsx",
   "props": [
     {
       "description": "Alternate color scheme",
@@ -44,6 +44,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/link See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/link/?code_library=react See Docs}"
 }

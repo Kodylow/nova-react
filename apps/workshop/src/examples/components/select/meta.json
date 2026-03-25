@@ -2,26 +2,22 @@
   "default-select": {
     "file": "default-select.tsx",
     "id": "default-select",
-    "title": "Default select",
-    "testAvg": 100
+    "title": "Default select"
   },
   "disabled-select": {
     "file": "disabled-select.tsx",
     "id": "disabled-select",
-    "title": "Disabled select",
-    "testAvg": 100
+    "title": "Disabled select"
   },
   "error-select": {
     "file": "error-select.tsx",
     "id": "error-select",
-    "title": "Select with error",
-    "testAvg": 100
+    "title": "Select with error"
   },
   "inline-select": {
     "file": "inline-select.tsx",
     "id": "inline-select",
-    "title": "Select with inline label",
-    "testAvg": 100
+    "title": "Select with inline label"
   },
   "card-expiration": {
     "file": "card-expiration.tsx",
@@ -29,22 +25,25 @@
     "title": "Select for card expiration",
     "tags": {
       "custom": true
-    },
-    "testAvg": 100
+    }
   },
   "select-with-inline-message": {
     "file": "select-with-inline-message.tsx",
     "id": "select-with-inline-message",
-    "title": "Select with inline message",
-    "testAvg": 100
+    "title": "Select with inline message"
   },
   "read-only-select": {
     "file": "read-only-select.tsx",
     "id": "read-only-select",
-    "title": "Read-only select",
-    "testAvg": 100
+    "title": "Read-only select"
   },
-  "meta": {
-    "designReviewDate": "2024-05-15"
+  "reusable": {
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable select"
   }
 }

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-toggle';
 
-export type ToggleProperties <ET extends ElementType = 'label',>= {
+export type ToggleProperties<ET extends ElementType = 'label'> = {
   /** Icons only toggle button */
   iconOnly?: boolean;
   /** Tag of Component */
@@ -28,19 +28,20 @@ export type ToggleProperties <ET extends ElementType = 'label',>= {
 
 /**
  * Selection element that allows users to switch between states or views.
- * @docs {@link https://design.visa.com/react/components/toggle-button | See Docs}
+ * @docs {@link https://design.visa.com/components/toggle-button/?code_library=react | See Docs}
  * @related toggle-container
  * @vgar TODO
  * @wcag TODO
  */
-const Toggle = <ET extends ElementType = 'label',>(
-  { className, iconOnly, tag: Tag = 'label', ...remainingProps }: ToggleProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, iconOnly && `${CSS_PREFIX}-icon`, className)} {...remainingProps} />;
+const Toggle = <ET extends ElementType = 'label'>({
+  className,
+  iconOnly,
+  tag: Tag = 'label',
+  ...remainingProps
+}: ToggleProperties<ET>) => (
+  <Tag className={cn(CSS_PREFIX, iconOnly && `${CSS_PREFIX}-icon`, className)} {...remainingProps} />
+);
 
 export default Toggle;
-
-Toggle.defaultProps = {
-  tag: 'label',
-};
 
 Toggle.displayName = 'Toggle';

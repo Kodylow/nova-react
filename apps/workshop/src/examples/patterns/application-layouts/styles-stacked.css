@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,8 @@
  * limitations under the License.
  *
  **/
+
+/* Layout structure with header and navigation stacked on top, content below */
 .layout-stacked {
   height: 100vh;
   z-index: 1;
@@ -24,12 +26,14 @@
   background-color: var(--palette-default-surface-3, #f0f0f0);
 }
 
+/* Higher z-index keeps header above other elements when scrolling */
 .layout-stacked .layout-header {
   z-index: 3;
   position: relative;
   grid-area: header;
 }
 
+/* Allows content area to scroll independently while header stays fixed */
 .layout-stacked .layout-content {
   position: relative;
   overflow-y: auto;
@@ -38,6 +42,7 @@
   grid-area: content;
 }
 
+/* Main content grows to fill available space, pushing footer to bottom */
 .layout-stacked main {
   display: block;
   flex-grow: 1;
@@ -47,12 +52,12 @@
   position: relative;
 }
 
-/* customize the default footer color */
+/* Match footer background to overall page background */
 .layout-stacked footer {
-  --v-footer-background-color: var(--v-palette-default-surface-3);
+  --v-footer-background-color: var(--palette-default-surface-3);
 }
 
-/* breakpoints */
+/* Show/hide elements based on screen size for mobile and desktop views */
 @container (max-width: 600px) {
   .layout-stacked .v-mobile-container-hide {
     display: none;

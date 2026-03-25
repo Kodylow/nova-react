@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,8 +28,8 @@ import {
   Radio,
   UtilityFragment,
 } from '@visa/nova-react';
-import { UseComboboxState, UseComboboxStateChangeOptions, useCombobox } from 'downshift';
-import { useState } from 'react';
+import { useCombobox, type UseComboboxState, type UseComboboxStateChangeOptions } from 'downshift';
+import { useId, useState } from 'react';
 
 type Item = { value: string };
 
@@ -59,6 +59,7 @@ export const stateReducer = <ItemType,>(
     : changes;
 
 export const AutocompleteWithManualSelectionCombobox = () => {
+  const id = useId();
   const [items, setItems] = useState(defaultItems);
   const {
     getInputProps,
@@ -70,6 +71,7 @@ export const AutocompleteWithManualSelectionCombobox = () => {
     inputValue,
     isOpen,
   } = useCombobox({
+    id,
     items,
     itemToString,
     onInputValueChange: ({ inputValue }) => {

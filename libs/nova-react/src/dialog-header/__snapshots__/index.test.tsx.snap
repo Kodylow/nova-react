@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`DialogHeader should render defaults correctly 1`] = `
+exports[`DialogHeader > should render defaults correctly 1`] = `
 <div>
   <h2
     class="v-dialog-header v-align-items-center v-flex v-gap-6 v-justify-content-start"

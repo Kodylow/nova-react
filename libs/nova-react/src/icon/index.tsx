@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType, SVGAttributes, useId } from 'react';
+import { type ComponentPropsWithRef, type ElementType, type SVGAttributes, useId } from 'react';
 
 const CSS_PREFIX = 'v-icon';
 const RESOLUTION = {
@@ -24,7 +24,7 @@ const RESOLUTION = {
   tiny: '16',
 };
 
-export type IconProperties<ET extends ElementType = 'svg',> = {
+export type IconProperties<ET extends ElementType = 'svg'> = {
   /** Aria Base ID */
   ariaBaseId?: number | string;
   /** Icon Branding */
@@ -39,35 +39,35 @@ export type IconProperties<ET extends ElementType = 'svg',> = {
   rtl?: boolean;
   /** Title for Standalone SVG's */
   title?: string;
-} & SVGAttributes<SVGSVGElement> & ComponentPropsWithRef<ET>;
+} & SVGAttributes<SVGSVGElement> &
+  ComponentPropsWithRef<ET>;
 
 /**
  * Meant for use with sprites only. Uses dom href linking of sprite elements expected to already be in the DOM to render the icon.
- * @docs {@link https://design.visa.com/react/components/icon | See Docs}
+ * @docs {@link https://design.visa.com/components/icons-illustrations | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const Icon = <ET extends ElementType = 'svg',>(
-  {
-    ariaBaseId,
-    brand = 'generic',
-    className,
-    description,
-    iconName = 'help',
-    resolution = 'low',
-    rtl,
-    ref,
-    title,
-    ...remainingProps
-  }: IconProperties<ET>
-) => {
+const Icon = <ET extends ElementType = 'svg'>({
+  ariaBaseId,
+  brand = 'generic',
+  className,
+  description,
+  iconName = 'help',
+  resolution = 'low',
+  rtl,
+  ref,
+  title,
+  ...remainingProps
+}: IconProperties<ET>) => {
   const uniqueId = useId();
 
   const uid = ariaBaseId || uniqueId;
-  const ariaLabelledBy = `${title ? `title-${uid}` : ''}${title && description ? ',' : ''}${description ? `description-${uid}` : ''
-    }`;
+  const ariaLabelledBy = `${title ? `title-${uid}` : ''}${title && description ? ',' : ''}${
+    description ? `description-${uid}` : ''
+  }`;
   const iconSize = RESOLUTION[resolution as keyof typeof RESOLUTION];
-  const symbolId = `${brand}-${iconName}-${resolution}`;
+  const symbolId = `#${brand}-${iconName}-${resolution}`;
 
   return (
     <svg
@@ -92,7 +92,7 @@ const Icon = <ET extends ElementType = 'svg',>(
       <use href={symbolId} xlinkHref={symbolId} />
     </svg>
   );
-}
+};
 
 export default Icon;
 

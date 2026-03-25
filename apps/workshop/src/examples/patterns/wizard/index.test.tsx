@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,13 +36,13 @@ const examples = [
  * Workaround until jest testing environment supports HTMLDialogElement.
  * Issue: https://github.com/jsdom/jsdom/issues/3294
  */
-HTMLDialogElement.prototype.show = jest.fn(function mock(this: HTMLDialogElement) {
+HTMLDialogElement.prototype.show = vi.fn(function mock(this: HTMLDialogElement) {
   this.open = true;
 });
-HTMLDialogElement.prototype.showModal = jest.fn(function mock(this: HTMLDialogElement) {
+HTMLDialogElement.prototype.showModal = vi.fn(function mock(this: HTMLDialogElement) {
   this.open = true;
 });
-HTMLDialogElement.prototype.close = jest.fn(function mock(this: HTMLDialogElement) {
+HTMLDialogElement.prototype.close = vi.fn(function mock(this: HTMLDialogElement) {
   this.open = false;
 });
 

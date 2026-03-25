@@ -1,9 +1,9 @@
 {
   "name": "@visa/nova-react-project",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "VISA Product Design System Nova React Library",
   "scripts": {
-    "api:json": "node ./bin/format-docs.mjs && cp ./libs/nova-react/dist/api.json ./api.json",
+    "api:json": "node ./bin/format-docs.mjs && npx @visa/scripts license:remove ./libs/nova-react/dist/api.json && cp ./libs/nova-react/dist/api.json ./api.json",
     "build": "pnpm -r build",
     "build:docs": "pnpm --filter ./apps/workshop run build",
     "build:lib": "pnpm --filter ./libs/nova-react run build",
@@ -19,17 +19,18 @@
     "presecurity": "node ./bin/pre-security-scan.mjs",
     "postsecurity": "node ./bin/post-security-scan.mjs",
     "release": "standard-version",
-    "test": "jest",
-    "test:coverage": "jest --coverage . && node ./bin/jest-average-reporter.mjs",
-    "test:watch": "jest --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest run --coverage .",
+    "test:workshop": "vitest run --coverage apps/workshop --config vitest.config.ts",
     "upgrade:packages": "pnpm upgrade -r",
     "license:update": "npx @visa/scripts license"
   },
   "engines": {
     "node": ">=20.9.0",
-    "pnpm": ">=8.0.0"
+    "pnpm": ">=10.0.0"
   },
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@10.8.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/visa/nova-react.git"
@@ -55,11 +56,15 @@
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "9.17.0",
-    "@testing-library/jest-dom": "^6.4.5",
-    "@types/jest": "^29.5.12",
+    "@testing-library/jest-dom": "^6.6.3",
     "@types/jest-axe": "^3.5.9",
-    "@visa/nova-icons-react": "^2.0.4",
-    "@visa/scripts": "^4.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "@visa/nova-icons-react": "4.0.0",
+    "@visa/scripts": "^4.3.0",
+    "@vitest/coverage-istanbul": "3.2.4",
+    "@vitest/coverage-v8": "3.2.4",
+    "@vitest/ui": "3.2.4",
     "change-case": "^5.0.0",
     "eslint": "^9.17.0",
     "eslint-plugin-react": "7.37.2",
@@ -67,16 +72,13 @@
     "globals": "^16.0.0",
     "husky": "^9.0.11",
     "is-ci": "^4.1.0",
-    "jest": "^29.7.0",
     "jest-axe": "^9.0.0",
-    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "27.0.0",
     "standard-version": "^9.5.0",
-    "ts-jest": "^29.4.0",
     "ts-jest-mock-import-meta": "^1.3.1",
+    "typescript": "^5.9.2",
     "typescript-eslint": "^8.42.0",
-    "@typescript-eslint/eslint-plugin": "^8.42.0",
-    "@typescript-eslint/parser": "^8.42.0",
-    "typescript": "^5.9.2"
+    "vitest": "3.2.4"
   },
   "workspaces": [
     "apps/*",

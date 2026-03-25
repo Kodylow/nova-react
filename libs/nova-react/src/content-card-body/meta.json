@@ -2,7 +2,7 @@
   "description": "Element containing the body elements of the content card.",
   "displayName": "contentcardbody",
   "filePath": "/content-card-body/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/content-card-body/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//content-card-body/index.tsx",
   "props": [
     {
       "defaultValue": "div",
@@ -12,6 +12,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/content-card See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/content-card/?code_library=react See Docs}"
 }

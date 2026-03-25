@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-breadcrumbs';
 
-export type BreadcrumbsProperties<ET extends ElementType = 'nav',> = {
+export type BreadcrumbsProperties<ET extends ElementType = 'nav'> = {
   /** Use Custom Separator */
   customSeparator?: boolean;
   /** Tag of Component */
@@ -28,24 +28,19 @@ export type BreadcrumbsProperties<ET extends ElementType = 'nav',> = {
 
 /**
  * Supplemental navigation indicating the user's location in a site or app.
- * @docs {@link https://design.visa.com/react/components/breadcrumbs | See Docs}
+ * @docs {@link https://design.visa.com/components/breadcrumbs/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const Breadcrumbs = <ET extends ElementType = 'div',>(
-  { className, customSeparator, tag: Tag = 'nav', ...remainingProps }: BreadcrumbsProperties<ET>,
-) => (
-  <Tag
-    className={cn(CSS_PREFIX, customSeparator && `${CSS_PREFIX}-custom`, className)}
-    {...remainingProps}
-  />
+const Breadcrumbs = <ET extends ElementType = 'div'>({
+  className,
+  customSeparator,
+  tag: Tag = 'nav',
+  ...remainingProps
+}: BreadcrumbsProperties<ET>) => (
+  <Tag className={cn(CSS_PREFIX, customSeparator && `${CSS_PREFIX}-custom`, className)} {...remainingProps} />
 );
 
 export default Breadcrumbs;
-
-Breadcrumbs.defaultProps = {
-  ariaLabel: 'Breadcrumb',
-  tag: 'nav',
-};
 
 Breadcrumbs.displayName = 'Breadcrumbs';

@@ -8,6 +8,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/progress See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/progress/?code_library=react See Docs}"
 }

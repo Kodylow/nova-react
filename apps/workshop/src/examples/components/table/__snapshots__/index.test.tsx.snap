@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Table examples Key value table with banded rows should render correctly 1`] = `
+exports[`Table examples > Key value table with banded rows should render correctly 1`] = `
 <div>
   <table
     class="v-table v-table-alt v-table-key-value"
@@ -68,7 +68,7 @@ exports[`Table examples Key value table with banded rows should render correctly
 </div>
 `;
 
-exports[`Table examples Key value table with lined rows should render correctly 1`] = `
+exports[`Table examples > Key value table with lined rows should render correctly 1`] = `
 <div>
   <div
     class="v-table-wrapper"
@@ -140,11 +140,10 @@ exports[`Table examples Key value table with lined rows should render correctly 
 </div>
 `;
 
-exports[`Table examples Large padding table with banded rows should render correctly 1`] = `
+exports[`Table examples > Large padding table with banded rows should render correctly 1`] = `
 <div>
   <table
-    class="v-table v-table-alt"
-    style="--v-table-data-padding-block-default: var(--v-table-data-padding-block-large); --v-table-data-block-default: var(--v-table-data-block-large);"
+    class="v-table v-table-alt v-table-large"
   >
     <caption
       class="v-screen-reader"
@@ -181,11 +180,12 @@ exports[`Table examples Large padding table with banded rows should render corre
     </thead>
     <tbody>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -203,11 +203,12 @@ exports[`Table examples Large padding table with banded rows should render corre
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -225,11 +226,12 @@ exports[`Table examples Large padding table with banded rows should render corre
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -251,7 +253,7 @@ exports[`Table examples Large padding table with banded rows should render corre
 </div>
 `;
 
-exports[`Table examples Medium padding table with banded rows should render correctly 1`] = `
+exports[`Table examples > Medium padding table with banded rows should render correctly 1`] = `
 <div>
   <table
     class="v-table v-table-alt"
@@ -291,11 +293,12 @@ exports[`Table examples Medium padding table with banded rows should render corr
     </thead>
     <tbody>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -313,11 +316,12 @@ exports[`Table examples Medium padding table with banded rows should render corr
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -335,11 +339,12 @@ exports[`Table examples Medium padding table with banded rows should render corr
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -361,11 +366,559 @@ exports[`Table examples Medium padding table with banded rows should render corr
 </div>
 `;
 
-exports[`Table examples Small padding table with banded rows should render correctly 1`] = `
+exports[`Table examples > Reusable table should render correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="v-table-wrapper"
+    >
+      <table
+        class="v-table v-table-alt"
+        id="demo-reusable-table-table"
+      >
+        <caption
+          class="v-screen-reader"
+        >
+          This is required text that describes the table in more detail.
+        </caption>
+        <thead>
+          <tr>
+            <th
+              class="v-th"
+              scope="col"
+            >
+              Column A
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+            >
+              Column B
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+            >
+              Column C
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+            >
+              Column D
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th
+              class="v-td"
+              scope="row"
+            >
+              A1
+            </th>
+            <td
+              class="v-td"
+            >
+              B1
+            </td>
+            <td
+              class="v-td"
+            >
+              C1
+            </td>
+            <td
+              class="v-td"
+            >
+              D1
+            </td>
+          </tr>
+          <tr>
+            <th
+              class="v-td"
+              scope="row"
+            >
+              A2
+            </th>
+            <td
+              class="v-td"
+            >
+              B2
+            </td>
+            <td
+              class="v-td"
+            >
+              C2
+            </td>
+            <td
+              class="v-td"
+            >
+              D2
+            </td>
+          </tr>
+          <tr>
+            <th
+              class="v-td"
+              scope="row"
+            >
+              A3
+            </th>
+            <td
+              class="v-td"
+            >
+              B3
+            </td>
+            <td
+              class="v-td"
+            >
+              C3
+            </td>
+            <td
+              class="v-td"
+            >
+              D3
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      style="margin-top: 24px;"
+    >
+      <details
+        class="v-accordion"
+        id="test-id-1"
+      >
+        <summary
+          class="v-button v-button-large v-button-secondary v-accordion-heading v-gap-2 v-typography-body-2-medium"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right v-icon-rtl v-accordion-toggle-icon v-accordion-toggle-icon-closed"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down v-accordion-toggle-icon v-accordion-toggle-icon-open"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+            />
+          </svg>
+          <div
+            class="v-align-items-center v-flex v-gap-6"
+          >
+            Customize demo
+          </div>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-32"
+        >
+          <form>
+            <div
+              class="v-flex v-flex-col v-gap-16"
+              style="margin-bottom: 32px;"
+            >
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-2-input"
+                >
+                  Caption
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-2-input"
+                      type="text"
+                      value="This is required text that describes the table in more detail."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-3-input"
+                >
+                  Columns
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <textarea
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-3-input"
+                      style="block-size: 100px;"
+                    >
+                      [
+    {
+        "key": "column-a",
+        "title": "Column A",
+        "sortable": false
+    },
+    {
+        "key": "column-b",
+        "title": "Column B",
+        "sortable": false
+    },
+    {
+        "key": "column-c",
+        "title": "Column C",
+        "sortable": false
+    },
+    {
+        "key": "column-d",
+        "title": "Column D",
+        "sortable": false
+    }
+]
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-4-input"
+                >
+                  Rows
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <textarea
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-4-input"
+                      style="block-size: 100px;"
+                    >
+                      [
+    {
+        "id": 1,
+        "column-a": "A1",
+        "column-b": "B1",
+        "column-c": "C1",
+        "column-d": "D1"
+    },
+    {
+        "id": 2,
+        "column-a": "A2",
+        "column-b": "B2",
+        "column-c": "C2",
+        "column-d": "D2"
+    },
+    {
+        "id": 3,
+        "column-a": "A3",
+        "column-b": "B3",
+        "column-c": "C3",
+        "column-d": "D3"
+    }
+]
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-flex-wrap v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-5-select"
+                  id="test-id-5-label"
+                >
+                  Table size
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <select
+                      aria-describedby="test-id-5-message"
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-5-select"
+                    >
+                      <option
+                        hidden=""
+                      />
+                      <option
+                        value="small"
+                      >
+                        Small
+                      </option>
+                      <option
+                        value="medium"
+                      >
+                        Medium
+                      </option>
+                      <option
+                        value="large"
+                      >
+                        Large
+                      </option>
+                    </select>
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+                      focusable="false"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="v-input-message"
+                    id="test-id-5-message"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  checked=""
+                  class="v-checkbox"
+                  id="test-id-6-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-6-input"
+                  >
+                    Alternate
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-6-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-7-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-7-input"
+                  >
+                    Border
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-7-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-8-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-8-input"
+                  >
+                    Border block
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-8-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-9-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-9-input"
+                  >
+                    Key value
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-9-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-10-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-10-input"
+                  >
+                    Loading
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-10-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-11-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-11-input"
+                  >
+                    Show header columns
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-11-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-12-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-12-input"
+                  >
+                    Subtle
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-12-message"
+              />
+            </div>
+            <div
+              class="v-flex v-gap-16"
+              style="margin-bottom: 16px;"
+            >
+              <button
+                class="v-button"
+                type="submit"
+              >
+                Apply
+              </button>
+              <button
+                class="v-button v-button-secondary"
+                type="button"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table examples > Small padding table with banded rows should render correctly 1`] = `
 <div>
   <table
-    class="v-table v-table-alt"
-    style="--v-table-data-padding-block-default: var(--v-table-data-padding-block-small); --v-table-data-block-default: var(--v-table-data-block-small);"
+    class="v-table v-table-alt v-table-small"
   >
     <caption
       class="v-screen-reader"
@@ -402,11 +955,12 @@ exports[`Table examples Small padding table with banded rows should render corre
     </thead>
     <tbody>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -424,11 +978,12 @@ exports[`Table examples Small padding table with banded rows should render corre
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -446,11 +1001,12 @@ exports[`Table examples Small padding table with banded rows should render corre
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -472,7 +1028,7 @@ exports[`Table examples Small padding table with banded rows should render corre
 </div>
 `;
 
-exports[`Table examples Table with group headers should render correctly 1`] = `
+exports[`Table examples > Table with group headers should render correctly 1`] = `
 <div>
   <table
     class="v-table v-table-border"
@@ -489,12 +1045,14 @@ exports[`Table examples Table with group headers should render correctly 1`] = `
         <th
           class="v-th v-th-alt"
           colspan="2"
+          id="group-header-1"
         >
           Group header 1
         </th>
         <th
           class="v-th v-th-alt"
           colspan="2"
+          id="group-header-2"
         >
           Group header 2
         </th>
@@ -502,24 +1060,28 @@ exports[`Table examples Table with group headers should render correctly 1`] = `
       <tr>
         <th
           class="v-th"
+          id="column-a"
           scope="col"
         >
           Column A
         </th>
         <th
           class="v-th"
+          id="column-b"
           scope="col"
         >
           Column B
         </th>
         <th
           class="v-th"
+          id="column-c"
           scope="col"
         >
           Column C
         </th>
         <th
           class="v-th"
+          id="column-d"
           scope="col"
         >
           Column D
@@ -528,67 +1090,85 @@ exports[`Table examples Table with group headers should render correctly 1`] = `
     </thead>
     <tbody>
       <tr>
-        <td
+        <th
           class="v-td"
+          headers="group-header-1 column-a"
+          id="row-1"
+          scope="row"
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="group-header-1 column-b row-1"
         >
           B1
         </td>
         <td
           class="v-td"
+          headers="group-header-2 column-c row-1"
         >
           C1
         </td>
         <td
           class="v-td"
+          headers="group-header-2 column-d row-1"
         >
           D1
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          headers="group-header-1 column-a"
+          id="row-2"
+          scope="row"
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="group-header-1 column-b row-2"
         >
           B2
         </td>
         <td
           class="v-td"
+          headers="group-header-2 column-c row-2"
         >
           C2
         </td>
         <td
           class="v-td"
+          headers="group-header-2 column-d row-2"
         >
           D2
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          headers="group-header-1 column-a"
+          id="row-3"
+          scope="row"
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="group-header-1 column-b row-3"
         >
           B3
         </td>
         <td
           class="v-td"
+          headers="group-header-2 column-c row-3"
         >
           C3
         </td>
         <td
           class="v-td"
+          headers="group-header-2 column-d row-3"
         >
           D3
         </td>
@@ -598,7 +1178,7 @@ exports[`Table examples Table with group headers should render correctly 1`] = `
 </div>
 `;
 
-exports[`Table examples Table with group headers with empty cell should render correctly 1`] = `
+exports[`Table examples > Table with group headers with empty cell should render correctly 1`] = `
 <div>
   <table
     class="v-table v-table-border"
@@ -618,12 +1198,14 @@ exports[`Table examples Table with group headers with empty cell should render c
         <th
           class="v-th v-th-alt"
           colspan="1"
+          id="e-group-header-1"
         >
           Group header 1
         </th>
         <th
           class="v-th v-th-alt"
           colspan="1"
+          id="e-group-header-2"
         >
           Group header 2
         </th>
@@ -631,18 +1213,21 @@ exports[`Table examples Table with group headers with empty cell should render c
       <tr>
         <th
           class="v-th"
+          id="e-column-a"
           scope="col"
         >
           Column A
         </th>
         <th
           class="v-th"
+          id="e-column-b"
           scope="col"
         >
           Column B
         </th>
         <th
           class="v-th"
+          id="e-column-c"
           scope="col"
         >
           Column C
@@ -651,52 +1236,67 @@ exports[`Table examples Table with group headers with empty cell should render c
     </thead>
     <tbody>
       <tr>
-        <td
+        <th
           class="v-td"
+          headers="e-column-a"
+          id="e-row-1"
+          scope="row"
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="e-group-header-1 e-column-b e-row-1"
         >
           B1
         </td>
         <td
           class="v-td"
+          headers="e-group-header-2 e-column-c e-row-1"
         >
           C1
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          headers="e-column-a"
+          id="e-row-2"
+          scope="row"
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="e-group-header-1 e-column-b e-row-2"
         >
           B2
         </td>
         <td
           class="v-td"
+          headers="e-group-header-2 e-column-c e-row-2"
         >
           C2
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          headers="e-column-a"
+          id="e-row-3"
+          scope="row"
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="e-group-header-1 e-column-b e-row-3"
         >
           B3
         </td>
         <td
           class="v-td"
+          headers="e-group-header-2 e-column-c e-row-3"
         >
           C3
         </td>
@@ -706,7 +1306,7 @@ exports[`Table examples Table with group headers with empty cell should render c
 </div>
 `;
 
-exports[`Table examples Table with lined rows should render correctly 1`] = `
+exports[`Table examples > Table with lined rows should render correctly 1`] = `
 <div>
   <table
     class="v-table v-table-border-block"
@@ -746,11 +1346,12 @@ exports[`Table examples Table with lined rows should render correctly 1`] = `
     </thead>
     <tbody>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -768,11 +1369,12 @@ exports[`Table examples Table with lined rows should render correctly 1`] = `
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -790,11 +1392,12 @@ exports[`Table examples Table with lined rows should render correctly 1`] = `
         </td>
       </tr>
       <tr>
-        <td
+        <th
           class="v-td"
+          scope="row"
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
         >
@@ -816,7 +1419,7 @@ exports[`Table examples Table with lined rows should render correctly 1`] = `
 </div>
 `;
 
-exports[`Table examples Table with outer border and subtle headers should render correctly 1`] = `
+exports[`Table examples > Table with outer border and subtle headers should render correctly 1`] = `
 <div>
   <div
     class="v-table-wrapper"
@@ -859,11 +1462,12 @@ exports[`Table examples Table with outer border and subtle headers should render
       </thead>
       <tbody>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A1
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -881,11 +1485,12 @@ exports[`Table examples Table with outer border and subtle headers should render
           </td>
         </tr>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A2
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -903,11 +1508,12 @@ exports[`Table examples Table with outer border and subtle headers should render
           </td>
         </tr>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A3
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -930,7 +1536,7 @@ exports[`Table examples Table with outer border and subtle headers should render
 </div>
 `;
 
-exports[`Table examples Table with outer border, column, and row dividers should render correctly 1`] = `
+exports[`Table examples > Table with outer border, column, and row dividers should render correctly 1`] = `
 <div>
   <div
     class="v-table-wrapper"
@@ -973,11 +1579,12 @@ exports[`Table examples Table with outer border, column, and row dividers should
       </thead>
       <tbody>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A1
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -995,11 +1602,12 @@ exports[`Table examples Table with outer border, column, and row dividers should
           </td>
         </tr>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A2
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -1017,11 +1625,12 @@ exports[`Table examples Table with outer border, column, and row dividers should
           </td>
         </tr>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A3
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -1044,7 +1653,7 @@ exports[`Table examples Table with outer border, column, and row dividers should
 </div>
 `;
 
-exports[`Table examples Table with scrollbars and banded rows should render correctly 1`] = `
+exports[`Table examples > Table with scrollbars and banded rows should render correctly 1`] = `
 <div>
   <div
     class="v-table-wrapper"
@@ -1137,11 +1746,12 @@ exports[`Table examples Table with scrollbars and banded rows should render corr
       </thead>
       <tbody>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A1
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -1199,11 +1809,12 @@ exports[`Table examples Table with scrollbars and banded rows should render corr
           </td>
         </tr>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A2
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -1261,11 +1872,12 @@ exports[`Table examples Table with scrollbars and banded rows should render corr
           </td>
         </tr>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A3
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -1323,11 +1935,12 @@ exports[`Table examples Table with scrollbars and banded rows should render corr
           </td>
         </tr>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A4
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -1385,11 +1998,12 @@ exports[`Table examples Table with scrollbars and banded rows should render corr
           </td>
         </tr>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A5
-          </td>
+          </th>
           <td
             class="v-td"
           >
@@ -1447,11 +2061,12 @@ exports[`Table examples Table with scrollbars and banded rows should render corr
           </td>
         </tr>
         <tr>
-          <td
+          <th
             class="v-td"
+            scope="row"
           >
             A6
-          </td>
+          </th>
           <td
             class="v-td"
           >

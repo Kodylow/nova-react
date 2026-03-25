@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+
 import {
   Button,
   Flag,
@@ -36,20 +37,30 @@ import {
   VisaDocumentJpgLow,
   VisaCloseTiny,
 } from '@visa/nova-icons-react';
-import { UploadFile } from './shared/types';
+import type { UploadFile } from './shared/types';
 import { UploadCard } from './shared/upload-card';
 import { FileStatusButton } from './shared/file-status-button';
 import { mockUpload } from './shared/mock-upload';
 
 import { useRef, useState } from 'react';
 
+// File size limit - customize as needed
 export const MAX_FILE_SIZE = 25 * 1024 * 1024; // 25MB
+
+// Accepted file types with corresponding icons - add/remove types as needed
 export const ACCEPTED_FILE_TYPES = [
   { type: 'application/pdf', icon: <VisaDocumentPdfLow /> },
   { type: 'image/png', icon: <VisaDocumentPngLow /> },
   { type: 'image/jpeg', icon: <VisaDocumentJpgLow /> },
 ];
 
+/**
+ * Validates and prepares a file for upload.
+ * Assigns appropriate icon based on file type and creates a unique ID for tracking.
+ *
+ * @param f - Native File object from browser
+ * @returns UploadFile object with icon, unique ID, and file reference
+ */
 const validateFile = (f: File): UploadFile => {
   let icon = undefined;
   const acceptedTypeObj = ACCEPTED_FILE_TYPES.find(t => t.type === f.type);
@@ -61,26 +72,45 @@ const validateFile = (f: File): UploadFile => {
 
   return {
     file: f,
-    // create an `id` which is a combination of name + size (only alphanumeric, no spaces)
-    // this will help with tracking and preventing duplicates
+    // Create unique ID combining sanitized filename and size for duplicate detection
     id: `${f.name.replace(/[^a-zA-Z0-9-_]/g, '-')}-${f.size}`,
     icon,
   };
 };
 
+/**
+ * Single file upload with automatic upload on selection and inline progress display.
+ * Includes error handling with retry functionality and success notification via Flag.
+ */
 const SingleFileUpload = () => {
+  // Hidden file input reference for programmatic triggering
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  // Current file being uploaded/displayed
   const [uploadedFile, setUploadedFile] = useState<UploadFile | undefined>();
+
+  // Controls visibility of error section message
   const [showSectionMessage, setShowSectionMessage] = useState(true);
+
+  // Controls visibility of success flag notification
   const [showFlag, setShowFlag] = useState(true);
 
+  /**
+   * Triggers the hidden file input when Select button is clicked.
+   */
   const handleSelectFilesClick = () => {
     if (fileInputRef.current) {
       fileInputRef.current.click();
     }
   };
 
+  /**
+   * Handles file selection and initiates automatic upload.
+   * Validates file, sets uploading state, and calls upload API.
+   * Important: Upload starts immediately upon file selection.
+   *
+   * @param event - Change event from file input containing selected file
+   */
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (files && files.length > 0) {
@@ -90,17 +120,18 @@ const SingleFileUpload = () => {
 
       setUploadedFile({ ...uploadFile, uploading: true });
 
+      // Replace mockUpload with your actual upload API call
       mockUpload(uploadFile, {
         maxFileSize: MAX_FILE_SIZE,
         acceptedFileTypes: ACCEPTED_FILE_TYPES.map(t => t.type),
       })
         .then(() => {
           setUploadedFile(previousFile => {
-            // make sure the file wasn't deleted while uploading
+            // Ensure file wasn't deleted during upload
             if (!previousFile) {
               return undefined;
             }
-            // make sure it's the same file that we started uploading
+            // Ensure we're updating the correct file (prevents race conditions)
             if (previousFile.id !== uploadFile.id) {
               return previousFile;
             }
@@ -115,11 +146,11 @@ const SingleFileUpload = () => {
         })
         .catch((err: Error) => {
           setUploadedFile(previousFile => {
-            // make sure the file wasn't deleted while uploading
+            // Ensure file wasn't deleted during upload
             if (!previousFile) {
               return undefined;
             }
-            // make sure it's the same file that we started uploading
+            // Ensure we're updating the correct file (prevents race conditions)
             if (previousFile.id !== uploadFile.id) {
               return previousFile;
             }
@@ -135,6 +166,12 @@ const SingleFileUpload = () => {
     }
   };
 
+  /**
+   * Removes the uploaded file from display.
+   * Hides success flag if deleting an errored file.
+   *
+   * @param fileToDelete - File to remove from the uploaded file list
+   */
   const handleDeleteFile = (fileToDelete: UploadFile) => {
     setUploadedFile(undefined);
 
@@ -143,6 +180,12 @@ const SingleFileUpload = () => {
     }
   };
 
+  /**
+   * Retries upload for a failed file.
+   * Re-validates file and attempts upload again.
+   *
+   * @param fileToRetry - File with error state to retry uploading
+   */
   const handleRetryFile = (fileToRetry: UploadFile) => {
     const validatedFile = validateFile(fileToRetry.file);
 
@@ -155,11 +198,11 @@ const SingleFileUpload = () => {
     })
       .then(() => {
         setUploadedFile(previousFile => {
-          // make sure the file wasn't deleted while uploading
+          // Ensure file wasn't deleted during retry
           if (!previousFile) {
             return undefined;
           }
-          // make sure it's the same file that we started uploading
+          // Ensure we're updating the correct file (prevents race conditions)
           if (previousFile.id !== fileToRetry.id) {
             return previousFile;
           }
@@ -174,11 +217,11 @@ const SingleFileUpload = () => {
       })
       .catch((err: Error) => {
         setUploadedFile(previousFile => {
-          // make sure the file wasn't deleted while uploading
+          // Ensure file wasn't deleted during retry
           if (!previousFile) {
             return undefined;
           }
-          // make sure it's the same file that we started uploading
+          // Ensure we're updating the correct file (prevents race conditions)
           if (previousFile.id !== fileToRetry.id) {
             return previousFile;
           }
@@ -193,27 +236,35 @@ const SingleFileUpload = () => {
       });
   };
 
+  /**
+   * Hides the error section message.
+   */
   const handleSectionMessageClose = () => {
     setShowSectionMessage(false);
   };
 
+  /**
+   * Hides the success flag notification.
+   */
   const handleFlagClose = () => {
     setShowFlag(false);
   };
 
   return (
     <Utility vFlex vFlexCol vGap={25}>
-      <Utility vFlex vFlexCol vGap={25} style={{ maxWidth: '400px' }}>
+      <Utility vFlex vFlexCol vGap={4} style={{ maxWidth: '400px' }}>
         <Utility vFlex vFlexCol vGap={16}>
           <Utility vFlex vFlexCol vGap={8}>
             <Typography tag="h4" variant="subtitle-1">
               Upload file
             </Typography>
+            {/* Update instructions to match your MAX_FILE_SIZE and ACCEPTED_FILE_TYPES */}
             <Typography variant="label-small">
               Choose one file to upload, up to 25 MB each. Accepted file types are .pdf, .png, and .jpg.
             </Typography>
           </Utility>
           <>
+            {/* Hidden file input - triggered programmatically by Select button */}
             <ScreenReader<'input'>
               tag={'input'}
               type="file"
@@ -228,27 +279,26 @@ const SingleFileUpload = () => {
             </UtilityFragment>
           </>
         </Utility>
-        <div
-          role="status"
-          className={
-            (!uploadedFile?.error && !uploadedFile?.uploading) || !showSectionMessage ? 'v-screen-reader' : undefined
-          }
-        >
-          {uploadedFile?.uploading && <Typography variant="label">Upload in progress...</Typography>}
+        {/* Always-present live region */}
+        <div role="status" style={{ minHeight: '1rem' }}>
+          {uploadedFile?.uploading && <Typography variant="label-small">Upload in progress...</Typography>}
           {uploadedFile?.error && showSectionMessage && (
-            <SectionMessage messageType="error">
-              <MessageIcon messageType="error" />
-              <UtilityFragment vPaddingLeft={2} vPaddingBottom={2}>
-                <SectionMessageContent style={{ wordBreak: 'break-all' }}>
-                  <Typography>File failed to upload.</Typography>
-                </SectionMessageContent>
-              </UtilityFragment>
-              <SectionMessageCloseButton onClick={handleSectionMessageClose}>
-                <VisaCloseTiny />
-              </SectionMessageCloseButton>
-            </SectionMessage>
+            <UtilityFragment vMarginVertical={21}>
+              <SectionMessage messageType="error">
+                <MessageIcon messageType="error" />
+                <UtilityFragment vPaddingLeft={2} vPaddingBottom={2}>
+                  <SectionMessageContent style={{ wordBreak: 'break-all' }}>
+                    <Typography>File failed to upload.</Typography>
+                  </SectionMessageContent>
+                </UtilityFragment>
+                <SectionMessageCloseButton onClick={handleSectionMessageClose}>
+                  <VisaCloseTiny />
+                </SectionMessageCloseButton>
+              </SectionMessage>
+            </UtilityFragment>
           )}
         </div>
+        {/* Display uploaded file with status and actions */}
         {!!uploadedFile && (
           <Utility tag="ul">
             <UploadCard
@@ -270,6 +320,7 @@ const SingleFileUpload = () => {
           </Utility>
         )}
       </Utility>
+      {/* Success notification - positioned at bottom right */}
       <Utility role="alert" vAlignSelf="end">
         {showFlag && uploadedFile && uploadedFile.uploaded && (
           <Flag messageType="success">

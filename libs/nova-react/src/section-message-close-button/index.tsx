@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,20 +15,18 @@
  *
  **/
 import cn from 'clsx';
-import MessageCloseButton, { MessageCloseButtonProperties } from '../message-close-button';
+import MessageCloseButton, { type MessageCloseButtonProperties } from '../message-close-button';
 
 export type SectionMessageCloseButtonProperties = MessageCloseButtonProperties;
 
 /**
  * Close button for section message component.
- * @docs {@link https://design.visa.com/react/components/section-message | See Docs}
+ * @docs {@link https://design.visa.com/components/section-message/?code_library=react | See Docs}
  */
-const SectionMessageCloseButton = (
-  { children, className, ...remainingProps }: SectionMessageCloseButtonProperties,
-) => (
-  <MessageCloseButton
-    className={cn('-v-mt-8 -v-mr-8 v-ml-14 v-p-7', className)}
-    {...remainingProps}>{children}</MessageCloseButton>
+const SectionMessageCloseButton = ({ children, className, ...remainingProps }: SectionMessageCloseButtonProperties) => (
+  <MessageCloseButton className={cn('-v-mt-8 -v-mr-8 v-ml-14 v-p-7', className)} {...remainingProps}>
+    {children}
+  </MessageCloseButton>
 );
 
 export default SectionMessageCloseButton;

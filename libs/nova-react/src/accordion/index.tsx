@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,28 +15,27 @@
  *
  **/
 import cn from 'clsx';
-import { ElementType } from 'react';
-import { ComponentPropsWithRef } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-accordion';
 
-export type AccordionProperties<ET extends ElementType = 'details',> = {
-
+export type AccordionProperties<ET extends ElementType = 'details'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
-
 /**
  * Sets of vertical headers that reveal or hide the accordion panel.
- * @docs {@link https://design.visa.com/react/components/accordion | See Docs}
+ * @docs {@link https://design.visa.com/components/accordion/?code_library=react | See Docs}
  * @related accordion-heading, accordion-panel, accordion-toggle-icon, use-accordion
  * @vgar TODO
  * @wcag TODO
  */
-const Accordion = <ET extends ElementType = 'details',>(
-  { className, tag: Tag = 'details', ...remainingProps }: AccordionProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const Accordion = <ET extends ElementType = 'details'>({
+  className,
+  tag: Tag = 'details',
+  ...remainingProps
+}: AccordionProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 export default Accordion;
 
 Accordion.displayName = 'Accordion';

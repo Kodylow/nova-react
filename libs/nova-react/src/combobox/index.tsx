@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,30 +15,28 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-combobox';
 
-export type ComboboxProperties<ET extends ElementType = 'div',> = {
+export type ComboboxProperties<ET extends ElementType = 'div'> = {
   /** Tag of the component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Dropdown menu enabling users to enter text or select items from a list.
- * @docs {@link https://design.visa.com/react/components/combobox | See Docs}
+ * @docs {@link https://design.visa.com/components/combobox/?code_library=react | See Docs}
  * @related dropdown-menu
  * @vgar TODO
  * @wcag TODO
  */
-const Combobox = <ET extends ElementType = 'div',>(
-  { className, tag: Tag = 'div', ...remainingProps }: ComboboxProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const Combobox = <ET extends ElementType = 'div'>({
+  className,
+  tag: Tag = 'div',
+  ...remainingProps
+}: ComboboxProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default Combobox;
-
-Combobox.defaultProps = {
-  tag: 'div',
-};
 
 Combobox.displayName = 'Combobox';

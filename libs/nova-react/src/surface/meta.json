@@ -2,7 +2,7 @@
   "description": "Styles container to be used for alternate backgrounds.",
   "displayName": "surface",
   "filePath": "/surface/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/surface/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//surface/index.tsx",
   "props": [
     {
       "description": "Type of Surface",
@@ -20,6 +20,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/surface See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/base-elements/surface/?code_library=react See Docs}"
 }

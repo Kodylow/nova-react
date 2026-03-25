@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Multiselect examples Default multiselect should render correctly 1`] = `
+exports[`Multiselect examples > Default multiselect should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -10,8 +10,8 @@ exports[`Multiselect examples Default multiselect should render correctly 1`] = 
     >
       <label
         class="v-label"
-        for="downshift-«r0»-input"
-        id="downshift-«r0»-label"
+        for="default-multiselect-input"
+        id="default-multiselect-label"
       >
         Label (required)
       </label>
@@ -24,12 +24,12 @@ exports[`Multiselect examples Default multiselect should render correctly 1`] = 
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«r0»-menu"
+            aria-controls="default-multiselect-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«r0»-label"
+            aria-labelledby="default-multiselect-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«r0»-input"
+            id="default-multiselect-input"
             name="default-multiselect"
             role="combobox"
             style="flex-basis: 50px;"
@@ -37,12 +37,12 @@ exports[`Multiselect examples Default multiselect should render correctly 1`] = 
           />
         </div>
         <button
-          aria-controls="downshift-«r0»-menu"
+          aria-controls="default-multiselect-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="default-multiselect-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
-          id="downshift-«r0»-toggle-button"
+          id="default-multiselect-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -56,9 +56,7 @@ exports[`Multiselect examples Default multiselect should render correctly 1`] = 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -68,16 +66,16 @@ exports[`Multiselect examples Default multiselect should render correctly 1`] = 
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«r0»-label"
+        aria-labelledby="default-multiselect-label"
         class="v-listbox v-flex"
-        id="downshift-«r0»-menu"
+        id="default-multiselect-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r0»-item-0"
+          id="default-multiselect-item-0"
           role="option"
         >
           <span
@@ -89,7 +87,7 @@ exports[`Multiselect examples Default multiselect should render correctly 1`] = 
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r0»-item-1"
+          id="default-multiselect-item-1"
           role="option"
         >
           <span
@@ -101,7 +99,7 @@ exports[`Multiselect examples Default multiselect should render correctly 1`] = 
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r0»-item-2"
+          id="default-multiselect-item-2"
           role="option"
         >
           <span
@@ -113,7 +111,7 @@ exports[`Multiselect examples Default multiselect should render correctly 1`] = 
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r0»-item-3"
+          id="default-multiselect-item-3"
           role="option"
         >
           <span
@@ -125,7 +123,7 @@ exports[`Multiselect examples Default multiselect should render correctly 1`] = 
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r0»-item-4"
+          id="default-multiselect-item-4"
           role="option"
         >
           <span
@@ -139,7 +137,7 @@ exports[`Multiselect examples Default multiselect should render correctly 1`] = 
 </div>
 `;
 
-exports[`Multiselect examples Disabled multiselect should render correctly 1`] = `
+exports[`Multiselect examples > Disabled multiselect should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -149,8 +147,8 @@ exports[`Multiselect examples Disabled multiselect should render correctly 1`] =
     >
       <label
         class="v-label"
-        for="downshift-«r4»-input"
-        id="downshift-«r4»-label"
+        for="disabled-multiselect-input"
+        id="disabled-multiselect-label"
       >
         Label (required)
       </label>
@@ -163,13 +161,13 @@ exports[`Multiselect examples Disabled multiselect should render correctly 1`] =
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«r4»-menu"
+            aria-controls="disabled-multiselect-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«r4»-label"
+            aria-labelledby="disabled-multiselect-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
             disabled=""
-            id="downshift-«r4»-input"
+            id="disabled-multiselect-input"
             name="disabled-multiselect"
             role="combobox"
             style="flex-basis: 50px;"
@@ -177,13 +175,13 @@ exports[`Multiselect examples Disabled multiselect should render correctly 1`] =
           />
         </div>
         <button
-          aria-controls="downshift-«r4»-menu"
+          aria-controls="disabled-multiselect-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="disabled-multiselect-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
           disabled=""
-          id="downshift-«r4»-toggle-button"
+          id="disabled-multiselect-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -197,9 +195,7 @@ exports[`Multiselect examples Disabled multiselect should render correctly 1`] =
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -209,16 +205,16 @@ exports[`Multiselect examples Disabled multiselect should render correctly 1`] =
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«r4»-label"
+        aria-labelledby="disabled-multiselect-label"
         class="v-listbox v-flex"
-        id="downshift-«r4»-menu"
+        id="disabled-multiselect-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r4»-item-0"
+          id="disabled-multiselect-item-0"
           role="option"
         >
           <span
@@ -230,7 +226,7 @@ exports[`Multiselect examples Disabled multiselect should render correctly 1`] =
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r4»-item-1"
+          id="disabled-multiselect-item-1"
           role="option"
         >
           <span
@@ -242,7 +238,7 @@ exports[`Multiselect examples Disabled multiselect should render correctly 1`] =
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r4»-item-2"
+          id="disabled-multiselect-item-2"
           role="option"
         >
           <span
@@ -254,7 +250,7 @@ exports[`Multiselect examples Disabled multiselect should render correctly 1`] =
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r4»-item-3"
+          id="disabled-multiselect-item-3"
           role="option"
         >
           <span
@@ -266,7 +262,7 @@ exports[`Multiselect examples Disabled multiselect should render correctly 1`] =
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r4»-item-4"
+          id="disabled-multiselect-item-4"
           role="option"
         >
           <span
@@ -296,7 +292,7 @@ exports[`Multiselect examples Disabled multiselect should render correctly 1`] =
 </div>
 `;
 
-exports[`Multiselect examples Multiselect with disabled option should render correctly 1`] = `
+exports[`Multiselect examples > Multiselect with disabled option should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -306,8 +302,8 @@ exports[`Multiselect examples Multiselect with disabled option should render cor
     >
       <label
         class="v-label"
-        for="downshift-«r3»-input"
-        id="downshift-«r3»-label"
+        for="multiselect-with-disabled-option-input"
+        id="multiselect-with-disabled-option-label"
       >
         Label (required)
       </label>
@@ -320,12 +316,12 @@ exports[`Multiselect examples Multiselect with disabled option should render cor
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«r3»-menu"
+            aria-controls="multiselect-with-disabled-option-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«r3»-label"
+            aria-labelledby="multiselect-with-disabled-option-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«r3»-input"
+            id="multiselect-with-disabled-option-input"
             name="multiselect-with-disabled-option"
             role="combobox"
             style="flex-basis: 50px;"
@@ -333,12 +329,12 @@ exports[`Multiselect examples Multiselect with disabled option should render cor
           />
         </div>
         <button
-          aria-controls="downshift-«r3»-menu"
+          aria-controls="multiselect-with-disabled-option-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="multiselect-with-disabled-option-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
-          id="downshift-«r3»-toggle-button"
+          id="multiselect-with-disabled-option-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -352,9 +348,7 @@ exports[`Multiselect examples Multiselect with disabled option should render cor
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -364,15 +358,15 @@ exports[`Multiselect examples Multiselect with disabled option should render cor
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«r3»-label"
+        aria-labelledby="multiselect-with-disabled-option-label"
         class="v-listbox v-flex"
-        id="downshift-«r3»-menu"
+        id="multiselect-with-disabled-option-menu"
         role="listbox"
       >
         <li
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r3»-item-0"
+          id="multiselect-with-disabled-option-item-0"
           role="option"
         >
           <span
@@ -384,7 +378,7 @@ exports[`Multiselect examples Multiselect with disabled option should render cor
           aria-disabled="true"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r3»-item-1"
+          id="multiselect-with-disabled-option-item-1"
           role="option"
         >
           <span
@@ -395,7 +389,7 @@ exports[`Multiselect examples Multiselect with disabled option should render cor
         <li
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r3»-item-2"
+          id="multiselect-with-disabled-option-item-2"
           role="option"
         >
           <span
@@ -406,7 +400,7 @@ exports[`Multiselect examples Multiselect with disabled option should render cor
         <li
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r3»-item-3"
+          id="multiselect-with-disabled-option-item-3"
           role="option"
         >
           <span
@@ -417,7 +411,7 @@ exports[`Multiselect examples Multiselect with disabled option should render cor
         <li
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r3»-item-4"
+          id="multiselect-with-disabled-option-item-4"
           role="option"
         >
           <span
@@ -431,7 +425,7 @@ exports[`Multiselect examples Multiselect with disabled option should render cor
 </div>
 `;
 
-exports[`Multiselect examples Multiselect with error should render correctly 1`] = `
+exports[`Multiselect examples > Multiselect with error should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -441,8 +435,8 @@ exports[`Multiselect examples Multiselect with error should render correctly 1`]
     >
       <label
         class="v-label"
-        for="downshift-«r2»-input"
-        id="downshift-«r2»-label"
+        for="multiselect-with-error-input"
+        id="multiselect-with-error-label"
       >
         Label (required)
       </label>
@@ -455,13 +449,13 @@ exports[`Multiselect examples Multiselect with error should render correctly 1`]
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«r2»-menu"
+            aria-controls="multiselect-with-error-menu"
             aria-expanded="false"
             aria-invalid="false"
-            aria-labelledby="downshift-«r2»-label"
+            aria-labelledby="multiselect-with-error-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«r2»-input"
+            id="multiselect-with-error-input"
             name="multiselect-with-error"
             role="combobox"
             style="flex-basis: 50px;"
@@ -469,12 +463,12 @@ exports[`Multiselect examples Multiselect with error should render correctly 1`]
           />
         </div>
         <button
-          aria-controls="downshift-«r2»-menu"
+          aria-controls="multiselect-with-error-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="multiselect-with-error-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
-          id="downshift-«r2»-toggle-button"
+          id="multiselect-with-error-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -488,9 +482,7 @@ exports[`Multiselect examples Multiselect with error should render correctly 1`]
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -500,16 +492,16 @@ exports[`Multiselect examples Multiselect with error should render correctly 1`]
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«r2»-label"
+        aria-labelledby="multiselect-with-error-label"
         class="v-listbox v-flex"
-        id="downshift-«r2»-menu"
+        id="multiselect-with-error-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r2»-item-0"
+          id="multiselect-with-error-item-0"
           role="option"
         >
           <span
@@ -521,7 +513,7 @@ exports[`Multiselect examples Multiselect with error should render correctly 1`]
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r2»-item-1"
+          id="multiselect-with-error-item-1"
           role="option"
         >
           <span
@@ -533,7 +525,7 @@ exports[`Multiselect examples Multiselect with error should render correctly 1`]
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r2»-item-2"
+          id="multiselect-with-error-item-2"
           role="option"
         >
           <span
@@ -545,7 +537,7 @@ exports[`Multiselect examples Multiselect with error should render correctly 1`]
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r2»-item-3"
+          id="multiselect-with-error-item-3"
           role="option"
         >
           <span
@@ -557,7 +549,7 @@ exports[`Multiselect examples Multiselect with error should render correctly 1`]
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r2»-item-4"
+          id="multiselect-with-error-item-4"
           role="option"
         >
           <span
@@ -587,7 +579,7 @@ exports[`Multiselect examples Multiselect with error should render correctly 1`]
 </div>
 `;
 
-exports[`Multiselect examples Multiselect with filterable menu and automatic selection should render correctly 1`] = `
+exports[`Multiselect examples > Multiselect with filterable menu and automatic selection should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -597,8 +589,8 @@ exports[`Multiselect examples Multiselect with filterable menu and automatic sel
     >
       <label
         class="v-label"
-        for="downshift-«rb»-input"
-        id="downshift-«rb»-label"
+        for="multiselect-with-filterable-menu-and-automatic-selection-input"
+        id="multiselect-with-filterable-menu-and-automatic-selection-label"
       >
         Label (required)
       </label>
@@ -611,12 +603,12 @@ exports[`Multiselect examples Multiselect with filterable menu and automatic sel
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«rb»-menu"
+            aria-controls="multiselect-with-filterable-menu-and-automatic-selection-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«rb»-label"
+            aria-labelledby="multiselect-with-filterable-menu-and-automatic-selection-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«rb»-input"
+            id="multiselect-with-filterable-menu-and-automatic-selection-input"
             name="multiselect-with-filterable-menu-and-automatic-selection"
             role="combobox"
             style="flex-basis: 50px;"
@@ -624,12 +616,12 @@ exports[`Multiselect examples Multiselect with filterable menu and automatic sel
           />
         </div>
         <button
-          aria-controls="downshift-«rb»-menu"
+          aria-controls="multiselect-with-filterable-menu-and-automatic-selection-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="multiselect-with-filterable-menu-and-automatic-selection-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
-          id="downshift-«rb»-toggle-button"
+          id="multiselect-with-filterable-menu-and-automatic-selection-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -643,9 +635,7 @@ exports[`Multiselect examples Multiselect with filterable menu and automatic sel
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -655,16 +645,16 @@ exports[`Multiselect examples Multiselect with filterable menu and automatic sel
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«rb»-label"
+        aria-labelledby="multiselect-with-filterable-menu-and-automatic-selection-label"
         class="v-listbox v-flex"
-        id="downshift-«rb»-menu"
+        id="multiselect-with-filterable-menu-and-automatic-selection-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item v-listbox-item-highlighted"
-          id="downshift-«rb»-item-0"
+          id="multiselect-with-filterable-menu-and-automatic-selection-item-0"
           role="option"
         >
           <span
@@ -676,7 +666,7 @@ exports[`Multiselect examples Multiselect with filterable menu and automatic sel
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«rb»-item-1"
+          id="multiselect-with-filterable-menu-and-automatic-selection-item-1"
           role="option"
         >
           <span
@@ -688,7 +678,7 @@ exports[`Multiselect examples Multiselect with filterable menu and automatic sel
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«rb»-item-2"
+          id="multiselect-with-filterable-menu-and-automatic-selection-item-2"
           role="option"
         >
           <span
@@ -700,7 +690,7 @@ exports[`Multiselect examples Multiselect with filterable menu and automatic sel
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«rb»-item-3"
+          id="multiselect-with-filterable-menu-and-automatic-selection-item-3"
           role="option"
         >
           <span
@@ -712,7 +702,7 @@ exports[`Multiselect examples Multiselect with filterable menu and automatic sel
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«rb»-item-4"
+          id="multiselect-with-filterable-menu-and-automatic-selection-item-4"
           role="option"
         >
           <span
@@ -726,7 +716,7 @@ exports[`Multiselect examples Multiselect with filterable menu and automatic sel
 </div>
 `;
 
-exports[`Multiselect examples Multiselect with filterable menu and manual selection should render correctly 1`] = `
+exports[`Multiselect examples > Multiselect with filterable menu and manual selection should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -736,8 +726,8 @@ exports[`Multiselect examples Multiselect with filterable menu and manual select
     >
       <label
         class="v-label"
-        for="downshift-«ra»-input"
-        id="downshift-«ra»-label"
+        for="multiselect-with-filterable-menu-and-manual-selection-input"
+        id="multiselect-with-filterable-menu-and-manual-selection-label"
       >
         Label (required)
       </label>
@@ -750,12 +740,12 @@ exports[`Multiselect examples Multiselect with filterable menu and manual select
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«ra»-menu"
+            aria-controls="multiselect-with-filterable-menu-and-manual-selection-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«ra»-label"
+            aria-labelledby="multiselect-with-filterable-menu-and-manual-selection-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«ra»-input"
+            id="multiselect-with-filterable-menu-and-manual-selection-input"
             name="multiselect-with-filterable-menu-and-manual-selection"
             role="combobox"
             style="flex-basis: 50px;"
@@ -763,12 +753,12 @@ exports[`Multiselect examples Multiselect with filterable menu and manual select
           />
         </div>
         <button
-          aria-controls="downshift-«ra»-menu"
+          aria-controls="multiselect-with-filterable-menu-and-manual-selection-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="multiselect-with-filterable-menu-and-manual-selection-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
-          id="downshift-«ra»-toggle-button"
+          id="multiselect-with-filterable-menu-and-manual-selection-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -782,9 +772,7 @@ exports[`Multiselect examples Multiselect with filterable menu and manual select
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -794,16 +782,16 @@ exports[`Multiselect examples Multiselect with filterable menu and manual select
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«ra»-label"
+        aria-labelledby="multiselect-with-filterable-menu-and-manual-selection-label"
         class="v-listbox v-flex"
-        id="downshift-«ra»-menu"
+        id="multiselect-with-filterable-menu-and-manual-selection-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«ra»-item-0"
+          id="multiselect-with-filterable-menu-and-manual-selection-item-0"
           role="option"
         >
           <span
@@ -815,7 +803,7 @@ exports[`Multiselect examples Multiselect with filterable menu and manual select
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«ra»-item-1"
+          id="multiselect-with-filterable-menu-and-manual-selection-item-1"
           role="option"
         >
           <span
@@ -827,7 +815,7 @@ exports[`Multiselect examples Multiselect with filterable menu and manual select
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«ra»-item-2"
+          id="multiselect-with-filterable-menu-and-manual-selection-item-2"
           role="option"
         >
           <span
@@ -839,7 +827,7 @@ exports[`Multiselect examples Multiselect with filterable menu and manual select
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«ra»-item-3"
+          id="multiselect-with-filterable-menu-and-manual-selection-item-3"
           role="option"
         >
           <span
@@ -851,7 +839,7 @@ exports[`Multiselect examples Multiselect with filterable menu and manual select
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«ra»-item-4"
+          id="multiselect-with-filterable-menu-and-manual-selection-item-4"
           role="option"
         >
           <span
@@ -865,7 +853,7 @@ exports[`Multiselect examples Multiselect with filterable menu and manual select
 </div>
 `;
 
-exports[`Multiselect examples Multiselect with inline message should render correctly 1`] = `
+exports[`Multiselect examples > Multiselect with inline message should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -875,8 +863,8 @@ exports[`Multiselect examples Multiselect with inline message should render corr
     >
       <label
         class="v-label"
-        for="downshift-«r1»-input"
-        id="downshift-«r1»-label"
+        for="multiselect-with-inline-message-input"
+        id="multiselect-with-inline-message-label"
       >
         Label (required)
       </label>
@@ -889,12 +877,12 @@ exports[`Multiselect examples Multiselect with inline message should render corr
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«r1»-menu"
+            aria-controls="multiselect-with-inline-message-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«r1»-label"
+            aria-labelledby="multiselect-with-inline-message-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«r1»-input"
+            id="multiselect-with-inline-message-input"
             name="multiselect-with-inline-message"
             role="combobox"
             style="flex-basis: 50px;"
@@ -902,12 +890,12 @@ exports[`Multiselect examples Multiselect with inline message should render corr
           />
         </div>
         <button
-          aria-controls="downshift-«r1»-menu"
+          aria-controls="multiselect-with-inline-message-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="multiselect-with-inline-message-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
-          id="downshift-«r1»-toggle-button"
+          id="multiselect-with-inline-message-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -921,9 +909,7 @@ exports[`Multiselect examples Multiselect with inline message should render corr
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -939,16 +925,16 @@ exports[`Multiselect examples Multiselect with inline message should render corr
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«r1»-label"
+        aria-labelledby="multiselect-with-inline-message-label"
         class="v-listbox v-flex"
-        id="downshift-«r1»-menu"
+        id="multiselect-with-inline-message-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r1»-item-0"
+          id="multiselect-with-inline-message-item-0"
           role="option"
         >
           <span
@@ -960,7 +946,7 @@ exports[`Multiselect examples Multiselect with inline message should render corr
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r1»-item-1"
+          id="multiselect-with-inline-message-item-1"
           role="option"
         >
           <span
@@ -972,7 +958,7 @@ exports[`Multiselect examples Multiselect with inline message should render corr
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r1»-item-2"
+          id="multiselect-with-inline-message-item-2"
           role="option"
         >
           <span
@@ -984,7 +970,7 @@ exports[`Multiselect examples Multiselect with inline message should render corr
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r1»-item-3"
+          id="multiselect-with-inline-message-item-3"
           role="option"
         >
           <span
@@ -996,7 +982,7 @@ exports[`Multiselect examples Multiselect with inline message should render corr
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r1»-item-4"
+          id="multiselect-with-inline-message-item-4"
           role="option"
         >
           <span
@@ -1010,7 +996,7 @@ exports[`Multiselect examples Multiselect with inline message should render corr
 </div>
 `;
 
-exports[`Multiselect examples Multiselect with multiple selections and vertical scroll should render correctly 1`] = `
+exports[`Multiselect examples > Multiselect with multiple selections and vertical scroll should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -1021,8 +1007,8 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
     >
       <label
         class="v-label"
-        for="downshift-«r7»-input"
-        id="downshift-«r7»-label"
+        for="multiselect-with-multiple-selections-and-vertical-scroll-input"
+        id="multiselect-with-multiple-selections-and-vertical-scroll-label"
       >
         Label (required)
       </label>
@@ -1056,9 +1042,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1095,9 +1079,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1134,9 +1116,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1173,9 +1153,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1212,9 +1190,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1251,9 +1227,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1290,9 +1264,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1329,9 +1301,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1368,9 +1338,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1407,9 +1375,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1446,9 +1412,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1485,9 +1449,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                  fill-rule="evenodd"
+                  d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
                 />
                 <defs>
                   <clippath>
@@ -1504,12 +1466,12 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«r7»-menu"
+            aria-controls="multiselect-with-multiple-selections-and-vertical-scroll-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«r7»-label"
+            aria-labelledby="multiselect-with-multiple-selections-and-vertical-scroll-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«r7»-input"
+            id="multiselect-with-multiple-selections-and-vertical-scroll-input"
             name="multiselect-with-multiple-selections-and-vertical-scroll"
             role="combobox"
             style="flex-basis: 50px;"
@@ -1517,12 +1479,12 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           />
         </div>
         <button
-          aria-controls="downshift-«r7»-menu"
+          aria-controls="multiselect-with-multiple-selections-and-vertical-scroll-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="multiselect-with-multiple-selections-and-vertical-scroll-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
-          id="downshift-«r7»-toggle-button"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -1536,9 +1498,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -1548,16 +1508,16 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«r7»-label"
+        aria-labelledby="multiselect-with-multiple-selections-and-vertical-scroll-label"
         class="v-listbox v-listbox-scroll v-flex"
-        id="downshift-«r7»-menu"
+        id="multiselect-with-multiple-selections-and-vertical-scroll-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-0"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-0"
           role="option"
         >
           <span
@@ -1569,7 +1529,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-1"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-1"
           role="option"
         >
           <span
@@ -1581,7 +1541,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-2"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-2"
           role="option"
         >
           <span
@@ -1593,7 +1553,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-3"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-3"
           role="option"
         >
           <span
@@ -1605,7 +1565,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-4"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-4"
           role="option"
         >
           <span
@@ -1617,7 +1577,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-5"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-5"
           role="option"
         >
           <span
@@ -1629,7 +1589,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-6"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-6"
           role="option"
         >
           <span
@@ -1641,7 +1601,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-7"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-7"
           role="option"
         >
           <span
@@ -1653,7 +1613,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-8"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-8"
           role="option"
         >
           <span
@@ -1665,7 +1625,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-9"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-9"
           role="option"
         >
           <span
@@ -1677,7 +1637,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-10"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-10"
           role="option"
         >
           <span
@@ -1689,7 +1649,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="true"
           class="v-listbox-item"
-          id="downshift-«r7»-item-11"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-11"
           role="option"
         >
           <span
@@ -1701,7 +1661,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r7»-item-12"
+          id="multiselect-with-multiple-selections-and-vertical-scroll-item-12"
           role="option"
         >
           <span
@@ -1715,7 +1675,7 @@ exports[`Multiselect examples Multiselect with multiple selections and vertical 
 </div>
 `;
 
-exports[`Multiselect examples Multiselect with scrollbar should render correctly 1`] = `
+exports[`Multiselect examples > Multiselect with scrollbar should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -1725,8 +1685,8 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
     >
       <label
         class="v-label"
-        for="downshift-«r9»-input"
-        id="downshift-«r9»-label"
+        for="multiselect-with-scrollbar-input"
+        id="multiselect-with-scrollbar-label"
       >
         Label (required)
       </label>
@@ -1739,12 +1699,12 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«r9»-menu"
+            aria-controls="multiselect-with-scrollbar-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«r9»-label"
+            aria-labelledby="multiselect-with-scrollbar-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«r9»-input"
+            id="multiselect-with-scrollbar-input"
             name="multiselect-with-scrollbar"
             role="combobox"
             style="flex-basis: 50px;"
@@ -1752,12 +1712,12 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           />
         </div>
         <button
-          aria-controls="downshift-«r9»-menu"
+          aria-controls="multiselect-with-scrollbar-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="multiselect-with-scrollbar-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
-          id="downshift-«r9»-toggle-button"
+          id="multiselect-with-scrollbar-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -1771,9 +1731,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -1783,16 +1741,16 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«r9»-label"
+        aria-labelledby="multiselect-with-scrollbar-label"
         class="v-listbox v-listbox-scroll v-flex"
-        id="downshift-«r9»-menu"
+        id="multiselect-with-scrollbar-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-0"
+          id="multiselect-with-scrollbar-item-0"
           role="option"
         >
           <span
@@ -1804,7 +1762,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-1"
+          id="multiselect-with-scrollbar-item-1"
           role="option"
         >
           <span
@@ -1816,7 +1774,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-2"
+          id="multiselect-with-scrollbar-item-2"
           role="option"
         >
           <span
@@ -1828,7 +1786,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-3"
+          id="multiselect-with-scrollbar-item-3"
           role="option"
         >
           <span
@@ -1840,7 +1798,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-4"
+          id="multiselect-with-scrollbar-item-4"
           role="option"
         >
           <span
@@ -1852,7 +1810,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-5"
+          id="multiselect-with-scrollbar-item-5"
           role="option"
         >
           <span
@@ -1864,7 +1822,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-6"
+          id="multiselect-with-scrollbar-item-6"
           role="option"
         >
           <span
@@ -1876,7 +1834,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-7"
+          id="multiselect-with-scrollbar-item-7"
           role="option"
         >
           <span
@@ -1888,7 +1846,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-8"
+          id="multiselect-with-scrollbar-item-8"
           role="option"
         >
           <span
@@ -1900,7 +1858,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-9"
+          id="multiselect-with-scrollbar-item-9"
           role="option"
         >
           <span
@@ -1912,7 +1870,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-10"
+          id="multiselect-with-scrollbar-item-10"
           role="option"
         >
           <span
@@ -1924,7 +1882,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-11"
+          id="multiselect-with-scrollbar-item-11"
           role="option"
         >
           <span
@@ -1936,7 +1894,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r9»-item-12"
+          id="multiselect-with-scrollbar-item-12"
           role="option"
         >
           <span
@@ -1950,7 +1908,7 @@ exports[`Multiselect examples Multiselect with scrollbar should render correctly
 </div>
 `;
 
-exports[`Multiselect examples Multiselect with select and unselect all buttons should render correctly 1`] = `
+exports[`Multiselect examples > Multiselect with select and unselect all buttons should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -1960,8 +1918,8 @@ exports[`Multiselect examples Multiselect with select and unselect all buttons s
     >
       <label
         class="v-label"
-        for="downshift-«r8»-input"
-        id="downshift-«r8»-label"
+        for="multiselect-with-select-and-unselect-all-buttons-input"
+        id="multiselect-with-select-and-unselect-all-buttons-label"
       >
         Label (required)
       </label>
@@ -1974,12 +1932,12 @@ exports[`Multiselect examples Multiselect with select and unselect all buttons s
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«r8»-menu"
+            aria-controls="multiselect-with-select-and-unselect-all-buttons-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«r8»-label"
+            aria-labelledby="multiselect-with-select-and-unselect-all-buttons-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«r8»-input"
+            id="multiselect-with-select-and-unselect-all-buttons-input"
             name="multiselect-with-select-and-unselect-all-buttons"
             role="combobox"
             style="flex-basis: 50px;"
@@ -1987,12 +1945,12 @@ exports[`Multiselect examples Multiselect with select and unselect all buttons s
           />
         </div>
         <button
-          aria-controls="downshift-«r8»-menu"
+          aria-controls="multiselect-with-select-and-unselect-all-buttons-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="multiselect-with-select-and-unselect-all-buttons-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
-          id="downshift-«r8»-toggle-button"
+          id="multiselect-with-select-and-unselect-all-buttons-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -2006,9 +1964,7 @@ exports[`Multiselect examples Multiselect with select and unselect all buttons s
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -2036,16 +1992,16 @@ exports[`Multiselect examples Multiselect with select and unselect all buttons s
         class="v-divider v-divider-decorative"
       />
       <ul
-        aria-labelledby="downshift-«r8»-label"
+        aria-labelledby="multiselect-with-select-and-unselect-all-buttons-label"
         class="v-listbox v-flex"
-        id="downshift-«r8»-menu"
+        id="multiselect-with-select-and-unselect-all-buttons-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r8»-item-0"
+          id="multiselect-with-select-and-unselect-all-buttons-item-0"
           role="option"
         >
           <span
@@ -2057,7 +2013,7 @@ exports[`Multiselect examples Multiselect with select and unselect all buttons s
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r8»-item-1"
+          id="multiselect-with-select-and-unselect-all-buttons-item-1"
           role="option"
         >
           <span
@@ -2069,7 +2025,7 @@ exports[`Multiselect examples Multiselect with select and unselect all buttons s
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r8»-item-2"
+          id="multiselect-with-select-and-unselect-all-buttons-item-2"
           role="option"
         >
           <span
@@ -2081,7 +2037,7 @@ exports[`Multiselect examples Multiselect with select and unselect all buttons s
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r8»-item-3"
+          id="multiselect-with-select-and-unselect-all-buttons-item-3"
           role="option"
         >
           <span
@@ -2093,7 +2049,7 @@ exports[`Multiselect examples Multiselect with select and unselect all buttons s
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r8»-item-4"
+          id="multiselect-with-select-and-unselect-all-buttons-item-4"
           role="option"
         >
           <span
@@ -2107,7 +2063,7 @@ exports[`Multiselect examples Multiselect with select and unselect all buttons s
 </div>
 `;
 
-exports[`Multiselect examples Multiselect without dropdown chevron should render correctly 1`] = `
+exports[`Multiselect examples > Multiselect without dropdown chevron should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -2117,8 +2073,8 @@ exports[`Multiselect examples Multiselect without dropdown chevron should render
     >
       <label
         class="v-label"
-        for="downshift-«r6»-input"
-        id="downshift-«r6»-label"
+        for="multiselect-without-dropdown-chevron-input"
+        id="multiselect-without-dropdown-chevron-label"
       >
         Label (required)
       </label>
@@ -2131,12 +2087,12 @@ exports[`Multiselect examples Multiselect without dropdown chevron should render
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«r6»-menu"
+            aria-controls="multiselect-without-dropdown-chevron-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«r6»-label"
+            aria-labelledby="multiselect-without-dropdown-chevron-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«r6»-input"
+            id="multiselect-without-dropdown-chevron-input"
             name="multiselect-without-dropdown-chevron"
             role="combobox"
             style="flex-basis: 50px;"
@@ -2149,16 +2105,16 @@ exports[`Multiselect examples Multiselect without dropdown chevron should render
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«r6»-label"
+        aria-labelledby="multiselect-without-dropdown-chevron-label"
         class="v-listbox v-flex"
-        id="downshift-«r6»-menu"
+        id="multiselect-without-dropdown-chevron-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r6»-item-0"
+          id="multiselect-without-dropdown-chevron-item-0"
           role="option"
         >
           <span
@@ -2170,7 +2126,7 @@ exports[`Multiselect examples Multiselect without dropdown chevron should render
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r6»-item-1"
+          id="multiselect-without-dropdown-chevron-item-1"
           role="option"
         >
           <span
@@ -2182,7 +2138,7 @@ exports[`Multiselect examples Multiselect without dropdown chevron should render
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r6»-item-2"
+          id="multiselect-without-dropdown-chevron-item-2"
           role="option"
         >
           <span
@@ -2194,7 +2150,7 @@ exports[`Multiselect examples Multiselect without dropdown chevron should render
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r6»-item-3"
+          id="multiselect-without-dropdown-chevron-item-3"
           role="option"
         >
           <span
@@ -2206,7 +2162,7 @@ exports[`Multiselect examples Multiselect without dropdown chevron should render
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r6»-item-4"
+          id="multiselect-without-dropdown-chevron-item-4"
           role="option"
         >
           <span
@@ -2220,7 +2176,7 @@ exports[`Multiselect examples Multiselect without dropdown chevron should render
 </div>
 `;
 
-exports[`Multiselect examples Read-only multiselect should render correctly 1`] = `
+exports[`Multiselect examples > Read-only multiselect should render correctly 1`] = `
 <div>
   <div
     class="v-combobox"
@@ -2230,8 +2186,8 @@ exports[`Multiselect examples Read-only multiselect should render correctly 1`] 
     >
       <label
         class="v-label"
-        for="downshift-«r5»-input"
-        id="downshift-«r5»-label"
+        for="read-only-multiselect-input"
+        id="read-only-multiselect-label"
       >
         Label (required)
       </label>
@@ -2244,12 +2200,12 @@ exports[`Multiselect examples Read-only multiselect should render correctly 1`] 
           <input
             aria-activedescendant=""
             aria-autocomplete="list"
-            aria-controls="downshift-«r5»-menu"
+            aria-controls="read-only-multiselect-menu"
             aria-expanded="false"
-            aria-labelledby="downshift-«r5»-label"
+            aria-labelledby="read-only-multiselect-label"
             autocomplete="off"
             class="v-input v-flex-shrink"
-            id="downshift-«r5»-input"
+            id="read-only-multiselect-input"
             name="read-only-multiselect"
             readonly=""
             role="combobox"
@@ -2258,13 +2214,13 @@ exports[`Multiselect examples Read-only multiselect should render correctly 1`] 
           />
         </div>
         <button
-          aria-controls="downshift-«r5»-menu"
+          aria-controls="read-only-multiselect-menu"
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-label="read-only-multiselect-toggle-button"
           class="v-button v-button-small v-button-tertiary v-button-icon"
           disabled=""
-          id="downshift-«r5»-toggle-button"
+          id="read-only-multiselect-toggle-button"
           tabindex="-1"
         >
           <svg
@@ -2278,9 +2234,7 @@ exports[`Multiselect examples Read-only multiselect should render correctly 1`] 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -2290,16 +2244,16 @@ exports[`Multiselect examples Read-only multiselect should render correctly 1`] 
       class="v-listbox-container"
     >
       <ul
-        aria-labelledby="downshift-«r5»-label"
+        aria-labelledby="read-only-multiselect-label"
         class="v-listbox v-flex"
-        id="downshift-«r5»-menu"
+        id="read-only-multiselect-menu"
         role="listbox"
       >
         <li
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r5»-item-0"
+          id="read-only-multiselect-item-0"
           role="option"
         >
           <span
@@ -2311,7 +2265,7 @@ exports[`Multiselect examples Read-only multiselect should render correctly 1`] 
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r5»-item-1"
+          id="read-only-multiselect-item-1"
           role="option"
         >
           <span
@@ -2323,7 +2277,7 @@ exports[`Multiselect examples Read-only multiselect should render correctly 1`] 
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r5»-item-2"
+          id="read-only-multiselect-item-2"
           role="option"
         >
           <span
@@ -2335,7 +2289,7 @@ exports[`Multiselect examples Read-only multiselect should render correctly 1`] 
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r5»-item-3"
+          id="read-only-multiselect-item-3"
           role="option"
         >
           <span
@@ -2347,7 +2301,7 @@ exports[`Multiselect examples Read-only multiselect should render correctly 1`] 
           aria-disabled="false"
           aria-selected="false"
           class="v-listbox-item"
-          id="downshift-«r5»-item-4"
+          id="read-only-multiselect-item-4"
           role="option"
         >
           <span
@@ -2373,6 +2327,603 @@ exports[`Multiselect examples Read-only multiselect should render correctly 1`] 
     >
       Mark input as read-only
     </label>
+  </div>
+</div>
+`;
+
+exports[`Multiselect examples > Reusable multiselect should render correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="v-combobox"
+    >
+      <div
+        class="v-dropdown v-flex v-flex-col v-gap-4"
+      >
+        <div
+          class="v-flex v-flex-col v-gap-4"
+        >
+          <label
+            class="v-label"
+            for="test-id-0-input"
+            id="test-id-0-combobox-label"
+          >
+            Label
+          </label>
+          <span
+            class="v-typography-body-3"
+            id="test-id-0-description"
+          >
+            This is optional text that describes the label in more detail.
+          </span>
+        </div>
+        <div
+          class="v-surface v-input-container v-pl-3 v-pr-6 v-py-3"
+        >
+          <div
+            class="v-flex v-flex-grow v-flex-shrink v-flex-wrap v-gap-2"
+          >
+            <input
+              aria-activedescendant=""
+              aria-autocomplete="list"
+              aria-controls="test-id-0-combobox-menu"
+              aria-describedby="test-id-0-description"
+              aria-expanded="false"
+              aria-invalid="false"
+              aria-labelledby="test-id-0-combobox-label"
+              autocomplete="off"
+              class="v-input v-flex-shrink"
+              id="test-id-0-input"
+              name="test-id-0-multiselect"
+              role="combobox"
+              style="flex-basis: 50px;"
+              value=""
+            />
+          </div>
+          <button
+            aria-controls="test-id-0-combobox-menu"
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-label="test-id-0-toggle-button"
+            class="v-button v-button-small v-button-tertiary v-button-icon"
+            id="test-id-0-combobox-toggle-button"
+            tabindex="-1"
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+              focusable="false"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="v-icon-primary"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <span
+        class="v-input-message v-mt-4"
+      />
+      <div
+        class="v-listbox-container"
+      >
+        <div
+          class="v-align-items-center v-flex v-justify-content-between v-px-8"
+        >
+          <button
+            class="v-button v-button-tertiary"
+          >
+            Select All
+          </button>
+          <button
+            class="v-button v-button-tertiary v-button-destructive"
+          >
+            Clear All
+          </button>
+        </div>
+        <hr
+          aria-hidden="true"
+          class="v-divider v-divider-decorative"
+        />
+        <ul
+          aria-labelledby="test-id-0-combobox-label"
+          class="v-listbox v-flex"
+          id="test-id-0-combobox-menu"
+          role="listbox"
+        >
+          <li
+            aria-selected="false"
+            class="v-listbox-item v-listbox-item-highlighted"
+            id="test-id-0-combobox-item-0"
+            role="option"
+          >
+            <span
+              class="v-checkbox"
+            />
+            Option A
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="test-id-0-combobox-item-1"
+            role="option"
+          >
+            <span
+              class="v-checkbox"
+            />
+            Option B
+          </li>
+          <li
+            aria-disabled="true"
+            aria-selected="false"
+            class="v-listbox-item"
+            id="test-id-0-combobox-item-2"
+            role="option"
+          >
+            <span
+              class="v-checkbox"
+              disabled=""
+            />
+            Option C
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="test-id-0-combobox-item-3"
+            role="option"
+          >
+            <span
+              class="v-checkbox"
+            />
+            Option D
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="test-id-0-combobox-item-4"
+            role="option"
+          >
+            <span
+              class="v-checkbox"
+            />
+            Option E
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      style="margin-top: 24px;"
+    >
+      <p
+        class="v-typography-body-2"
+      >
+        Selected values: 
+        None
+      </p>
+    </div>
+    <div
+      style="margin-top: 24px;"
+    >
+      <details
+        class="v-accordion"
+        id="test-id-1"
+      >
+        <summary
+          class="v-button v-button-large v-button-secondary v-accordion-heading v-gap-2 v-typography-body-2-medium"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right v-icon-rtl v-accordion-toggle-icon v-accordion-toggle-icon-closed"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down v-accordion-toggle-icon v-accordion-toggle-icon-open"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+            />
+          </svg>
+          <div
+            class="v-align-items-center v-flex v-gap-6"
+          >
+            Customize demo
+          </div>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-32"
+        >
+          <form>
+            <div
+              class="v-flex v-flex-col v-gap-16"
+              style="margin-bottom: 32px;"
+            >
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-2-input"
+                >
+                  Label
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-2-input"
+                      type="text"
+                      value="Label"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-3-input"
+                >
+                  Description
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-3-input"
+                      type="text"
+                      value="This is optional text that describes the label in more detail."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-4-input"
+                >
+                  Error message
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-4-input"
+                      type="text"
+                      value="This is required text that describes the error in more detail."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-5-input"
+                >
+                  Options (JSON)
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <textarea
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-5-input"
+                      style="block-size: 150px;"
+                    >
+                      [
+  {
+    "label": "Option A",
+    "value": "a"
+  },
+  {
+    "label": "Option B",
+    "value": "b"
+  },
+  {
+    "label": "Option C",
+    "value": "c",
+    "disabled": true
+  },
+  {
+    "label": "Option D",
+    "value": "d"
+  },
+  {
+    "label": "Option E",
+    "value": "e"
+  }
+]
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  checked=""
+                  class="v-checkbox"
+                  id="test-id-6-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-6-input"
+                  >
+                    Auto filter
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-6-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-7-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-7-input"
+                  >
+                    Auto select
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-7-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-8-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-8-input"
+                  >
+                    Disabled
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-8-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-9-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-9-input"
+                  >
+                    Hide dropdown button
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-9-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-10-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-10-input"
+                  >
+                    Hide selection buttons
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-10-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-11-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-11-input"
+                  >
+                    Inline
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-11-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-12-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-12-input"
+                  >
+                    Invalid
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-12-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-13-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-13-input"
+                  >
+                    Readonly
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-13-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-14-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-14-input"
+                  >
+                    Required
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-14-message"
+              />
+            </div>
+            <div
+              class="v-flex v-gap-16"
+              style="margin-bottom: 16px;"
+            >
+              <button
+                class="v-button"
+                type="submit"
+              >
+                Apply
+              </button>
+              <button
+                class="v-button v-button-secondary"
+                type="button"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </details>
+    </div>
   </div>
 </div>
 `;

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-input';
 
-export type InputProperties<ET extends ElementType = 'input',> = {
+export type InputProperties<ET extends ElementType = 'input'> = {
   /** one-time pass-code style */
   otp?: boolean;
   /** Tag of Component */
@@ -28,19 +28,20 @@ export type InputProperties<ET extends ElementType = 'input',> = {
 
 /**
  * Text fields that enable users to enter free-form content.
- * @docs {@link https://design.visa.com/react/components/input | See Docs}
+ * @docs {@link https://design.visa.com/components/input/?code_library=react | See Docs}
  * @related input-container, input-control, input-message
  * @vgar TODO
  * @wcag TODO
  */
-const Input = <ET extends ElementType = 'input',>(
-  { className, otp = false, tag: Tag = 'input', ...remainingProps }: InputProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, otp && `${CSS_PREFIX}-otp`, className)} {...remainingProps} />;
+const Input = <ET extends ElementType = 'input'>({
+  className,
+  otp = false,
+  tag: Tag = 'input',
+  ...remainingProps
+}: InputProperties<ET>) => (
+  <Tag className={cn(CSS_PREFIX, otp && `${CSS_PREFIX}-otp`, className)} {...remainingProps} />
+);
 
 export default Input;
-
-Input.defaultProps = {
-  tag: 'input',
-};
 
 Input.displayName = 'Input';

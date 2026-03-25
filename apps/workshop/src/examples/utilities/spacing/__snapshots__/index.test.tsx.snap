@@ -1,12 +1,13 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Spacing examples Column gap should render correctly 1`] = `
+exports[`Spacing examples > Column gap should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-col-gap-20 v-flex"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-flex v-flex-col"
@@ -45,13 +46,14 @@ exports[`Spacing examples Column gap should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Default gap should render correctly 1`] = `
+exports[`Spacing examples > Default gap should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-col-gap-20 v-flex"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-surface v-flex-grow v-p-16"
@@ -70,16 +72,18 @@ exports[`Spacing examples Default gap should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Default margin should render correctly 1`] = `
+exports[`Spacing examples > Default margin should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-flex"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-surface v-m-20"
+        style="border: 1px dashed var(--palette-default-active-subtle);"
       >
         Content Area
       </div>
@@ -88,16 +92,18 @@ exports[`Spacing examples Default margin should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Gap inherit should render correctly 1`] = `
+exports[`Spacing examples > Gap inherit should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <ul
       class="v-flex v-flex-col v-gap-8"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <li
         class="v-align-items-center v-flex v-gap-inherit"
+        style="background: var(--palette-default-surface-1); padding: var(--size-scalable-6) var(--size-scalable-80) var(--size-scalable-6) var(--size-scalable-20);"
       >
         <span
           aria-label="Alex Miller"
@@ -109,6 +115,7 @@ exports[`Spacing examples Gap inherit should render correctly 1`] = `
       </li>
       <li
         class="v-align-items-center v-flex v-gap-inherit"
+        style="background: var(--palette-default-surface-1); padding: var(--size-scalable-6) var(--size-scalable-80) var(--size-scalable-6) var(--size-scalable-20);"
       >
         <span
           aria-label="Rosetta Jones"
@@ -120,6 +127,7 @@ exports[`Spacing examples Gap inherit should render correctly 1`] = `
       </li>
       <li
         class="v-align-items-center v-flex v-gap-inherit"
+        style="background: var(--palette-default-surface-1); padding: var(--size-scalable-6) var(--size-scalable-80) var(--size-scalable-6) var(--size-scalable-20);"
       >
         <span
           aria-label="Stacey Taylor"
@@ -134,13 +142,14 @@ exports[`Spacing examples Gap inherit should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Gap normal should render correctly 1`] = `
+exports[`Spacing examples > Gap normal should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-flex v-gap-normal"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-surface v-flex-grow v-p-16"
@@ -159,16 +168,18 @@ exports[`Spacing examples Gap normal should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Margin bottom should render correctly 1`] = `
+exports[`Spacing examples > Margin bottom should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-flex"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-surface v-mb-20 v-p-16"
+        style="border: 1px dashed var(--palette-default-active-subtle);"
       >
         Content Area
       </div>
@@ -177,16 +188,18 @@ exports[`Spacing examples Margin bottom should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Margin horizontal should render correctly 1`] = `
+exports[`Spacing examples > Margin horizontal should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-flex"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-surface v-mx-20 v-p-16"
+        style="border: 1px dashed var(--palette-default-active-subtle);"
       >
         Content Area
       </div>
@@ -195,22 +208,24 @@ exports[`Spacing examples Margin horizontal should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Margin inherit should render correctly 1`] = `
+exports[`Spacing examples > Margin inherit should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
-    <div>
+    <div
+      style="background: var(--palette-default-surface-highlight);"
+    >
       <div
         class="v-mt-20"
-        style="text-align: center;"
+        style="text-align: center; border: 1px dashed var(--palette-default-active-subtle); background: var(--palette-messaging-highlight-positive);"
       >
         <p>
           Parent with top margin
         </p>
         <div
           class="v-surface v-mt-inherit v-p-16"
-          style="border-inline: 0; border-block-end: 0;"
+          style="border: 1px dashed var(--palette-default-active-subtle); border-inline: 0; border-block-end: 0;"
         >
           Child inherits top margin from parent
         </div>
@@ -220,16 +235,18 @@ exports[`Spacing examples Margin inherit should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Margin left should render correctly 1`] = `
+exports[`Spacing examples > Margin left should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-flex"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-surface v-ml-20 v-p-16"
+        style="border: 1px dashed var(--palette-default-active-subtle);"
       >
         Content Area
       </div>
@@ -238,16 +255,18 @@ exports[`Spacing examples Margin left should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Margin right should render correctly 1`] = `
+exports[`Spacing examples > Margin right should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-flex"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-surface v-mr-20 v-p-16"
+        style="border: 1px dashed var(--palette-default-active-subtle);"
       >
         Content Area
       </div>
@@ -256,16 +275,18 @@ exports[`Spacing examples Margin right should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Margin top should render correctly 1`] = `
+exports[`Spacing examples > Margin top should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-flex"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-surface v-mt-20 v-p-16"
+        style="border: 1px dashed var(--palette-default-active-subtle);"
       >
         Content Area
       </div>
@@ -274,16 +295,18 @@ exports[`Spacing examples Margin top should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Margin vertical should render correctly 1`] = `
+exports[`Spacing examples > Margin vertical should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-flex"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-surface v-my-20 v-p-16"
+        style="border: 1px dashed var(--palette-default-active-subtle);"
       >
         Content Area
       </div>
@@ -292,13 +315,14 @@ exports[`Spacing examples Margin vertical should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Padding bottom should render correctly 1`] = `
+exports[`Spacing examples > Padding bottom should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-pb-20"
+      style="background: var(--palette-default-surface-highlight); border: 1px dashed var(--palette-default-active-subtle);"
     >
       <div
         class="v-surface v-p-16 v-pb-20"
@@ -310,13 +334,14 @@ exports[`Spacing examples Padding bottom should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Padding horizontal should render correctly 1`] = `
+exports[`Spacing examples > Padding horizontal should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-px-20"
+      style="background: var(--palette-default-surface-highlight); border: 1px dashed var(--palette-default-active-subtle);"
     >
       <div
         class="v-surface v-p-16 v-pb-20"
@@ -328,21 +353,21 @@ exports[`Spacing examples Padding horizontal should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Padding inherit should render correctly 1`] = `
+exports[`Spacing examples > Padding inherit should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-pt-24"
-      style="text-align: center;"
+      style="text-align: center; border: 1px dashed var(--palette-default-active-subtle); background: var(--palette-default-surface-highlight);"
     >
       <p>
         Parent with top padding
       </p>
       <div
         class="v-surface v-p-16 v-pt-inherit"
-        style="border-inline: 0; border-block-end: 0;"
+        style="border: 1px dashed var(--palette-default-active-subtle); border-inline: 0; border-block-end: 0;"
       >
         Child inherits top margin from parent
       </div>
@@ -351,13 +376,14 @@ exports[`Spacing examples Padding inherit should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Padding left should render correctly 1`] = `
+exports[`Spacing examples > Padding left should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-pl-20"
+      style="background: var(--palette-default-surface-highlight); border: 1px dashed var(--palette-default-active-subtle);"
     >
       <div
         class="v-surface v-p-16 v-pb-20"
@@ -369,13 +395,14 @@ exports[`Spacing examples Padding left should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Padding right should render correctly 1`] = `
+exports[`Spacing examples > Padding right should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-pr-20"
+      style="background: var(--palette-default-surface-highlight); border: 1px dashed var(--palette-default-active-subtle);"
     >
       <div
         class="v-surface v-p-16 v-pb-20"
@@ -387,13 +414,14 @@ exports[`Spacing examples Padding right should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Padding should render correctly 1`] = `
+exports[`Spacing examples > Padding should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-p-20"
+      style="background: var(--palette-default-surface-highlight); border: 1px dashed var(--palette-default-active-subtle);"
     >
       <div
         class="v-surface v-p-16 v-pb-20"
@@ -405,13 +433,14 @@ exports[`Spacing examples Padding should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Padding top should render correctly 1`] = `
+exports[`Spacing examples > Padding top should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-pt-20"
+      style="background: var(--palette-default-surface-highlight); border: 1px dashed var(--palette-default-active-subtle);"
     >
       <div
         class="v-surface v-p-16 v-pb-20"
@@ -423,13 +452,14 @@ exports[`Spacing examples Padding top should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Padding vertical should render correctly 1`] = `
+exports[`Spacing examples > Padding vertical should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-py-20"
+      style="background: var(--palette-default-surface-highlight); border: 1px dashed var(--palette-default-active-subtle);"
     >
       <div
         class="v-surface v-p-16 v-pb-20"
@@ -441,13 +471,14 @@ exports[`Spacing examples Padding vertical should render correctly 1`] = `
 </div>
 `;
 
-exports[`Spacing examples Row gap should render correctly 1`] = `
+exports[`Spacing examples > Row gap should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
   >
     <div
       class="v-flex v-flex-col v-row-gap-20"
+      style="background: var(--palette-default-surface-highlight);"
     >
       <div
         class="v-flex"

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,8 @@
  * limitations under the License.
  *
  **/
+
+/* Layout with header spanning full width, sidebar on left, and content on right */
 .layout-mixed {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -23,11 +25,12 @@
   background-color: var(--palette-default-surface-3, #f0f0f0);
 }
 
-/* open nav */
+/* When sidebar navigation is expanded, set fixed width for consistent spacing */
 .layout-mixed:has(.mixed-vertical-tabs) {
   grid-template-columns: 242px 1fr !important;
 }
 
+/* Higher z-index keeps header above other elements when scrolling */
 .layout-mixed .layout-header {
   z-index: 3;
   position: relative;
@@ -38,6 +41,7 @@
   grid-area: nav;
 }
 
+/* Allows content area to scroll independently while header and sidebar stay fixed */
 .layout-mixed .layout-content {
   position: relative;
   overflow-y: auto;
@@ -46,17 +50,18 @@
   grid-area: content;
 }
 
+/* Main content grows to fill available space, pushing footer to bottom */
 .layout-mixed main {
   display: block;
   flex-grow: 1;
 }
 
-/* customize the default footer color */
+/* Match footer background to overall page background */
 .layout-mixed footer {
-  --v-footer-background-color: var(--v-palette-default-surface-3);
+  --v-footer-background-color: var(--palette-default-surface-3);
 }
 
-/* breakpoints */
+/* Show/hide elements based on screen size for mobile and desktop views */
 @container (max-width: 1003px) {
   .layout-mixed .v-mobile-container-hide {
     display: none;

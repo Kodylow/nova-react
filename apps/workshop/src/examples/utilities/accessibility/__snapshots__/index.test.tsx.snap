@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Breakpoints examples Screen reader-only table caption should render correctly 1`] = `
+exports[`Breakpoints examples > Screen reader-only table caption should render correctly 1`] = `
 <div>
   <div
     class="v-table-wrapper"
@@ -72,7 +72,7 @@ exports[`Breakpoints examples Screen reader-only table caption should render cor
 </div>
 `;
 
-exports[`Breakpoints examples Screen reader-only text should render correctly 1`] = `
+exports[`Breakpoints examples > Screen reader-only text should render correctly 1`] = `
 <div>
   <span
     class="v-screen-reader"

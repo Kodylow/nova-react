@@ -2,7 +2,7 @@
   "description": "Wraps around a component and add Nova utility classes to its direct child without adding extra elements to the DOM.",
   "displayName": "UtilityFragment",
   "filePath": "/utility-fragment/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/utility-fragment/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//utility-fragment/index.tsx",
   "props": [
     {
       "description": "",
@@ -38,7 +38,7 @@
       "description": "",
       "name": "vElevation",
       "required": false,
-      "type": "\"small\" | \"none\" | \"large\" | \"inset\" | \"medium\" | \"xlarge\" | \"xxlarge\" | \"xsmall\""
+      "type": "\"small\" | \"none\" | \"large\" | \"medium\" | \"inset\" | \"xlarge\" | \"xxlarge\" | \"xsmall\""
     },
     {
       "description": "",
@@ -235,6 +235,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/utilities/api See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/base-elements/responsive-grid-system/breakpoints/?code_library=react See Docs}"
 }

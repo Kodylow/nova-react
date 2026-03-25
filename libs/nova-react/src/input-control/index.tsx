@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,28 +15,26 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-input-control';
 
-export type InputControlProperties <ET extends ElementType = 'div',>= {
+export type InputControlProperties<ET extends ElementType = 'div'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Container for icons controlling form elements, such as a dropdown icon for a select element.
- * @docs {@link https://design.visa.com/react/components/input | See Docs}
+ * @docs {@link https://design.visa.com/components/input/?code_library=react | See Docs}
  * @related select
  */
-const InputControl = <ET extends ElementType = 'div',>(
-  { className, tag: Tag = 'div', ...remainingProps }: InputControlProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const InputControl = <ET extends ElementType = 'div'>({
+  className,
+  tag: Tag = 'div',
+  ...remainingProps
+}: InputControlProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default InputControl;
-
-InputControl.defaultProps = {
-  tag: 'div',
-};
 
 InputControl.displayName = 'InputControl';

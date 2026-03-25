@@ -1,0 +1,78 @@
+{
+  "accordion-filter-items": {
+    "file": "accordion-filter-items.tsx",
+    "id": "accordion-filter-items"
+  },
+  "dynamic-table-constants": {
+    "file": "dynamic-table.constants.tsx",
+    "id": "dynamic-table-constants"
+  },
+  "dynamic-table-utils": {
+    "file": "dynamic-table.utils.tsx",
+    "id": "dynamic-table-utils"
+  },
+  "filter-checkbox-groups": {
+    "file": "filter-checkbox-groups.tsx",
+    "id": "filter-checkbox-groups"
+  },
+  "filters-utils": {
+    "file": "filters.utils.tsx",
+    "id": "filters-utils"
+  },
+  "header-actions-button": {
+    "file": "header-actions-button.tsx",
+    "id": "header-actions-button"
+  },
+  "pagination": {
+    "file": "pagination.tsx",
+    "id": "pagination"
+  },
+  "sort-button": {
+    "file": "sort-button.tsx",
+    "id": "sort-button"
+  },
+  "table-dropdown-button": {
+    "file": "table-dropdown-button.tsx",
+    "id": "table-dropdown-button"
+  },
+  "action-bar": {
+    "file": "action-bar.tsx",
+    "id": "action-bar"
+  },
+  "badge": {
+    "file": "badge.tsx",
+    "id": "badge"
+  },
+  "chip-filters": {
+    "file": "chip-filters.tsx",
+    "id": "chip-filters"
+  },
+  "row-action-button": {
+    "file": "row-action-button.tsx",
+    "id": "row-action-button"
+  },
+  "actions-button": {
+    "file": "actions-button.tsx",
+    "id": "actions-button"
+  },
+  "dropdown-menu-button": {
+    "file": "dropdown-menu-button.tsx",
+    "id": "dropdown-menu-button"
+  },
+  "sort-icon": {
+    "file": "sort-icon.tsx",
+    "id": "sort-icon"
+  },
+  "generate-demo-data-utils": {
+    "file": "generate-demo-data.utils.tsx",
+    "id": "generate-demo-data-utils"
+  },
+  "mock-table-api-utils": {
+    "file": "mock-table-api.utils.tsx",
+    "id": "mock-table-api-utils"
+  },
+  "pagination-shared": {
+    "file": "pagination-shared.tsx",
+    "id": "pagination-shared"
+  }
+}

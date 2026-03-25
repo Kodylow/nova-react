@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  **/
 import { MessageIcon } from '@visa/nova-icons-react';
 import { SectionMessage, SectionMessageContent, Typography } from '@visa/nova-react';
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 const ExampleIntro = () => (
   <SectionMessage>
@@ -155,6 +155,8 @@ const Examples: ExampleIndex[] = [
   {
     id: 'persistent-subtle-section-message',
   },
+  { id: 'Custom section message example', title: 'Custom section messages', type: 'section' },
+  { id: 'reusable' },
 ];
 
 export default Examples;

@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Chip examples Compact removable chip group should render correctly 1`] = `
+exports[`Chip examples > Compact removable chip group should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-wrap v-gap-8"
@@ -24,9 +24,7 @@ exports[`Chip examples Compact removable chip group should render correctly 1`] 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -59,9 +57,7 @@ exports[`Chip examples Compact removable chip group should render correctly 1`] 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -94,9 +90,7 @@ exports[`Chip examples Compact removable chip group should render correctly 1`] 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -129,9 +123,7 @@ exports[`Chip examples Compact removable chip group should render correctly 1`] 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -164,9 +156,7 @@ exports[`Chip examples Compact removable chip group should render correctly 1`] 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -199,9 +189,7 @@ exports[`Chip examples Compact removable chip group should render correctly 1`] 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -228,7 +216,7 @@ exports[`Chip examples Compact removable chip group should render correctly 1`] 
 </div>
 `;
 
-exports[`Chip examples Compact removable chip should render correctly 1`] = `
+exports[`Chip examples > Compact removable chip should render correctly 1`] = `
 <div>
   <div
     class="v-chip v-chip-compact v-flex"
@@ -251,9 +239,7 @@ exports[`Chip examples Compact removable chip should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-          fill-rule="evenodd"
+          d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
         />
         <defs>
           <clippath>
@@ -270,7 +256,7 @@ exports[`Chip examples Compact removable chip should render correctly 1`] = `
 </div>
 `;
 
-exports[`Chip examples Compact removable chip with avatar should render correctly 1`] = `
+exports[`Chip examples > Compact removable chip with avatar should render correctly 1`] = `
 <div>
   <div
     class="v-chip v-chip-compact v-flex"
@@ -298,9 +284,7 @@ exports[`Chip examples Compact removable chip with avatar should render correctl
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-          fill-rule="evenodd"
+          d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
         />
         <defs>
           <clippath>
@@ -317,7 +301,7 @@ exports[`Chip examples Compact removable chip with avatar should render correctl
 </div>
 `;
 
-exports[`Chip examples Compact removable chip with icon should render correctly 1`] = `
+exports[`Chip examples > Compact removable chip with icon should render correctly 1`] = `
 <div>
   <div
     class="v-chip v-chip-compact v-flex"
@@ -333,15 +317,11 @@ exports[`Chip examples Compact removable chip with icon should render correctly 
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
-        fill-rule="evenodd"
+        d="M8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
-        fill-rule="evenodd"
+        d="M8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0ZM8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2Z"
       />
     </svg>
     <span>
@@ -362,9 +342,7 @@ exports[`Chip examples Compact removable chip with icon should render correctly 
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-          fill-rule="evenodd"
+          d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
         />
         <defs>
           <clippath>
@@ -381,7 +359,7 @@ exports[`Chip examples Compact removable chip with icon should render correctly 
 </div>
 `;
 
-exports[`Chip examples Default removable chip should render correctly 1`] = `
+exports[`Chip examples > Default removable chip should render correctly 1`] = `
 <div>
   <div
     class="v-chip v-flex"
@@ -404,9 +382,7 @@ exports[`Chip examples Default removable chip should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-          fill-rule="evenodd"
+          d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
         />
         <defs>
           <clippath>
@@ -423,7 +399,7 @@ exports[`Chip examples Default removable chip should render correctly 1`] = `
 </div>
 `;
 
-exports[`Chip examples Default selection chip should render correctly 1`] = `
+exports[`Chip examples > Default selection chip should render correctly 1`] = `
 <div>
   <label
     class="v-chip v-chip-selection v-label v-gap-6"
@@ -439,7 +415,7 @@ exports[`Chip examples Default selection chip should render correctly 1`] = `
 </div>
 `;
 
-exports[`Chip examples Disabled removable chip should render correctly 1`] = `
+exports[`Chip examples > Disabled removable chip should render correctly 1`] = `
 <div>
   <div
     class="v-chip v-flex"
@@ -467,9 +443,7 @@ exports[`Chip examples Disabled removable chip should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-          fill-rule="evenodd"
+          d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
         />
         <defs>
           <clippath>
@@ -486,7 +460,7 @@ exports[`Chip examples Disabled removable chip should render correctly 1`] = `
 </div>
 `;
 
-exports[`Chip examples Disabled selected selection chip should render correctly 1`] = `
+exports[`Chip examples > Disabled selected selection chip should render correctly 1`] = `
 <div>
   <label
     class="v-chip v-chip-selection v-label v-gap-6"
@@ -504,7 +478,7 @@ exports[`Chip examples Disabled selected selection chip should render correctly 
 </div>
 `;
 
-exports[`Chip examples Disabled selection chip should render correctly 1`] = `
+exports[`Chip examples > Disabled selection chip should render correctly 1`] = `
 <div>
   <label
     class="v-chip v-chip-selection v-label v-gap-6"
@@ -521,7 +495,7 @@ exports[`Chip examples Disabled selection chip should render correctly 1`] = `
 </div>
 `;
 
-exports[`Chip examples Multi-line selection chip should render correctly 1`] = `
+exports[`Chip examples > Multi-line selection chip should render correctly 1`] = `
 <div>
   <label
     class="v-chip v-chip-selection v-label v-gap-6"
@@ -541,7 +515,7 @@ exports[`Chip examples Multi-line selection chip should render correctly 1`] = `
 </div>
 `;
 
-exports[`Chip examples Removable chip group should render correctly 1`] = `
+exports[`Chip examples > Removable chip group should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-wrap v-gap-8"
@@ -565,9 +539,7 @@ exports[`Chip examples Removable chip group should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -600,9 +572,7 @@ exports[`Chip examples Removable chip group should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -635,9 +605,7 @@ exports[`Chip examples Removable chip group should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -670,9 +638,7 @@ exports[`Chip examples Removable chip group should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -705,9 +671,7 @@ exports[`Chip examples Removable chip group should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -740,9 +704,7 @@ exports[`Chip examples Removable chip group should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -775,9 +737,7 @@ exports[`Chip examples Removable chip group should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -810,9 +770,7 @@ exports[`Chip examples Removable chip group should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-            fill-rule="evenodd"
+            d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
           />
           <defs>
             <clippath>
@@ -839,7 +797,7 @@ exports[`Chip examples Removable chip group should render correctly 1`] = `
 </div>
 `;
 
-exports[`Chip examples Removable chip with avatar should render correctly 1`] = `
+exports[`Chip examples > Removable chip with avatar should render correctly 1`] = `
 <div>
   <div
     class="v-chip v-flex"
@@ -867,9 +825,7 @@ exports[`Chip examples Removable chip with avatar should render correctly 1`] = 
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-          fill-rule="evenodd"
+          d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
         />
         <defs>
           <clippath>
@@ -886,7 +842,7 @@ exports[`Chip examples Removable chip with avatar should render correctly 1`] = 
 </div>
 `;
 
-exports[`Chip examples Removable chip with icon should render correctly 1`] = `
+exports[`Chip examples > Removable chip with icon should render correctly 1`] = `
 <div>
   <div
     class="v-chip v-flex"
@@ -902,15 +858,11 @@ exports[`Chip examples Removable chip with icon should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
-        fill-rule="evenodd"
+        d="M8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
-        fill-rule="evenodd"
+        d="M8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0ZM8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2Z"
       />
     </svg>
     <span>
@@ -931,9 +883,7 @@ exports[`Chip examples Removable chip with icon should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-          fill-rule="evenodd"
+          d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
         />
         <defs>
           <clippath>
@@ -950,7 +900,7 @@ exports[`Chip examples Removable chip with icon should render correctly 1`] = `
 </div>
 `;
 
-exports[`Chip examples Selected selection chip should render correctly 1`] = `
+exports[`Chip examples > Selected selection chip should render correctly 1`] = `
 <div>
   <label
     class="v-chip v-chip-selection v-label v-gap-6"
@@ -967,7 +917,7 @@ exports[`Chip examples Selected selection chip should render correctly 1`] = `
 </div>
 `;
 
-exports[`Chip examples Selection chip group should render correctly 1`] = `
+exports[`Chip examples > Selection chip group should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-wrap v-gap-8"
@@ -1068,7 +1018,7 @@ exports[`Chip examples Selection chip group should render correctly 1`] = `
 </div>
 `;
 
-exports[`Chip examples Static chip should render correctly 1`] = `
+exports[`Chip examples > Static chip should render correctly 1`] = `
 <div>
   <label
     class="v-chip v-flex"

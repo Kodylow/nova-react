@@ -1,6 +1,5 @@
 {
   "exit-dialog": {
-    "testAvg": 87,
     "file": "exit-dialog.tsx",
     "id": "exit-dialog",
     "tags": {
@@ -9,7 +8,6 @@
     }
   },
   "save-flag": {
-    "testAvg": 100,
     "file": "save-flag.tsx",
     "id": "save-flag",
     "tags": {
@@ -18,7 +16,6 @@
     }
   },
   "success-message": {
-    "testAvg": 100,
     "file": "success-message.tsx",
     "id": "success-message",
     "tags": {
@@ -27,7 +24,6 @@
     }
   },
   "summary-page": {
-    "testAvg": 100,
     "file": "summary-page.tsx",
     "id": "summary-page",
     "tags": {

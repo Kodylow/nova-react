@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`BadgeEllipse should render defaults correctly 1`] = `
+exports[`BadgeEllipse > should render defaults correctly 1`] = `
 <div>
   <svg
     aria-hidden="true"

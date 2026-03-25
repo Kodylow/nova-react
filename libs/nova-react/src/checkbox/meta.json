@@ -2,7 +2,7 @@
   "description": "Interactive element enabling users to select one or more independent options from a group.",
   "displayName": "checkbox",
   "filePath": "/checkbox/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/checkbox/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//checkbox/index.tsx",
   "props": [
     {
       "description": "Whether a checkbox is indeterminate state, only allowable on \"input\" tag types. This should only be set to true if checked is false.",
@@ -20,8 +20,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/checkbox See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/checkbox/?code_library=react See Docs}",
   "related": [
     "checkbox-panel"
   ]

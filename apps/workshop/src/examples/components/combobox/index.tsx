@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ import { Link, SectionMessage, SectionMessageContent, Typography } from '@visa/n
 import Utility from '@visa/nova-react/utility';
 import packageJson from '../../../../package.json';
 import PackageInstaller from '../../../components/package-installer';
-import { ExampleIndex } from '../../../types/component';
+import type { ExampleIndex } from '../../../types/component';
 
 const ExampleIntro = () => (
   <SectionMessage>
@@ -77,6 +77,8 @@ export const Examples: ExampleIndex[] = [
   { id: 'Combobox behaviors', title: 'Combobox behaviors', type: 'section' },
   { id: 'autocomplete-with-manual-selection-combobox' },
   { id: 'autocomplete-with-automatic-selection-combobox' },
+  { id: 'Custom comboboxes', title: 'Custom comboboxes', type: 'section' },
+  { id: 'reusable' },
 ];
 
 export default Examples;

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,27 +15,25 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-content-card-body';
 
-export type ContentCardBodyProperties<ET extends ElementType = 'div',> = {
+export type ContentCardBodyProperties<ET extends ElementType = 'div'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Element containing the body elements of the content card.
- * @docs {@link https://design.visa.com/react/components/content-card | See Docs}
+ * @docs {@link https://design.visa.com/components/content-card/?code_library=react | See Docs}
  */
-const ContentCardBody = <ET extends ElementType = 'div',>(
-  { className, tag: Tag = 'div', ...remainingProps }: ContentCardBodyProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const ContentCardBody = <ET extends ElementType = 'div'>({
+  className,
+  tag: Tag = 'div',
+  ...remainingProps
+}: ContentCardBodyProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default ContentCardBody;
-
-ContentCardBody.defaultProps = {
-  tag: 'div',
-};
 
 ContentCardBody.displayName = 'ContentCardBody';

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import cn from 'clsx';
-import Surface, { SurfaceProperties } from '../surface';
+import Surface, { type SurfaceProperties } from '../surface';
 
 const CSS_PREFIX = 'v-input-container';
 
@@ -23,12 +23,12 @@ export type InputContainerProperties = SurfaceProperties;
 
 /**
  * Container for styling input elements.
- * @docs {@link https://design.visa.com/react/components/input | See Docs}
+ * @docs {@link https://design.visa.com/components/input/?code_library=react | See Docs}
  * @related combobox, input, select, textarea
  */
-const InputContainer = (
-  { className, ...remainingProps }: InputContainerProperties,
-) => <Surface className={cn(CSS_PREFIX, className)}{...remainingProps} />;
+const InputContainer = ({ className, ...remainingProps }: InputContainerProperties) => (
+  <Surface className={cn(CSS_PREFIX, className)} {...remainingProps} />
+);
 
 export default InputContainer;
 

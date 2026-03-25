@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,18 +17,14 @@
 import { useQueries, useQuery } from '@tanstack/react-query';
 import { Utility } from '@visa/nova-react';
 import { Suspense, lazy } from 'react';
-import ReactGA from 'react-ga4';
 import { useParams } from 'react-router-dom';
 import VSuspense from '../../components/v-suspense';
-import { LibMetaData } from '../../types';
-import { GA_TRACKING_ID } from '../../constants';
+import type { LibMetaData } from '../../types';
 
 const LazyPropsTable = lazy(() => import('../../components/properties-table'));
 
 const fetchMetaData = async (docName: string): Promise<LibMetaData> =>
   (await import(`../../../node_modules/@visa/nova-react/${docName}/meta.json`)).default;
-
-ReactGA.initialize(GA_TRACKING_ID);
 
 const ApiPage = () => {
   const { docName = '' } = useParams();

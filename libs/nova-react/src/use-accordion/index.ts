@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
  * limitations under the License.
  *
  **/
-import { KeyboardEvent, MutableRefObject, useCallback, useEffect, useRef, useState } from 'react';
-import { FocusableHTMLElement } from '../types';
+import { type KeyboardEvent, type RefObject, useCallback, useEffect, useRef, useState } from 'react';
+import { type FocusableHTMLElement } from '../types';
 
 export type UseAccordionOptions<HTMLElementType> = {
   /** Default expanded state of the accordion */
   defaultExpanded?: (number | string)[] | number | string | undefined;
   /** Ref for the accordion elements */
-  ref?: MutableRefObject<(HTMLElementType | null)[]>;
+  ref?: RefObject<(HTMLElementType | null)[]>;
 };
 
 const defaultOptions = {
@@ -29,14 +29,14 @@ const defaultOptions = {
 } satisfies Partial<UseAccordionOptions<HTMLElement>>;
 
 /**
- * @docs {@link https://design.visa.com/react/hooks/use-accordion | See Docs}
+ * @docs {@link https://design.visa.com/components/accordion/?code_library=react | See Docs}
  * @description This hook is used to manage the open state and keyboard navigation of accordions.
  * @related accordion
  * @vgar TODO
  * @wcag TODO
  */
 export const useAccordion = <HTMLElementType extends FocusableHTMLElement = HTMLButtonElement>(
-  useAccordionOptions?: UseAccordionOptions<HTMLElementType>
+  useAccordionOptions: UseAccordionOptions<HTMLElementType> = defaultOptions
 ) => {
   const { defaultExpanded, ...options } = { ...defaultOptions, ...useAccordionOptions };
   // Custom refs if ref not provided
@@ -58,7 +58,7 @@ export const useAccordion = <HTMLElementType extends FocusableHTMLElement = HTML
   // Allows for multiple accordions to be expanded
   const multiple = Array.isArray(expanded);
   // Ref based on the options or custom refs
-  const ref: MutableRefObject<(HTMLElementType | null)[]> = options?.ref || customRefs;
+  const ref: RefObject<(HTMLElementType | null)[]> = options?.ref || customRefs;
 
   // Check if a panel index or id is expanded
   const isIndexExpanded = useCallback(
@@ -146,7 +146,3 @@ export const useAccordion = <HTMLElementType extends FocusableHTMLElement = HTML
 export default useAccordion;
 
 useAccordion.displayName = 'useAccordion';
-
-useAccordion.defaultProps = {
-  defaultExpanded: '',
-};

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
  * limitations under the License.
  *
  **/
-import MessageContent, { MessageContentProperties } from '../message-content';
+import MessageContent, { type MessageContentProperties } from '../message-content';
 
 export type FlagContentProperties = MessageContentProperties;
 
 /**
  * Container for flag content.
  * @displayName FlagContent
- * @docs {@link https://design.visa.com/react/components/flag | See Docs}
+ * @docs {@link https://design.visa.com/components/flag/?code_library=react | See Docs}
  */
 const FlagContent = MessageContent;
 

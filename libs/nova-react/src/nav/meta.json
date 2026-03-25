@@ -2,7 +2,7 @@
   "description": "Menu or panel at the top or next to page content that links to important pages or features.",
   "displayName": "nav",
   "filePath": "/nav/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/nav/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//nav/index.tsx",
   "props": [
     {
       "description": "Alternate",
@@ -32,8 +32,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/nav See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/horizontal-navigation/?code_library=react See Docs}",
   "related": [
     "tab",
     "tabs"

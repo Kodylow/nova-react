@@ -2,7 +2,7 @@
   "description": "Component containing the header of the anchor link menu.",
   "displayName": "anchorlinkmenuheader",
   "filePath": "/anchor-link-menu-header/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/anchor-link-menu-header/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//anchor-link-menu-header/index.tsx",
   "props": [
     {
       "defaultValue": "div",
@@ -12,6 +12,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/anchor-link-menu See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/anchor-link-menu/?code_library=react See Docs}"
 }

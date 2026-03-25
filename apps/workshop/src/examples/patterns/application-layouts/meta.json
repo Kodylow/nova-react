@@ -3,7 +3,6 @@
     "file": "horizontal-application-layout.tsx",
     "id": "horizontal-application-layout",
     "title": "Horizontal application layout",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false
@@ -17,7 +16,6 @@
     "file": "vertical-application-layout.tsx",
     "id": "vertical-application-layout",
     "title": "Vertical application layout",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false
@@ -31,7 +29,6 @@
     "file": "mixed-application-layout.tsx",
     "id": "mixed-application-layout",
     "title": "Mixed application layout",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false
@@ -46,7 +43,6 @@
     "file": "stacked-horizontal-application-layout.tsx",
     "id": "stacked-horizontal-application-layout",
     "title": "Stacked horizontal application layout",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false
@@ -60,7 +56,6 @@
     "file": "horizontal-nav-layout.tsx",
     "id": "horizontal-nav-layout",
     "title": "Horizontal nav",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false,
@@ -71,7 +66,6 @@
     "file": "alternate-horizontal-nav-layout.tsx",
     "id": "alternate-horizontal-nav-layout",
     "title": "Alternate horizontal nav",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false,
@@ -82,7 +76,6 @@
     "file": "vertical-nav-layout.tsx",
     "id": "vertical-nav-layout",
     "title": "Vertical nav",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false,
@@ -93,7 +86,6 @@
     "file": "vertical-mixed-nav-layout.tsx",
     "id": "vertical-mixed-nav-layout",
     "title": "Vertical mixed nav",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false,
@@ -104,7 +96,6 @@
     "file": "stacked-horizontal-nav-layout.tsx",
     "id": "stacked-horizontal-nav-layout",
     "title": "Stacked horizontal nav",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false,
@@ -115,7 +106,6 @@
     "file": "footer-layout.tsx",
     "id": "footer-layout",
     "title": "Footer layout",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -125,7 +115,6 @@
     "file": "styles-horizontal.css",
     "id": "styles-horizontal",
     "title": "Styles horizontal",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false,
@@ -136,7 +125,6 @@
     "file": "styles-stacked.css",
     "id": "styles-stacked",
     "title": "Styles stacked",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false,
@@ -147,7 +135,6 @@
     "file": "styles-vertical.css",
     "id": "styles-vertical",
     "title": "Styles vertical",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false,
@@ -158,7 +145,6 @@
     "file": "styles-mixed.css",
     "id": "styles-mixed",
     "title": "Styles mixed",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": false,

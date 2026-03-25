@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  **/
 import { VisaMaximizeTiny as MaximizeTinyVisa, MessageIcon } from '@visa/nova-icons-react';
 import { Link, SectionMessage, Typography } from '@visa/nova-react';
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 const ExampleIntro = () => (
   <SectionMessage>
@@ -25,7 +25,7 @@ const ExampleIntro = () => (
       For more icons, please visit{' '}
       <Link
         aria-label="icon library (Opens in a new tab)"
-        href="https://design.visa.com/icons"
+        href="https://design.visa.com/components/icons-illustrations/"
         rel="noopener noreferrer"
         target="_blank"
       >

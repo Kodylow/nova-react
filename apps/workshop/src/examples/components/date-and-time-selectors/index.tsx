@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import { Typography } from '@visa/nova-react';
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 export const DateTimeSelectorsHeadline = () => (
   <Typography tag="h2" variant="headline-2">

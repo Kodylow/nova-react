@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,28 +15,25 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-pagination-overflow';
 
-export type PaginationOverflowProperties<ET extends ElementType = 'li',> = {
-
+export type PaginationOverflowProperties<ET extends ElementType = 'li'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Element to show hidden elements within pagination component, usually used with ellipsis icon.
- * @docs {@link https://design.visa.com/react/components/pagination | See Docs}
+ * @docs {@link https://design.visa.com/components/pagination/?code_library=react | See Docs}
  */
-const PaginationOverflow = <ET extends ElementType = 'li',>(
-  { className, tag: Tag = 'li', ...remainingProps }: PaginationOverflowProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const PaginationOverflow = <ET extends ElementType = 'li'>({
+  className,
+  tag: Tag = 'li',
+  ...remainingProps
+}: PaginationOverflowProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default PaginationOverflow;
-
-PaginationOverflow.defaultProps = {
-  tag: 'li',
-};
 
 PaginationOverflow.displayName = 'PaginationOverflow';

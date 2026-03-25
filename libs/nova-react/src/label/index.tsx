@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,28 +15,25 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ElementType } from 'react';
+import Typography, { type TypographyProperties } from '../typography';
 
 const CSS_PREFIX = 'v-label';
 
-export type LabelProperties<ET extends ElementType = 'label',> = {
-
-  /** Tag of Component */
-  tag?: ElementType;
-} & ComponentPropsWithRef<ET>;
+export type LabelProperties<ET extends ElementType = 'label'> = TypographyProperties<ET>;
 
 /**
  * Component used to label form elements.
- * @docs {@link https://design.visa.com/react/components | See Docs}
+ * @docs {@link https://design.visa.com/components | See Docs}
  */
-const Label = <ET extends ElementType = 'label',>(
-  { className, tag: Tag = 'label', ...remainingProps }: LabelProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const Label = <ET extends ElementType = 'label'>({
+  className,
+  tag = 'label',
+  ...remainingProps
+}: LabelProperties<ET>) => (
+  <Typography className={cn(CSS_PREFIX, className)} tag={tag} {...(remainingProps as LabelProperties<ET>)} />
+);
 
 export default Label;
-
-Label.defaultProps = {
-  tag: 'label',
-};
 
 Label.displayName = 'Label';

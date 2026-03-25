@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,30 +15,30 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-switch';
 
-export type SwitchProperties<ET extends ElementType = 'input',> = {
+export type SwitchProperties<ET extends ElementType = 'input'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Binary control that allows users to toggle between two states, such as on/off.
- * @docs {@link https://design.visa.com/react/components/switch | See Docs}
+ * @docs {@link https://design.visa.com/components/switch/?code_library=react | See Docs}
  * @related switch-label
  * @vgar TODO
  * @wcag TODO
  */
-const Switch = <ET extends ElementType = 'input',>(
-  { className, tag: Tag = 'input', ...remainingProps }: SwitchProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} role="switch" type="checkbox" {...remainingProps} />;
+const Switch = <ET extends ElementType = 'input'>({
+  className,
+  tag: Tag = 'input',
+  ...remainingProps
+}: SwitchProperties<ET>) => (
+  <Tag className={cn(CSS_PREFIX, className)} role="switch" type="checkbox" {...remainingProps} />
+);
 
 export default Switch;
-
-Switch.defaultProps = {
-  tag: 'input',
-};
 
 Switch.displayName = 'Switch';

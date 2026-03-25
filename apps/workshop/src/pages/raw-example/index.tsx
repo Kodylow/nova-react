@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 import { useQuery } from '@tanstack/react-query';
 import '@visa/nova-styles/themes/visa-hybrid/index.css';
 import cn from 'clsx';
-import { FC } from 'react';
+import type { FC } from 'react';
 import { useParams } from 'react-router-dom';
 import Styles from './styles.module.scss';
 
@@ -34,7 +34,6 @@ const fetchExample = async (docType: string, docName: string, exampleName: strin
 };
 
 const RawExample = () => {
-  console.log('here');
   const { docName = '', docType = '', exampleName = '' } = useParams();
   const {
     data: Example,
@@ -50,8 +49,6 @@ const RawExample = () => {
   if (isError) return <h1>Error loading example :'(</h1>;
   if (isPending) return <h1>Loading...</h1>;
   if (!Example) return <h1>No examples found :(</h1>;
-
-  console.log('example', Example);
 
   return (
     <div className={cn(isPattern ? 'patterns-background' : 'checkered-background', Styles.rawExampleContent)}>

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ import {
   VisaLogo,
 } from '@visa/nova-react';
 import DropdownMenu from '@visa/nova-react/dropdown-menu';
-import { FC, useState } from 'react';
+import { useState, type FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useDocContext } from '../../../hooks';
 import { Paths } from '../../../routes/paths';

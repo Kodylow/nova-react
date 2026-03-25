@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,12 +25,10 @@ import {
 } from '@visa/nova-icons-react';
 import { Button, Divider, Link, SectionMessage, SectionMessageContent, Tab, Tabs, Typography } from '@visa/nova-react';
 import cn from 'clsx';
-import { FC, useState } from 'react';
-import ReactGA from 'react-ga4';
+import { useState, type FC } from 'react';
 import Code from '../components/code';
 import PackageInstaller from '../components/package-installer';
 import { PageContent, PageHeader } from '../components/page';
-import { GA_TRACKING_ID } from '../constants.ts';
 import { useDocContext } from '../hooks';
 import { defaultPreferencesProp, useTheme } from '../providers';
 import Paths from '../routes/paths.ts';
@@ -39,8 +37,6 @@ import YourComponent from './components/examples/your-component.tsx';
 import YourComponentRawTS from './components/examples/your-component.tsx?raw';
 import HomeHero from './components/hero';
 import Styles from './styles.module.scss';
-
-ReactGA.initialize(GA_TRACKING_ID);
 
 const Index: FC = () => {
   const { preferences } = useTheme();

@@ -2,7 +2,7 @@
   "description": "Styles text in a consistent manner.",
   "displayName": "typography",
   "filePath": "/typography/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/typography/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//typography/index.tsx",
   "props": [
     {
       "description": "Color variant",
@@ -26,6 +26,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/typography See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/base-elements/typography/?code_library=react See Docs}"
 }

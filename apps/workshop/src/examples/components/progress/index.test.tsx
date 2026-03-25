@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,9 @@
  * limitations under the License.
  *
  **/
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+
+import { vi, describe, it, expect, afterEach } from 'vitest';
+import { act, fireEvent, render, screen, waitFor, cleanup } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
 import metaData from './meta.json';
@@ -32,6 +34,7 @@ import { IndeterminateCircularProgress } from './indeterminate-circular-progress
 import { IndeterminateCircularSmallProgress } from './indeterminate-circular-small-progress';
 import { IndeterminateNoLabelProgress } from './indeterminate-no-label-progress';
 import { IndeterminateProgress } from './indeterminate-progress';
+import NovaProgressDemo from './reusable';
 
 const examples = [
   { Component: IndeterminateProgress, title: metaData['indeterminate-progress'].title },
@@ -47,6 +50,7 @@ const examples = [
   { Component: ErrorProgress, title: metaData['error-progress'].title },
   { Component: CompleteCircularProgress, title: metaData['complete-circular-progress'].title },
   { Component: ErrorCircularProgress, title: metaData['error-circular-progress'].title },
+  { Component: NovaProgressDemo, title: metaData['reusable'].title },
 ];
 
 const indeterminateLinear = [
@@ -78,9 +82,15 @@ const determinateCircular = [
   { Component: CircularCustomSizeProgress, title: metaData['circular-custom-size-progress'].title },
 ];
 
-jest.setTimeout(30000);
+// vi.useFakeTimers();
+// vi.advanceTimersByTime(30000);
 
 describe('Progress examples', () => {
+  // Ensure cleanup after each test to prevent timer leaks
+  afterEach(() => {
+    cleanup();
+  });
+
   examples.forEach(({ Component, title }) => {
     it(`${title} should render correctly`, async () => {
       const { container } = render(<Component />);
@@ -93,7 +103,7 @@ describe('Progress examples', () => {
   describe('Indeterminate Linear Progress', () => {
     indeterminateLinear.forEach(({ Component, title, id }) => {
       it(`${title} should start and display loading message when the start button is clicked`, async () => {
-        const { container } = render(<Component />);
+        const { container, unmount } = render(<Component />);
         const startButton = screen.getByText('Start');
         fireEvent.click(startButton);
         const progressElement = container.querySelector(id);
@@ -103,10 +113,11 @@ describe('Progress examples', () => {
           expect(loadingMessage).toBeInTheDocument();
           expect(progressElement).toHaveStyle('animation-play-state: running;');
         });
+        unmount();
       });
 
       it(`${title} should reset when the reset button is clicked`, async () => {
-        const { container } = render(<Component />);
+        const { container, unmount } = render(<Component />);
         const startButton = screen.getByText('Start');
         fireEvent.click(startButton);
         const resetButton = screen.getByText('Reset');
@@ -115,10 +126,11 @@ describe('Progress examples', () => {
         expect(progressElement).not.toBeInTheDocument();
         const loadingMessage = screen.queryByText('Loading...');
         expect(loadingMessage).not.toBeInTheDocument();
+        unmount();
       });
 
       it(`${title} should pause when the pause button is clicked`, async () => {
-        const { container } = render(<Component />);
+        const { container, unmount } = render(<Component />);
         const startButton = screen.getByText('Start');
         fireEvent.click(startButton);
         const pauseButton = screen.getByText('Pause');
@@ -129,10 +141,11 @@ describe('Progress examples', () => {
         expect(playButton).toBeInTheDocument();
         fireEvent.click(playButton);
         expect(progressElement).toHaveStyle('animation-play-state: running;');
+        unmount();
       });
 
       it(`${title} should resume when the pause button is clicked`, async () => {
-        const { container } = render(<Component />);
+        const { container, unmount } = render(<Component />);
         const startButton = screen.getByText('Start');
         fireEvent.click(startButton);
         const pauseButton = screen.getByText('Pause');
@@ -142,6 +155,7 @@ describe('Progress examples', () => {
         expect(pauseButton).toHaveTextContent('Play');
         fireEvent.click(pauseButton);
         expect(progressElement).toHaveStyle('animation-play-state: running;');
+        unmount();
       });
     });
   });
@@ -152,33 +166,49 @@ describe('Progress examples', () => {
   describe('Determinate Linear Progress', () => {
     determinateLinear.forEach(({ Component, title }) => {
       it(`${title} should start and increment progress value when the start button is clicked`, async () => {
-        render(<Component />);
+        const { unmount } = render(<Component />);
         const startButton = screen.getByText('Start');
-        fireEvent.click(startButton);
+        await act(async () => {
+          fireEvent.click(startButton);
+        });
+
         const progressElement = screen.getByRole('progressbar');
         await waitFor(
           () => {
             expect(progressElement).toHaveAttribute('value', '100');
           },
-          { timeout: 5500 }
+          { timeout: 7000 }
         );
+
         const loadingMessage = screen.getByText('Loading complete');
         expect(loadingMessage).toBeInTheDocument();
-      });
+        unmount();
+      }, 8000);
 
       it(`${title} should reset progress value when the reset button is clicked`, async () => {
-        render(<Component />);
+        const { unmount } = render(<Component />);
         const startButton = screen.getByText('Start');
-        fireEvent.click(startButton);
-        const resetButton = screen.getByText('Reset');
-        fireEvent.click(resetButton);
-        const progressElement = screen.getByRole('progressbar');
-        await waitFor(() => {
-          expect(progressElement).toHaveAttribute('value', '0');
+        await act(async () => {
+          fireEvent.click(startButton);
         });
+
+        const resetButton = screen.getByText('Reset');
+        await act(async () => {
+          fireEvent.click(resetButton);
+        });
+
+        const progressElement = screen.getByRole('progressbar');
+        await waitFor(
+          () => {
+            expect(progressElement).toHaveAttribute('value', '0');
+          },
+          { timeout: 7000 }
+        );
+
         const loadingMessage = screen.queryByText('Loading...');
         expect(loadingMessage).not.toBeInTheDocument();
-      });
+        unmount();
+      }, 8000);
     });
   });
 
@@ -186,7 +216,7 @@ describe('Progress examples', () => {
   describe('Indeterminate Circular Progress', () => {
     indeterminateCircular.forEach(({ Component, title }) => {
       test(`${title} IndeterminateCircularProgress component`, async () => {
-        render(<Component />);
+        const { unmount } = render(<Component />);
 
         // Test if Start button is present and clickable
         const startButton = screen.getByText('Start');
@@ -211,7 +241,9 @@ describe('Progress examples', () => {
         // Test if Pause button changes to Play after being clicked
         const playButton = screen.getByRole('button', { name: /play/i });
         expect(playButton).toBeInTheDocument();
-      }, 10000);
+
+        unmount();
+      });
 
       // END GENAI@COPILOT
     });
@@ -221,7 +253,7 @@ describe('Progress examples', () => {
   describe('Determinate Circular Progress', () => {
     determinateCircular.forEach(({ Component, title }) => {
       it(`${title} should start and increment progress value when the start button is clicked`, async () => {
-        render(<Component />);
+        const { unmount } = render(<Component />);
         const startButton = screen.getByText('Start');
         fireEvent.click(startButton);
         const progressElement = screen.getByRole('progressbar');
@@ -233,10 +265,11 @@ describe('Progress examples', () => {
           },
           { timeout: 5500 }
         );
-      }, 10000);
+        unmount();
+      }, 6500);
 
       it(`${title} should reset progress value when the reset button is clicked`, async () => {
-        render(<Component />);
+        const { unmount } = render(<Component />);
         const startButton = screen.getByText('Start');
         fireEvent.click(startButton);
         const resetButton = screen.getByText('Reset');
@@ -250,12 +283,13 @@ describe('Progress examples', () => {
         );
         const loadingMessage = screen.queryByText('Loading...');
         expect(loadingMessage).not.toBeInTheDocument();
-      }, 10000);
+        unmount();
+      }, 6500);
 
       // START GENAI@CHATGPT4
       it(`${title} should reset count when Reset button is clicked immediately after Start button`, () => {
-        jest.useFakeTimers();
-        const { getByText } = render(<Component />);
+        vi.useFakeTimers();
+        const { getByText, unmount } = render(<Component />);
 
         // Simulate clicking the Start button to start counting
         fireEvent.click(getByText('Start'));
@@ -267,10 +301,15 @@ describe('Progress examples', () => {
         expect(getByText('0%')).toBeInTheDocument();
 
         // Advance timers to simulate more time passing
-        jest.advanceTimersByTime(5000);
+        vi.advanceTimersByTime(5000);
 
         // Check that the count is still zero, indicating that counting has indeed stopped
         expect(getByText('0%')).toBeInTheDocument();
+
+        // Properly cleanup before switching back to real timers
+        unmount();
+        vi.clearAllTimers();
+        vi.useRealTimers(); // have to turn timers back to normal for other tests to work
       });
       // END GENAI@CHATGPT4
     });

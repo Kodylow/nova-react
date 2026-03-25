@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,19 +28,6 @@ const HooksTemplate = lazy(() => import('../pages/hooks-template'));
 const ExampleLayout = lazy(() => import('../components/example-layout'));
 const PageNotFound = lazy(() => import('../pages/page-not-found'));
 const Resources = lazy(() => import('../resources'));
-
-interface RouterFutureOptions {
-  v7_relativeSplatPath?: boolean;
-  v7_fetcherPersist?: boolean;
-  v7_normalizeFormMethod?: boolean;
-  v7_partialHydration?: boolean;
-  v7_skipActionErrorRevalidation?: boolean;
-}
-
-interface RouterProviderFutureOptions {
-  v7_relativeSplatPath?: boolean;
-  v7_startTransition?: boolean;
-}
 
 const Routing = () => {
   const router = createBrowserRouter(
@@ -134,12 +121,6 @@ const Routing = () => {
     ),
     {
       basename: Paths.base,
-      future: {
-        v7_fetcherPersist: false,
-        v7_normalizeFormMethod: false,
-        v7_partialHydration: false,
-        v7_skipActionErrorRevalidation: false,
-      } as RouterFutureOptions,
     }
   );
 
@@ -147,12 +128,6 @@ const Routing = () => {
     <RouterProvider
       router={router}
       fallbackElement={<VSuspense />}
-      future={
-        {
-          v7_startTransition: true,
-          v7_relativeSplatPath: true,
-        } as RouterProviderFutureOptions
-      }
     />
   );
 };

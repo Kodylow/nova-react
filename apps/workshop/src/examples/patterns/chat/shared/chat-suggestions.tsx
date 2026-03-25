@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,20 @@
  * limitations under the License.
  *
  **/
+
 import { Checkbox, Chip, Typography, Utility } from '@visa/nova-react';
 import { useContext } from 'react';
 import ChatContext from './chat-context';
+
 const id = 'chat-suggestion';
 
-//Customize this with your own chat suggestions
+// Replace with prompts relevant to your use case
 const chips = ['How do I reset my password?', 'Summarize a document', 'Find a report'];
 
+/**
+ * Prompt suggestion chips displayed when conversation is empty that users can click to auto-populate input.
+ * Clicking a chip adds it as a user message to ChatContext and starts the conversation.
+ */
 const ChatSuggestions = () => {
   const { setResponses } = useContext(ChatContext);
 
@@ -46,7 +52,7 @@ const ChatSuggestions = () => {
                   {
                     timeStamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
                     message: chip,
-                    role: "User 1",
+                    role: 'User 1',
                   },
                 ]);
               }}

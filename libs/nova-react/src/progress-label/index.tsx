@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,30 +15,27 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ElementType } from 'react';
+import Typography, { type TypographyProperties } from '../typography';
 
 const CSS_PREFIX = 'v-progress-label';
 
-export type ProgressLabelProperties<ET extends ElementType = 'label',> = {
-
-  /** Tag of Component */
-  tag?: ElementType;
-} & ComponentPropsWithRef<ET>;
+export type ProgressLabelProperties<ET extends ElementType = 'label'> = TypographyProperties<ET>;
 
 /**
  * Label used with a progress component for textual representation of status.
- * @docs {@link https://design.visa.com/react/components/progress | See Docs}
+ * @docs {@link https://design.visa.com/components/progress/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const ProgressLabel = <ET extends ElementType = 'label',>(
-  { className, tag: Tag = 'label', ...remainingProps }: ProgressLabelProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const ProgressLabel = <ET extends ElementType = 'label'>({
+  className,
+  tag = 'label',
+  ...remainingProps
+}: ProgressLabelProperties<ET>) => (
+  <Typography className={cn(CSS_PREFIX, className)} tag={tag} {...(remainingProps as ProgressLabelProperties<ET>)} />
+);
 
 export default ProgressLabel;
 
 ProgressLabel.displayName = 'ProgressLabel';
-
-ProgressLabel.defaultProps = {
-  tag: 'label',
-};

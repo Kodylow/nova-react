@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import { VisaChevronDownTiny, VisaErrorTiny } from '@visa/nova-icons-react';
-import { ChangeEvent, FormEvent, useRef, useState } from 'react';
+import { useRef, useState, type ChangeEvent, type FormEvent } from 'react';
 import { Button, InputContainer, InputControl, InputMessage, Label, Select, Utility } from '@visa/nova-react';
 
 // TIP: Customize this ID, pass it as a prop, or auto-generate it with useId() from @react

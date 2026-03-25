@@ -2,13 +2,13 @@
   "description": "Container for message elements. This is the base element for banner, flag, and section message.",
   "displayName": "message",
   "filePath": "/message/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/message/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//message/index.tsx",
   "props": [
     {
       "description": "Message Type",
       "name": "messageType",
       "required": false,
-      "type": "\"subtle\" | \"warning\" | \"error\" | \"success\""
+      "type": "\"subtle\" | \"warning\" | \"error\" | \"information\" | \"success\""
     },
     {
       "defaultValue": "div",
@@ -20,8 +20,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components See Docs}",
   "related": [
     "banner",
     "flag",

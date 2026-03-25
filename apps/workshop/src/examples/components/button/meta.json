@@ -2,265 +2,221 @@
   "alternate-button": {
     "file": "alternate-button.tsx",
     "id": "alternate-button",
-    "title": "Alternate primary text button",
-    "testAvg": 100
+    "title": "Alternate primary text button"
   },
   "alternate-secondary-button": {
     "file": "alternate-secondary-button.tsx",
     "id": "alternate-secondary-button",
-    "title": "Alternate secondary text button",
-    "testAvg": 100
+    "title": "Alternate secondary text button"
   },
   "alternate-stacked-icon-button": {
     "file": "alternate-stacked-icon-button.tsx",
     "id": "alternate-stacked-icon-button",
-    "title": "Alternate stacked icon button",
-    "testAvg": 100
+    "title": "Alternate stacked icon button"
   },
   "alternate-tertiary-button": {
     "file": "alternate-tertiary-button.tsx",
     "title": "Alternate tertiary text button",
-    "id": "alternate-tertiary-button",
-    "testAvg": 100
+    "id": "alternate-tertiary-button"
   },
   "alternate-ui-icon-button": {
     "file": "alternate-ui-icon-button.tsx",
     "id": "alternate-ui-icon-button",
-    "title": "Alternate UI icon button",
-    "testAvg": 100
+    "title": "Alternate UI icon button"
   },
   "coded-as-link-button": {
     "file": "coded-as-link-button.tsx",
     "id": "coded-as-link-button",
-    "title": "Button coded as a link",
-    "testAvg": 100
+    "title": "Button coded as a link"
   },
   "default-button": {
     "file": "default-button.tsx",
     "id": "default-button",
-    "title": "Default primary text button",
-    "testAvg": 100
+    "title": "Default primary text button"
   },
   "destructive-button": {
     "file": "destructive-button.tsx",
     "id": "destructive-button",
-    "title": "Primary destructive text button",
-    "testAvg": 100
+    "title": "Primary destructive text button"
   },
   "destructive-secondary-button": {
     "file": "destructive-secondary-button.tsx",
     "id": "destructive-secondary-button",
-    "title": "Secondary destructive text button",
-    "testAvg": 100
+    "title": "Secondary destructive text button"
   },
   "destructive-tertiary-button": {
     "file": "destructive-tertiary-button.tsx",
     "id": "destructive-tertiary-button",
-    "title": "Tertiary destructive text button",
-    "testAvg": 100
+    "title": "Tertiary destructive text button"
   },
   "disabled-button": {
     "file": "disabled-button.tsx",
     "title": "Disabled primary text button",
-    "id": "disabled-button",
-    "testAvg": 100
+    "id": "disabled-button"
   },
   "disabled-icon-button": {
     "file": "disabled-icon-button.tsx",
     "id": "disabled-icon-button",
-    "title": "Disabled primary icon button",
-    "testAvg": 100
+    "title": "Disabled primary icon button"
   },
   "disabled-secondary-button": {
     "file": "disabled-secondary-button.tsx",
     "id": "disabled-secondary-button",
-    "title": "Disabled secondary text button",
-    "testAvg": 100
+    "title": "Disabled secondary text button"
   },
   "disabled-secondary-icon-button": {
     "file": "disabled-secondary-icon-button.tsx",
     "id": "disabled-secondary-icon-button",
-    "title": "Disabled secondary icon button",
-    "testAvg": 100
+    "title": "Disabled secondary icon button"
   },
   "disabled-tertiary-button": {
     "file": "disabled-tertiary-button.tsx",
     "id": "disabled-tertiary-button",
-    "title": "Disabled tertiary text button",
-    "testAvg": 100
+    "title": "Disabled tertiary text button"
   },
   "icon-alternate-button": {
     "file": "icon-alternate-button.tsx",
     "id": "icon-alternate-button",
-    "title": "Alternate primary icon button",
-    "testAvg": 100
+    "title": "Alternate primary icon button"
   },
   "icon-button": {
     "file": "icon-button.tsx",
     "id": "icon-button",
-    "title": "Default primary icon button",
-    "testAvg": 100
+    "title": "Default primary icon button"
   },
   "large-button": {
     "file": "large-button.tsx",
     "id": "large-button",
-    "title": "Large primary text button",
-    "testAvg": 100
+    "title": "Large primary text button"
   },
   "large-icon-button": {
     "file": "large-icon-button.tsx",
     "id": "large-icon-button",
-    "title": "Large primary icon button",
-    "testAvg": 100
+    "title": "Large primary icon button"
   },
   "large-secondary-button": {
     "file": "large-secondary-button.tsx",
     "title": "Large secondary text button",
-    "id": "large-secondary-button",
-    "testAvg": 100
+    "id": "large-secondary-button"
   },
   "large-secondary-icon-button": {
     "file": "large-secondary-icon-button.tsx",
     "id": "large-secondary-icon-button",
-    "title": "Large secondary icon button",
-    "testAvg": 100
+    "title": "Large secondary icon button"
   },
   "large-tertiary-button": {
     "file": "large-tertiary-button.tsx",
     "id": "large-tertiary-button",
-    "title": "Large tertiary text button",
-    "testAvg": 100
+    "title": "Large tertiary text button"
   },
   "large-ui-icon-button": {
     "file": "large-ui-icon-button.tsx",
     "id": "large-ui-icon-button",
-    "title": "Large UI icon button",
-    "testAvg": 100
+    "title": "Large UI icon button"
   },
   "secondary-alternate-icon-button": {
     "file": "secondary-alternate-icon-button.tsx",
     "title": "Alternate secondary icon button",
-    "id": "secondary-alternate-icon-button",
-    "testAvg": 100
+    "id": "secondary-alternate-icon-button"
   },
   "secondary-button": {
     "file": "secondary-button.tsx",
     "id": "secondary-button",
-    "title": "Default secondary text button",
-    "testAvg": 100
+    "title": "Default secondary text button"
   },
   "secondary-icon-button": {
     "file": "secondary-icon-button.tsx",
     "id": "secondary-icon-button",
-    "title": "Default secondary icon button",
-    "testAvg": 100
+    "title": "Default secondary icon button"
   },
   "small-button": {
     "file": "small-button.tsx",
     "id": "small-button",
-    "title": "Small primary text button",
-    "testAvg": 100
+    "title": "Small primary text button"
   },
   "small-icon-button": {
     "file": "small-icon-button.tsx",
     "id": "small-icon-button",
-    "title": "Small primary icon button",
-    "testAvg": 100
+    "title": "Small primary icon button"
   },
   "small-secondary-button": {
     "file": "small-secondary-button.tsx",
     "id": "small-secondary-button",
-    "title": "Small secondary text button",
-    "testAvg": 100
+    "title": "Small secondary text button"
   },
   "small-tertiary-button": {
     "file": "small-tertiary-button.tsx",
     "id": "small-tertiary-button",
-    "title": "Small tertiary text button",
-    "testAvg": 100
+    "title": "Small tertiary text button"
   },
   "small-ui-icon-button": {
     "file": "small-ui-icon-button.tsx",
     "id": "small-ui-icon-button",
-    "title": "Small UI icon button",
-    "testAvg": 100
+    "title": "Small UI icon button"
   },
   "stacked-icon-button": {
     "file": "stacked-icon-button.tsx",
     "id": "stacked-icon-button",
-    "title": "Default stacked icon button",
-    "testAvg": 100
+    "title": "Default stacked icon button"
   },
   "subtle-ui-icon-button": {
     "file": "subtle-ui-icon-button.tsx",
     "id": "subtle-ui-icon-button",
-    "title": "Subtle UI icon button",
-    "testAvg": 100
+    "title": "Subtle UI icon button"
   },
   "tertiary-button": {
     "file": "tertiary-button.tsx",
     "id": "tertiary-button",
-    "title": "Default tertiary text button",
-    "testAvg": 100
+    "title": "Default tertiary text button"
   },
   "ui-icon-button": {
     "file": "ui-icon-button.tsx",
     "id": "ui-icon-button",
-    "title": "Medium UI icon button",
-    "testAvg": 100
+    "title": "Medium UI icon button"
   },
   "with-badge-number-ui-icon-button": {
     "file": "with-badge-number-ui-icon-button.tsx",
     "id": "with-badge-number-ui-icon-button",
-    "title": "UI icon button with badge",
-    "testAvg": 100
+    "title": "UI icon button with badge"
   },
   "with-label-icon-button": {
     "file": "with-label-icon-button.tsx",
     "id": "with-label-icon-button",
-    "title": "Primary icon button with label",
-    "testAvg": 100
+    "title": "Primary icon button with label"
   },
   "with-label-secondary-icon-button": {
     "file": "with-label-secondary-icon-button.tsx",
     "id": "with-label-secondary-icon-button",
-    "title": "Secondary icon button with label",
-    "testAvg": 100
+    "title": "Secondary icon button with label"
   },
   "with-leading-icon-button": {
     "file": "with-leading-icon-button.tsx",
     "title": "Primary text button with leading icon",
-    "id": "with-leading-icon-button",
-    "testAvg": 100
+    "id": "with-leading-icon-button"
   },
   "with-leading-icon-secondary-button": {
     "file": "with-leading-icon-secondary-button.tsx",
     "id": "with-leading-icon-secondary-button",
-    "title": "Secondary text button with leading icon",
-    "testAvg": 100
+    "title": "Secondary text button with leading icon"
   },
   "with-leading-icon-tertiary-button": {
     "file": "with-leading-icon-tertiary-button.tsx",
     "id": "with-leading-icon-tertiary-button",
-    "title": "Tertiary text button with leading icon",
-    "testAvg": 100
+    "title": "Tertiary text button with leading icon"
   },
   "with-trailing-icon-button": {
     "file": "with-trailing-icon-button.tsx",
     "id": "with-trailing-icon-button",
-    "title": "Primary text button with trailing icon",
-    "testAvg": 100
+    "title": "Primary text button with trailing icon"
   },
   "with-trailing-icon-secondary-button": {
     "file": "with-trailing-icon-secondary-button.tsx",
     "id": "with-trailing-icon-secondary-button",
-    "title": "Secondary text button with trailing icon",
-    "testAvg": 100
+    "title": "Secondary text button with trailing icon"
   },
   "with-trailing-icon-tertiary-button": {
     "file": "with-trailing-icon-tertiary-button.tsx",
     "id": "with-trailing-icon-tertiary-button",
-    "title": "Tertiary text button with trailing icon",
-    "testAvg": 100
+    "title": "Tertiary text button with trailing icon"
   }
 }

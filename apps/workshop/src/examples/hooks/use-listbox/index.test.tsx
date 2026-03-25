@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+import { describe, it, expect } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { axe } from 'jest-axe';
@@ -44,7 +45,7 @@ describe('useListbox example', () => {
     it('should focus correctly on keyboard navigation', async () => {
       render(<UseListboxExample />);
       const user = userEvent.setup();
-      const itemOption = screen.getByText('Item C');
+      const itemOption = screen.getByText('Item D');
       await user.tab();
       await user.keyboard('{ArrowDown}');
       await user.keyboard('{ArrowDown}');

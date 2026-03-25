@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Surface examples Alternate should render correctly 1`] = `
+exports[`Surface examples > Alternate should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-alternate"
@@ -10,7 +10,7 @@ exports[`Surface examples Alternate should render correctly 1`] = `
 </div>
 `;
 
-exports[`Surface examples Default should render correctly 1`] = `
+exports[`Surface examples > Default should render correctly 1`] = `
 <div>
   <div
     class="v-surface"

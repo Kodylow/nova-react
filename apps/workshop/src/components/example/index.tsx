@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,22 +26,32 @@ import {
   ProgressLinear,
   Typography,
   Utility,
-  UtilityFragment,
   UseAccordion as useAccordion,
 } from '@visa/nova-react';
 import { noCase } from 'change-case';
 import cn from 'clsx';
-import { ElementType, FC, MutableRefObject, Suspense, lazy } from 'react';
+import { Suspense, lazy, type ElementType, type FC, type RefObject } from 'react';
 import { Link } from 'react-router-dom';
 import { Paths } from '../../routes/paths';
-import { DocType, ExampleMetaData } from '../../types';
+import type { DocType, ExampleMetaData } from '../../types';
 import Styles from './styles.module.scss';
 
 const LazyCode = lazy(() => import('../code'));
 
+function removeLicenseHeader(snippet: string): string {
+  if (!snippet) return snippet;
+  // Remove TS license comment block
+  snippet = snippet.replace(
+    /\/\*\*[\s\S]*?© 2025 Visa[\s\S]*?Licensed under the Apache License[\s\S]*?limitations under the License.[\s\S]*?\*\/\s*/m,
+    ''
+  );
+  return snippet;
+}
+
 const fetchExampleCode = async (docType: string, docName: string, fileName: string) => {
   const importResult = await import(`../../examples/${docType}/${docName}/${fileName}.tsx?raw`);
-  return importResult.default.toString();
+  const rawCode = importResult.default.toString();
+  return removeLicenseHeader(rawCode);
 };
 
 const fetchExample = async (docType: string, docName: string, exampleName: string): Promise<FC> => {
@@ -62,7 +72,7 @@ type ExampleProps = {
   headerTag?: string;
   metaData: ExampleMetaData;
   showTitleAsLink?: boolean;
-  ref?: MutableRefObject<HTMLButtonElement | null> | undefined;
+  ref?: RefObject<HTMLButtonElement | null> | undefined;
 };
 
 const Example = ({
@@ -98,150 +108,150 @@ const Example = ({
     (codeResults.isError && 'Error loading code') || (codeResults.isPending && 'Loading code') || codeResults.data;
   const exampleContent = (exampleResults.isError && "Error loading example :'(") || <ExampleComponent />;
   const linkId = `v-example-${docType}-${docName}-${metaData.id}`;
-  const modificationDateFormatted = new Date(metaData.dateModified || '').toLocaleDateString();
   const rawExamplePath = Paths.rawExample(docType, docName, metaData.id);
-  const { alternate = false, custom = false, docs = false, isShared, isSubComponent, ...remainingTags } = metaData.tags || {};
+  const {
+    alternate = false,
+    custom = false,
+    docs = false,
+    isShared,
+    isSubComponent,
+    ...remainingTags
+  } = metaData.tags || {};
   const iframed = metaData.iframe;
 
-  return (<>
-    {!isShared && !isSubComponent && (<div className={Styles.example}>
-      <Utility vFlex vFlexRow vFlexWrap vJustifyContent="between" vGap={4} vAlignItems="center">
-        <Typography className="v-p-4" id={linkId} tag={headerTag as ElementType} variant="headline-3">
-          {metaData.title === "Default full page chat" ? "Default full-page chat" : metaData.title}
-        </Typography>
-        {showTitleAsLink && (
-          <Button
-            aria-label={`scroll to ${metaData.title}`}
-            buttonSize="small"
-            className={cn(Styles.hashLink, 'v-p-4')}
-            colorScheme="tertiary"
-            element={<Link to={Paths.documentationExample(docType, docName, metaData.id)} />}
-            ref={ref}
-            subtle
-          >
-            <Typography tag="span" variant="headline-3">
-              #
+  return (
+    <>
+      {!isShared && !isSubComponent && (
+        <div className={Styles.example}>
+          <Utility vFlex vFlexRow vFlexWrap vJustifyContent="between" vGap={4} vAlignItems="center">
+            <Typography className="v-p-4" id={linkId} tag={headerTag as ElementType} variant="headline-3">
+              {metaData.title === 'Default full page chat' ? 'Default full-page chat' : metaData.title}
             </Typography>
-          </Button>
-        )}
-        <Utility vFlex vFlexGrow vGap={8} vJustifyContent="end">
-          {docs && <Badge badgeType="neutral">#docs</Badge>}
-          {alternate && <Badge badgeType="warning">#alternate</Badge>}
-          {custom && <Badge badgeType="stable">#custom</Badge>}
-          {Object.keys(remainingTags).length > 0 && (
-            <Badge badgeType="subtle">
-              {Object.entries(remainingTags).map(([key, value]) => (value === true ? key : `${key}: ${value}`))}
-            </Badge>
-          )}
-        </Utility>
-        <Button
-          buttonSize="small"
-          colorScheme="tertiary"
-          element={
-            <Link
-              aria-label={`Report feedback example (internal only, opens in a new tab)`}
-              to={Paths.ticketLink}
-              rel="noopener noreferrer"
-              target="_blank"
-            />
-          }
-        >
-          Report feedback (internal only)
-          <VisaMaximizeTiny rtl />
-        </Button>
-        <Button
-          colorScheme="tertiary"
-          buttonSize="small"
-          element={
-            <Link
-              aria-label={`View example of ${noCase(metaData.title || '')} (Opens in a new tab)`}
-              rel="noopener noreferrer"
-              target="_blank"
-              to={rawExamplePath}
+            {showTitleAsLink && (
+              <Button
+                aria-label={`scroll to ${metaData.title}`}
+                buttonSize="small"
+                className={cn(Styles.hashLink, 'v-p-4')}
+                colorScheme="tertiary"
+                element={<Link to={Paths.documentationExample(docType, docName, metaData.id)} />}
+                ref={ref}
+                subtle
+              >
+                <Typography tag="span" variant="headline-3">
+                  #
+                </Typography>
+              </Button>
+            )}
+            <Utility vFlex vFlexGrow vGap={8} vJustifyContent="end">
+              {docs && <Badge badgeType="neutral">#docs</Badge>}
+              {alternate && <Badge badgeType="warning">#alternate</Badge>}
+              {custom && <Badge badgeType="stable">#custom</Badge>}
+              {Object.keys(remainingTags).length > 0 && (
+                <Badge badgeType="subtle">
+                  {Object.entries(remainingTags).map(([key, value]) => (value === true ? key : `${key}: ${value}`))}
+                </Badge>
+              )}
+            </Utility>
+            <Button
+              buttonSize="small"
+              colorScheme="tertiary"
+              element={
+                <Link
+                  aria-label={`Report feedback example (internal only, opens in a new tab)`}
+                  to={Paths.ticketLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                />
+              }
             >
-              View example
+              Report feedback (internal only)
               <VisaMaximizeTiny rtl />
-            </Link>
-          }
-        />
-      </Utility>
-      {metaData.description && (
-        <Utility vFlex vPaddingVertical={12}>
-          {metaData.description}
-        </Utility>
-      )}
-      {metaData.devNote && (
-        <Utility vFlex vPaddingVertical={12}>
-          {metaData.devNote}
-        </Utility>
-      )}
-
-      <div
-        className={cn(
-          Styles.exampleContent,
-          !iframed && Styles.exampleContentUnframed,
-          !iframed && 'checkered-background'
-        )}
-      >
-        {iframed ? (
-          <iframe
-            className={Styles.exampleContentFramed}
-            src={Paths.base + rawExamplePath}
-            title={`Interaction example for ${docType} example "${metaData.title}"`}
-          />
-        ) : (
-          exampleContent
-        )}
-      </div>
-
-      <Accordion className={Styles.exampleCode} id={`${metaData.id}-example-code-accordion`} tag="div">
-        <AccordionHeading
-          aria-controls={`${metaData.id}-example-code-accordion-panel`}
-          aria-expanded={codeExpanded}
-          aria-label={`Typescript of ${metaData.title}`}
-          className="v-flex-wrap"
-          buttonSize="large"
-          colorScheme="secondary"
-          id={`${metaData.id}-example-code-accordion-header`}
-          onClick={() => toggleIndexExpanded(0)}
-          tag="button"
-        >
-          <AccordionToggleIcon
-            accordionOpen={codeExpanded}
-            elementClosed={<VisaChevronRightTiny rtl />}
-            elementOpen={<VisaChevronDownTiny />}
-          />
-          TypeScript
-          <UtilityFragment vFlex vMarginLeft="auto">
-            <Badge badgeType={metaData.testAvg === 100 ? 'stable' : 'neutral'} tag="span">
-              {metaData.testAvg}% test coverage
-            </Badge>
-          </UtilityFragment>
-        </AccordionHeading>
-
-        <AccordionPanel
-          aria-hidden={!codeExpanded}
-          className="v-px-0 v-py-0"
-          id={`${metaData.id}-example-code-accordion-panel`}
-        >
-          <Suspense fallback={<></>}>
-            <LazyCode
-              className={Styles.codePanelSnippet}
-              code={code}
-              docName={docName}
-              exampleName={metaData.title}
-              inPanel
+            </Button>
+            <Button
+              colorScheme="tertiary"
+              buttonSize="small"
+              element={
+                <Link
+                  aria-label={`View example of ${noCase(metaData.title || '')} (Opens in a new tab)`}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  to={rawExamplePath}
+                >
+                  View example
+                  <VisaMaximizeTiny rtl />
+                </Link>
+              }
             />
-          </Suspense>
-        </AccordionPanel>
-      </Accordion>
-      <Utility vMarginTop={10} vPaddingLeft={2}>
-        <Typography colorScheme="subtle" tag="span" variant="label">
-          Last modified: {modificationDateFormatted}
-        </Typography>
-      </Utility>
-    </div>)}
-  </>);
+          </Utility>
+          {metaData.description && (
+            <Utility vFlex vPaddingVertical={12}>
+              {metaData.description}
+            </Utility>
+          )}
+          {metaData.devNote && (
+            <Utility vFlex vPaddingVertical={12}>
+              {metaData.devNote}
+            </Utility>
+          )}
+
+          <div
+            className={cn(
+              Styles.exampleContent,
+              !iframed && Styles.exampleContentUnframed,
+              !iframed && 'checkered-background'
+            )}
+          >
+            {iframed ? (
+              <iframe
+                className={Styles.exampleContentFramed}
+                src={Paths.base + rawExamplePath}
+                title={`Interaction example for ${docType} example "${metaData.title}"`}
+              />
+            ) : (
+              exampleContent
+            )}
+          </div>
+
+          <Accordion className={Styles.exampleCode} id={`${metaData.id}-example-code-accordion`} tag="div">
+            <AccordionHeading
+              aria-controls={`${metaData.id}-example-code-accordion-panel`}
+              aria-expanded={codeExpanded}
+              aria-label={`Typescript of ${metaData.title}`}
+              className="v-flex-wrap"
+              buttonSize="large"
+              colorScheme="secondary"
+              id={`${metaData.id}-example-code-accordion-header`}
+              onClick={() => toggleIndexExpanded(0)}
+              tag="button"
+            >
+              <AccordionToggleIcon
+                accordionOpen={codeExpanded}
+                elementClosed={<VisaChevronRightTiny rtl />}
+                elementOpen={<VisaChevronDownTiny />}
+              />
+              TypeScript
+            </AccordionHeading>
+
+            <AccordionPanel
+              aria-hidden={!codeExpanded}
+              className="v-px-0 v-py-0"
+              id={`${metaData.id}-example-code-accordion-panel`}
+            >
+              <Suspense fallback={<></>}>
+                <LazyCode
+                  className={Styles.codePanelSnippet}
+                  code={code}
+                  docName={docName}
+                  exampleName={metaData.title}
+                  inPanel
+                />
+              </Suspense>
+            </AccordionPanel>
+          </Accordion>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default Example;

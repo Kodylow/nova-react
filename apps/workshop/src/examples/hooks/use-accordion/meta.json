@@ -2,7 +2,6 @@
   "use-accordion-example": {
     "file": "use-accordion-example.tsx",
     "id": "use-accordion-example",
-    "testAvg": 100,
     "title": "Behavior and usage"
   }
 }

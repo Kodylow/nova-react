@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
-import { KeyboardEvent, MutableRefObject, useRef } from 'react';
+import { type KeyboardEvent, type RefObject, useRef } from 'react';
 
 export type UseFocusTrapOptions<HTMLElementType extends HTMLElement = HTMLDialogElement> = {
   /** Document object */
@@ -22,7 +22,7 @@ export type UseFocusTrapOptions<HTMLElementType extends HTMLElement = HTMLDialog
   /** DOM elements selector */
   querySelector?: string;
   /** Ref object to use if ref isn't supplied in properties. */
-  ref?: MutableRefObject<HTMLElementType | null>;
+  ref?: RefObject<HTMLElementType | null>;
 };
 
 const defaultOptions = {
@@ -31,12 +31,12 @@ const defaultOptions = {
 } satisfies Partial<UseFocusTrapOptions>;
 
 /**
- * @docs {@link https://design.visa.com/react/hooks/use-focus-trap | See Docs}
+ * @docs {@link https://design.visa.com/developing/react/hooks/usefocustrap/?code_library=react | See Docs}
  * @description This hook is used to trap focus inside a container.
  * @related dialog, panel
  */
 export const useFocusTrap = <HTMLElementType extends HTMLElement = HTMLDialogElement>(
-  useFocusTrapOptions?: UseFocusTrapOptions<HTMLElementType>
+  useFocusTrapOptions: UseFocusTrapOptions<HTMLElementType> = defaultOptions
 ) => {
   const customRef = useRef<HTMLElementType | null>(null);
 
@@ -80,7 +80,3 @@ export const useFocusTrap = <HTMLElementType extends HTMLElement = HTMLDialogEle
 export default useFocusTrap;
 
 useFocusTrap.displayName = 'useFocusTrap';
-
-useFocusTrap.defaultProps = {
-  querySelector: 'a[href], button:not(disabled), textarea:not(disabled), input:not(disabled), select:not(disabled)',
-};

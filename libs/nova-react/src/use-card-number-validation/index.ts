@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
  **/
 import { useState } from 'react';
 import {
-  CardBrand,
+  type CardBrand,
   cardNumberLengthCheck,
-  CardValidator,
+  type CardValidator,
   cardValidators,
   findCardValidatorFromBinRegex,
   formatCardNumberFromValidator,
@@ -40,14 +40,22 @@ export type UseCardNumberValidationProps<Brand extends string = CardBrand> = {
   validators?: Record<Brand, CardValidator<Brand>>;
 };
 
+const defaultOptions = {
+  allowedBrands: undefined,
+  defaultCardNumber: '',
+  filteredForBrands: undefined,
+  trimToMaxLength: true,
+  validators: cardValidators,
+};
+
 /**
- * @docs {@link https://design.visa.com/react/hooks/use-card-number-validation | See Docs}
+ * @docs {@link https://design.visa.com/developing/react/hooks/usecardnumbervalidation/?code_library=react | See Docs}
  * @description This hook is used to to validate card numbers. This hook uses BIN regex's, length, Luhn checksum algorithm (modulo 10 check), and brands to check card number validity. This hook is designed to be flexible and allow for custom validators.
  * @devNote This hook's validation is not comprehensive and is subject to change. VPDS does not maintain acceptance marks for all brands for legal reasons. This hook is designed to let you bring your own validators, if custom validators are required for your use case.
  * @related input, select
  */
 export const useCardNumberValidation = <Brand extends string = CardBrand>(
-  useCardNumberValidationOptions?: UseCardNumberValidationProps<Brand>
+  useCardNumberValidationOptions: UseCardNumberValidationProps<Brand> = defaultOptions as UseCardNumberValidationProps<Brand>
 ) => {
   /// Options
   const { allowedBrands, defaultCardNumberInputValue, filteredForBrands, trimToMaxLength, validators } = {
@@ -116,11 +124,3 @@ export default useCardNumberValidation;
 export * from './utils';
 
 useCardNumberValidation.displayName = 'useCardNumberValidation';
-
-useCardNumberValidation.defaultProps = {
-  allowedBrands: undefined,
-  defaultCardNumber: '',
-  filteredForBrands: undefined,
-  trimToMaxLength: true,
-  validators: { ...cardValidators },
-};

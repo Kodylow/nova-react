@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ import {
   UtilityFragment,
 } from '@visa/nova-react';
 import Code from '../../../components/code';
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 const OnKeyNavigationTable = () => (
   <Utility vPaddingVertical={12}>
@@ -43,51 +43,51 @@ const OnKeyNavigationTable = () => (
         </Thead>
         <Tbody>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>Arrow Down/Arrow Right</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Focus the next tab, looping to the top of the list</Td>
           </Tr>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>Arrow Up/Arrow Left</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Focus the previous tab, looping to the bottom of the list</Td>
           </Tr>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>End</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Focus the last tab</Td>
           </Tr>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>Home</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Focus the first tab</Td>
           </Tr>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>Shift + Tab</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Jumps out of the tabs, focus the previous focusable element</Td>
           </Tr>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>Tab</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Jumps out of the tabs, focus the next focusable element</Td>
           </Tr>
         </Tbody>

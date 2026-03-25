@@ -2,7 +2,7 @@
   "description": "Selection element that allows users to switch between states or views.",
   "displayName": "toggle",
   "filePath": "/toggle/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/toggle/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//toggle/index.tsx",
   "props": [
     {
       "description": "Icons only toggle button",
@@ -20,8 +20,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/toggle-button See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/toggle-button/?code_library=react See Docs}",
   "related": [
     "toggle-container"
   ]

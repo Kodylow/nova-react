@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,17 +14,15 @@
  * limitations under the License.
  *
  **/
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
-export type TheadProperties<ET extends ElementType = 'thead',> = Record<string, unknown> & ComponentPropsWithRef<ET>;
+export type TheadProperties<ET extends ElementType = 'thead'> = Record<string, unknown> & ComponentPropsWithRef<ET>;
 
 /**
  * Table head component that contains all the th cells.
- * @docs {@link https://design.visa.com/react/components/table | See Docs}
+ * @docs {@link https://design.visa.com/components/table/?code_library=react | See Docs}
  */
-const Thead = <ET extends ElementType = 'thead',>(props: TheadProperties<ET>) => (
-  <thead {...props} />
-);
+const Thead = <ET extends ElementType = 'thead'>(props: TheadProperties<ET>) => <thead {...props} />;
 
 export default Thead;
 

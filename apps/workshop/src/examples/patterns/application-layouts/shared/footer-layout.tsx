@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +14,23 @@
  * limitations under the License.
  *
  **/
+
 import { Footer, Link, Utility, VisaLogo } from '@visa/nova-react';
 
+/**
+ * Shared footer component used by all application layouts.
+ */
 export const FooterLayout = () => {
   return (
     <Footer className="v-gap-15">
+      {/* Visa logo */}
       <Utility vFlex vMarginRight={1}>
         <VisaLogo aria-label="Visa" />
       </Utility>
+      {/* Copyright text and footer links */}
       <Utility vFlex vFlexWrap vFlexGrow vJustifyContent="between" vGap={42}>
         {`Copyright © ${new Date().getFullYear()} Visa Inc. All Rights Reserved`}
+        {/* Footer navigation links - customize as needed */}
         <Utility tag="ul" vFlex vFlexWrap vGap={16}>
           <li>
             <Link href="./application-layouts">Contact us</Link>

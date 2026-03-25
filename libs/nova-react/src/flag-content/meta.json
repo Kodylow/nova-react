@@ -2,7 +2,7 @@
   "description": "Container for flag content.",
   "displayName": "FlagContent",
   "filePath": "/flag-content/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/flag-content/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//flag-content/index.tsx",
   "props": [
     {
       "description": "Tag of Component",
@@ -11,6 +11,5 @@
       "type": "ElementType"
     }
   ],
-  "testAvg": 100,
-  "docs": "{@link https://design.visa.com/react/components/flag See Docs}"
+  "docs": "{@link https://design.visa.com/components/flag/?code_library=react See Docs}"
 }

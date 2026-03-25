@@ -1,9 +1,9 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Pagination should render defaults correctly 1`] = `
+exports[`Pagination > should render defaults correctly 1`] = `
 <div>
   <ul
-    class="v-pagination"
+    class="v-pagination v-flex v-flex-row"
   />
 </div>
 `;

@@ -2,7 +2,7 @@
   "description": "Circular indicator used to show the progress of a task or process.",
   "displayName": "progresscircular",
   "filePath": "/progress-circular/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/progress-circular/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//progress-circular/index.tsx",
   "props": [
     {
       "defaultValue": false,
@@ -34,8 +34,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "testAvg": 100,
-  "docs": "{@link https://design.visa.com/react/components/progress See Docs}",
+  "docs": "{@link https://design.visa.com/components/progress/?code_library=react See Docs}",
   "related": [
     "progress-label"
   ]

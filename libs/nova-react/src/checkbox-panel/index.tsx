@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,23 +15,18 @@
  *
  **/
 import cn from 'clsx';
-import { ReactElement } from 'react';
-import Label, { LabelProperties } from '../label';
+import { type ReactElement } from 'react';
+import Label, { type LabelProperties } from '../label';
 
 const CSS_PREFIX = 'v-checkbox-panel v-action v-action-secondary';
 export type CheckboxPanelProperties = LabelProperties;
 
 /**
  * Container to be used with checkbox component to add border and background color.
- * @docs {@link https://design.visa.com/react/components/Checkbox | See Docs}
+ * @docs {@link https://design.visa.com/components/checkbox/?code_library=react | See Docs}
  */
-const CheckboxPanel = (
-  { className, ...remainingProps }: CheckboxPanelProperties,
-): ReactElement => (
-  <Label
-    className={cn(CSS_PREFIX, className)}
-    {...remainingProps}
-  />
+const CheckboxPanel = ({ className, ...remainingProps }: CheckboxPanelProperties): ReactElement => (
+  <Label className={cn(CSS_PREFIX, className)} {...remainingProps} />
 );
 
 export default CheckboxPanel;

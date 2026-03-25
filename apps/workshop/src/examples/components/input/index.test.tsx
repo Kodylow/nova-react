@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+import { vi } from 'vitest';
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
@@ -42,6 +43,7 @@ import { FixedHeightTextarea } from './fixed-height-textarea';
 import { ResizeTextarea } from './resize-textarea';
 import { NativeRowTextarea } from './native-row-textarea';
 import { CustomInlineLabelInput } from './custom-inline-label-input';
+import NovaInputDemo from './reusable';
 
 const examples = [
   { Component: InitialValueInput, title: metaData['initial-value-input'].title },
@@ -56,6 +58,7 @@ const examples = [
   { Component: ResizeTextarea, title: metaData['resize-textarea'].title },
   { Component: NativeRowTextarea, title: metaData['native-row-textarea'].title },
   { Component: CustomInlineLabelInput, title: metaData['custom-inline-label-input'].title },
+  { Component: NovaInputDemo, title: metaData['reusable'].title },
   {
     Component: DefaultInput,
     title: metaData['default-input'].title,
@@ -175,7 +178,7 @@ describe('Input examples', () => {
     it('should submit and alert', () => {
       const { container } = render(<CustomFormInput />);
       const input = container.querySelector<HTMLInputElement>('#input-form-control')!;
-      window.alert = jest.fn();
+      window.alert = vi.fn();
       fireEvent.change(input, { target: { value: 'test' } });
       const submitButton = container.querySelector<HTMLButtonElement>('[type="submit"]')!;
       fireEvent.click(submitButton);
@@ -261,7 +264,7 @@ describe('Input examples', () => {
       expect(input).toHaveAttribute('type', 'password');
     });
     it('show alert if valid', () => {
-      const windowMock = jest.spyOn(window, 'alert').mockImplementation(() => {});
+      const windowMock = vi.spyOn(window, 'alert').mockImplementation(() => {});
       const { container } = render(<CVVInput />);
       const submitButton = screen.getByText('Submit');
       const input = container.querySelector<HTMLInputElement>('#cvv-input')!;

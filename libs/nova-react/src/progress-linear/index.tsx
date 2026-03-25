@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-progress';
 
-export type ProgressLinearProperties<ET extends ElementType = 'progress',> = {
+export type ProgressLinearProperties<ET extends ElementType = 'progress'> = {
   /** Is Completed */
   completed?: boolean;
   /** Is Error State */
@@ -32,22 +32,20 @@ export type ProgressLinearProperties<ET extends ElementType = 'progress',> = {
 
 /**
  * Linear indicator used to show the progress of a task or process.
- * @docs {@link https://design.visa.com/react/components/progress | See Docs}
+ * @docs {@link https://design.visa.com/components/progress/?code_library=react | See Docs}
  * @related progress-label
  * @vgar TODO
  * @wcag TODO
  */
-const ProgressLinear = <ET extends ElementType = 'progress',>(
-  {
-    className,
-    completed,
-    invalid,
-    paused = false,
-    style,
-    tag: Tag = 'progress',
-    ...remainingProps
-  }: ProgressLinearProperties<ET>,
-) => (
+const ProgressLinear = <ET extends ElementType = 'progress'>({
+  className,
+  completed,
+  invalid,
+  paused = false,
+  style,
+  tag: Tag = 'progress',
+  ...remainingProps
+}: ProgressLinearProperties<ET>) => (
   <Tag
     className={cn(
       CSS_PREFIX,
@@ -62,9 +60,5 @@ const ProgressLinear = <ET extends ElementType = 'progress',>(
 );
 
 export default ProgressLinear;
-
-ProgressLinear.defaultProps = {
-  tag: 'progress',
-};
 
 ProgressLinear.displayName = 'ProgressLinear';

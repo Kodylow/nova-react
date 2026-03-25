@@ -2,7 +2,7 @@
   "description": "Icons and/or text representing users or entities.",
   "displayName": "avatar",
   "filePath": "/avatar/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/avatar/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//avatar/index.tsx",
   "props": [
     {
       "description": "Small Avatar",
@@ -20,8 +20,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/avatar See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/avatar/?code_library=react See Docs}",
   "related": [
     "tab-suffix"
   ]

@@ -2,7 +2,7 @@
   "description": "Menu of links that navigate to sections within the current page.",
   "displayName": "anchorlinkmenu",
   "filePath": "/anchor-link-menu/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/anchor-link-menu/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//anchor-link-menu/index.tsx",
   "props": [
     {
       "defaultValue": "aside",
@@ -14,8 +14,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/anchor-link-menu See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/anchor-link-menu/?code_library=react See Docs}",
   "related": [
     "anchor-link-menu-header"
   ]

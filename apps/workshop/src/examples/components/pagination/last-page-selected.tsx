@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,10 +23,10 @@ import {
 } from '@visa/nova-icons-react';
 import { Button, Pagination, PaginationOverflow } from '@visa/nova-react';
 
-export const LastDigitPagination = () => {
+export const LastPageSelected = () => {
   return (
     <nav aria-label="1 digit pagination" role="navigation">
-      <Pagination className="v-flex v-flex-row v-align-items-center v-gap-4">
+      <Pagination className="v-align-items-center v-gap-4">
         <li className="v-mobile-container-hide">
           <Button aria-label="Go to first page" buttonSize="small" colorScheme="tertiary" iconButton>
             <VisaArrowStartTiny rtl />

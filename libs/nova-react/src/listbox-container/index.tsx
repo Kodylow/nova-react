@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-listbox-container';
 
-export type ListboxContainerProperties<ET extends ElementType = 'div',> = {
-
+export type ListboxContainerProperties<ET extends ElementType = 'div'> = {
   /** Is Disabled */
   disabled?: boolean;
   /** Error */
@@ -31,11 +30,15 @@ export type ListboxContainerProperties<ET extends ElementType = 'div',> = {
 
 /**
  * Container for listbox component.
- * @docs {@link https://design.visa.com/react/components/listbox | See Docs}
+ * @docs {@link https://design.visa.com/components/listbox/?code_library=react | See Docs}
  */
-const ListboxContainer = <ET extends ElementType = 'div',>(
-  { className, disabled, error, tag: Tag = 'div', ...remainingProps }: ListboxContainerProperties<ET>,
-) => (
+const ListboxContainer = <ET extends ElementType = 'div'>({
+  className,
+  disabled,
+  error,
+  tag: Tag = 'div',
+  ...remainingProps
+}: ListboxContainerProperties<ET>) => (
   <Tag
     className={cn(CSS_PREFIX, disabled && `v-listbox-disabled`, error && `v-listbox-error`, className)}
     {...remainingProps}
@@ -43,9 +46,5 @@ const ListboxContainer = <ET extends ElementType = 'div',>(
 );
 
 export default ListboxContainer;
-
-ListboxContainer.defaultProps = {
-  tag: 'div',
-};
 
 ListboxContainer.displayName = 'ListboxContainer';

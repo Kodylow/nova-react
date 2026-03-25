@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,28 +15,25 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-listbox-item';
 
-export type ListboxItemProperties<ET extends ElementType = 'li',> = {
+export type ListboxItemProperties<ET extends ElementType = 'li'> = {
   /** Tag of Component */
   tag?: ElementType;
-
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Container for elements used inside listbox.
- * @docs {@link https://design.visa.com/react/components/listbox | See Docs}
+ * @docs {@link https://design.visa.com/components/listbox/?code_library=react | See Docs}
  */
-const ListboxItem = <ET extends ElementType = 'li',>(
-  { className, tag: Tag = 'li', ...remainingProps }: ListboxItemProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const ListboxItem = <ET extends ElementType = 'li'>({
+  className,
+  tag: Tag = 'li',
+  ...remainingProps
+}: ListboxItemProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default ListboxItem;
-
-ListboxItem.defaultProps = {
-  tag: 'li',
-};
 
 ListboxItem.displayName = 'ListboxItem';

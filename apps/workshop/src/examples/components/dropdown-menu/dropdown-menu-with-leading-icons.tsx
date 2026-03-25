@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -88,7 +88,7 @@ export const DropdownMenuWithLeadingIcons = () => {
                   vPaddingVertical={11}
                 >
                   <Button className="v-listbox-item" colorScheme="tertiary" subtle>
-                    <VisaFileDownloadTiny /> Label 3
+                    <VisaFileDownloadTiny /> Label 2
                   </Button>
                 </UtilityFragment>
               </li>

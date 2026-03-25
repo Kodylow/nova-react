@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,29 +15,27 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-footer';
 
-export type FooterProperties<ET extends ElementType = 'footer',> = {
+export type FooterProperties<ET extends ElementType = 'footer'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Content anchored at the bottom of a page to provide important information or links.
- * @docs {@link https://design.visa.com/react/components/footer | See Docs}
+ * @docs {@link https://design.visa.com/components/footer/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const Footer = <ET extends ElementType = 'footer',>(
-  { className, tag: Tag = 'footer', ...remainingProps }: FooterProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const Footer = <ET extends ElementType = 'footer'>({
+  className,
+  tag: Tag = 'footer',
+  ...remainingProps
+}: FooterProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default Footer;
-
-Footer.defaultProps = {
-  tag: 'footer',
-};
 
 Footer.displayName = 'Footer';

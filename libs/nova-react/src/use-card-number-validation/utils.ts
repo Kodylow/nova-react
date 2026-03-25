@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -55,7 +55,7 @@ export type CardValidator<Brand = CardBrand> = {
 export const defaultSpacingPattern = [4, 4, 4, 4];
 
 /**
- * This is all based off the {@link https://design.visa.com/components/card-input#card-number | card number guidance}.
+ * This is all based off the {@link https://design.visa.com/patterns/card-input/#card-number-field | card number guidance}.
  * @devNote This validator array is not comprehensive and is subject to change. VPDS does not maintain acceptance marks for all brands for legal reasons.
  */
 export const cardValidators: Record<CardBrand, CardValidator> = {

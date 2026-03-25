@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Content card examples Clickable content card should render correctly 1`] = `
+exports[`Content card examples > Clickable content card should render correctly 1`] = `
 <div>
   <button
     class="v-content-card v-content-card-clickable"
@@ -23,9 +23,7 @@ exports[`Content card examples Clickable content card should render correctly 1`
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </span>
@@ -44,7 +42,7 @@ exports[`Content card examples Clickable content card should render correctly 1`
 </div>
 `;
 
-exports[`Content card examples Compact content card should render correctly 1`] = `
+exports[`Content card examples > Compact content card should render correctly 1`] = `
 <div>
   <div
     class="v-content-card v-content-card-border-block-end"
@@ -81,9 +79,7 @@ exports[`Content card examples Compact content card should render correctly 1`] 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </a>
@@ -93,7 +89,7 @@ exports[`Content card examples Compact content card should render correctly 1`] 
 </div>
 `;
 
-exports[`Content card examples Compact dashboard content card should render correctly 1`] = `
+exports[`Content card examples > Compact dashboard content card should render correctly 1`] = `
 <div>
   <div
     class="v-content-card"
@@ -120,6 +116,7 @@ exports[`Content card examples Compact dashboard content card should render corr
       >
         <p
           class="v-typography-display-2"
+          style="color: var(--palette-messaging-text-positive);"
         >
           0,000
         </p>
@@ -143,9 +140,7 @@ exports[`Content card examples Compact dashboard content card should render corr
             </title>
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M15.7042 7.79744L7.99712 0.090332L0.290009 7.79744L1.70422 9.21165L6.99712 3.91876V16.0045H8.99712V3.91876L14.29 9.21165L15.7042 7.79744Z"
-              fill-rule="evenodd"
+              d="M15.7041 7.79736L14.29 9.21143L8.99704 3.91846V16.0044H6.99704V3.91846L1.70407 9.21143L0.290009 7.79736L7.99704 0.090332L15.7041 7.79736Z"
             />
             <defs>
               <clippath>
@@ -170,7 +165,7 @@ exports[`Content card examples Compact dashboard content card should render corr
 </div>
 `;
 
-exports[`Content card examples Content card with UI buttons should render correctly 1`] = `
+exports[`Content card examples > Content card with UI buttons should render correctly 1`] = `
 <div>
   <div
     class="v-content-card"
@@ -201,13 +196,11 @@ exports[`Content card examples Content card with UI buttons should render correc
           >
             <path
               class="v-icon-secondary"
-              d="M0 10H2V14H14V10H16V16H0V10Z"
+              d="M2 14H14V10H16V16H0V10H2V14Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M9.00062 3.86585L11.0762 5.97354L12.5012 4.57022L8.71313 0.72353L8.00062 0L7.28811 0.72353L3.5 4.57022L4.92502 5.97354L7.00062 3.86585V12.0036H9.00062V3.86585Z"
-              fill-rule="evenodd"
+              d="M8.71289 0.723633L12.501 4.57031L11.0762 5.97363L9.00098 3.86621V12.0039H7.00098V3.86621L4.9248 5.97363L3.5 4.57031L7.28809 0.723633L8.00098 0L8.71289 0.723633Z"
             />
           </svg>
         </button>
@@ -246,9 +239,7 @@ exports[`Content card examples Content card with UI buttons should render correc
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </a>
@@ -258,7 +249,7 @@ exports[`Content card examples Content card with UI buttons should render correc
 </div>
 `;
 
-exports[`Content card examples Content card with category should render correctly 1`] = `
+exports[`Content card examples > Content card with category should render correctly 1`] = `
 <div>
   <div
     class="v-content-card"
@@ -280,19 +271,16 @@ exports[`Content card examples Content card with category should render correctl
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M12 14C7.58172 14 4 17.5817 4 22V24H2V22C2 16.4772 6.47715 12 12 12C17.5228 12 22 16.4772 22 22V24H20V22C20 17.5817 16.4183 14 12 14Z"
-            fill-rule="evenodd"
+            d="M12 12C17.5228 12 22 16.4772 22 22V24H20V22C20 17.5817 16.4183 14 12 14C7.58172 14 4 17.5817 4 22V24H2V22C2 16.4772 6.47715 12 12 12Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8ZM12 10C14.7614 10 17 7.76142 17 5C17 2.23858 14.7614 0 12 0C9.23858 0 7 2.23858 7 5C7 7.76142 9.23858 10 12 10Z"
-            fill-rule="evenodd"
+            d="M12 0C14.7614 0 17 2.23858 17 5C17 7.76142 14.7614 10 12 10C9.23858 10 7 7.76142 7 5C7 2.23858 9.23858 0 12 0ZM12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2Z"
           />
         </svg>
         <h3
           class="v-typography-overline"
+          style="color: var(--palette-default-active);"
         >
           Category
         </h3>
@@ -336,9 +324,7 @@ exports[`Content card examples Content card with category should render correctl
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </a>
@@ -348,7 +334,7 @@ exports[`Content card examples Content card with category should render correctl
 </div>
 `;
 
-exports[`Content card examples Content card with icon should render correctly 1`] = `
+exports[`Content card examples > Content card with icon should render correctly 1`] = `
 <div>
   <div
     class="v-content-card"
@@ -367,15 +353,11 @@ exports[`Content card examples Content card with icon should render correctly 1`
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M25.1711 33.0061L26.0399 32.1997C26.6331 31.6492 27 30.869 27 30C27 28.3431 25.6569 27 24 27C22.3431 27 21 28.3431 21 30C21 30.869 21.3669 31.6492 21.9601 32.1997L22.8289 33.0061L21.5678 38H26.4322L25.1711 33.0061ZM29 40H19L20.5996 33.6657C19.6157 32.7526 19 31.4482 19 30C19 27.2386 21.2386 25 24 25C26.7614 25 29 27.2386 29 30C29 31.4482 28.3843 32.7526 27.4004 33.6657L29 40Z"
-          fill-rule="evenodd"
+          d="M24 25C26.7614 25 29 27.2386 29 30C29 31.4482 28.3843 32.7529 27.4004 33.666L29 40H19L20.5996 33.666C19.6157 32.7529 19 31.4482 19 30C19 27.2386 21.2386 25 24 25ZM24 27C22.3431 27 21 28.3431 21 30C21 30.869 21.3668 31.6497 21.96 32.2002L22.8291 33.0059L21.5674 38H26.4326L25.1709 33.0059L26.04 32.2002C26.6332 31.6497 27 30.869 27 30C27 28.3431 25.6569 27 24 27Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M14 12C14 6.47715 18.4772 2 24 2C29.5228 2 34 6.47715 34 12V16H32V12C32 7.58172 28.4183 4 24 4C19.5817 4 16 7.58172 16 12V16H14V12ZM30 18H32H34H36H40V46H8V43H13V41H8V38H13V36H8V33H13V31H8V28H13V26H8V23H13V21H8V18H12H14H16H18H30ZM30 12V16H18V12C18 8.68629 20.6863 6 24 6C27.3137 6 30 8.68629 30 12ZM12 16V12C12 5.37258 17.3726 0 24 0C30.6274 0 36 5.37258 36 12V16H42V48H6V16H12Z"
-          fill-rule="evenodd"
+          d="M24 0C30.6274 0 36 5.37258 36 12V16H42V48H6V16H12V12C12 5.37258 17.3726 0 24 0ZM8 21H13V23H8V26H13V28H8V31H13V33H8V36H13V38H8V41H13V43H8V46H40V18H8V21ZM24 2C18.4772 2 14 6.47715 14 12V16H16V12C16 7.58172 19.5817 4 24 4C28.4183 4 32 7.58172 32 12V16H34V12C34 6.47715 29.5228 2 24 2ZM24 6C20.6863 6 18 8.68629 18 12V16H30V12C30 8.68629 27.3137 6 24 6Z"
         />
       </svg>
       <h3
@@ -410,9 +392,7 @@ exports[`Content card examples Content card with icon should render correctly 1`
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </a>
@@ -422,7 +402,7 @@ exports[`Content card examples Content card with icon should render correctly 1`
 </div>
 `;
 
-exports[`Content card examples Content card with image should render correctly 1`] = `
+exports[`Content card examples > Content card with image should render correctly 1`] = `
 <div>
   <div
     class="v-content-card"
@@ -476,9 +456,7 @@ exports[`Content card examples Content card with image should render correctly 1
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </a>
@@ -488,7 +466,7 @@ exports[`Content card examples Content card with image should render correctly 1
 </div>
 `;
 
-exports[`Content card examples Default content card should render correctly 1`] = `
+exports[`Content card examples > Default content card should render correctly 1`] = `
 <div>
   <div
     class="v-content-card"
@@ -535,9 +513,7 @@ exports[`Content card examples Default content card should render correctly 1`] 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </a>
@@ -547,7 +523,7 @@ exports[`Content card examples Default content card should render correctly 1`] 
 </div>
 `;
 
-exports[`Content card examples Disabled clickable content card should render correctly 1`] = `
+exports[`Content card examples > Disabled clickable content card should render correctly 1`] = `
 <div>
   <button
     aria-disabled="true"
@@ -575,13 +551,11 @@ exports[`Content card examples Disabled clickable content card should render cor
         >
           <path
             class="v-icon-secondary"
-            d="M7 8.99609H9V11.9961H7V8.99609Z"
+            d="M9 11.9961H7V8.99609H9V11.9961Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 0C5.79086 0 4 1.79086 4 4V5H1V16H15V5H12V4C12 1.79086 10.2091 0 8 0ZM10 5V4C10 2.89543 9.10457 2 8 2C6.89543 2 6 2.89543 6 4V5H10ZM4 7H3V14H13V7H12H4Z"
-            fill-rule="evenodd"
+            d="M8 0C10.2091 0 12 1.79086 12 4V5H15V16H1V5H4V4C4 1.79086 5.79086 0 8 0ZM3 14H13V7H3V14ZM8 2C6.89543 2 6 2.89543 6 4V5H10V4C10 2.89543 9.10457 2 8 2Z"
           />
         </svg>
       </div>

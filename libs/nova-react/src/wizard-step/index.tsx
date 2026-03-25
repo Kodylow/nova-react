@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,34 +15,38 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType, ReactElement, cloneElement } from 'react';
+import { type ComponentPropsWithRef, type ElementType, type ReactElement, cloneElement } from 'react';
 
 const CSS_PREFIX = 'v-wizard-step';
 
-export type WizardStepProperties<ET extends ElementType = 'div',> = (
-  {
-    /** Cloned Element (not compatible with tag property) */
-    element?: never;
-    /** Tag (not compatible with element property) */
-    tag?: ElementType;
-  }
+export type WizardStepProperties<ET extends ElementType = 'div'> = (
   | {
-    /** Cloned Element (not compatible with tag property) */
-    element?: ReactElement<ComponentPropsWithRef<ET>>;
-    /** Tag (not compatible with element property) */
-    tag?: never;
-  }
-) & Omit<ComponentPropsWithRef<ET>, ''>;
+      /** Cloned Element (not compatible with tag property) */
+      element?: never;
+      /** Tag (not compatible with element property) */
+      tag?: ElementType;
+    }
+  | {
+      /** Cloned Element (not compatible with tag property) */
+      element?: ReactElement<ComponentPropsWithRef<ET>>;
+      /** Tag (not compatible with element property) */
+      tag?: never;
+    }
+) &
+  Omit<ComponentPropsWithRef<ET>, ''>;
 
 /**
  * Represents an individual step within a multi-step wizard process.
- * @docs {@link https://design.visa.com/react/components/wizard | See Docs}
+ * @docs {@link https://design.visa.com/patterns/wizard | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const WizardStep = <ET extends ElementType = 'div',>(
-  { className, element, tag: Tag = 'li', ...remainingProps }: WizardStepProperties<ET>,
-) => {
+const WizardStep = <ET extends ElementType = 'div'>({
+  className,
+  element,
+  tag: Tag = 'li',
+  ...remainingProps
+}: WizardStepProperties<ET>) => {
   const classNames = cn(CSS_PREFIX, className);
   return !element ? (
     <Tag className={classNames} {...remainingProps} />
@@ -55,9 +59,5 @@ const WizardStep = <ET extends ElementType = 'div',>(
 };
 
 export default WizardStep;
-
-WizardStep.defaultProps = {
-  tag: 'li',
-};
 
 WizardStep.displayName = 'WizardStep';

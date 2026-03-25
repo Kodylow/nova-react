@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  **/
 import { Link } from 'react-router-dom';
 import { Paths } from '../../../routes';
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 import { MessageIcon } from '@visa/nova-icons-react';
 import { SectionMessage, SectionMessageContent, Typography, Link as VLink } from '@visa/nova-react';
@@ -143,6 +143,9 @@ const Examples: ExampleIndex[] = [
   },
   {
     id: 'key-nav-group-accordion',
+  },
+  {
+    id: 'reusable',
   },
 ];
 

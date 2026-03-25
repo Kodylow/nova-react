@@ -2,7 +2,7 @@
   "description": "Content anchored at the bottom of a page to provide important information or links.",
   "displayName": "footer",
   "filePath": "/footer/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/footer/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//footer/index.tsx",
   "props": [
     {
       "defaultValue": "footer",
@@ -14,6 +14,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/footer See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/footer/?code_library=react See Docs}"
 }

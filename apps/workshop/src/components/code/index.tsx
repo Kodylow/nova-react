@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,6 @@ import { Button, Typography } from '@visa/nova-react';
 import cn from 'clsx';
 import { Highlight, themes } from 'prism-react-renderer';
 import { useState } from 'react';
-import ReactGA from 'react-ga4';
 import { useTheme } from '../../providers/theme-provider';
 import Styles from './styles.module.scss';
 
@@ -37,7 +36,6 @@ const Code = ({
   className = '',
   code = '',
   deprecated,
-  docName = '',
   exampleName = '',
   inPanel,
   language = 'typescript',
@@ -48,16 +46,11 @@ const Code = ({
   const formattedCode = code.trim();
   const [copied, setCopied] = useState(false);
 
-  const copyToClipboard = (text: string, example: string, component: string) => {
+  const copyToClipboard = (text: string,) => {
     if (!copied) {
       navigator.clipboard.writeText(text);
       setCopied(true);
       window.setTimeout(() => setCopied(false), 2000);
-      ReactGA.event({
-        category: 'Nova React',
-        action: 'copy_code',
-        label: component + '-' + example.split(' ').join('-'),
-      });
     }
   };
 
@@ -77,7 +70,7 @@ const Code = ({
               className={cn(Styles.copyButton, copied && Styles.copied)}
               colorScheme="tertiary"
               iconButton
-              onClick={() => copyToClipboard(formattedCode, exampleName, docName)}
+              onClick={() => copyToClipboard(formattedCode)}
             >
               {copied ? <VisaCheckmarkLow /> : <VisaCopyLow />}
               <Typography tag="span" variant="label-active">

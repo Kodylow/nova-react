@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-chip';
 
-export type ChipProperties<ET extends ElementType = 'div',> = {
+export type ChipProperties<ET extends ElementType = 'div'> = {
   /** Chip Size */
   chipSize?: 'compact';
   /** Chip Type */
@@ -30,13 +30,17 @@ export type ChipProperties<ET extends ElementType = 'div',> = {
 
 /**
  * Compact elements used to filter content or display user input.
- * @docs {@link https://design.visa.com/react/components/chip | See Docs}
+ * @docs {@link https://design.visa.com/components/chips/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const Chip = <ET extends ElementType = 'div',>(
-  { className, chipType, chipSize, tag: Tag = 'div', ...remainingProps }: ChipProperties<ET>,
-) => (
+const Chip = <ET extends ElementType = 'div'>({
+  className,
+  chipType,
+  chipSize,
+  tag: Tag = 'div',
+  ...remainingProps
+}: ChipProperties<ET>) => (
   <Tag
     className={cn(
       CSS_PREFIX,
@@ -50,9 +54,5 @@ const Chip = <ET extends ElementType = 'div',>(
 );
 
 export default Chip;
-
-Chip.defaultProps = {
-  tag: 'div',
-};
 
 Chip.displayName = 'Chip';

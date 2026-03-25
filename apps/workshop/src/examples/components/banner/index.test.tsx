@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,6 +43,7 @@ import { TitleErrorBanner } from './title-error-banner';
 import { TitleInformationBanner } from './title-information-banner';
 import { TitleSuccessBanner } from './title-success-banner';
 import { TitleWarningBanner } from './title-warning-banner';
+import NovaBannerDemo from './reusable';
 
 const examples = [
   { Component: DefaultErrorBanner, title: metaData['default-error-banner'].title },
@@ -69,6 +70,7 @@ const examples = [
   { Component: LinkInformationBanner, title: metaData['link-information-banner'].title },
   { Component: LinkSuccessBanner, title: metaData['link-success-banner'].title },
   { Component: LinkWarningBanner, title: metaData['link-warning-banner'].title },
+  { Component: NovaBannerDemo, title: metaData['reusable'].title },
 ];
 
 describe('Banner examples', () => {

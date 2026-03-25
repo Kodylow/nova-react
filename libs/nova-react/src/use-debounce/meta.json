@@ -2,7 +2,7 @@
   "description": "Debounces expensive function, only calling the function after it's last call has waited for specified delay",
   "displayName": "usedebounce",
   "filePath": "/use-debounce/index.ts",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/use-debounce/index.ts",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//use-debounce/index.ts",
   "props": [],
   "param": "callback - Function that runs after last delay\ndelay - Length of time to wait since last call was made (milliseconds)",
   "params": [
@@ -25,6 +25,5 @@
     "button",
     "input"
   ],
-  "testAvg": 100,
   "clientSideOnly": true
 }

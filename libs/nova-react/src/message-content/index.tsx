@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-message-content';
 
-export type MessageContentProperties <ET extends ElementType = 'div',>= {
+export type MessageContentProperties<ET extends ElementType = 'div'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
@@ -27,13 +27,12 @@ export type MessageContentProperties <ET extends ElementType = 'div',>= {
 /**
  * Container for message content elements.
  */
-const MessageContent = <ET extends ElementType = 'div',>(
-  { className, tag: Tag = 'div', ...remainingProps }: MessageContentProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const MessageContent = <ET extends ElementType = 'div'>({
+  className,
+  tag: Tag = 'div',
+  ...remainingProps
+}: MessageContentProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default MessageContent;
 
-MessageContent.defaultProps = {
-  tag: 'div',
-};
 MessageContent.displayName = 'MessageContent';

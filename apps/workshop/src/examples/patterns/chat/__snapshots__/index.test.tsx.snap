@@ -1,0 +1,1595 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Chat examples > Default dialog chat should render correctly 1`] = `
+<div>
+  <div>
+    <button
+      aria-label="open chat"
+      class="v-button v-button-icon"
+    >
+      <img
+        class="v-icon"
+        role="presentation"
+        src="https://www.url.com/chat-ai.svg"
+      />
+    </button>
+    <dialog
+      aria-describedby="modal-chatbot-description"
+      aria-labelledby="modal-chatbot-title"
+      class="v-message v-dialog v-dialog-default"
+      id="modal-chatbot"
+      style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); inline-size: 500px; block-size: min(500px, 90vh); margin: 0px; padding: 0px; gap: 10px; overflow-x: auto; flex-direction: column;"
+    >
+      <div
+        class="v-align-items-center v-flex v-justify-content-between"
+        style="block-size: 62px; border-radius: 10px; inline-size: 100%; min-inline-size: 300px; padding-block: 8px; padding-inline: 16px; flex-shrink: 0; background: var(--palette-default-surface-1, #FFF); box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.05);"
+      >
+        <button
+          aria-label="minimize dialog"
+          class="v-button v-button-large v-button-tertiary v-button-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-low v-icon-minimize"
+            focusable="false"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M10 4H2V22H20V14L22 12V24H0V2H12L10 4ZM24 1.41406L11.4141 14H18V16H8V6H10V12.5859L22.5859 0L24 1.41406Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="24"
+                  width="24"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+        <p
+          class="v-typography-headline-3"
+          style="color: var(--palette-accent-app-name);"
+        >
+          Chat name
+        </p>
+        <button
+          aria-label="close dialog"
+          class="v-button v-button-large v-button-tertiary v-button-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-low v-icon-close"
+            focusable="false"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M23 22.6108L12.8896 12.5005L23 2.39014L21.6104 1.00049L11.5 11.1108L1.38965 1.00049L0 2.39014L10.1104 12.5005L0 22.6108L1.38965 24.0005L11.5 13.8901L21.6104 24.0005L23 22.6108Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="v-flex v-flex-col"
+        style="flex: 1 1 0%; block-size: 500px; min-inline-size: 300px; overflow: auto; padding: var(--size-scalable-16);"
+      >
+        <div
+          class="v-message-content v-pb-2 v-pr-2"
+        >
+          <div
+            class="v-align-items-start v-align-self-stretch v-flex v-flex-row-reverse v-gap-8 v-pb-4"
+          >
+            <div
+              class="v-align-items-end v-flex v-flex-col v-gap-4"
+            >
+              <div
+                class="v-flex v-gap-8"
+              >
+                <p
+                  class="v-typography-label-small"
+                >
+                   
+                  User 1
+                </p>
+                <p
+                  class="v-typography-label-small"
+                >
+                   
+                  04:30 AM
+                </p>
+              </div>
+              <div
+                class="v-flex v-justify-content-center"
+                style="margin-left: 88px;"
+              >
+                <div
+                  aria-label="This is a sent message. undefined message from User 1 at 04:30 AM. Press tab to navigate to more options."
+                  class="v-flex v-flex-col v-gap-4"
+                  id="modal-chatbot-user-0"
+                  style="padding-block: 12px; padding-inline: 14px; border-radius: 10px; background-color: var(--palette-default-surface-3);"
+                  tabindex="0"
+                >
+                  <p
+                    class="v-typography-body-2"
+                  >
+                    This is a sent message.
+                  </p>
+                  <div
+                    class="v-flex v-gap-4 v-justify-content-end"
+                  >
+                    <button
+                      aria-controls="modal-chatbot-user-0-actions"
+                      aria-expanded="false"
+                      aria-label="see more options"
+                      class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle v-dropdown"
+                      id="modal-chatbot-user-0-actions-button"
+                      style="--v-button-default-block-size: var(--size-scalable-26); --v-button-default-border-radius: var(--size-rounded-small);"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="v-icon v-icon-visa v-icon-tiny v-icon-option-horizontal"
+                        focusable="false"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="v-icon-primary"
+                          d="M1.5 6.5C2.32843 6.5 3 7.17157 3 8C3 8.82843 2.32843 9.5 1.5 9.5C0.671573 9.5 0 8.82843 0 8C0 7.17157 0.671573 6.5 1.5 6.5ZM8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8C6.5 7.17157 7.17157 6.5 8 6.5ZM14.5 6.5C15.3284 6.5 16 7.17157 16 8C16 8.82843 15.3284 9.5 14.5 9.5C13.6716 9.5 13 8.82843 13 8C13 7.17157 13.6716 6.5 14.5 6.5Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="v-align-items-start v-align-self-stretch v-flex v-flex-row-reverse v-gap-8 v-pb-20"
+          >
+            <div
+              class="v-align-items-end v-flex v-flex-col v-gap-4"
+            >
+              <div
+                class="v-flex v-justify-content-center"
+                style="margin-left: 88px;"
+              >
+                <div
+                  aria-label="This is a sent message with more text. It fills the container to a maximum width, then wraps to another line. undefined message from User 1 at 04:30 AM. Press tab to navigate to more options."
+                  class="v-flex v-flex-col v-gap-4"
+                  id="modal-chatbot-user-1"
+                  style="padding-block: 12px; padding-inline: 14px; border-radius: 10px; background-color: var(--palette-default-surface-3);"
+                  tabindex="0"
+                >
+                  <p
+                    class="v-typography-body-2"
+                  >
+                    This is a sent message with more text. It fills the container to a maximum width, then wraps to another line.
+                  </p>
+                  <div
+                    class="v-flex v-gap-4 v-justify-content-end"
+                  >
+                    <button
+                      aria-controls="modal-chatbot-user-1-actions"
+                      aria-expanded="false"
+                      aria-label="see more options"
+                      class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle v-dropdown"
+                      id="modal-chatbot-user-1-actions-button"
+                      style="--v-button-default-block-size: var(--size-scalable-26); --v-button-default-border-radius: var(--size-rounded-small);"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="v-icon v-icon-visa v-icon-tiny v-icon-option-horizontal"
+                        focusable="false"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="v-icon-primary"
+                          d="M1.5 6.5C2.32843 6.5 3 7.17157 3 8C3 8.82843 2.32843 9.5 1.5 9.5C0.671573 9.5 0 8.82843 0 8C0 7.17157 0.671573 6.5 1.5 6.5ZM8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8C6.5 7.17157 7.17157 6.5 8 6.5ZM14.5 6.5C15.3284 6.5 16 7.17157 16 8C16 8.82843 15.3284 9.5 14.5 9.5C13.6716 9.5 13 8.82843 13 8C13 7.17157 13.6716 6.5 14.5 6.5Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="margin-inline-end: 48px;"
+          >
+            <div
+              style="max-inline-size: calc(-208px + 100cqi);"
+            >
+              <div
+                class="v-align-items-start v-align-self-stretch v-flex v-gap-8 v-pb-4"
+              >
+                <div
+                  style="padding-block-start: 18px; padding-inline-start: 0;"
+                >
+                  <span
+                    aria-label="Virtual assistant"
+                    class="v-avatar v-avatar-small"
+                  >
+                    <img
+                      alt="chat icon"
+                      src="https://www.url.com/chat-ai-avatar.svg"
+                    />
+                  </span>
+                </div>
+                <div
+                  class="v-align-items-start v-flex v-flex-col v-gap-4"
+                  style="padding-inline-start: 0;"
+                >
+                  <div
+                    class="v-flex v-gap-8"
+                  >
+                    <p
+                      class="v-typography-label-small"
+                    >
+                       
+                      User 2
+                    </p>
+                    <p
+                      class="v-typography-label-small"
+                    >
+                       
+                      04:30 AM
+                    </p>
+                  </div>
+                  <div
+                    style="max-inline-size: calc(-208px + 100cqi);"
+                  >
+                    <div
+                      aria-label="This is a received message. undefined message from User 2 at 04:30 AM. Press tab to navigate to more options."
+                      class="v-flex v-flex-col v-gap-6 v-px-14 v-py-12"
+                      id="modal-chatbot-response-2"
+                      style="border-radius: 10px; background-color: var(--palette-default-surface-highlight); min-inline-size: fit-content;"
+                      tabindex="0"
+                    >
+                      <p
+                        class="v-typography-body-2"
+                        style="word-wrap: break-word; word-break: break-word; white-space: pre-wrap; overflow-wrap: break-word;"
+                      >
+                        This is a received message.
+                      </p>
+                      <div
+                        class="v-flex v-gap-4 v-justify-content-end"
+                      >
+                        <button
+                          aria-label="action"
+                          class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle"
+                          id="modal-chatbot-response-2-flag-button"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="v-icon v-icon-visa v-icon-tiny v-icon-flag"
+                            focusable="false"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="v-icon-secondary"
+                              d="M16 7.62793C15.9999 8.29028 15.5651 8.87412 14.9307 9.06445L11.667 10.0439L8.33301 9.04395L4 10.3438V3.37207C4 2.70966 4.43486 2.12589 5.06934 1.93555L8.33301 0.956055L11.667 1.95605L16 0.65625V7.62793ZM6 3.74414V7.65625L8.33301 6.95605L11.667 7.95605L14 7.25586V3.34375L11.667 4.04395L8.33301 3.04395L6 3.74414ZM2 2H0V0H2V2Z"
+                            />
+                            <path
+                              class="v-icon-primary"
+                              d="M2 16H0V4H2V16Z"
+                            />
+                            <defs>
+                              <clippath>
+                                <rect
+                                  height="16"
+                                  width="16"
+                                />
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                        <button
+                          aria-controls="modal-chatbot-response-2-actions"
+                          aria-expanded="false"
+                          aria-label="see more options"
+                          class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle v-dropdown"
+                          id="modal-chatbot-response-2-actions-button"
+                          style="--v-button-default-block-size: var(--size-scalable-26); --v-button-default-border-radius: var(--size-rounded-small);"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="v-icon v-icon-visa v-icon-tiny v-icon-option-horizontal"
+                            focusable="false"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="v-icon-primary"
+                              d="M1.5 6.5C2.32843 6.5 3 7.17157 3 8C3 8.82843 2.32843 9.5 1.5 9.5C0.671573 9.5 0 8.82843 0 8C0 7.17157 0.671573 6.5 1.5 6.5ZM8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8C6.5 7.17157 7.17157 6.5 8 6.5ZM14.5 6.5C15.3284 6.5 16 7.17157 16 8C16 8.82843 15.3284 9.5 14.5 9.5C13.6716 9.5 13 8.82843 13 8C13 7.17157 13.6716 6.5 14.5 6.5Z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="margin-inline-end: 48px;"
+          >
+            <div
+              style="max-inline-size: calc(-208px + 100cqi);"
+            >
+              <div
+                class="v-align-items-start v-align-self-stretch v-flex v-gap-8 v-pb-20"
+              >
+                <div
+                  style="padding-block-start: 18px; padding-inline-start: var(--size-responsive-32);"
+                />
+                <div
+                  class="v-align-items-start v-flex v-flex-col v-gap-4"
+                  style="padding-inline-start: 0;"
+                >
+                  <div
+                    style="max-inline-size: calc(-208px + 100cqi);"
+                  >
+                    <div
+                      aria-label="This is a received message with more text. It fills the container to a maximum width, then wraps to another line. undefined message from User 2 at 04:30 AM. Press tab to navigate to more options."
+                      class="v-flex v-flex-col v-gap-6 v-px-14 v-py-12"
+                      id="modal-chatbot-response-3"
+                      style="border-radius: 10px; background-color: var(--palette-default-surface-highlight); min-inline-size: fit-content;"
+                      tabindex="0"
+                    >
+                      <p
+                        class="v-typography-body-2"
+                        style="word-wrap: break-word; word-break: break-word; white-space: pre-wrap; overflow-wrap: break-word;"
+                      >
+                        This is a received message with more text. It fills the container to a maximum width, then wraps to another line.
+                      </p>
+                      <div
+                        class="v-flex v-gap-4 v-justify-content-end"
+                      >
+                        <button
+                          aria-label="action"
+                          class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle"
+                          id="modal-chatbot-response-3-flag-button"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="v-icon v-icon-visa v-icon-tiny v-icon-flag"
+                            focusable="false"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="v-icon-secondary"
+                              d="M16 7.62793C15.9999 8.29028 15.5651 8.87412 14.9307 9.06445L11.667 10.0439L8.33301 9.04395L4 10.3438V3.37207C4 2.70966 4.43486 2.12589 5.06934 1.93555L8.33301 0.956055L11.667 1.95605L16 0.65625V7.62793ZM6 3.74414V7.65625L8.33301 6.95605L11.667 7.95605L14 7.25586V3.34375L11.667 4.04395L8.33301 3.04395L6 3.74414ZM2 2H0V0H2V2Z"
+                            />
+                            <path
+                              class="v-icon-primary"
+                              d="M2 16H0V4H2V16Z"
+                            />
+                            <defs>
+                              <clippath>
+                                <rect
+                                  height="16"
+                                  width="16"
+                                />
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                        <button
+                          aria-controls="modal-chatbot-response-3-actions"
+                          aria-expanded="false"
+                          aria-label="see more options"
+                          class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle v-dropdown"
+                          id="modal-chatbot-response-3-actions-button"
+                          style="--v-button-default-block-size: var(--size-scalable-26); --v-button-default-border-radius: var(--size-rounded-small);"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="v-icon v-icon-visa v-icon-tiny v-icon-option-horizontal"
+                            focusable="false"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="v-icon-primary"
+                              d="M1.5 6.5C2.32843 6.5 3 7.17157 3 8C3 8.82843 2.32843 9.5 1.5 9.5C0.671573 9.5 0 8.82843 0 8C0 7.17157 0.671573 6.5 1.5 6.5ZM8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8C6.5 7.17157 7.17157 6.5 8 6.5ZM14.5 6.5C15.3284 6.5 16 7.17157 16 8C16 8.82843 15.3284 9.5 14.5 9.5C13.6716 9.5 13 8.82843 13 8C13 7.17157 13.6716 6.5 14.5 6.5Z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="v-flex v-flex-col v-gap-8 v-p-16"
+        style="overflow: auto; flex-shrink: 0; min-inline-size: 300px;"
+      >
+        <form>
+          <div
+            class="v-flex v-flex-col v-gap-4"
+          >
+            <label
+              class="v-label"
+            />
+            <div
+              class="v-surface v-input-container v-flex-row"
+              style="border-radius: 10px; position: relative;"
+            >
+              <textarea
+                aria-describedby="modal-chatbot-input-message"
+                aria-invalid="false"
+                aria-label="Chat input"
+                aria-required="true"
+                class="v-input v-input-resize-none _chatTextareaResize_ae270e"
+                id="modal-chatbot-input"
+                name="test"
+                placeholder="Start typing..."
+                style="margin-top: 0px; margin-block-end: 40px;"
+              />
+              <div
+                style="position: absolute; right: 8px; bottom: 6px; display: flex; gap: 6px; align-items: center; z-index: 1000;"
+              >
+                <button
+                  aria-label="record"
+                  class="v-button v-button-tertiary v-button-icon v-button-subtle"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-visa v-icon-tiny v-icon-microphone"
+                    focusable="false"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      d="M8 0C10.2091 0 12 1.79086 12 4V5H14V7H12V8C12 9.86384 10.7252 11.43 9 11.874V14H12V16H4V14H7V11.874C5.27477 11.43 4 9.86384 4 8V7H2V5H4V4C4 1.79086 5.79086 0 8 0ZM8 2C6.89543 2 6 2.89543 6 4V8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8V4C10 2.89543 9.10457 2 8 2Z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-label="files"
+                  class="v-button v-button-tertiary v-button-icon v-button-subtle"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-visa v-icon-tiny v-icon-attachment"
+                    focusable="false"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      d="M6 0C7.65685 0 9 1.34315 9 3V12H7V3C7 2.44772 6.55228 2 6 2C5.44772 2 5 2.44771 5 3V11C5 12.6569 6.34315 14 8 14C9.65685 14 11 12.6569 11 11V4H13V11C13 13.7614 10.7614 16 8 16C5.23858 16 3 13.7614 3 11V3C3 1.34315 4.34315 0 6 0Z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-label="send"
+                  class="v-button v-button-tertiary v-button-icon v-button-subtle"
+                  style="block-size: 32px; inline-size: 32px; padding: 7px;"
+                  type="submit"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-visa v-icon-tiny v-icon-send"
+                    focusable="false"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      d="M15.3936 7.08167V8.91956L1.39355 14.9196L0.0517578 13.6842L1.94629 8.00061L0.0517578 2.31702L1.39355 1.08167L15.3936 7.08167ZM3.7207 8.99963L2.65137 12.2047L10.1309 8.99963H3.7207ZM3.71973 6.99963H10.127L2.65137 3.79553L3.71973 6.99963Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <span
+              aria-atomic="false"
+              aria-live="polite"
+              class="v-input-message"
+              id="modal-chatbot-input-message"
+            />
+          </div>
+        </form>
+      </div>
+    </dialog>
+  </div>
+</div>
+`;
+
+exports[`Chat examples > Default full page chat should render correctly 1`] = `
+<div>
+  <div
+    class="layout-example app-container"
+    id="full-page-chat"
+  >
+    <div
+      class="layout-container"
+    >
+      <header
+        class="v-nav v-nav-vertical full-page-nav"
+        id="full-page-vertical-navigation"
+        style="block-size: auto;"
+      >
+        <a
+          class="v-link v-skip-link"
+          href="#full-page-content"
+        >
+          Skip to content
+        </a>
+        <a
+          aria-label="application name"
+          class="v-link v-link-no-underline v-flex v-flex-col v-gap-12 v-mb-30 v-ml-20 v-mr-16 v-mt-16"
+          href="https://www.visa.com"
+          id="full-page-vertical-navigation-home-link"
+          style="background-color: transparent;"
+        >
+          <div
+            class="v-nav-app-name"
+          >
+            <p
+              class="v-typography-subtitle-1"
+            >
+              Application name
+            </p>
+          </div>
+        </a>
+        <div
+          class="v-mb-24 v-mx-24"
+        >
+          <div
+            class="v-flex v-flex-col v-gap-4"
+          >
+            <div
+              class="v-surface v-input-container"
+            >
+              <div
+                class="v-flex v-flex-col"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="v-icon v-icon-visa v-icon-low v-icon-search"
+                  focusable="false"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="v-icon-secondary"
+                    d="M24 22.4814L22.4814 24L15 16.5186C15.5551 16.0641 16.0641 15.5551 16.5186 15L24 22.4814ZM9 5C11.2056 5 13 6.79443 13 9H11C11 7.89697 10.103 7 9 7V5Z"
+                  />
+                  <path
+                    class="v-icon-primary"
+                    d="M9 1C13.4111 1 17 4.58887 17 9C17 13.4111 13.4111 17 9 17C4.58887 17 1 13.4111 1 9C1 4.58887 4.58887 1 9 1ZM9 3C5.69141 3 3 5.69141 3 9C3 12.3086 5.69141 15 9 15C12.3086 15 15 12.3086 15 9C15 5.69141 12.3086 3 9 3Z"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-required="true"
+                class="v-input"
+                id="full-page-vertical-navigation-search-input"
+                placeholder="Search"
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+        <nav
+          aria-label="default vertical navigation"
+        >
+          <div
+            class="v-gap-8"
+          >
+            <ul
+              class="v-tabs v-tabs-vertical"
+            >
+              <li
+                class="v-tab v-tab-section-title"
+              >
+                Pinned chats
+              </li>
+              <li
+                class="v-tab"
+              >
+                <a
+                  class="v-button v-button-tertiary"
+                  href="./chat"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-visa v-icon-tiny v-icon-pin-fill"
+                    focusable="false"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      d="M16 4.97754L14.5781 6.40039L13.2373 5.05957L7.82227 15.2891L4.97754 12.4443L1.42188 16L0 14.5781L3.55566 11.0225L0.710938 8.17773L10.9404 2.7627L9.59961 1.42188L11.0225 0L16 4.97754Z"
+                    />
+                  </svg>
+                  Chat name 1
+                </a>
+              </li>
+              <li
+                class="v-tab v-tab-section-title"
+              >
+                2 days ago
+              </li>
+              <li
+                class="v-tab"
+              >
+                <a
+                  class="v-button v-button-tertiary"
+                  href="./chat"
+                >
+                  Chat name 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+              >
+                <a
+                  class="v-button v-button-tertiary"
+                  href="./chat"
+                >
+                  Chat name 2
+                </a>
+              </li>
+              <li
+                class="v-tab"
+              >
+                <a
+                  class="v-button v-button-tertiary"
+                  href="./chat"
+                >
+                  Chat name 3
+                </a>
+              </li>
+              <li
+                class="v-tab v-tab-section-title"
+              >
+                1 week ago
+              </li>
+              <li
+                class="v-tab"
+              >
+                <a
+                  class="v-button v-button-tertiary"
+                  href="./chat"
+                >
+                  Chat name 4
+                </a>
+              </li>
+              <li
+                class="v-tab"
+              >
+                <a
+                  class="v-button v-button-tertiary"
+                  href="./chat"
+                >
+                  Chat name 5
+                </a>
+              </li>
+              <li
+                class="v-tab"
+              >
+                <a
+                  class="v-button v-button-tertiary"
+                  href="./chat"
+                >
+                  Chat name 6
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div
+          class="v-align-self-stretch v-flex v-flex-col v-gap-30 v-mt-auto"
+        >
+          <hr
+            aria-hidden="true"
+            class="v-divider v-divider-decorative"
+          />
+          <div
+            class="v-align-self-center v-gap-16 v-mb-4"
+          >
+            <button
+              aria-label="start new chat"
+              class="v-button v-button-secondary"
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-visa v-icon-tiny v-icon-add-alt"
+                focusable="false"
+                height="16"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="v-icon-secondary"
+                  d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
+                />
+                <path
+                  class="v-icon-primary"
+                  d="M9 7.00012H12V9.00012H9V12.0001H7V9.00012H4V7.00012H7V4.00012H9V7.00012Z"
+                />
+                <defs>
+                  <clippath>
+                    <rect
+                      height="16"
+                      width="16"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+              Start new chat
+            </button>
+          </div>
+        </div>
+        <button
+          aria-expanded="true"
+          aria-label="Side bar"
+          class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle v-ml-auto v-mr-8"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-media-rewind v-icon-rtl"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-secondary"
+              d="M7 8L13.6064 15L15 13.5244L9.78613 8L15 2.47559L13.6064 1L7 8Z"
+            />
+            <path
+              class="v-icon-primary"
+              d="M1 8L7.60645 15L9 13.5244L3.78613 8L9 2.47559L7.60645 1L1 8Z"
+            />
+          </svg>
+        </button>
+      </header>
+      <main
+        class="main-content"
+        id="full-page-chat-content"
+      >
+        <div
+          class="v-content-card"
+          id="full-page-chat-card"
+          style="min-block-size: calc(100vh - 64px); container-type: inline-size; min-inline-size: 300px;"
+        >
+          <div
+            class="v-align-items-center v-flex v-justify-content-between v-px-20"
+            style="block-size: 56px; border-block-end: var(--v-content-card-border); box-shadow: var(--v-content-card-elevation),var(--v-content-card-border-block-end-none);"
+          >
+            <span>
+              Chat name
+            </span>
+            <div
+              class="v-align-items-center v-flex v-gap-10 v-justify-content-between"
+            >
+              <button
+                aria-label="pin"
+                class="v-button v-button-tertiary v-button-icon v-button-subtle"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="v-icon v-icon-visa v-icon-tiny v-icon-pin-outline"
+                  focusable="false"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="v-icon-primary"
+                    d="M15.707 5.29297L14.293 6.70703L13.2305 5.64453L8.23047 14.6445L5.5 11.9141L1.70703 15.707L0.292969 14.293L4.08594 10.5L1.34961 7.76367L10.3965 2.81055L9.29297 1.70703L10.707 0.292969L15.707 5.29297ZM4.65039 8.23633L7.76953 11.3555L11.624 4.41895L4.65039 8.23633Z"
+                  />
+                  <defs>
+                    <clippath>
+                      <rect
+                        height="16"
+                        width="16"
+                      />
+                    </clippath>
+                  </defs>
+                </svg>
+              </button>
+              <button
+                aria-controls="full-page-chat-card-more-options"
+                aria-expanded="false"
+                aria-label="see more options"
+                class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle v-dropdown"
+                id="full-page-chat-card-more-options-button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="v-icon v-icon-visa v-icon-tiny v-icon-option-horizontal"
+                  focusable="false"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="v-icon-primary"
+                    d="M1.5 6.5C2.32843 6.5 3 7.17157 3 8C3 8.82843 2.32843 9.5 1.5 9.5C0.671573 9.5 0 8.82843 0 8C0 7.17157 0.671573 6.5 1.5 6.5ZM8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8C6.5 7.17157 7.17157 6.5 8 6.5ZM14.5 6.5C15.3284 6.5 16 7.17157 16 8C16 8.82843 15.3284 9.5 14.5 9.5C13.6716 9.5 13 8.82843 13 8C13 7.17157 13.6716 6.5 14.5 6.5Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="v-content-card-body v-flex v-flex-col v-justify-content-between"
+            style="block-size: calc(100vh - 120px); min-block-size: fit-content; padding: 24px;"
+          >
+            <div
+              class="v-flex v-flex-col"
+            >
+              <p
+                class="v-typography-headline-3"
+              >
+                Welcome!
+              </p>
+              <p
+                class="v-pt-4"
+              >
+                I'm your friendly AI chatbot, here to assist you. I'm powered by artificial intelligence, which allows me to learn and adapt to better serve your needs. Our conversations are stored to improve our services, but you have the right to access, correct, or delete your personal information at any time.
+              </p>
+            </div>
+            <div
+              class="v-flex v-flex-col v-gap-8"
+            >
+              <div
+                class="v-align-items-end v-flex v-flex-col v-gap-8"
+              >
+                <p
+                  class="v-typography-label-large"
+                >
+                  Prompt suggestions
+                </p>
+                <div
+                  class="v-align-items-end v-flex v-flex-wrap v-gap-8 v-justify-content-end"
+                >
+                  <label
+                    class="v-chip v-chip-selection v-label v-gap-6"
+                    for="chat-suggestion-0"
+                    style="max-block-size: 32px; min-block-size: fit-content;"
+                  >
+                    <span
+                      style="text-wrap: pretty;"
+                    >
+                      How do I reset my password?
+                    </span>
+                    <input
+                      aria-label="How do I reset my password?"
+                      class="v-checkbox"
+                      id="chat-suggestion-0"
+                      type="checkbox"
+                    />
+                  </label>
+                  <label
+                    class="v-chip v-chip-selection v-label v-gap-6"
+                    for="chat-suggestion-1"
+                    style="max-block-size: 32px; min-block-size: fit-content;"
+                  >
+                    <span
+                      style="text-wrap: pretty;"
+                    >
+                      Summarize a document
+                    </span>
+                    <input
+                      aria-label="Summarize a document"
+                      class="v-checkbox"
+                      id="chat-suggestion-1"
+                      type="checkbox"
+                    />
+                  </label>
+                  <label
+                    class="v-chip v-chip-selection v-label v-gap-6"
+                    for="chat-suggestion-2"
+                    style="max-block-size: 32px; min-block-size: fit-content;"
+                  >
+                    <span
+                      style="text-wrap: pretty;"
+                    >
+                      Find a report
+                    </span>
+                    <input
+                      aria-label="Find a report"
+                      class="v-checkbox"
+                      id="chat-suggestion-2"
+                      type="checkbox"
+                    />
+                  </label>
+                </div>
+              </div>
+              <form>
+                <div
+                  class="v-flex v-flex-col v-gap-4"
+                >
+                  <label
+                    class="v-label"
+                  />
+                  <div
+                    class="v-surface v-input-container v-flex-row"
+                    style="position: relative;"
+                  >
+                    <textarea
+                      aria-describedby="full-page-chat-card-input-message"
+                      aria-invalid="false"
+                      aria-label="Chat input"
+                      aria-required="true"
+                      class="v-input v-input-resize-none _chatTextareaResize_ae270e"
+                      id="full-page-chat-card-input"
+                      name="test"
+                      placeholder="Start typing..."
+                      style="margin-top: 0px; margin-block-end: 40px;"
+                    />
+                    <div
+                      style="position: absolute; right: 8px; bottom: 6px; display: flex; gap: 6px; align-items: center; z-index: 1000;"
+                    >
+                      <button
+                        aria-label="record"
+                        class="v-button v-button-tertiary v-button-icon v-button-subtle"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="v-icon v-icon-visa v-icon-tiny v-icon-microphone"
+                          focusable="false"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="v-icon-primary"
+                            d="M8 0C10.2091 0 12 1.79086 12 4V5H14V7H12V8C12 9.86384 10.7252 11.43 9 11.874V14H12V16H4V14H7V11.874C5.27477 11.43 4 9.86384 4 8V7H2V5H4V4C4 1.79086 5.79086 0 8 0ZM8 2C6.89543 2 6 2.89543 6 4V8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8V4C10 2.89543 9.10457 2 8 2Z"
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        aria-label="files"
+                        class="v-button v-button-tertiary v-button-icon v-button-subtle"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="v-icon v-icon-visa v-icon-tiny v-icon-attachment"
+                          focusable="false"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="v-icon-primary"
+                            d="M6 0C7.65685 0 9 1.34315 9 3V12H7V3C7 2.44772 6.55228 2 6 2C5.44772 2 5 2.44771 5 3V11C5 12.6569 6.34315 14 8 14C9.65685 14 11 12.6569 11 11V4H13V11C13 13.7614 10.7614 16 8 16C5.23858 16 3 13.7614 3 11V3C3 1.34315 4.34315 0 6 0Z"
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        aria-label="send"
+                        class="v-button v-button-tertiary v-button-icon v-button-subtle"
+                        style="block-size: 32px; inline-size: 32px; padding: 7px;"
+                        type="submit"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="v-icon v-icon-visa v-icon-tiny v-icon-send"
+                          focusable="false"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="v-icon-primary"
+                            d="M15.3936 7.08167V8.91956L1.39355 14.9196L0.0517578 13.6842L1.94629 8.00061L0.0517578 2.31702L1.39355 1.08167L15.3936 7.08167ZM3.7207 8.99963L2.65137 12.2047L10.1309 8.99963H3.7207ZM3.71973 6.99963H10.127L2.65137 3.79553L3.71973 6.99963Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <span
+                    aria-atomic="false"
+                    aria-live="polite"
+                    class="v-input-message"
+                    id="full-page-chat-card-input-message"
+                  >
+                    100,000 characters remaining
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Chat examples > Default panel chat should render correctly 1`] = `
+<div>
+  <div
+    class="chat-example"
+    style="background: var(--palette-default-surface-3); overflow: auto;"
+  >
+    <div
+      class="v-flex"
+      style="block-size: 100vh;"
+    >
+      <div
+        class="v-ml-auto"
+      >
+        <button
+          aria-expanded="false"
+          aria-label="Open panel"
+          class="v-button v-button-large v-button-icon v-icon-two-color v-panel-toggle"
+        >
+          <img
+            role="presentation"
+            src="https://www.url.com/chat-ai.svg"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Chat examples > Full page chat card should render correctly 1`] = `
+<div>
+  <div
+    class="v-content-card"
+    id="full-page-chat-card"
+    style="min-block-size: calc(100vh - 64px); container-type: inline-size; min-inline-size: 300px;"
+  >
+    <div
+      class="v-align-items-center v-flex v-justify-content-between v-px-20"
+      style="block-size: 56px; border-block-end: var(--v-content-card-border); box-shadow: var(--v-content-card-elevation),var(--v-content-card-border-block-end-none);"
+    >
+      <span>
+        Chat name
+      </span>
+      <div
+        class="v-align-items-center v-flex v-gap-10 v-justify-content-between"
+      >
+        <button
+          aria-label="pin"
+          class="v-button v-button-tertiary v-button-icon v-button-subtle"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-pin-outline"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M15.707 5.29297L14.293 6.70703L13.2305 5.64453L8.23047 14.6445L5.5 11.9141L1.70703 15.707L0.292969 14.293L4.08594 10.5L1.34961 7.76367L10.3965 2.81055L9.29297 1.70703L10.707 0.292969L15.707 5.29297ZM4.65039 8.23633L7.76953 11.3555L11.624 4.41895L4.65039 8.23633Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+        <button
+          aria-controls="full-page-chat-card-more-options"
+          aria-expanded="false"
+          aria-label="see more options"
+          class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle v-dropdown"
+          id="full-page-chat-card-more-options-button"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-option-horizontal"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M1.5 6.5C2.32843 6.5 3 7.17157 3 8C3 8.82843 2.32843 9.5 1.5 9.5C0.671573 9.5 0 8.82843 0 8C0 7.17157 0.671573 6.5 1.5 6.5ZM8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8C6.5 7.17157 7.17157 6.5 8 6.5ZM14.5 6.5C15.3284 6.5 16 7.17157 16 8C16 8.82843 15.3284 9.5 14.5 9.5C13.6716 9.5 13 8.82843 13 8C13 7.17157 13.6716 6.5 14.5 6.5Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      class="v-content-card-body v-flex v-flex-col v-justify-content-between"
+      style="block-size: calc(100vh - 120px); min-block-size: fit-content; padding: 24px;"
+    >
+      <div
+        class="v-flex v-flex-col"
+      >
+        <p
+          class="v-typography-headline-3"
+        >
+          Welcome!
+        </p>
+        <p
+          class="v-pt-4"
+        >
+          I'm your friendly AI chatbot, here to assist you. I'm powered by artificial intelligence, which allows me to learn and adapt to better serve your needs. Our conversations are stored to improve our services, but you have the right to access, correct, or delete your personal information at any time.
+        </p>
+      </div>
+      <div
+        class="v-flex v-flex-col v-gap-8"
+      >
+        <div
+          class="v-align-items-end v-flex v-flex-col v-gap-8"
+        >
+          <p
+            class="v-typography-label-large"
+          >
+            Prompt suggestions
+          </p>
+          <div
+            class="v-align-items-end v-flex v-flex-wrap v-gap-8 v-justify-content-end"
+          >
+            <label
+              class="v-chip v-chip-selection v-label v-gap-6"
+              for="chat-suggestion-0"
+              style="max-block-size: 32px; min-block-size: fit-content;"
+            >
+              <span
+                style="text-wrap: pretty;"
+              >
+                How do I reset my password?
+              </span>
+              <input
+                aria-label="How do I reset my password?"
+                class="v-checkbox"
+                id="chat-suggestion-0"
+                type="checkbox"
+              />
+            </label>
+            <label
+              class="v-chip v-chip-selection v-label v-gap-6"
+              for="chat-suggestion-1"
+              style="max-block-size: 32px; min-block-size: fit-content;"
+            >
+              <span
+                style="text-wrap: pretty;"
+              >
+                Summarize a document
+              </span>
+              <input
+                aria-label="Summarize a document"
+                class="v-checkbox"
+                id="chat-suggestion-1"
+                type="checkbox"
+              />
+            </label>
+            <label
+              class="v-chip v-chip-selection v-label v-gap-6"
+              for="chat-suggestion-2"
+              style="max-block-size: 32px; min-block-size: fit-content;"
+            >
+              <span
+                style="text-wrap: pretty;"
+              >
+                Find a report
+              </span>
+              <input
+                aria-label="Find a report"
+                class="v-checkbox"
+                id="chat-suggestion-2"
+                type="checkbox"
+              />
+            </label>
+          </div>
+        </div>
+        <form>
+          <div
+            class="v-flex v-flex-col v-gap-4"
+          >
+            <label
+              class="v-label"
+            />
+            <div
+              class="v-surface v-input-container v-flex-row"
+              style="position: relative;"
+            >
+              <textarea
+                aria-describedby="full-page-chat-card-input-message"
+                aria-invalid="false"
+                aria-label="Chat input"
+                aria-required="true"
+                class="v-input v-input-resize-none _chatTextareaResize_ae270e"
+                id="full-page-chat-card-input"
+                name="test"
+                placeholder="Start typing..."
+                style="margin-top: 0px; margin-block-end: 40px;"
+              />
+              <div
+                style="position: absolute; right: 8px; bottom: 6px; display: flex; gap: 6px; align-items: center; z-index: 1000;"
+              >
+                <button
+                  aria-label="record"
+                  class="v-button v-button-tertiary v-button-icon v-button-subtle"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-visa v-icon-tiny v-icon-microphone"
+                    focusable="false"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      d="M8 0C10.2091 0 12 1.79086 12 4V5H14V7H12V8C12 9.86384 10.7252 11.43 9 11.874V14H12V16H4V14H7V11.874C5.27477 11.43 4 9.86384 4 8V7H2V5H4V4C4 1.79086 5.79086 0 8 0ZM8 2C6.89543 2 6 2.89543 6 4V8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8V4C10 2.89543 9.10457 2 8 2Z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-label="files"
+                  class="v-button v-button-tertiary v-button-icon v-button-subtle"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-visa v-icon-tiny v-icon-attachment"
+                    focusable="false"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      d="M6 0C7.65685 0 9 1.34315 9 3V12H7V3C7 2.44772 6.55228 2 6 2C5.44772 2 5 2.44771 5 3V11C5 12.6569 6.34315 14 8 14C9.65685 14 11 12.6569 11 11V4H13V11C13 13.7614 10.7614 16 8 16C5.23858 16 3 13.7614 3 11V3C3 1.34315 4.34315 0 6 0Z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-label="send"
+                  class="v-button v-button-tertiary v-button-icon v-button-subtle"
+                  style="block-size: 32px; inline-size: 32px; padding: 7px;"
+                  type="submit"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-visa v-icon-tiny v-icon-send"
+                    focusable="false"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      d="M15.3936 7.08167V8.91956L1.39355 14.9196L0.0517578 13.6842L1.94629 8.00061L0.0517578 2.31702L1.39355 1.08167L15.3936 7.08167ZM3.7207 8.99963L2.65137 12.2047L10.1309 8.99963H3.7207ZM3.71973 6.99963H10.127L2.65137 3.79553L3.71973 6.99963Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <span
+              aria-atomic="false"
+              aria-live="polite"
+              class="v-input-message"
+              id="full-page-chat-card-input-message"
+            >
+              100,000 characters remaining
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Chat examples > Full page navigation should render correctly 1`] = `
+<div>
+  <header
+    class="v-nav v-nav-vertical full-page-nav"
+    id="full-page-vertical-navigation"
+    style="block-size: auto;"
+  >
+    <a
+      class="v-link v-skip-link"
+      href="#full-page-content"
+    >
+      Skip to content
+    </a>
+    <a
+      aria-label="application name"
+      class="v-link v-link-no-underline v-flex v-flex-col v-gap-12 v-mb-30 v-ml-20 v-mr-16 v-mt-16"
+      href="https://www.visa.com"
+      id="full-page-vertical-navigation-home-link"
+      style="background-color: transparent;"
+    >
+      <div
+        class="v-nav-app-name"
+      >
+        <p
+          class="v-typography-subtitle-1"
+        >
+          Application name
+        </p>
+      </div>
+    </a>
+    <div
+      class="v-mb-24 v-mx-24"
+    >
+      <div
+        class="v-flex v-flex-col v-gap-4"
+      >
+        <div
+          class="v-surface v-input-container"
+        >
+          <div
+            class="v-flex v-flex-col"
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-visa v-icon-low v-icon-search"
+              focusable="false"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="v-icon-secondary"
+                d="M24 22.4814L22.4814 24L15 16.5186C15.5551 16.0641 16.0641 15.5551 16.5186 15L24 22.4814ZM9 5C11.2056 5 13 6.79443 13 9H11C11 7.89697 10.103 7 9 7V5Z"
+              />
+              <path
+                class="v-icon-primary"
+                d="M9 1C13.4111 1 17 4.58887 17 9C17 13.4111 13.4111 17 9 17C4.58887 17 1 13.4111 1 9C1 4.58887 4.58887 1 9 1ZM9 3C5.69141 3 3 5.69141 3 9C3 12.3086 5.69141 15 9 15C12.3086 15 15 12.3086 15 9C15 5.69141 12.3086 3 9 3Z"
+              />
+            </svg>
+          </div>
+          <input
+            aria-required="true"
+            class="v-input"
+            id="full-page-vertical-navigation-search-input"
+            placeholder="Search"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <nav
+      aria-label="default vertical navigation"
+    >
+      <div
+        class="v-gap-8"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+        >
+          <li
+            class="v-tab v-tab-section-title"
+          >
+            Pinned chats
+          </li>
+          <li
+            class="v-tab"
+          >
+            <a
+              class="v-button v-button-tertiary"
+              href="./chat"
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-visa v-icon-tiny v-icon-pin-fill"
+                focusable="false"
+                height="16"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="v-icon-primary"
+                  d="M16 4.97754L14.5781 6.40039L13.2373 5.05957L7.82227 15.2891L4.97754 12.4443L1.42188 16L0 14.5781L3.55566 11.0225L0.710938 8.17773L10.9404 2.7627L9.59961 1.42188L11.0225 0L16 4.97754Z"
+                />
+              </svg>
+              Chat name 1
+            </a>
+          </li>
+          <li
+            class="v-tab v-tab-section-title"
+          >
+            2 days ago
+          </li>
+          <li
+            class="v-tab"
+          >
+            <a
+              class="v-button v-button-tertiary"
+              href="./chat"
+            >
+              Chat name 1
+            </a>
+          </li>
+          <li
+            class="v-tab"
+          >
+            <a
+              class="v-button v-button-tertiary"
+              href="./chat"
+            >
+              Chat name 2
+            </a>
+          </li>
+          <li
+            class="v-tab"
+          >
+            <a
+              class="v-button v-button-tertiary"
+              href="./chat"
+            >
+              Chat name 3
+            </a>
+          </li>
+          <li
+            class="v-tab v-tab-section-title"
+          >
+            1 week ago
+          </li>
+          <li
+            class="v-tab"
+          >
+            <a
+              class="v-button v-button-tertiary"
+              href="./chat"
+            >
+              Chat name 4
+            </a>
+          </li>
+          <li
+            class="v-tab"
+          >
+            <a
+              class="v-button v-button-tertiary"
+              href="./chat"
+            >
+              Chat name 5
+            </a>
+          </li>
+          <li
+            class="v-tab"
+          >
+            <a
+              class="v-button v-button-tertiary"
+              href="./chat"
+            >
+              Chat name 6
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      class="v-align-self-stretch v-flex v-flex-col v-gap-30 v-mt-auto"
+    >
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative"
+      />
+      <div
+        class="v-align-self-center v-gap-16 v-mb-4"
+      >
+        <button
+          aria-label="start new chat"
+          class="v-button v-button-secondary"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-add-alt"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-secondary"
+              d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
+            />
+            <path
+              class="v-icon-primary"
+              d="M9 7.00012H12V9.00012H9V12.0001H7V9.00012H4V7.00012H7V4.00012H9V7.00012Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+          Start new chat
+        </button>
+      </div>
+    </div>
+    <button
+      aria-expanded="true"
+      aria-label="Side bar"
+      class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle v-ml-auto v-mr-8"
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-visa v-icon-tiny v-icon-media-rewind v-icon-rtl"
+        focusable="false"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="v-icon-secondary"
+          d="M7 8L13.6064 15L15 13.5244L9.78613 8L15 2.47559L13.6064 1L7 8Z"
+        />
+        <path
+          class="v-icon-primary"
+          d="M1 8L7.60645 15L9 13.5244L3.78613 8L9 2.47559L7.60645 1L1 8Z"
+        />
+      </svg>
+    </button>
+  </header>
+</div>
+`;

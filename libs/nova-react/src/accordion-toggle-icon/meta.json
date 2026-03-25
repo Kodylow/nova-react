@@ -2,7 +2,7 @@
   "description": "Component containing the icon and logic for the accordion toggle icon.",
   "displayName": "accordiontoggleicon",
   "filePath": "/accordion-toggle-icon/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/accordion-toggle-icon/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//accordion-toggle-icon/index.tsx",
   "props": [
     {
       "description": "manually assign the open state of the accordion",
@@ -25,6 +25,5 @@
       "type": "ReactElement<unknown, string | JSXElementConstructor<any>>"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/accordion See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/accordion/?code_library=react See Docs}"
 }

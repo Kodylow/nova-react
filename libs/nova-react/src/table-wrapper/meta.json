@@ -2,7 +2,7 @@
   "description": "Container for a table that adds a border with a curved radius to the table.",
   "displayName": "tablewrapper",
   "filePath": "/table-wrapper/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/table-wrapper/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//table-wrapper/index.tsx",
   "props": [
     {
       "defaultValue": "div",
@@ -12,6 +12,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/table See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/table/?code_library=react See Docs}"
 }

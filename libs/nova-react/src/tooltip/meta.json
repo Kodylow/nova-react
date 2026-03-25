@@ -2,7 +2,7 @@
   "description": "Short message communicating the function or context of a control or object.",
   "displayName": "tooltip",
   "filePath": "/tooltip/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/tooltip/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//tooltip/index.tsx",
   "props": [
     {
       "description": "CSS Class Name",
@@ -20,6 +20,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/tooltip See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/tooltip/?code_library=react See Docs}"
 }

@@ -5,8 +5,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default footer",
-    "testAvg": 100
+    "title": "Default footer"
   },
   "navigational-footer": {
     "file": "navigational-footer.tsx",
@@ -14,7 +13,6 @@
     "tags": {
       "docs": true
     },
-    "title": "Navigational footer",
-    "testAvg": 100
+    "title": "Navigational footer"
   }
 }

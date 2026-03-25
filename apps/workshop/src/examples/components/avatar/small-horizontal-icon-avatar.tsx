@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  **/
 import { VisaAccountLow, VisaChevronDownLow, VisaChevronUpLow } from '@visa/nova-icons-react';
 import { Avatar, Button, DropdownMenu, TabSuffix, Tab, UtilityFragment } from '@visa/nova-react';
-import { CSSProperties, useState } from 'react';
+import { useState, type CSSProperties } from 'react';
 import { offset, useClick, useFloating, useInteractions } from '@floating-ui/react';
 
 export const SmallHorizontalIconAvatar = () => {

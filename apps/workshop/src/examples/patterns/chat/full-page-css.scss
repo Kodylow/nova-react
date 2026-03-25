@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@
     .layout-container {
       // Fallback to a single column.
       // This forces reflow on small devices.
-      grid-template-columns: 1fr !important;
+      grid-template-columns: 1fr;
     }
   }
 }
@@ -36,4 +36,6 @@
   background-color: var(--palette-default-surface-3);
   min-block-size: 500px;
   padding: 32px;
+  overflow-x: auto;
+  overflow-x: auto;
 }

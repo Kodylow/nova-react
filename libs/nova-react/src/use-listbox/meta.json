@@ -2,7 +2,7 @@
   "description": "This hook is used to manage the selected state and keyboard navigation of listbox component.",
   "displayName": "useListbox",
   "filePath": "/use-listbox/index.ts",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/use-listbox/index.ts",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//use-listbox/index.ts",
   "props": [
     {
       "defaultValue": false,
@@ -22,7 +22,7 @@
       "description": "Ref for the tab elements",
       "name": "ref",
       "required": false,
-      "type": "MutableRefObject<HTMLElementType[]>"
+      "type": "RefObject<HTMLElementType[]>"
     }
   ],
   "vgar": "TODO",
@@ -67,7 +67,6 @@
   "related": [
     "listbox"
   ],
-  "docs": "{@link https://design.visa.com/react/hooks/use-listbox See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/listbox/?code_library=react See Docs}",
   "clientSideOnly": true
 }

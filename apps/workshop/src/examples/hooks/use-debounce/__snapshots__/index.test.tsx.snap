@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`useDebounce example Behavior and usage should render correctly 1`] = `
+exports[`useDebounce example > Behavior and usage should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-12"
@@ -41,9 +41,7 @@ exports[`useDebounce example Behavior and usage should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7 5V3H9V5H7ZM6 9H7V10V11H6V13H7H9H10V11H9V10V8V7H6V9Z"
-          fill-rule="evenodd"
+          d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM6 7V9H7V11H6V13H10V11H9V7H6ZM7 3V5H9V3H7Z"
         />
         <defs>
           <clippath>

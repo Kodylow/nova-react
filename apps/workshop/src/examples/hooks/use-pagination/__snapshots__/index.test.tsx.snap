@@ -1,13 +1,13 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`usePagination example Behavior and usage should render correctly 1`] = `
+exports[`usePagination example > Behavior and usage should render correctly 1`] = `
 <div>
   <nav
     aria-label="minimum and maximum pagination"
     role="navigation"
   >
     <ul
-      class="v-pagination v-align-items-center v-flex v-flex-row v-gap-4"
+      class="v-pagination v-flex v-flex-row v-align-items-center v-gap-4"
     >
       <li>
         <button
@@ -26,9 +26,7 @@ exports[`usePagination example Behavior and usage should render correctly 1`] = 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2 15.0002V1.00024H4L4 15.0002H2ZM6 8.00025L12.6069 1.00024L14 2.47622L8.78617 8.00025L14 13.5243L12.6069 15.0002L6 8.00025Z"
-              fill-rule="evenodd"
+              d="M4 1.00024V15.0002H2V1.00024H4ZM14 2.47583L8.78613 8.00024L14 13.5247L12.6064 15.0002L6 8.00024L12.6064 1.00024L14 2.47583Z"
             />
           </svg>
         </button>
@@ -50,9 +48,7 @@ exports[`usePagination example Behavior and usage should render correctly 1`] = 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M10.6069 1.00049L12 2.47646L6.78617 8.00049L12 13.5245L10.6069 15.0005L4 8.00049L10.6069 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 2.47607L6.78613 8.00049L12 13.5249L10.6064 15.0005L4 8.00049L10.6064 1.00049L12 2.47607Z"
             />
           </svg>
         </button>
@@ -98,9 +94,7 @@ exports[`usePagination example Behavior and usage should render correctly 1`] = 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M3 8C3 8.82843 2.32843 9.5 1.5 9.5C0.671573 9.5 0 8.82843 0 8C0 7.17157 0.671573 6.5 1.5 6.5C2.32843 6.5 3 7.17157 3 8ZM9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8C6.5 7.17157 7.17157 6.5 8 6.5C8.82843 6.5 9.5 7.17157 9.5 8ZM14.5 9.5C15.3284 9.5 16 8.82843 16 8C16 7.17157 15.3284 6.5 14.5 6.5C13.6716 6.5 13 7.17157 13 8C13 8.82843 13.6716 9.5 14.5 9.5Z"
-            fill-rule="evenodd"
+            d="M1.5 6.5C2.32843 6.5 3 7.17157 3 8C3 8.82843 2.32843 9.5 1.5 9.5C0.671573 9.5 0 8.82843 0 8C0 7.17157 0.671573 6.5 1.5 6.5ZM8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8C6.5 7.17157 7.17157 6.5 8 6.5ZM14.5 6.5C15.3284 6.5 16 7.17157 16 8C16 8.82843 15.3284 9.5 14.5 9.5C13.6716 9.5 13 8.82843 13 8C13 7.17157 13.6716 6.5 14.5 6.5Z"
           />
         </svg>
       </li>
@@ -129,9 +123,7 @@ exports[`usePagination example Behavior and usage should render correctly 1`] = 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
         </button>
@@ -152,9 +144,7 @@ exports[`usePagination example Behavior and usage should render correctly 1`] = 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2 2.47622L7.20919 8.00024L2 13.5243L3.3954 15.0002L10 8.00024L3.3954 1.00024L2 2.47622ZM12 1.00024H14L14 15.0002H12L12 1.00024Z"
-              fill-rule="evenodd"
+              d="M10 8.00024L3.39551 15.0002L2 13.5247L7.20898 8.00024L2 2.47583L3.39551 1.00024L10 8.00024ZM14 1.00024V15.0002H12V1.00024H14Z"
             />
           </svg>
         </button>

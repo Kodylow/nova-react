@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  **/
 import packageJson from '../../../../package.json';
 import PackageInstaller from '../../../components/package-installer';
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 const Examples: ExampleIndex[] = [
   {
@@ -38,6 +38,8 @@ const Examples: ExampleIndex[] = [
   { id: 'bottom-tooltip' },
   { id: 'left-tooltip' },
   { id: 'right-tooltip' },
+  { id: 'custom-tooltips-section', title: 'Custom tooltips', type: 'section' },
+  { id: 'reusable' },
 ];
 
 export default Examples;

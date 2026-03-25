@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,17 +15,15 @@
  *
  **/
 
-import { ComponentPropsWithRef, ElementType } from "react";
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
-export type TbodyProperties<ET extends ElementType = 'tbody',> = Record<string, unknown> & ComponentPropsWithRef<ET>;
+export type TbodyProperties<ET extends ElementType = 'tbody'> = Record<string, unknown> & ComponentPropsWithRef<ET>;
 
 /**
  * Table body component that contains all the tr and td cells.
- * @docs {@link https://design.visa.com/react/components/table | See Docs}
+ * @docs {@link https://design.visa.com/components/table/?code_library=react | See Docs}
  */
-const Tbody = <ET extends ElementType = 'tbody',>(props: TbodyProperties<ET>) => (
-  <tbody {...props} />
-);
+const Tbody = <ET extends ElementType = 'tbody'>(props: TbodyProperties<ET>) => <tbody {...props} />;
 
 export default Tbody;
 

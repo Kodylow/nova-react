@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,17 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType, HTMLAttributes, ReactElement, cloneElement } from 'react';
+import {
+  type ComponentPropsWithRef,
+  type ElementType,
+  type HTMLAttributes,
+  type ReactElement,
+  cloneElement,
+} from 'react';
 
 const CSS_PREFIX = 'v-link';
 
-export type LinkProperties<ET extends ElementType = 'a',> = {
+export type LinkProperties<ET extends ElementType = 'a'> = {
   /** Alternate color scheme */
   alternate?: boolean;
   /** Disabled */
@@ -29,29 +35,37 @@ export type LinkProperties<ET extends ElementType = 'a',> = {
   /** Skip Link */
   skipLink?: boolean;
 } & (
-    | {
+  | {
       /** Cloned Element (not compatible with tag property) */
       element?: never;
       /** Tag (not compatible with element property) */
       tag?: ElementType;
     }
-    | {
+  | {
       /** Cloned Element (not compatible with tag property) */
       element?: ReactElement<ComponentPropsWithRef<ET>>;
       /** Tag (not compatible with element property) */
       tag?: never;
     }
-  ) & Omit<ComponentPropsWithRef<ET>, ''>;
+) &
+  Omit<ComponentPropsWithRef<ET>, ''>;
 
 /**
  * Text-based navigation elements that directs users to another destination.
- * @docs {@link https://design.visa.com/react/components/link | See Docs}
+ * @docs {@link https://design.visa.com/components/link/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const Link = <ET extends ElementType = 'a',>(
-  { alternate, className, disabled, element, noUnderline, skipLink, tag: Tag = 'a', ...remainingProps }: LinkProperties<ET>,
-) => {
+const Link = <ET extends ElementType = 'a'>({
+  alternate,
+  className,
+  disabled,
+  element,
+  noUnderline,
+  skipLink,
+  tag: Tag = 'a',
+  ...remainingProps
+}: LinkProperties<ET>) => {
   const classNames = cn(
     CSS_PREFIX,
     alternate && 'v-alternate',
@@ -71,10 +85,6 @@ const Link = <ET extends ElementType = 'a',>(
   );
 };
 
-export default Link;
-
-Link.defaultProps = {
-  tag: 'a',
-};
-
 Link.displayName = 'Link';
+
+export default Link;

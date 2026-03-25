@@ -2,7 +2,7 @@
   "description": "Dropdown menu enabling users to enter text or select items from a list.",
   "displayName": "combobox",
   "filePath": "/combobox/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/combobox/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//combobox/index.tsx",
   "props": [
     {
       "defaultValue": "div",
@@ -14,8 +14,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/combobox See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/combobox/?code_library=react See Docs}",
   "related": [
     "dropdown-menu"
   ]

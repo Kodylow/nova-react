@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@
  **/
 import { VisaChevronDownTiny, VisaChevronRightTiny } from '@visa/nova-icons-react';
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType, ReactElement, cloneElement } from 'react';
+import { type ComponentPropsWithRef, type ElementType, type ReactElement, cloneElement } from 'react';
 
 const CSS_PREFIX = 'v-accordion-toggle-icon';
 
-export type AccordionToggleIconProperties<ET extends ElementType = 'button',> = {
+export type AccordionToggleIconProperties<ET extends ElementType = 'button'> = {
   /** manually assign the open state of the accordion */
   accordionOpen?: boolean;
   /** The icon in closed state */
@@ -31,17 +31,15 @@ export type AccordionToggleIconProperties<ET extends ElementType = 'button',> = 
 
 /**
  * Component containing the icon and logic for the accordion toggle icon.
- * @docs {@link https://design.visa.com/react/components/accordion | See Docs}
+ * @docs {@link https://design.visa.com/components/accordion/?code_library=react | See Docs}
  */
-const AccordionToggleIcon = <ET extends ElementType = 'div',>(
-  {
-    accordionOpen,
-    className,
-    elementClosed = <VisaChevronRightTiny rtl />,
-    elementOpen = <VisaChevronDownTiny />,
-    ...remainingProps
-  }: AccordionToggleIconProperties<ET>,
-) => (
+const AccordionToggleIcon = <ET extends ElementType = 'div'>({
+  accordionOpen,
+  className,
+  elementClosed = <VisaChevronRightTiny rtl />,
+  elementOpen = <VisaChevronDownTiny />,
+  ...remainingProps
+}: AccordionToggleIconProperties<ET>) => (
   <>
     {(!accordionOpen || accordionOpen === undefined) &&
       cloneElement<AccordionToggleIconProperties>(elementClosed, {

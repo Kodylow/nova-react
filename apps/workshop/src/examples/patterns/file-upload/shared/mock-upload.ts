@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,21 +14,36 @@
  * limitations under the License.
  *
  **/
-import { UploadFile } from './types';
 
+import type { UploadFile } from './types';
+
+/**
+ * Configuration options for mock upload.
+ */
 export interface MockUploadOptions {
-  maxFileSize: number;
-  acceptedFileTypes: string[];
+  maxFileSize: number; // Maximum file size in bytes
+  acceptedFileTypes: string[]; // Array of accepted MIME types
 }
 
+/**
+ * Mock utility simulating file upload with 5-second delay and validation.
+ *
+ * @param uploadFile - File to upload
+ * @param options - Validation options
+ * @returns Promise that resolves on success or rejects with error message
+ */
 export const mockUpload = (uploadFile: UploadFile, options: MockUploadOptions): Promise<void> => {
   return new Promise((resolve, reject) => {
+    // Simulate network delay (5 seconds)
     setTimeout(() => {
       let fileError;
+
+      // Validate file size
       if (uploadFile.file.size > options.maxFileSize) {
         fileError = 'File size is too large.';
       }
 
+      // Validate file type
       if (!options.acceptedFileTypes.includes(uploadFile.file.type)) {
         fileError = 'File type not accepted.';
       }
@@ -38,6 +53,7 @@ export const mockUpload = (uploadFile: UploadFile, options: MockUploadOptions): 
         return;
       }
 
+      // Simulate successful upload
       resolve();
     }, 5000);
   });

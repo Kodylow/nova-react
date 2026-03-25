@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,17 +15,19 @@
  *
  **/
 import cn from 'clsx';
-import MessageCloseButton, { MessageCloseButtonProperties } from '../message-close-button';
+import MessageCloseButton, { type MessageCloseButtonProperties } from '../message-close-button';
 
 export type FlagCloseButtonProperties = MessageCloseButtonProperties;
 
 /**
  * Close button to dismiss a flag message.
- * @docs {@link https://design.visa.com/react/components/flag | See Docs}
+ * @docs {@link https://design.visa.com/components/flag/?code_library=react | See Docs}
  */
-const FlagCloseButton = (
-  { children, className, ...remainingProps }: FlagCloseButtonProperties,
-) => <MessageCloseButton className={cn('-v-mt-8 -v-mr-8', className)} {...remainingProps}>{children}</MessageCloseButton>;
+const FlagCloseButton = ({ children, className, ...remainingProps }: FlagCloseButtonProperties) => (
+  <MessageCloseButton className={cn('-v-mt-8 -v-mr-8', className)} {...remainingProps}>
+    {children}
+  </MessageCloseButton>
+);
 
 export default FlagCloseButton;
 

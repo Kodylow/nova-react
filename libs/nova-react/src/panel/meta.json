@@ -2,7 +2,7 @@
   "description": "Collapsible or persistent containers used to present supplementary information.",
   "displayName": "panel",
   "filePath": "/panel/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/panel/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//panel/index.tsx",
   "props": [
     {
       "description": "Expandable",
@@ -32,8 +32,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/panel See Docs}",
-  "testAvg": 96,
+  "docs": "{@link https://design.visa.com/components/panel/?code_library=react See Docs}",
   "related": [
     "panel-body",
     "panel-content",

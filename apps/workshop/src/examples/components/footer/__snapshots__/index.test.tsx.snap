@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Footer examples Default footer should render correctly 1`] = `
+exports[`Footer examples > Default footer should render correctly 1`] = `
 <div>
   <footer
     class="v-footer v-gap-15"
@@ -26,7 +26,7 @@ exports[`Footer examples Default footer should render correctly 1`] = `
     <div
       class="v-flex v-flex-grow v-flex-wrap v-gap-42 v-justify-content-between"
     >
-      Copyright © 2025 Visa Inc. All Rights Reserved
+      Copyright © 2026 Visa Inc. All Rights Reserved
       <ul
         class="v-flex v-flex-wrap v-gap-16"
       >
@@ -60,7 +60,7 @@ exports[`Footer examples Default footer should render correctly 1`] = `
 </div>
 `;
 
-exports[`Footer examples Navigational footer should render correctly 1`] = `
+exports[`Footer examples > Navigational footer should render correctly 1`] = `
 <div>
   <footer
     class="v-footer v-flex v-flex-row v-gap-24 v-p-24"

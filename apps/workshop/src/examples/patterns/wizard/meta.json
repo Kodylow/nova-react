@@ -3,7 +3,6 @@
     "file": "horizontal-wizard.tsx",
     "id": "horizontal-wizard",
     "title": "Horizontal multi-page wizard",
-    "testAvg": 96,
     "tags": {
       "patterns": true
     }
@@ -12,7 +11,6 @@
     "file": "responsive-horizontal-wizard.tsx",
     "id": "responsive-horizontal-wizard",
     "title": "Responsive horizontal wizard",
-    "testAvg": 96,
     "tags": {
       "patterns": true
     }
@@ -21,7 +19,6 @@
     "file": "single-page-wizard.tsx",
     "id": "single-page-wizard",
     "title": "Default single-page wizard",
-    "testAvg": 98,
     "tags": {
       "patterns": true
     }
@@ -30,7 +27,6 @@
     "file": "vertical-wizard.tsx",
     "id": "vertical-wizard",
     "title": "Vertical multi-page wizard",
-    "testAvg": 96,
     "tags": {
       "patterns": true
     }
@@ -39,7 +35,6 @@
     "file": "exit-dialog.tsx",
     "id": "exit-dialog",
     "title": "Exit dialog",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -49,7 +44,6 @@
     "file": "save-flag.tsx",
     "id": "save-flag",
     "title": "Save flag",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -59,7 +53,6 @@
     "file": "success-message.tsx",
     "id": "success-message",
     "title": "Success message",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -69,7 +62,6 @@
     "file": "summary-page.tsx",
     "id": "summary-page",
     "title": "Summary page",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true

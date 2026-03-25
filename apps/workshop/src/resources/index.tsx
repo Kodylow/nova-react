@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,9 +48,6 @@ const Resources = () => {
     'Custom Hooks': meta.stats.hooks,
     Examples: meta.stats.examples,
     'Helper Components': meta.stats.components - meta.components.length,
-    Tests: meta.totalTests,
-    'Test Coverage': `${meta.testAvg}%`,
-    'Test Suites': meta.testSuites,
     'Total Components': meta.stats.components,
   };
   return (

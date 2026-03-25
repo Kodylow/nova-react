@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Input examples Date selector with disabled dates should render correctly 1`] = `
+exports[`Input examples > Date selector with disabled dates should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-flex-wrap v-gap-4"
@@ -27,7 +27,7 @@ exports[`Input examples Date selector with disabled dates should render correctl
 </div>
 `;
 
-exports[`Input examples Date selector with error should render correctly 1`] = `
+exports[`Input examples > Date selector with error should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-4"
@@ -69,7 +69,7 @@ exports[`Input examples Date selector with error should render correctly 1`] = `
 </div>
 `;
 
-exports[`Input examples Default date range selector should render correctly 1`] = `
+exports[`Input examples > Default date range selector should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-wrap v-gap-12"
@@ -118,7 +118,7 @@ exports[`Input examples Default date range selector should render correctly 1`] 
 </div>
 `;
 
-exports[`Input examples Default date selector should render correctly 1`] = `
+exports[`Input examples > Default date selector should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-4"
@@ -143,7 +143,7 @@ exports[`Input examples Default date selector should render correctly 1`] = `
 </div>
 `;
 
-exports[`Input examples Default time selector should render correctly 1`] = `
+exports[`Input examples > Default time selector should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-flex-grow v-gap-4"
@@ -168,7 +168,7 @@ exports[`Input examples Default time selector should render correctly 1`] = `
 </div>
 `;
 
-exports[`Input examples Disabled date selector should render correctly 1`] = `
+exports[`Input examples > Disabled date selector should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-4"
@@ -194,7 +194,7 @@ exports[`Input examples Disabled date selector should render correctly 1`] = `
 </div>
 `;
 
-exports[`Input examples Disabled time selector should render correctly 1`] = `
+exports[`Input examples > Disabled time selector should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-flex-grow v-gap-4"
@@ -220,7 +220,7 @@ exports[`Input examples Disabled time selector should render correctly 1`] = `
 </div>
 `;
 
-exports[`Input examples Read-only date selector should render correctly 1`] = `
+exports[`Input examples > Read-only date selector should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-4"
@@ -246,7 +246,7 @@ exports[`Input examples Read-only date selector should render correctly 1`] = `
 </div>
 `;
 
-exports[`Input examples Read-only time selector should render correctly 1`] = `
+exports[`Input examples > Read-only time selector should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-flex-grow v-gap-4"
@@ -272,7 +272,7 @@ exports[`Input examples Read-only time selector should render correctly 1`] = `
 </div>
 `;
 
-exports[`Input examples Stacked date range selector should render correctly 1`] = `
+exports[`Input examples > Stacked date range selector should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-12"
@@ -321,7 +321,7 @@ exports[`Input examples Stacked date range selector should render correctly 1`] 
 </div>
 `;
 
-exports[`Input examples Time selector with error should render correctly 1`] = `
+exports[`Input examples > Time selector with error should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-flex-grow v-gap-4"

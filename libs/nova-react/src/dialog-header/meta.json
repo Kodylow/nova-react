@@ -2,7 +2,7 @@
   "description": "Container for the heading area of a dialog pop-up window.",
   "displayName": "dialogheader",
   "filePath": "/dialog-header/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/dialog-header/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//dialog-header/index.tsx",
   "props": [
     {
       "description": "Color variant",
@@ -24,6 +24,5 @@
       "type": "\"label\" | \"body-1\" | \"body-2-bold\" | \"body-2-link\" | \"body-2-medium\" | \"body-2\" | \"body-3\" | \"button-large\" | \"button-medium\" | \"button-small\" | \"display-1\" | \"display-2\" | \"headline-1\" | \"headline-2\" | \"headline-3\" | \"headline-4\" | \"label-active\" | \"label-large-active\" | \"label-large\" | \"label-small\" | \"overline\" | \"subtitle-1\" | \"subtitle-2\" | \"subtitle-3\""
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/dialog See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/dialog/?code_library=react See Docs}"
 }

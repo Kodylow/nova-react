@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,19 +14,19 @@
  * limitations under the License.
  *
  **/
-import React from 'react';
 import cn from 'clsx';
+import type { FC, SVGProps } from 'react';
 
 const CSS_PREFIX = 'v-logo';
 
-interface VisaLogoProperties extends React.SVGProps<SVGSVGElement> {
+interface VisaLogoProperties extends SVGProps<SVGSVGElement> {
   /** aria-label */
   'aria-label'?: string;
   /** CSS Class Name */
   className?: string;
 }
 
-const VisaLogo: React.FC<VisaLogoProperties> = ({ className, 'aria-label': ariaLabel, ...remainingProps }) => (
+const VisaLogo: FC<VisaLogoProperties> = ({ className, 'aria-label': ariaLabel, ...remainingProps }) => (
   <svg
     aria-hidden={ariaLabel ? undefined : 'true'}
     aria-label={ariaLabel || undefined}

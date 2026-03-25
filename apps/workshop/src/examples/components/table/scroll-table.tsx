@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
-import { CSSProperties } from 'react';
+import type { CSSProperties } from 'react';
 import { ScreenReader, Table, TableWrapper, Tbody, Td, Th, Thead, Tr } from '@visa/nova-react';
 
 export const ScrollTable = () => {
@@ -43,7 +43,7 @@ export const ScrollTable = () => {
         </Thead>
         <Tbody>
           <Tr>
-            <Td>A1</Td>
+            <Th scope="row">A1</Th>
             <Td>B1</Td>
             <Td>C1</Td>
             <Td>D1</Td>
@@ -57,7 +57,7 @@ export const ScrollTable = () => {
             <Td>L1</Td>
           </Tr>
           <Tr>
-            <Td>A2</Td>
+            <Th scope="row">A2</Th>
             <Td>B2</Td>
             <Td>C2</Td>
             <Td>D2</Td>
@@ -71,7 +71,7 @@ export const ScrollTable = () => {
             <Td>L2</Td>
           </Tr>
           <Tr>
-            <Td>A3</Td>
+            <Th scope="row">A3</Th>
             <Td>B3</Td>
             <Td>C3</Td>
             <Td>D3</Td>
@@ -85,7 +85,7 @@ export const ScrollTable = () => {
             <Td>L3</Td>
           </Tr>
           <Tr>
-            <Td>A4</Td>
+            <Th scope="row">A4</Th>
             <Td>B4</Td>
             <Td>C4</Td>
             <Td>D4</Td>
@@ -99,7 +99,7 @@ export const ScrollTable = () => {
             <Td>L4</Td>
           </Tr>
           <Tr>
-            <Td>A5</Td>
+            <Th scope="row">A5</Th>
             <Td>B5</Td>
             <Td>C5</Td>
             <Td>D5</Td>
@@ -113,7 +113,7 @@ export const ScrollTable = () => {
             <Td>L5</Td>
           </Tr>
           <Tr>
-            <Td>A6</Td>
+            <Th scope="row">A6</Th>
             <Td>B6</Td>
             <Td>C6</Td>
             <Td>D6</Td>

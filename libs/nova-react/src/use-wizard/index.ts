@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,16 +39,17 @@ const defaultOptions = {
   autoProgressError: false,
   defaultActiveStep: 0,
   isExclusiveSets: true,
+  length: 1,
 } satisfies Partial<UseWizardOptions>;
 
 /**
- * @docs {@link https://design.visa.com/react/hooks/use-wizard | See Docs}
+ * @docs {@link https://design.visa.com/patterns/wizard | See Docs}
  * @description This hook is used to control the state of a wizard component.
  * @related wizard
  * @vgar TODO
  * @wcag TODO
  */
-export const useWizard = (useWizardOptions: UseWizardOptions) => {
+export const useWizard = (useWizardOptions: UseWizardOptions = defaultOptions) => {
   /// Options
   const { autoProgressComplete, autoProgressError, isExclusiveSets, length, defaultActiveStep } = {
     ...defaultOptions,
@@ -71,7 +72,8 @@ export const useWizard = (useWizardOptions: UseWizardOptions) => {
     });
 
     let nextStep = index;
-    if (index < 0) nextStep = 0; // Stays at first step
+    if (index < 0)
+      nextStep = 0; // Stays at first step
     else if (index >= length) nextStep = length - 1; // Stays at last step
     setMaxStep(prev => Math.max(prev, nextStep)); // Update the maximum step
     setCurrentStep(nextStep);
@@ -199,10 +201,3 @@ export const useWizard = (useWizardOptions: UseWizardOptions) => {
 export default useWizard;
 
 useWizard.displayName = 'useWizard';
-
-useWizard.defaultProps = {
-  autoProgressComplete: true,
-  autoProgressError: false,
-  defaultActiveStep: 0,
-  isExclusiveSets: true,
-};

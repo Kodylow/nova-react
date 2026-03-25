@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import {
 } from '@visa/nova-icons-react';
 import { Button, Nav, Tab, TabSuffix, Tabs } from '@visa/nova-react';
 import { camelCase, sentenceCase } from 'change-case';
-import { FC, useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, type FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import meta from '../../../examples/meta.json';
 import { Paths } from '../../../routes/paths';

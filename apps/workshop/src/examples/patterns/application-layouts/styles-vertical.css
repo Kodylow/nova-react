@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,40 +14,45 @@
  * limitations under the License.
  *
  **/
+
+/* Layout with sidebar navigation on left and main content on right, both filling full height */
 .layout-vertical {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 100%;
-    grid-template-areas: "header content";
-    background-color: var(--palette-default-surface-3, #f0f0f0);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: 'header content';
+  background-color: var(--palette-default-surface-3, #f0f0f0);
 }
 
-/* open nav */
+/* When sidebar navigation is expanded, set fixed width for consistent spacing */
 .layout-vertical:has(.v-nav .v-tabs) {
-    grid-template-columns: 242px 1fr;
+  grid-template-columns: 242px 1fr;
 }
 
+/* Higher z-index keeps sidebar navigation above other elements */
 .layout-vertical .layout-header {
-    z-index: 3;
-    position: relative;
-    grid-area: header;
+  z-index: 3;
+  position: relative;
+  grid-area: header;
 }
-    
+
+/* Allows content area to scroll independently while sidebar stays fixed */
 .layout-vertical .layout-content {
-    position: relative;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    grid-area: content;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  grid-area: content;
 }
 
+/* Main content grows to fill available space, pushing footer to bottom */
 .layout-vertical main {
-    display: block;
-    flex-grow: 1;
+  display: block;
+  flex-grow: 1;
 }
 
-/* customize the default footer color */
+/* Match footer background to overall page background */
 .layout-vertical footer {
-  --v-footer-background-color: var(--v-palette-default-surface-3);
+  --v-footer-background-color: var(--palette-default-surface-3);
 }

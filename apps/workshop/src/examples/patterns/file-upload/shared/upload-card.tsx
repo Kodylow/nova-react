@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,14 @@
 import React from 'react';
 import { Utility, UtilityFragment, Surface, Typography, ScreenReader } from '@visa/nova-react';
 import { VisaErrorTiny } from '@visa/nova-icons-react';
-import { UploadFile, UploadCardProps } from './types';
+import type { UploadFile, UploadCardProps } from './types';
 
+/**
+ * Generates unique ID for error message to link with aria-describedby.
+ *
+ * @param file - File to generate error ID for
+ * @returns Unique error ID or empty string if no error
+ */
 function getListItemErrorId(file: UploadFile): string {
   if (!file.error) {
     return '';
@@ -26,6 +32,13 @@ function getListItemErrorId(file: UploadFile): string {
   return `file-list-error-${file.id}`;
 }
 
+/**
+ * Card-based file display component showing file icon, name, size, and custom action buttons.
+ * Used in list-style upload patterns; includes error state styling and accessible error messaging.
+ *
+ * @param file - UploadFile object containing file data and state
+ * @param renderActions - Render prop function returning action buttons/elements
+ */
 export const UploadCard: React.FC<UploadCardProps> = ({ file, renderActions }) => {
   const errorId = getListItemErrorId(file);
   const fileNameId = `${file.id}-name`;
@@ -36,6 +49,7 @@ export const UploadCard: React.FC<UploadCardProps> = ({ file, renderActions }) =
   return (
     <Utility tag="li" vFlex vFlexCol vGap={5}>
       <UtilityFragment vFlex vJustifyContent="between" vPaddingHorizontal={15} vPaddingVertical={7}>
+        {/* Card container with error state styling */}
         <Surface
           style={{
             border: file.error
@@ -45,6 +59,7 @@ export const UploadCard: React.FC<UploadCardProps> = ({ file, renderActions }) =
             wordBreak: 'break-all',
           }}
         >
+          {/* File info section with icon, name, and size */}
           <Utility vFlex vAlignItems="center" vGap={8}>
             {file.icon}
             <div>
@@ -54,6 +69,7 @@ export const UploadCard: React.FC<UploadCardProps> = ({ file, renderActions }) =
               <Typography id={fileSizeId} variant="label-small" colorScheme="subtle">
                 {fileSize}
               </Typography>
+              {/* Hidden error message for screen readers */}
               <UtilityFragment vHide={!file.error}>
                 <ScreenReader tag="span" id={errorId}>
                   {errorMessage}
@@ -61,11 +77,13 @@ export const UploadCard: React.FC<UploadCardProps> = ({ file, renderActions }) =
               </UtilityFragment>
             </div>
           </Utility>
+          {/* Action buttons area (passed via render prop) */}
           <Utility vFlex vAlignItems="center" vGap={8}>
             {renderActions()}
           </Utility>
         </Surface>
       </UtilityFragment>
+      {/* Visible error message below card (aria-hidden since screen reader uses errorId) */}
       <UtilityFragment
         vHide={!file.error}
         vFlex

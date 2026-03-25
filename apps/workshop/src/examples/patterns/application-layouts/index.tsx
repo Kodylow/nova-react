@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,13 @@
  * limitations under the License.
  *
  **/
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 const Examples: ExampleIndex[] = [
     { id: 'horizontal-application-layouts', title: 'Horizontal application layouts', type: 'section' },
     { id: 'horizontal-application-layout' },
     { id: 'horizontal-nav-layout' },
+    { id: "styles-horizontal" },
     { id: 'stacked-horizontal-application-layouts', title: 'Stacked horizontal application layouts', type: 'section' },
     { id: "stacked-horizontal-application-layout" },
     { id: "stacked-horizontal-nav-layout" },
@@ -34,7 +35,6 @@ const Examples: ExampleIndex[] = [
     { id: "styles-mixed" },
     { id: 'shared-layouts-examples', title: 'Shared Components', type: 'section' },
     { id: "footer-layout" },
-    { id: "styles-horizontal" },
 
 ];
 

@@ -2,7 +2,7 @@
   "description": "Manages and navigates multi-step processes within your application.",
   "displayName": "wizard",
   "filePath": "/wizard/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/wizard/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//wizard/index.tsx",
   "props": [
     {
       "description": "CSS Class Name",
@@ -30,10 +30,9 @@
       "type": "boolean"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/wizard See Docs}",
+  "docs": "{@link https://design.visa.com/patterns/wizard See Docs}",
   "vgar": "TODO",
   "wcag": "TODO",
-  "testAvg": 100,
   "related": [
     "wizard-step",
     "use-wizard",

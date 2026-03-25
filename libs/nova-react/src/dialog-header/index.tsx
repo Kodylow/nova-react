@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import cn from 'clsx';
-import Typography, { TypographyProperties } from '../typography';
+import Typography, { type TypographyProperties } from '../typography';
 
 const CSS_PREFIX = 'v-dialog-header';
 
@@ -23,11 +23,9 @@ export type DialogHeaderProperties = TypographyProperties;
 
 /**
  * Container for the heading area of a dialog pop-up window.
- * @docs {@link https://design.visa.com/react/components/dialog | See Docs}
+ * @docs {@link https://design.visa.com/components/dialog/?code_library=react | See Docs}
  */
-const DialogHeader = (
-  { className, tag = 'h2', ...remainingProps }: DialogHeaderProperties,
-) => (
+const DialogHeader = ({ className, tag = 'h2', ...remainingProps }: DialogHeaderProperties) => (
   <Typography
     className={cn(CSS_PREFIX, 'v-align-items-center v-flex v-gap-6 v-justify-content-start', className)}
     tag={tag}
@@ -36,9 +34,5 @@ const DialogHeader = (
 );
 
 export default DialogHeader;
-
-DialogHeader.defaultProps = {
-  tag: 'h2',
-};
 
 DialogHeader.displayName = 'DialogHeader';

@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Tabs examples Alternate horizontal tablist should render correctly 1`] = `
+exports[`Tabs examples > Alternate horizontal tablist should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-alternate"
@@ -84,7 +84,7 @@ exports[`Tabs examples Alternate horizontal tablist should render correctly 1`] 
 </div>
 `;
 
-exports[`Tabs examples Alternate stacked tablist should render correctly 1`] = `
+exports[`Tabs examples > Alternate stacked tablist should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-alternate"
@@ -116,7 +116,7 @@ exports[`Tabs examples Alternate stacked tablist should render correctly 1`] = `
             >
               <path
                 class="v-icon-primary"
-                d="M24 24H0V22.0232H22V11.2299L12 3.51053L2 11.2299V20.0464H0V10.2613L12 1L24 10.2613V24Z"
+                d="M24 10.2617V24H0V22.0234H22V11.2295L12 3.51074L2 11.2295V20.0469H0V10.2617L12 1L24 10.2617Z"
               />
               <path
                 class="v-icon-secondary"
@@ -148,15 +148,11 @@ exports[`Tabs examples Alternate stacked tablist should render correctly 1`] = `
             >
               <path
                 class="v-icon-secondary"
-                clip-rule="evenodd"
-                d="M7 9H17V7H7V9ZM11 13H14V11H11V13ZM7 17H13V15H7V17ZM9 13H7V11H9V13Z"
-                fill-rule="evenodd"
+                d="M13 17H7V15H13V17ZM9 13H7V11H9V13ZM14 13H11V11H14V13ZM17 9H7V7H17V9Z"
               />
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M3 0L8 3L12 0L16 3L21 0V24L16 21L12 24L8 21L3 24V21.6678L6.97095 19.2852L6.97088 19.2851L8.12416 18.5931L12 21.5L15.8758 18.5931L19 20.4676V3.53238L15.8758 5.40688L12 2.5L8.12416 5.40688L5 3.53238V18.1355L3 19.3355V0Z"
-                fill-rule="evenodd"
+                d="M21 24L16 21L12 24L8 21L3 24V21.668L6.97168 19.2852L6.9707 19.2842L8.12402 18.5928L12 21.5L15.876 18.5928L19 20.4678V3.53223L15.876 5.40723L12 2.5L8.12402 5.40723L5 3.53223V18.1357L3 19.335V0L8 3L12 0L16 3L21 0V24Z"
               />
             </svg>
             Label 2
@@ -184,11 +180,11 @@ exports[`Tabs examples Alternate stacked tablist should render correctly 1`] = `
             >
               <path
                 class="v-icon-secondary"
-                d="M23 12H12V1H12.9919C18.5068 1 23 5.49324 23 11.0081V12ZM13.9838 10.0162H20.9567C20.5104 6.38593 17.6141 3.48963 13.9838 3.04328V10.0162Z"
+                d="M12.9922 1C18.5068 1.00016 22.9998 5.49317 23 11.0078V12H12V1H12.9922ZM13.9834 10.0166H20.957C20.5107 6.3863 17.6137 3.48932 13.9834 3.04297V10.0166Z"
               />
               <path
                 class="v-icon-primary"
-                d="M11.0247 23C5.50067 23 1 18.5015 1 12.9802C1 10.2096 2.11275 7.51843 4.06006 5.59193C5.76892 3.89382 7.95468 2.99015 10.21 3.00008L10.1901 4.98617C8.48125 4.97624 6.79226 5.6813 5.46093 7.00205C3.89116 8.56113 2.98705 10.7359 2.98705 12.9802C2.98705 17.4092 6.59355 21.0139 11.0247 21.0139C13.2402 21.0139 15.4955 20.0705 17.0554 18.5015C18.337 17.2006 19.0325 15.5919 19.0126 13.9534L20.9997 13.9335C21.0195 16.0983 20.1254 18.2235 18.4662 19.9017C16.5387 21.8381 13.7569 23 11.0247 23Z"
+                d="M10.1904 4.98633C8.48159 4.9764 6.79225 5.68124 5.46094 7.00195C3.89117 8.56103 2.9873 10.7362 2.9873 12.9805C2.98746 17.4092 6.5935 21.0135 11.0244 21.0137C13.2399 21.0137 15.4958 20.0709 17.0557 18.502C18.3373 17.2011 19.0326 15.5916 19.0127 13.9531L21 13.9336C21.0198 16.0984 20.125 18.2231 18.4658 19.9014C16.5384 21.8378 13.7566 23 11.0244 23C5.50063 22.9999 1.00016 18.5016 1 12.9805C1 10.2099 2.11324 7.5183 4.06055 5.5918C5.76936 3.8939 7.9548 2.99008 10.21 3L10.1904 4.98633Z"
               />
             </svg>
             Label 3
@@ -216,18 +212,8 @@ exports[`Tabs examples Alternate stacked tablist should render correctly 1`] = `
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8.23866e-05 7.91984L2.00008 9.19257V18H22.0001V6.82167L12.0001 14.1853L0.463207 5.84366C0.088112 5.60496 -0.0843434 5.14729 0.0399622 4.72041C0.164268 4.29354 0.555479 4 1.00008 4H24.0001V20H8.23866e-05V7.91984ZM12.0001 11.8147L4.43414 6H19.566L12.0001 11.8147Z"
-                fill-rule="evenodd"
+                d="M24 20H0V7.91895L2 9.19238V18H22V6.82129L12 14.1855L0.462891 5.84375C0.0879965 5.60507 -0.0841075 5.14744 0.0400391 4.7207C0.164337 4.29386 0.555431 4.00004 1 4H24V20ZM12 11.8145L19.5664 6H4.43457L12 11.8145Z"
               />
-              <defs>
-                <clippath>
-                  <rect
-                    height="24"
-                    width="24"
-                  />
-                </clippath>
-              </defs>
             </svg>
             Label 4
           </button>
@@ -252,7 +238,7 @@ exports[`Tabs examples Alternate stacked tablist should render correctly 1`] = `
 </div>
 `;
 
-exports[`Tabs examples Alternate vertical tablist should render correctly 1`] = `
+exports[`Tabs examples > Alternate vertical tablist should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-alternate"
@@ -341,7 +327,7 @@ exports[`Tabs examples Alternate vertical tablist should render correctly 1`] = 
 </div>
 `;
 
-exports[`Tabs examples Default horizontal tab should render correctly 1`] = `
+exports[`Tabs examples > Default horizontal tab should render correctly 1`] = `
 <div>
   <div>
     <ul
@@ -423,7 +409,7 @@ exports[`Tabs examples Default horizontal tab should render correctly 1`] = `
 </div>
 `;
 
-exports[`Tabs examples Default stacked tablist should render correctly 1`] = `
+exports[`Tabs examples > Default stacked tablist should render correctly 1`] = `
 <div>
   <div>
     <ul
@@ -452,7 +438,7 @@ exports[`Tabs examples Default stacked tablist should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              d="M24 24H0V22.0232H22V11.2299L12 3.51053L2 11.2299V20.0464H0V10.2613L12 1L24 10.2613V24Z"
+              d="M24 10.2617V24H0V22.0234H22V11.2295L12 3.51074L2 11.2295V20.0469H0V10.2617L12 1L24 10.2617Z"
             />
             <path
               class="v-icon-secondary"
@@ -484,15 +470,11 @@ exports[`Tabs examples Default stacked tablist should render correctly 1`] = `
           >
             <path
               class="v-icon-secondary"
-              clip-rule="evenodd"
-              d="M7 9H17V7H7V9ZM11 13H14V11H11V13ZM7 17H13V15H7V17ZM9 13H7V11H9V13Z"
-              fill-rule="evenodd"
+              d="M13 17H7V15H13V17ZM9 13H7V11H9V13ZM14 13H11V11H14V13ZM17 9H7V7H17V9Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M3 0L8 3L12 0L16 3L21 0V24L16 21L12 24L8 21L3 24V21.6678L6.97095 19.2852L6.97088 19.2851L8.12416 18.5931L12 21.5L15.8758 18.5931L19 20.4676V3.53238L15.8758 5.40688L12 2.5L8.12416 5.40688L5 3.53238V18.1355L3 19.3355V0Z"
-              fill-rule="evenodd"
+              d="M21 24L16 21L12 24L8 21L3 24V21.668L6.97168 19.2852L6.9707 19.2842L8.12402 18.5928L12 21.5L15.876 18.5928L19 20.4678V3.53223L15.876 5.40723L12 2.5L8.12402 5.40723L5 3.53223V18.1357L3 19.335V0L8 3L12 0L16 3L21 0V24Z"
             />
           </svg>
           Label 2
@@ -520,11 +502,11 @@ exports[`Tabs examples Default stacked tablist should render correctly 1`] = `
           >
             <path
               class="v-icon-secondary"
-              d="M23 12H12V1H12.9919C18.5068 1 23 5.49324 23 11.0081V12ZM13.9838 10.0162H20.9567C20.5104 6.38593 17.6141 3.48963 13.9838 3.04328V10.0162Z"
+              d="M12.9922 1C18.5068 1.00016 22.9998 5.49317 23 11.0078V12H12V1H12.9922ZM13.9834 10.0166H20.957C20.5107 6.3863 17.6137 3.48932 13.9834 3.04297V10.0166Z"
             />
             <path
               class="v-icon-primary"
-              d="M11.0247 23C5.50067 23 1 18.5015 1 12.9802C1 10.2096 2.11275 7.51843 4.06006 5.59193C5.76892 3.89382 7.95468 2.99015 10.21 3.00008L10.1901 4.98617C8.48125 4.97624 6.79226 5.6813 5.46093 7.00205C3.89116 8.56113 2.98705 10.7359 2.98705 12.9802C2.98705 17.4092 6.59355 21.0139 11.0247 21.0139C13.2402 21.0139 15.4955 20.0705 17.0554 18.5015C18.337 17.2006 19.0325 15.5919 19.0126 13.9534L20.9997 13.9335C21.0195 16.0983 20.1254 18.2235 18.4662 19.9017C16.5387 21.8381 13.7569 23 11.0247 23Z"
+              d="M10.1904 4.98633C8.48159 4.9764 6.79225 5.68124 5.46094 7.00195C3.89117 8.56103 2.9873 10.7362 2.9873 12.9805C2.98746 17.4092 6.5935 21.0135 11.0244 21.0137C13.2399 21.0137 15.4958 20.0709 17.0557 18.502C18.3373 17.2011 19.0326 15.5916 19.0127 13.9531L21 13.9336C21.0198 16.0984 20.125 18.2231 18.4658 19.9014C16.5384 21.8378 13.7566 23 11.0244 23C5.50063 22.9999 1.00016 18.5016 1 12.9805C1 10.2099 2.11324 7.5183 4.06055 5.5918C5.76936 3.8939 7.9548 2.99008 10.21 3L10.1904 4.98633Z"
             />
           </svg>
           Label 3
@@ -552,18 +534,8 @@ exports[`Tabs examples Default stacked tablist should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M8.23866e-05 7.91984L2.00008 9.19257V18H22.0001V6.82167L12.0001 14.1853L0.463207 5.84366C0.088112 5.60496 -0.0843434 5.14729 0.0399622 4.72041C0.164268 4.29354 0.555479 4 1.00008 4H24.0001V20H8.23866e-05V7.91984ZM12.0001 11.8147L4.43414 6H19.566L12.0001 11.8147Z"
-              fill-rule="evenodd"
+              d="M24 20H0V7.91895L2 9.19238V18H22V6.82129L12 14.1855L0.462891 5.84375C0.0879965 5.60507 -0.0841075 5.14744 0.0400391 4.7207C0.164337 4.29386 0.555431 4.00004 1 4H24V20ZM12 11.8145L19.5664 6H4.43457L12 11.8145Z"
             />
-            <defs>
-              <clippath>
-                <rect
-                  height="24"
-                  width="24"
-                />
-              </clippath>
-            </defs>
           </svg>
           Label 4
         </button>
@@ -587,7 +559,7 @@ exports[`Tabs examples Default stacked tablist should render correctly 1`] = `
 </div>
 `;
 
-exports[`Tabs examples Default vertical tablist should render correctly 1`] = `
+exports[`Tabs examples > Default vertical tablist should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-wrap v-gap-8"
@@ -671,7 +643,7 @@ exports[`Tabs examples Default vertical tablist should render correctly 1`] = `
 </div>
 `;
 
-exports[`Tabs examples Horizontal tab with icon should render correctly 1`] = `
+exports[`Tabs examples > Horizontal tab with icon should render correctly 1`] = `
 <div>
   <div>
     <ul
@@ -700,15 +672,11 @@ exports[`Tabs examples Horizontal tab with icon should render correctly 1`] = `
           >
             <path
               class="v-icon-secondary"
-              clip-rule="evenodd"
-              d="M7 0H8C12.4183 0 16 3.58172 16 8V9H7V0ZM9 2.08296V7H13.917C13.4955 4.4875 11.5125 2.50448 9 2.08296Z"
-              fill-rule="evenodd"
+              d="M8 0C12.4183 0 16 3.58172 16 8V9H7V0H8ZM9 7H13.917C13.4955 4.4875 11.5125 2.50453 9 2.08301V7Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5 0.578125C4.65376 0.718269 4.3195 0.881945 3.99927 1.06719C1.61068 2.44891 0 5.03393 0 7.99632C0 12.4146 3.58172 15.9963 8 15.9963C10.9624 15.9963 13.5474 14.3856 14.9291 11.997C15.1144 11.6768 15.278 11.3426 15.4182 10.9963H13.1975C12.1585 12.7919 10.2193 13.9963 8 13.9963C4.68629 13.9963 2 11.31 2 7.99632C2 5.77703 3.20439 3.83786 5 2.79882V0.578125Z"
-              fill-rule="evenodd"
+              d="M5 2.79883C3.20445 3.83783 2.00008 5.7769 2 7.99609C2 11.3098 4.68629 13.9961 8 13.9961C10.2193 13.9961 12.1582 12.7917 13.1973 10.9961H15.417C15.2769 11.3423 15.1139 11.6769 14.9287 11.9971C13.547 14.3856 10.9623 15.9961 8 15.9961C3.58172 15.9961 0 12.4144 0 7.99609C8.04098e-05 5.03391 1.61064 2.44912 3.99902 1.06738C4.31914 0.882203 4.65388 0.719215 5 0.579102V2.79883Z"
             />
           </svg>
           Label 1
@@ -736,13 +704,11 @@ exports[`Tabs examples Horizontal tab with icon should render correctly 1`] = `
           >
             <path
               class="v-icon-secondary"
-              d="M10 6.99609C10 8.10066 9.10457 8.99609 8 8.99609C6.89543 8.99609 6 8.10066 6 6.99609C6 5.89152 6.89543 4.99609 8 4.99609C9.10457 4.99609 10 5.89152 10 6.99609Z"
+              d="M8 4.99609C9.10457 4.99609 10 5.89152 10 6.99609C10 8.10066 9.10457 8.99609 8 8.99609C6.89543 8.99609 6 8.10066 6 6.99609C6 5.89152 6.89543 4.99609 8 4.99609Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M6 3H10C12.2091 3 14 4.79086 14 7C14 9.20914 12.2091 11 10 11H6C3.79086 11 2 9.20914 2 7C2 4.79086 3.79086 3 6 3ZM0 7C0 3.68629 2.68629 1 6 1H10C13.3137 1 16 3.68629 16 7C16 10.3137 13.3137 13 10 13H8L5 16V12.917C2.16229 12.441 0 9.973 0 7Z"
-              fill-rule="evenodd"
+              d="M10 1C13.3137 1 16 3.68629 16 7C16 10.3137 13.3137 13 10 13H8L5 16V12.915C2.16245 12.4388 0 9.97288 0 7C0 3.68629 2.68629 1 6 1H10ZM6 3C3.79086 3 2 4.79086 2 7C2 9.20914 3.79086 11 6 11H10C12.2091 11 14 9.20914 14 7C14 4.79086 12.2091 3 10 3H6Z"
             />
           </svg>
           Label 2
@@ -770,9 +736,7 @@ exports[`Tabs examples Horizontal tab with icon should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M3.70328 4L8 7.6829L12.2967 4H3.70328ZM14 5.1742V12H2V8.42857L0 6.71429V14H16V2H0V3.5L1.68348 4.9029L7.02381 9.48032C7.58554 9.96181 8.41445 9.96181 8.97618 9.48033L14 5.1742Z"
-              fill-rule="evenodd"
+              d="M16 14H0V6.71387L2 8.42773V12H14V5.17285L8.97656 9.48047C8.41483 9.96196 7.58517 9.96196 7.02344 9.48047L1.68262 4.90137L0 3.5V2H16V14ZM8 7.68262L12.2969 4H3.70312L8 7.68262Z"
             />
           </svg>
           Label 3
@@ -800,15 +764,11 @@ exports[`Tabs examples Horizontal tab with icon should render correctly 1`] = `
           >
             <path
               class="v-icon-secondary"
-              clip-rule="evenodd"
-              d="M5 9C5 7.89543 5.89543 7 7 7H9C10.1046 7 11 7.89543 11 9V12H9V9H7V12H5V9Z"
-              fill-rule="evenodd"
+              d="M9 7C10.1046 7 11 7.89543 11 9V12H9V9H7V12H5V9C5 7.89543 5.89543 7 7 7H9Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M16 6.4854L8 0.771118L0 6.4854V12H2V7.51464L8 3.22893L14 7.51464V14H0V16H16V6.4854Z"
-              fill-rule="evenodd"
+              d="M8 0.771118L16 6.48499V15.9996H0V13.9996H14V7.51428L8 3.22913L2 7.51428V11.9996H0V6.48499L8 0.771118Z"
             />
             <defs>
               <clippath>
@@ -841,7 +801,7 @@ exports[`Tabs examples Horizontal tab with icon should render correctly 1`] = `
 </div>
 `;
 
-exports[`Tabs examples Horizontal tab with menu should render correctly 1`] = `
+exports[`Tabs examples > Horizontal tab with menu should render correctly 1`] = `
 <div>
   <div
     class="v-tab"
@@ -864,15 +824,11 @@ exports[`Tabs examples Horizontal tab with menu should render correctly 1`] = `
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M5 9C5 7.89543 5.89543 7 7 7H9C10.1046 7 11 7.89543 11 9V12H9V9H7V12H5V9Z"
-          fill-rule="evenodd"
+          d="M9 7C10.1046 7 11 7.89543 11 9V12H9V9H7V12H5V9C5 7.89543 5.89543 7 7 7H9Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M16 6.4854L8 0.771118L0 6.4854V12H2V7.51464L8 3.22893L14 7.51464V14H0V16H16V6.4854Z"
-          fill-rule="evenodd"
+          d="M8 0.771118L16 6.48499V15.9996H0V13.9996H14V7.51428L8 3.22913L2 7.51428V11.9996H0V6.48499L8 0.771118Z"
         />
         <defs>
           <clippath>
@@ -895,9 +851,7 @@ exports[`Tabs examples Horizontal tab with menu should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
     </button>
@@ -905,7 +859,7 @@ exports[`Tabs examples Horizontal tab with menu should render correctly 1`] = `
 </div>
 `;
 
-exports[`Tabs examples Horizontal tablist with disabled tab should render correctly 1`] = `
+exports[`Tabs examples > Horizontal tablist with disabled tab should render correctly 1`] = `
 <div>
   <div>
     <ul
@@ -988,7 +942,7 @@ exports[`Tabs examples Horizontal tablist with disabled tab should render correc
 </div>
 `;
 
-exports[`Tabs examples Stacked tablist with disabled tab should render correctly 1`] = `
+exports[`Tabs examples > Stacked tablist with disabled tab should render correctly 1`] = `
 <div>
   <div>
     <ul
@@ -1017,7 +971,7 @@ exports[`Tabs examples Stacked tablist with disabled tab should render correctly
           >
             <path
               class="v-icon-primary"
-              d="M24 24H0V22.0232H22V11.2299L12 3.51053L2 11.2299V20.0464H0V10.2613L12 1L24 10.2613V24Z"
+              d="M24 10.2617V24H0V22.0234H22V11.2295L12 3.51074L2 11.2295V20.0469H0V10.2617L12 1L24 10.2617Z"
             />
             <path
               class="v-icon-secondary"
@@ -1049,15 +1003,11 @@ exports[`Tabs examples Stacked tablist with disabled tab should render correctly
           >
             <path
               class="v-icon-secondary"
-              clip-rule="evenodd"
-              d="M7 9H17V7H7V9ZM11 13H14V11H11V13ZM7 17H13V15H7V17ZM9 13H7V11H9V13Z"
-              fill-rule="evenodd"
+              d="M13 17H7V15H13V17ZM9 13H7V11H9V13ZM14 13H11V11H14V13ZM17 9H7V7H17V9Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M3 0L8 3L12 0L16 3L21 0V24L16 21L12 24L8 21L3 24V21.6678L6.97095 19.2852L6.97088 19.2851L8.12416 18.5931L12 21.5L15.8758 18.5931L19 20.4676V3.53238L15.8758 5.40688L12 2.5L8.12416 5.40688L5 3.53238V18.1355L3 19.3355V0Z"
-              fill-rule="evenodd"
+              d="M21 24L16 21L12 24L8 21L3 24V21.668L6.97168 19.2852L6.9707 19.2842L8.12402 18.5928L12 21.5L15.876 18.5928L19 20.4678V3.53223L15.876 5.40723L12 2.5L8.12402 5.40723L5 3.53223V18.1357L3 19.335V0L8 3L12 0L16 3L21 0V24Z"
             />
           </svg>
           Label 2
@@ -1086,11 +1036,11 @@ exports[`Tabs examples Stacked tablist with disabled tab should render correctly
           >
             <path
               class="v-icon-secondary"
-              d="M23 12H12V1H12.9919C18.5068 1 23 5.49324 23 11.0081V12ZM13.9838 10.0162H20.9567C20.5104 6.38593 17.6141 3.48963 13.9838 3.04328V10.0162Z"
+              d="M12.9922 1C18.5068 1.00016 22.9998 5.49317 23 11.0078V12H12V1H12.9922ZM13.9834 10.0166H20.957C20.5107 6.3863 17.6137 3.48932 13.9834 3.04297V10.0166Z"
             />
             <path
               class="v-icon-primary"
-              d="M11.0247 23C5.50067 23 1 18.5015 1 12.9802C1 10.2096 2.11275 7.51843 4.06006 5.59193C5.76892 3.89382 7.95468 2.99015 10.21 3.00008L10.1901 4.98617C8.48125 4.97624 6.79226 5.6813 5.46093 7.00205C3.89116 8.56113 2.98705 10.7359 2.98705 12.9802C2.98705 17.4092 6.59355 21.0139 11.0247 21.0139C13.2402 21.0139 15.4955 20.0705 17.0554 18.5015C18.337 17.2006 19.0325 15.5919 19.0126 13.9534L20.9997 13.9335C21.0195 16.0983 20.1254 18.2235 18.4662 19.9017C16.5387 21.8381 13.7569 23 11.0247 23Z"
+              d="M10.1904 4.98633C8.48159 4.9764 6.79225 5.68124 5.46094 7.00195C3.89117 8.56103 2.9873 10.7362 2.9873 12.9805C2.98746 17.4092 6.5935 21.0135 11.0244 21.0137C13.2399 21.0137 15.4958 20.0709 17.0557 18.502C18.3373 17.2011 19.0326 15.5916 19.0127 13.9531L21 13.9336C21.0198 16.0984 20.125 18.2231 18.4658 19.9014C16.5384 21.8378 13.7566 23 11.0244 23C5.50063 22.9999 1.00016 18.5016 1 12.9805C1 10.2099 2.11324 7.5183 4.06055 5.5918C5.76936 3.8939 7.9548 2.99008 10.21 3L10.1904 4.98633Z"
             />
           </svg>
           Label 3
@@ -1118,18 +1068,8 @@ exports[`Tabs examples Stacked tablist with disabled tab should render correctly
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M8.23866e-05 7.91984L2.00008 9.19257V18H22.0001V6.82167L12.0001 14.1853L0.463207 5.84366C0.088112 5.60496 -0.0843434 5.14729 0.0399622 4.72041C0.164268 4.29354 0.555479 4 1.00008 4H24.0001V20H8.23866e-05V7.91984ZM12.0001 11.8147L4.43414 6H19.566L12.0001 11.8147Z"
-              fill-rule="evenodd"
+              d="M24 20H0V7.91895L2 9.19238V18H22V6.82129L12 14.1855L0.462891 5.84375C0.0879965 5.60507 -0.0841075 5.14744 0.0400391 4.7207C0.164337 4.29386 0.555431 4.00004 1 4H24V20ZM12 11.8145L19.5664 6H4.43457L12 11.8145Z"
             />
-            <defs>
-              <clippath>
-                <rect
-                  height="24"
-                  width="24"
-                />
-              </clippath>
-            </defs>
           </svg>
           Label 4
         </button>
@@ -1153,7 +1093,7 @@ exports[`Tabs examples Stacked tablist with disabled tab should render correctly
 </div>
 `;
 
-exports[`Tabs examples Stacked tabs with notifications should render correctly 1`] = `
+exports[`Tabs examples > Stacked tabs with notifications should render correctly 1`] = `
 <div>
   <div>
     <ul
@@ -1182,7 +1122,7 @@ exports[`Tabs examples Stacked tabs with notifications should render correctly 1
           >
             <path
               class="v-icon-primary"
-              d="M24 24H0V22.0232H22V11.2299L12 3.51053L2 11.2299V20.0464H0V10.2613L12 1L24 10.2613V24Z"
+              d="M24 10.2617V24H0V22.0234H22V11.2295L12 3.51074L2 11.2295V20.0469H0V10.2617L12 1L24 10.2617Z"
             />
             <path
               class="v-icon-secondary"
@@ -1220,15 +1160,11 @@ exports[`Tabs examples Stacked tabs with notifications should render correctly 1
           >
             <path
               class="v-icon-secondary"
-              clip-rule="evenodd"
-              d="M7 9H17V7H7V9ZM11 13H14V11H11V13ZM7 17H13V15H7V17ZM9 13H7V11H9V13Z"
-              fill-rule="evenodd"
+              d="M13 17H7V15H13V17ZM9 13H7V11H9V13ZM14 13H11V11H14V13ZM17 9H7V7H17V9Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M3 0L8 3L12 0L16 3L21 0V24L16 21L12 24L8 21L3 24V21.6678L6.97095 19.2852L6.97088 19.2851L8.12416 18.5931L12 21.5L15.8758 18.5931L19 20.4676V3.53238L15.8758 5.40688L12 2.5L8.12416 5.40688L5 3.53238V18.1355L3 19.3355V0Z"
-              fill-rule="evenodd"
+              d="M21 24L16 21L12 24L8 21L3 24V21.668L6.97168 19.2852L6.9707 19.2842L8.12402 18.5928L12 21.5L15.876 18.5928L19 20.4678V3.53223L15.876 5.40723L12 2.5L8.12402 5.40723L5 3.53223V18.1357L3 19.335V0L8 3L12 0L16 3L21 0V24Z"
             />
           </svg>
           Label 2
@@ -1262,11 +1198,11 @@ exports[`Tabs examples Stacked tabs with notifications should render correctly 1
           >
             <path
               class="v-icon-secondary"
-              d="M23 12H12V1H12.9919C18.5068 1 23 5.49324 23 11.0081V12ZM13.9838 10.0162H20.9567C20.5104 6.38593 17.6141 3.48963 13.9838 3.04328V10.0162Z"
+              d="M12.9922 1C18.5068 1.00016 22.9998 5.49317 23 11.0078V12H12V1H12.9922ZM13.9834 10.0166H20.957C20.5107 6.3863 17.6137 3.48932 13.9834 3.04297V10.0166Z"
             />
             <path
               class="v-icon-primary"
-              d="M11.0247 23C5.50067 23 1 18.5015 1 12.9802C1 10.2096 2.11275 7.51843 4.06006 5.59193C5.76892 3.89382 7.95468 2.99015 10.21 3.00008L10.1901 4.98617C8.48125 4.97624 6.79226 5.6813 5.46093 7.00205C3.89116 8.56113 2.98705 10.7359 2.98705 12.9802C2.98705 17.4092 6.59355 21.0139 11.0247 21.0139C13.2402 21.0139 15.4955 20.0705 17.0554 18.5015C18.337 17.2006 19.0325 15.5919 19.0126 13.9534L20.9997 13.9335C21.0195 16.0983 20.1254 18.2235 18.4662 19.9017C16.5387 21.8381 13.7569 23 11.0247 23Z"
+              d="M10.1904 4.98633C8.48159 4.9764 6.79225 5.68124 5.46094 7.00195C3.89117 8.56103 2.9873 10.7362 2.9873 12.9805C2.98746 17.4092 6.5935 21.0135 11.0244 21.0137C13.2399 21.0137 15.4958 20.0709 17.0557 18.502C18.3373 17.2011 19.0326 15.5916 19.0127 13.9531L21 13.9336C21.0198 16.0984 20.125 18.2231 18.4658 19.9014C16.5384 21.8378 13.7566 23 11.0244 23C5.50063 22.9999 1.00016 18.5016 1 12.9805C1 10.2099 2.11324 7.5183 4.06055 5.5918C5.76936 3.8939 7.9548 2.99008 10.21 3L10.1904 4.98633Z"
             />
           </svg>
           Label 3
@@ -1300,18 +1236,8 @@ exports[`Tabs examples Stacked tabs with notifications should render correctly 1
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M8.23866e-05 7.91984L2.00008 9.19257V18H22.0001V6.82167L12.0001 14.1853L0.463207 5.84366C0.088112 5.60496 -0.0843434 5.14729 0.0399622 4.72041C0.164268 4.29354 0.555479 4 1.00008 4H24.0001V20H8.23866e-05V7.91984ZM12.0001 11.8147L4.43414 6H19.566L12.0001 11.8147Z"
-              fill-rule="evenodd"
+              d="M24 20H0V7.91895L2 9.19238V18H22V6.82129L12 14.1855L0.462891 5.84375C0.0879965 5.60507 -0.0841075 5.14744 0.0400391 4.7207C0.164337 4.29386 0.555431 4.00004 1 4H24V20ZM12 11.8145L19.5664 6H4.43457L12 11.8145Z"
             />
-            <defs>
-              <clippath>
-                <rect
-                  height="24"
-                  width="24"
-                />
-              </clippath>
-            </defs>
           </svg>
           Label 4
           <sup
@@ -1341,7 +1267,7 @@ exports[`Tabs examples Stacked tabs with notifications should render correctly 1
 </div>
 `;
 
-exports[`Tabs examples Tablist with automatic activation should render correctly 1`] = `
+exports[`Tabs examples > Tablist with automatic activation should render correctly 1`] = `
 <div>
   <div>
     <ul
@@ -1423,7 +1349,7 @@ exports[`Tabs examples Tablist with automatic activation should render correctly
 </div>
 `;
 
-exports[`Tabs examples Vertical tab with menu should render correctly 1`] = `
+exports[`Tabs examples > Vertical tab with menu should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-wrap v-gap-8"
@@ -1449,15 +1375,11 @@ exports[`Tabs examples Vertical tab with menu should render correctly 1`] = `
           >
             <path
               class="v-icon-secondary"
-              clip-rule="evenodd"
-              d="M5 9C5 7.89543 5.89543 7 7 7H9C10.1046 7 11 7.89543 11 9V12H9V9H7V12H5V9Z"
-              fill-rule="evenodd"
+              d="M9 7C10.1046 7 11 7.89543 11 9V12H9V9H7V12H5V9C5 7.89543 5.89543 7 7 7H9Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M16 6.4854L8 0.771118L0 6.4854V12H2V7.51464L8 3.22893L14 7.51464V14H0V16H16V6.4854Z"
-              fill-rule="evenodd"
+              d="M8 0.771118L16 6.48499V15.9996H0V13.9996H14V7.51428L8 3.22913L2 7.51428V11.9996H0V6.48499L8 0.771118Z"
             />
             <defs>
               <clippath>
@@ -1480,9 +1402,7 @@ exports[`Tabs examples Vertical tab with menu should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </button>
@@ -1492,7 +1412,7 @@ exports[`Tabs examples Vertical tab with menu should render correctly 1`] = `
 </div>
 `;
 
-exports[`Tabs examples Vertical tablist with disabled tab should render correctly 1`] = `
+exports[`Tabs examples > Vertical tablist with disabled tab should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-wrap v-gap-8"
@@ -1577,7 +1497,7 @@ exports[`Tabs examples Vertical tablist with disabled tab should render correctl
 </div>
 `;
 
-exports[`Tabs examples Vertical tablist with icon should render correctly 1`] = `
+exports[`Tabs examples > Vertical tablist with icon should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-wrap v-gap-8"
@@ -1610,15 +1530,11 @@ exports[`Tabs examples Vertical tablist with icon should render correctly 1`] = 
           >
             <path
               class="v-icon-secondary"
-              clip-rule="evenodd"
-              d="M7 0H8C12.4183 0 16 3.58172 16 8V9H7V0ZM9 2.08296V7H13.917C13.4955 4.4875 11.5125 2.50448 9 2.08296Z"
-              fill-rule="evenodd"
+              d="M8 0C12.4183 0 16 3.58172 16 8V9H7V0H8ZM9 7H13.917C13.4955 4.4875 11.5125 2.50453 9 2.08301V7Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5 0.578125C4.65376 0.718269 4.3195 0.881945 3.99927 1.06719C1.61068 2.44891 0 5.03393 0 7.99632C0 12.4146 3.58172 15.9963 8 15.9963C10.9624 15.9963 13.5474 14.3856 14.9291 11.997C15.1144 11.6768 15.278 11.3426 15.4182 10.9963H13.1975C12.1585 12.7919 10.2193 13.9963 8 13.9963C4.68629 13.9963 2 11.31 2 7.99632C2 5.77703 3.20439 3.83786 5 2.79882V0.578125Z"
-              fill-rule="evenodd"
+              d="M5 2.79883C3.20445 3.83783 2.00008 5.7769 2 7.99609C2 11.3098 4.68629 13.9961 8 13.9961C10.2193 13.9961 12.1582 12.7917 13.1973 10.9961H15.417C15.2769 11.3423 15.1139 11.6769 14.9287 11.9971C13.547 14.3856 10.9623 15.9961 8 15.9961C3.58172 15.9961 0 12.4144 0 7.99609C8.04098e-05 5.03391 1.61064 2.44912 3.99902 1.06738C4.31914 0.882203 4.65388 0.719215 5 0.579102V2.79883Z"
             />
           </svg>
           Label 1
@@ -1647,13 +1563,11 @@ exports[`Tabs examples Vertical tablist with icon should render correctly 1`] = 
           >
             <path
               class="v-icon-secondary"
-              d="M10 6.99609C10 8.10066 9.10457 8.99609 8 8.99609C6.89543 8.99609 6 8.10066 6 6.99609C6 5.89152 6.89543 4.99609 8 4.99609C9.10457 4.99609 10 5.89152 10 6.99609Z"
+              d="M8 4.99609C9.10457 4.99609 10 5.89152 10 6.99609C10 8.10066 9.10457 8.99609 8 8.99609C6.89543 8.99609 6 8.10066 6 6.99609C6 5.89152 6.89543 4.99609 8 4.99609Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M6 3H10C12.2091 3 14 4.79086 14 7C14 9.20914 12.2091 11 10 11H6C3.79086 11 2 9.20914 2 7C2 4.79086 3.79086 3 6 3ZM0 7C0 3.68629 2.68629 1 6 1H10C13.3137 1 16 3.68629 16 7C16 10.3137 13.3137 13 10 13H8L5 16V12.917C2.16229 12.441 0 9.973 0 7Z"
-              fill-rule="evenodd"
+              d="M10 1C13.3137 1 16 3.68629 16 7C16 10.3137 13.3137 13 10 13H8L5 16V12.915C2.16245 12.4388 0 9.97288 0 7C0 3.68629 2.68629 1 6 1H10ZM6 3C3.79086 3 2 4.79086 2 7C2 9.20914 3.79086 11 6 11H10C12.2091 11 14 9.20914 14 7C14 4.79086 12.2091 3 10 3H6Z"
             />
           </svg>
           Label 2
@@ -1682,9 +1596,7 @@ exports[`Tabs examples Vertical tablist with icon should render correctly 1`] = 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M3.70328 4L8 7.6829L12.2967 4H3.70328ZM14 5.1742V12H2V8.42857L0 6.71429V14H16V2H0V3.5L1.68348 4.9029L7.02381 9.48032C7.58554 9.96181 8.41445 9.96181 8.97618 9.48033L14 5.1742Z"
-              fill-rule="evenodd"
+              d="M16 14H0V6.71387L2 8.42773V12H14V5.17285L8.97656 9.48047C8.41483 9.96196 7.58517 9.96196 7.02344 9.48047L1.68262 4.90137L0 3.5V2H16V14ZM8 7.68262L12.2969 4H3.70312L8 7.68262Z"
             />
           </svg>
           Label 3
@@ -1713,15 +1625,11 @@ exports[`Tabs examples Vertical tablist with icon should render correctly 1`] = 
           >
             <path
               class="v-icon-secondary"
-              clip-rule="evenodd"
-              d="M5 9C5 7.89543 5.89543 7 7 7H9C10.1046 7 11 7.89543 11 9V12H9V9H7V12H5V9Z"
-              fill-rule="evenodd"
+              d="M9 7C10.1046 7 11 7.89543 11 9V12H9V9H7V12H5V9C5 7.89543 5.89543 7 7 7H9Z"
             />
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M16 6.4854L8 0.771118L0 6.4854V12H2V7.51464L8 3.22893L14 7.51464V14H0V16H16V6.4854Z"
-              fill-rule="evenodd"
+              d="M8 0.771118L16 6.48499V15.9996H0V13.9996H14V7.51428L8 3.22913L2 7.51428V11.9996H0V6.48499L8 0.771118Z"
             />
             <defs>
               <clippath>

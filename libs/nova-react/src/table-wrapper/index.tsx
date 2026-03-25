@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,27 +15,25 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-table-wrapper';
 
-export type TableWrapperProperties<ET extends ElementType = 'div',>= {
+export type TableWrapperProperties<ET extends ElementType = 'div'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Container for a table that adds a border with a curved radius to the table.
- * @docs {@link https://design.visa.com/react/components/table | See Docs}
+ * @docs {@link https://design.visa.com/components/table/?code_library=react | See Docs}
  */
-const TableWrapper = <ET extends ElementType = 'div',>(
-  { className, tag: Tag = 'div', ...remainingProps }: TableWrapperProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const TableWrapper = <ET extends ElementType = 'div'>({
+  className,
+  tag: Tag = 'div',
+  ...remainingProps
+}: TableWrapperProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default TableWrapper;
-
-TableWrapper.defaultProps = {
-  tag: 'div',
-};
 
 TableWrapper.displayName = 'TableWrapper';

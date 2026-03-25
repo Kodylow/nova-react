@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,13 +25,13 @@ describe('Pagination', () => {
     const results = await axe(container);
     expect(results).toHaveNoViolations();
     expect(container).toMatchSnapshot();
-    expect(container.firstElementChild?.className).toBe('v-pagination');
+    expect(container.firstElementChild?.className).toBe('v-pagination v-flex v-flex-row');
     expect(container.firstElementChild?.tagName).toBe('UL');
   });
 
   it('should allow custom classNames', () => {
     const { container } = render(<Pagination className="test-class" />);
-    expect(container.firstElementChild?.className).toBe('v-pagination test-class');
+    expect(container.firstElementChild?.className).toBe('v-pagination v-flex v-flex-row test-class');
   });
 
   it('should allow custom tag', () => {
@@ -49,5 +49,23 @@ describe('Pagination', () => {
   it('should allow for child components', () => {
     const { container } = render(<Pagination>Test Child</Pagination>);
     expect(container.firstElementChild?.firstChild?.textContent).toBe('Test Child');
+  });
+
+  it('should apply horizontal orientation by default', () => {
+    const { container } = render(<Pagination />);
+    expect(container.firstElementChild?.className).toContain('v-flex-row');
+    expect(container.firstElementChild?.className).not.toContain('v-flex-col');
+  });
+
+  it('should apply horizontal orientation when explicitly set', () => {
+    const { container } = render(<Pagination orientation="horizontal" />);
+    expect(container.firstElementChild?.className).toContain('v-flex-row');
+    expect(container.firstElementChild?.className).not.toContain('v-flex-col');
+  });
+
+  it('should apply vertical orientation when set', () => {
+    const { container } = render(<Pagination orientation="vertical" />);
+    expect(container.firstElementChild?.className).toContain('v-flex-col');
+    expect(container.firstElementChild?.className).not.toContain('v-flex-row');
   });
 });

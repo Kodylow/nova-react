@@ -2,7 +2,7 @@
   "description": "Container for message content elements.",
   "displayName": "messagecontent",
   "filePath": "/message-content/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/message-content/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//message-content/index.tsx",
   "props": [
     {
       "defaultValue": "div",
@@ -11,6 +11,5 @@
       "required": false,
       "type": "ElementType"
     }
-  ],
-  "testAvg": 100
+  ]
 }

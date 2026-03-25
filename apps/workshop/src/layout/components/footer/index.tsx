@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ import {
   Footer as VFooter,
 } from '@visa/nova-react';
 import { Link } from 'react-router-dom';
-import { ChangeEvent, FC, useEffect, useState } from 'react';
+import { useEffect, useState, type ChangeEvent, type FC } from 'react';
 import { defaultPreferencesProp, useTheme } from '../../../providers';
 import VersionPicker from '../version-picker';
 import { Paths } from '../../../routes/paths';

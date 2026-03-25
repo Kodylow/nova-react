@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,23 @@
  * limitations under the License.
  *
  **/
-import { KeyboardEvent, MutableRefObject, useEffect, useRef, useState } from 'react';
-import { FocusableHTMLElement } from '../types';
+import { type KeyboardEvent, type RefObject, useEffect, useRef, useState } from 'react';
+import { type FocusableHTMLElement } from '../types';
+import useModel from '../use-model';
 
-export type UseTabsOptions<HTMLElementType> = {
+export type UseTabsOptions<HTMLElementType extends FocusableHTMLElement = HTMLButtonElement> = {
+  /** Arrow key navigation direction, 'horizontal', 'vertical', 'both', 'none' */
+  arrowKeyNavigation?: 'both' | 'horizontal' | 'none' | 'vertical' | null;
   /** Auto select tab on keyboard navigation */
   autoSelect?: boolean;
   /** Default selected tab */
   defaultSelected?: number;
+  /** Selected tab index change handler for controlled state, must also pass selected state */
+  onSelectedIndexChange?: (index: number) => void;
   /** Ref for the tab elements */
-  ref?: MutableRefObject<(HTMLElementType | null)[]>;
-  /** Arrow key navigation direction, 'horizontal', 'vertical', 'both', 'none' */
-  arrowKeyNavigation?: 'both' | 'horizontal' | 'none' | 'vertical' | null;
+  ref?: RefObject<(HTMLElementType | null)[]>;
+  /** Selected tab index for controlled state, must also pass onSelectedChange */
+  selectedIndex?: number;
 };
 
 const defaultOptions = {
@@ -35,26 +40,33 @@ const defaultOptions = {
 } satisfies Partial<UseTabsOptions<HTMLElement>>;
 
 /**
- * @docs {@link https://design.visa.com/react/hooks/use-tabs | See Docs}
+ * @docs {@link https://design.visa.com/components/tabs/?code_library=react | See Docs}
  * @description This hook allows us to set the <defaultSelected> value, which indicates that we are selecting that item by default.
  * @related nav, tabs
  * @vgar TODO
  * @wcag TODO
  */
 export const useTabs = <HTMLElementType extends FocusableHTMLElement = HTMLButtonElement>(
-  useTabsOptions?: UseTabsOptions<HTMLElementType>
+  useTabsOptions: UseTabsOptions<HTMLElementType> = defaultOptions
 ) => {
-  const { defaultSelected, ...options } = { ...defaultOptions, ...useTabsOptions };
+  const {
+    arrowKeyNavigation,
+    defaultSelected,
+    onSelectedIndexChange: controlledSelectedHandler,
+    selectedIndex: controlledSelected,
+    ...options
+  } = {
+    ...defaultOptions,
+    ...useTabsOptions,
+  };
   // Custom refs if ref not provided
   const customRefs = useRef<(HTMLElementType | null)[]>([]);
   // Tracks the currently selected element
-  const [selectedIndex, setSelectedIndex] = useState(defaultSelected);
+  const [selectedIndex, setSelectedIndex] = useModel(controlledSelected, controlledSelectedHandler, defaultSelected);
   // Tracks the currently focused element
   const [focusedIndex, setFocusedIndex] = useState(defaultSelected);
   // Which elements are focusable depending on disabled state of refs
   const [focusableIndices, setFocusableIndices] = useState<number[]>([]);
-  // Orientation of the tabs
-  const [orientation, setOrientation] = useState('horizontal');
 
   /// Derived State
   // Current index of the focused element
@@ -66,7 +78,13 @@ export const useTabs = <HTMLElementType extends FocusableHTMLElement = HTMLButto
   // Index for the last focusable element
   const lastFocusableIndex = focusableLength - 1;
   // Ref based on the options or custom refs
-  const ref: MutableRefObject<(HTMLElementType | null)[]> = options?.ref || customRefs;
+  const ref: RefObject<(HTMLElementType | null)[]> = options?.ref || customRefs;
+
+  const orientation: UseTabsOptions['arrowKeyNavigation'] = (() => {
+    const tabsElHasVerticalClass = ref?.current[0]?.parentElement?.parentElement?.classList.contains('v-tabs-vertical');
+    if (tabsElHasVerticalClass && arrowKeyNavigation === null) return 'vertical';
+    return arrowKeyNavigation;
+  })();
 
   // Callback to select a tab
   const onIndexChange = (index: number, disabled = false) => {
@@ -129,32 +147,12 @@ export const useTabs = <HTMLElementType extends FocusableHTMLElement = HTMLButto
     }
   };
 
-  const getOrientation = () => {
-    if (options.arrowKeyNavigation !== null) {
-      setOrientation(options.arrowKeyNavigation);
-      return;
-    } else if (ref.current) {
-      if (ref.current[0] instanceof HTMLElement) {
-        const tabsEl = ref.current[0].parentElement?.parentElement;
-        if (tabsEl) {
-          if (tabsEl.classList.contains('v-tabs-vertical')) {
-            setOrientation('vertical');
-          }
-        }
-      }
-    }
-  };
-
   // When ref updates update our focusable indices
   useEffect(() => {
     setFocusableIndices(
       ref.current?.map((element, index) => !element?.disabled && index).filter(element => element !== false) as number[]
     );
   }, [ref]);
-
-  useEffect(() => {
-    getOrientation();
-  }, []);
 
   return {
     /** Get tab index for tab key navigation */
@@ -173,9 +171,3 @@ export const useTabs = <HTMLElementType extends FocusableHTMLElement = HTMLButto
 export default useTabs;
 
 useTabs.displayName = 'useTabs';
-
-useTabs.defaultProps = {
-  autoSelect: false,
-  defaultSelected: -1,
-  arrowKeyNavigation: null,
-};

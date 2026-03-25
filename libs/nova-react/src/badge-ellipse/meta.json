@@ -2,7 +2,7 @@
   "description": "",
   "displayName": "badgeellipse",
   "filePath": "/badge-ellipse/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/badge-ellipse/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//badge-ellipse/index.tsx",
   "props": [
     {
       "description": "aria-label\nDefines a string value that labels the current element.\n@see aria-labelledby.",
@@ -19,7 +19,6 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/badge-ellipse See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/badge/?code_library=react See Docs}",
   "deprecated": "This component is deprecated and will be removed in the next major version. Please use the Badge component with the badgeVariant prop set to 'ellipse' instead."
 }

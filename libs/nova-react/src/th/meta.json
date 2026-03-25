@@ -2,7 +2,7 @@
   "description": "Table header cell component usually used for titles and column/row descriptions.",
   "displayName": "th",
   "filePath": "/th/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/th/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//th/index.tsx",
   "props": [
     {
       "description": "Alt",
@@ -18,6 +18,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/table See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/table/?code_library=react See Docs}"
 }

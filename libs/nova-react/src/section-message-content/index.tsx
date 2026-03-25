@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,12 @@
  * limitations under the License.
  *
  **/
-import MessageContent, { MessageContentProperties } from '../message-content';
+import MessageContent, { type MessageContentProperties } from '../message-content';
 
 /**
  * Content container to be used within a section message.
  * @displayName SectionMessageContent
- * @docs {@link https://design.visa.com/react/components/section-message | See Docs}
+ * @docs {@link https://design.visa.com/components/section-message/?code_library=react | See Docs}
  */
 export type SectionMessageContentProperties = MessageContentProperties;
 

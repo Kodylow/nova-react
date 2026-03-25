@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,32 +15,36 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType, ReactElement, cloneElement } from 'react';
+import { type ComponentPropsWithRef, type ElementType, type ReactElement, cloneElement } from 'react';
 
 const CSS_PREFIX = 'v-tab-suffix';
 
-export type TabSuffixProperties<ET extends ElementType = 'div',> = (
-  {
-    /** Child element that the styles are applies to. Only allows for single child element. (not compatible with element property) */
-    children: ReactElement<ComponentPropsWithRef<ET>>;
-    /** Cloned Element (not compatible with children) */
-    element?: never;
-  }
+export type TabSuffixProperties<ET extends ElementType = 'div'> = (
   | {
-    /** Child element that the styles are applies to. Only allows for single child element. (not compatible with element property) */
-    children?: never;
-    /** Cloned Element (not compatible with children) */
-    element: ReactElement<ComponentPropsWithRef<ET>>
-  }
-) & Omit<ComponentPropsWithRef<ET>, ''>;
+      /** Child element that the styles are applies to. Only allows for single child element. (not compatible with element property) */
+      children: ReactElement<ComponentPropsWithRef<ET>>;
+      /** Cloned Element (not compatible with children) */
+      element?: never;
+    }
+  | {
+      /** Child element that the styles are applies to. Only allows for single child element. (not compatible with element property) */
+      children?: never;
+      /** Cloned Element (not compatible with children) */
+      element: ReactElement<ComponentPropsWithRef<ET>>;
+    }
+) &
+  Omit<ComponentPropsWithRef<ET>, ''>;
 
 /**
  * Utility class for positioning and styling elements at the end of tab components.
- * @docs {@link https://design.visa.com/react/components/tabs | See Docs}
+ * @docs {@link https://design.visa.com/components/tabs/?code_library=react | See Docs}
  */
-const TabSuffix = <ET extends ElementType = 'div',>(
-  { children, className, element, ...remainingProps }: TabSuffixProperties<ET>,
-) =>
+const TabSuffix = <ET extends ElementType = 'div'>({
+  children,
+  className,
+  element,
+  ...remainingProps
+}: TabSuffixProperties<ET>) =>
   cloneElement<TabSuffixProperties>(children || element, {
     className: cn(CSS_PREFIX, className, children?.props.className, element?.props.className),
     ...remainingProps,

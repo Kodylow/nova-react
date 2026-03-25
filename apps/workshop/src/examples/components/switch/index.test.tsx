@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,12 +23,14 @@ import { DefaultSwitch } from './default-switch';
 import { DisabledSwitch } from './disabled-switch';
 import { OptionalMessageSwitch } from './optional-message-switch';
 import { DisabledSwitchOn } from './disabled-switch-on';
+import NovaSwitchDemo from './reusable';
 
 const examples = [
   { Component: DefaultSwitch, title: metaData['default-switch'].title },
   { Component: DisabledSwitch, title: metaData['disabled-switch'].title },
   { Component: DisabledSwitchOn, title: metaData['disabled-switch-on'].title },
   { Component: OptionalMessageSwitch, title: metaData['optional-message-switch'].title },
+  { Component: NovaSwitchDemo, title: metaData['reusable'].title },
 ];
 
 describe('Switch examples', () => {

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -52,7 +52,7 @@ describe('Checkbox', () => {
     expect((container.firstElementChild as HTMLInputElement).indeterminate).toBe(true);
   });
   it('should allow for indeterminate state with ref function', () => {
-    const refsFuncMock = jest.fn();
+    const refsFuncMock = vi.fn();
     const refsFunc = (element: HTMLInputElement | null) => {
       refsFuncMock(element);
     };

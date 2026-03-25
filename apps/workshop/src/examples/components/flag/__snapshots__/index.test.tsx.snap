@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Flag examples Default error flag should render correctly 1`] = `
+exports[`Flag examples > Default error flag should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-error v-flag"
@@ -17,13 +17,11 @@ exports[`Flag examples Default error flag should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -61,7 +59,7 @@ exports[`Flag examples Default error flag should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -78,7 +76,7 @@ exports[`Flag examples Default error flag should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Default informational flag should render correctly 1`] = `
+exports[`Flag examples > Default informational flag should render correctly 1`] = `
 <div>
   <div
     class="v-message v-flag"
@@ -95,11 +93,11 @@ exports[`Flag examples Default informational flag should render correctly 1`] = 
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        d="M15 19H9V17.0351H11.451V12.9874H9.43137V11.0225H13.4118V17.0351H15V19ZM12 9.53895C10.7549 9.53895 9.73529 8.51719 9.73529 7.26947C9.73529 6.02175 10.7549 5 12 5C13.2549 5 14.2647 6.02175 14.2647 7.26947C14.2647 8.51719 13.2549 9.53895 12 9.53895ZM12 6.96491C11.8333 6.96491 11.6961 7.10246 11.6961 7.26947C11.6961 7.43649 11.8333 7.57403 12 7.57403C12.1667 7.57403 12.3039 7.43649 12.3039 7.26947C12.3039 7.10246 12.1667 6.96491 12 6.96491Z"
+        d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
       />
       <defs>
         <clippath>
@@ -137,7 +135,7 @@ exports[`Flag examples Default informational flag should render correctly 1`] = 
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -154,7 +152,7 @@ exports[`Flag examples Default informational flag should render correctly 1`] = 
 </div>
 `;
 
-exports[`Flag examples Default success flag should render correctly 1`] = `
+exports[`Flag examples > Default success flag should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-success v-flag"
@@ -171,11 +169,11 @@ exports[`Flag examples Default success flag should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -213,7 +211,7 @@ exports[`Flag examples Default success flag should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -230,7 +228,7 @@ exports[`Flag examples Default success flag should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Default warning flag should render correctly 1`] = `
+exports[`Flag examples > Default warning flag should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-warning v-flag"
@@ -247,13 +245,11 @@ exports[`Flag examples Default warning flag should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div
@@ -283,7 +279,7 @@ exports[`Flag examples Default warning flag should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -300,7 +296,7 @@ exports[`Flag examples Default warning flag should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Empty error flag should render correctly 1`] = `
+exports[`Flag examples > Empty error flag should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-error v-flag"
@@ -308,7 +304,7 @@ exports[`Flag examples Empty error flag should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Empty informational flag should render correctly 1`] = `
+exports[`Flag examples > Empty informational flag should render correctly 1`] = `
 <div>
   <div
     class="v-message v-flag"
@@ -316,7 +312,7 @@ exports[`Flag examples Empty informational flag should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Empty success flag should render correctly 1`] = `
+exports[`Flag examples > Empty success flag should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-success v-flag"
@@ -324,7 +320,7 @@ exports[`Flag examples Empty success flag should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Empty warning flag should render correctly 1`] = `
+exports[`Flag examples > Empty warning flag should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-warning v-flag"
@@ -332,7 +328,7 @@ exports[`Flag examples Empty warning flag should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Error flag with button should render correctly 1`] = `
+exports[`Flag examples > Error flag with button should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-error v-flag"
@@ -349,13 +345,11 @@ exports[`Flag examples Error flag with button should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -402,7 +396,7 @@ exports[`Flag examples Error flag with button should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -419,7 +413,7 @@ exports[`Flag examples Error flag with button should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Error flag with link should render correctly 1`] = `
+exports[`Flag examples > Error flag with link should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-error v-flag"
@@ -436,13 +430,11 @@ exports[`Flag examples Error flag with link should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -490,7 +482,7 @@ exports[`Flag examples Error flag with link should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -507,7 +499,7 @@ exports[`Flag examples Error flag with link should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Error flag with title should render correctly 1`] = `
+exports[`Flag examples > Error flag with title should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-error v-flag"
@@ -524,13 +516,11 @@ exports[`Flag examples Error flag with title should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -575,7 +565,7 @@ exports[`Flag examples Error flag with title should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -592,7 +582,7 @@ exports[`Flag examples Error flag with title should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Error flag without close icon button should render correctly 1`] = `
+exports[`Flag examples > Error flag without close icon button should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-error v-flag"
@@ -609,13 +599,11 @@ exports[`Flag examples Error flag without close icon button should render correc
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -644,7 +632,7 @@ exports[`Flag examples Error flag without close icon button should render correc
 </div>
 `;
 
-exports[`Flag examples Informational flag with button should render correctly 1`] = `
+exports[`Flag examples > Informational flag with button should render correctly 1`] = `
 <div>
   <div
     class="v-message v-flag"
@@ -661,11 +649,11 @@ exports[`Flag examples Informational flag with button should render correctly 1`
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        d="M15 19H9V17.0351H11.451V12.9874H9.43137V11.0225H13.4118V17.0351H15V19ZM12 9.53895C10.7549 9.53895 9.73529 8.51719 9.73529 7.26947C9.73529 6.02175 10.7549 5 12 5C13.2549 5 14.2647 6.02175 14.2647 7.26947C14.2647 8.51719 13.2549 9.53895 12 9.53895ZM12 6.96491C11.8333 6.96491 11.6961 7.10246 11.6961 7.26947C11.6961 7.43649 11.8333 7.57403 12 7.57403C12.1667 7.57403 12.3039 7.43649 12.3039 7.26947C12.3039 7.10246 12.1667 6.96491 12 6.96491Z"
+        d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
       />
       <defs>
         <clippath>
@@ -712,7 +700,7 @@ exports[`Flag examples Informational flag with button should render correctly 1`
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -729,7 +717,7 @@ exports[`Flag examples Informational flag with button should render correctly 1`
 </div>
 `;
 
-exports[`Flag examples Informational flag with link should render correctly 1`] = `
+exports[`Flag examples > Informational flag with link should render correctly 1`] = `
 <div>
   <div
     class="v-message v-flag"
@@ -746,11 +734,11 @@ exports[`Flag examples Informational flag with link should render correctly 1`] 
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        d="M15 19H9V17.0351H11.451V12.9874H9.43137V11.0225H13.4118V17.0351H15V19ZM12 9.53895C10.7549 9.53895 9.73529 8.51719 9.73529 7.26947C9.73529 6.02175 10.7549 5 12 5C13.2549 5 14.2647 6.02175 14.2647 7.26947C14.2647 8.51719 13.2549 9.53895 12 9.53895ZM12 6.96491C11.8333 6.96491 11.6961 7.10246 11.6961 7.26947C11.6961 7.43649 11.8333 7.57403 12 7.57403C12.1667 7.57403 12.3039 7.43649 12.3039 7.26947C12.3039 7.10246 12.1667 6.96491 12 6.96491Z"
+        d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
       />
       <defs>
         <clippath>
@@ -798,7 +786,7 @@ exports[`Flag examples Informational flag with link should render correctly 1`] 
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -815,7 +803,7 @@ exports[`Flag examples Informational flag with link should render correctly 1`] 
 </div>
 `;
 
-exports[`Flag examples Informational flag with title should render correctly 1`] = `
+exports[`Flag examples > Informational flag with title should render correctly 1`] = `
 <div>
   <div
     class="v-message v-flag"
@@ -832,11 +820,11 @@ exports[`Flag examples Informational flag with title should render correctly 1`]
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        d="M15 19H9V17.0351H11.451V12.9874H9.43137V11.0225H13.4118V17.0351H15V19ZM12 9.53895C10.7549 9.53895 9.73529 8.51719 9.73529 7.26947C9.73529 6.02175 10.7549 5 12 5C13.2549 5 14.2647 6.02175 14.2647 7.26947C14.2647 8.51719 13.2549 9.53895 12 9.53895ZM12 6.96491C11.8333 6.96491 11.6961 7.10246 11.6961 7.26947C11.6961 7.43649 11.8333 7.57403 12 7.57403C12.1667 7.57403 12.3039 7.43649 12.3039 7.26947C12.3039 7.10246 12.1667 6.96491 12 6.96491Z"
+        d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
       />
       <defs>
         <clippath>
@@ -881,7 +869,7 @@ exports[`Flag examples Informational flag with title should render correctly 1`]
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -898,7 +886,7 @@ exports[`Flag examples Informational flag with title should render correctly 1`]
 </div>
 `;
 
-exports[`Flag examples Informational flag without close icon button should render correctly 1`] = `
+exports[`Flag examples > Informational flag without close icon button should render correctly 1`] = `
 <div>
   <div
     class="v-message v-flag"
@@ -915,11 +903,11 @@ exports[`Flag examples Informational flag without close icon button should rende
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        d="M15 19H9V17.0351H11.451V12.9874H9.43137V11.0225H13.4118V17.0351H15V19ZM12 9.53895C10.7549 9.53895 9.73529 8.51719 9.73529 7.26947C9.73529 6.02175 10.7549 5 12 5C13.2549 5 14.2647 6.02175 14.2647 7.26947C14.2647 8.51719 13.2549 9.53895 12 9.53895ZM12 6.96491C11.8333 6.96491 11.6961 7.10246 11.6961 7.26947C11.6961 7.43649 11.8333 7.57403 12 7.57403C12.1667 7.57403 12.3039 7.43649 12.3039 7.26947C12.3039 7.10246 12.1667 6.96491 12 6.96491Z"
+        d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
       />
       <defs>
         <clippath>
@@ -948,7 +936,490 @@ exports[`Flag examples Informational flag without close icon button should rende
 </div>
 `;
 
-exports[`Flag examples Success flag with button should render correctly 1`] = `
+exports[`Flag examples > Reusable flag should render correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="v-message v-message-success v-flag"
+    >
+      <svg
+        aria-hidden="false"
+        aria-label="Success"
+        class="v-icon v-icon-visa v-icon-low v-icon-success v-message-icon"
+        focusable="false"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="v-icon-secondary"
+          d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
+        />
+        <path
+          class="v-icon-primary"
+          d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="24"
+              width="24"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      <div
+        class="v-message-content v-pb-2 v-pl-2"
+      >
+        <h4
+          class="v-typography-body-2-bold"
+        >
+          Success title
+        </h4>
+        <p>
+          This is required text that describes the flag in more detail.
+        </p>
+      </div>
+      <button
+        aria-label="close"
+        class="v-button v-button-small v-button-tertiary v-button-icon v-button-subtle -v-mt-8 -v-mr-8"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-visa v-icon-tiny v-icon-close"
+          focusable="false"
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="v-icon-primary"
+            d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
+          />
+          <defs>
+            <clippath>
+              <rect
+                height="16"
+                transform="translate(0 0.000488281)"
+                width="16"
+              />
+            </clippath>
+          </defs>
+        </svg>
+      </button>
+    </div>
+    <div
+      style="margin-top: 24px;"
+    >
+      <details
+        class="v-accordion"
+        id="test-id-0"
+      >
+        <summary
+          class="v-button v-button-large v-button-secondary v-accordion-heading v-gap-2 v-typography-body-2-medium"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right v-icon-rtl v-accordion-toggle-icon v-accordion-toggle-icon-closed"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down v-accordion-toggle-icon v-accordion-toggle-icon-open"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+            />
+          </svg>
+          <div
+            class="v-align-items-center v-flex v-gap-6"
+          >
+            Customize demo
+          </div>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-32"
+        >
+          <form>
+            <div
+              class="v-flex v-flex-col v-gap-16"
+              style="margin-bottom: 32px;"
+            >
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-1-input"
+                >
+                  Button label
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-1-input"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-2-input"
+                >
+                  Description
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-2-input"
+                      type="text"
+                      value="This is required text that describes the flag in more detail."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-3-input"
+                >
+                  Href
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-3-input"
+                      type="text"
+                      value="www.visa.com"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-4-input"
+                >
+                  Link label
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-4-input"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-5-input"
+                >
+                  Title
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-5-input"
+                      type="text"
+                      value="Success title"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-flex-wrap v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-6-select"
+                  id="test-id-6-label"
+                >
+                  Message type
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <select
+                      aria-describedby="test-id-6-message"
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-6-select"
+                    >
+                      <option
+                        hidden=""
+                      />
+                      <option
+                        value="success"
+                      >
+                        Success
+                      </option>
+                      <option
+                        value="information"
+                      >
+                        Information
+                      </option>
+                      <option
+                        value="warning"
+                      >
+                        Warning
+                      </option>
+                      <option
+                        value="error"
+                      >
+                        Error
+                      </option>
+                      <option
+                        value="subtle"
+                      >
+                        Subtle
+                      </option>
+                    </select>
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+                      focusable="false"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="v-input-message"
+                    id="test-id-6-message"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-flex-wrap v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-7-select"
+                  id="test-id-7-label"
+                >
+                  Title level
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <select
+                      aria-describedby="test-id-7-message"
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-7-select"
+                    >
+                      <option
+                        hidden=""
+                      />
+                      <option
+                        value="h1"
+                      >
+                        1
+                      </option>
+                      <option
+                        value="h2"
+                      >
+                        2
+                      </option>
+                      <option
+                        value="h3"
+                      >
+                        3
+                      </option>
+                      <option
+                        value="h4"
+                      >
+                        4
+                      </option>
+                      <option
+                        value="h5"
+                      >
+                        5
+                      </option>
+                      <option
+                        value="h6"
+                      >
+                        6
+                      </option>
+                    </select>
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+                      focusable="false"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="v-input-message"
+                    id="test-id-7-message"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  checked=""
+                  class="v-checkbox"
+                  id="test-id-8-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-8-input"
+                  >
+                    Dismissible
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-8-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  checked=""
+                  class="v-checkbox"
+                  id="test-id-9-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-9-input"
+                  >
+                    Show icon
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-9-message"
+              />
+            </div>
+            <div
+              class="v-flex v-gap-16"
+              style="margin-bottom: 16px;"
+            >
+              <button
+                class="v-button"
+                type="submit"
+              >
+                Apply
+              </button>
+              <button
+                class="v-button v-button-secondary"
+                type="button"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Flag examples > Success flag with button should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-success v-flag"
@@ -965,11 +1436,11 @@ exports[`Flag examples Success flag with button should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -1016,7 +1487,7 @@ exports[`Flag examples Success flag with button should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1033,7 +1504,7 @@ exports[`Flag examples Success flag with button should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Success flag with link should render correctly 1`] = `
+exports[`Flag examples > Success flag with link should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-success v-flag"
@@ -1050,11 +1521,11 @@ exports[`Flag examples Success flag with link should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -1102,7 +1573,7 @@ exports[`Flag examples Success flag with link should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1119,7 +1590,7 @@ exports[`Flag examples Success flag with link should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Success flag with title should render correctly 1`] = `
+exports[`Flag examples > Success flag with title should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-success v-flag"
@@ -1136,11 +1607,11 @@ exports[`Flag examples Success flag with title should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -1185,7 +1656,7 @@ exports[`Flag examples Success flag with title should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1202,7 +1673,7 @@ exports[`Flag examples Success flag with title should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Success flag without close icon button should render correctly 1`] = `
+exports[`Flag examples > Success flag without close icon button should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-success v-flag"
@@ -1219,11 +1690,11 @@ exports[`Flag examples Success flag without close icon button should render corr
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -1252,7 +1723,7 @@ exports[`Flag examples Success flag without close icon button should render corr
 </div>
 `;
 
-exports[`Flag examples Warning flag with button should render correctly 1`] = `
+exports[`Flag examples > Warning flag with button should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-warning v-flag"
@@ -1269,13 +1740,11 @@ exports[`Flag examples Warning flag with button should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div
@@ -1314,7 +1783,7 @@ exports[`Flag examples Warning flag with button should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1331,7 +1800,7 @@ exports[`Flag examples Warning flag with button should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Warning flag with link should render correctly 1`] = `
+exports[`Flag examples > Warning flag with link should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-warning v-flag"
@@ -1348,13 +1817,11 @@ exports[`Flag examples Warning flag with link should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div
@@ -1394,7 +1861,7 @@ exports[`Flag examples Warning flag with link should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1411,7 +1878,7 @@ exports[`Flag examples Warning flag with link should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Warning flag with title should render correctly 1`] = `
+exports[`Flag examples > Warning flag with title should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-warning v-flag"
@@ -1428,13 +1895,11 @@ exports[`Flag examples Warning flag with title should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div
@@ -1471,7 +1936,7 @@ exports[`Flag examples Warning flag with title should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1488,7 +1953,7 @@ exports[`Flag examples Warning flag with title should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flag examples Warning flag without close icon button should render correctly 1`] = `
+exports[`Flag examples > Warning flag without close icon button should render correctly 1`] = `
 <div>
   <div
     class="v-message v-message-warning v-flag"
@@ -1505,13 +1970,11 @@ exports[`Flag examples Warning flag without close icon button should render corr
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ import { KeyboardEvent, MutableRefObject } from 'react';
 
 import useListbox from '.';
 
-const focusMocks = jest.fn();
+const focusMocks = vi.fn();
 const refs = {
   current: [
     {
@@ -38,7 +38,18 @@ const refs = {
 } as MutableRefObject<HTMLLIElement[]>;
 
 afterEach(focusMocks.mockClear);
-afterAll(() => (console.error as jest.Mock).mockRestore());
+
+const originalError = console.error;
+const originalWarn = console.warn;
+
+afterAll(() => {
+  console.error = originalError;
+  console.warn = originalWarn;
+});
+beforeAll(() => {
+  console.error = vi.fn();
+  console.warn = vi.fn();
+});
 
 describe('useListbox', () => {
   it('should return correct default state', () => {
@@ -60,10 +71,12 @@ describe('useListbox', () => {
     expect(result.current.isIndexSelected(2)).toBeTruthy();
     expect(result.current.isIndexSelected(3)).toBeFalsy();
   });
-  it('should throw error when both auto select and multiple select are declared', () => {
-    console.error = jest.fn();
-
-    expect(() => renderHook(() => useListbox({ autoSelect: true, defaultSelected: [1, 2] }))).toThrow();
+  it('should warn when both auto select and multiple select are declared', () => {
+    vi.clearAllMocks();
+    renderHook(() => useListbox({ autoSelect: true, defaultSelected: [1, 2] }));
+    expect(console.warn).toHaveBeenCalledWith(
+      expect.stringContaining('autoSelect is not compatible with multiple selection')
+    );
   });
   it('should change state onIndexChange when not disabled', () => {
     const { result } = renderHook(() => useListbox());
@@ -77,7 +90,7 @@ describe('useListbox', () => {
   it('should return the correct list item index if no list item is default selected', () => {
     const { result } = renderHook(() => useListbox());
 
-    const mock = jest.fn();
+    const mock = vi.fn();
 
     act(() => {
       mock(result.current.getTabIndex(0, true));
@@ -96,7 +109,7 @@ describe('useListbox', () => {
   it('should return the correct list item index if no list item is default selected for multiselect listbox', () => {
     const { result } = renderHook(() => useListbox({ defaultSelected: [] }));
 
-    const mock = jest.fn();
+    const mock = vi.fn();
 
     act(() => {
       mock(result.current.getTabIndex(0, true));
@@ -116,7 +129,7 @@ describe('useListbox', () => {
   it('should return the correct list item index if list item is default selected for multiselect listbox', () => {
     const { result } = renderHook(() => useListbox({ defaultSelected: [1] }));
 
-    const mock = jest.fn();
+    const mock = vi.fn();
 
     act(() => {
       mock(result.current.getTabIndex(0, true));
@@ -135,7 +148,7 @@ describe('useListbox', () => {
   it('should return the correct list item index if un-check the list item', () => {
     const { result } = renderHook(() => useListbox({ defaultSelected: 1 }));
 
-    const mock = jest.fn();
+    const mock = vi.fn();
 
     act(() => {
       mock(result.current.toggleIndexSelected(1));

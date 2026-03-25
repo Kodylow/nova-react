@@ -2,7 +2,7 @@
   "description": "Visual indicators communicating the status of a component.",
   "displayName": "badge",
   "filePath": "/badge/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/badge/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//badge/index.tsx",
   "props": [
     {
       "description": "Active style",
@@ -38,6 +38,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/badge See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/badge/?code_library=react See Docs}"
 }

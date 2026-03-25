@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 const Examples: ExampleIndex[] = [
   { id: 'Informational banners headline', title: 'Informational banners', type: 'section' },
@@ -45,6 +45,8 @@ const Examples: ExampleIndex[] = [
   { id: 'link-error-banner' },
   { id: 'button-error-banner' },
   { id: 'persistent-error-banner' },
+  { id: 'Custom banners', title: 'Custom banners', type: 'section' },
+  { id: 'reusable' },
 ];
 
 export default Examples;

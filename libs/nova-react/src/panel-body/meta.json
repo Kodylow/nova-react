@@ -2,7 +2,7 @@
   "description": "Container for panel body elements.",
   "displayName": "panelbody",
   "filePath": "/panel-body/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/panel-body/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//panel-body/index.tsx",
   "props": [
     {
       "defaultValue": "div",
@@ -12,6 +12,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/panel See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/panel/?code_library=react See Docs}"
 }

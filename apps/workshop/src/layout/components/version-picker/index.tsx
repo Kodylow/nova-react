@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,11 +22,11 @@ import {
   Listbox,
   ListboxItem,
   TabSuffix,
-  UtilityProperties,
+  type UtilityProperties,
   useListbox,
 } from '@visa/nova-react';
 import Utility from '@visa/nova-react/utility';
-import { FC, useId, useState } from 'react';
+import { useId, useState, type FC } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useVersions } from '../../../providers';
 import { Paths } from '../../../routes';

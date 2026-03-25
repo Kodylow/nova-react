@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  **/
 import { MessageIcon, VisaMaximizeTiny } from '@visa/nova-icons-react';
 import { Link, SectionMessage, SectionMessageContent, Typography } from '@visa/nova-react';
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 const ValidationGroupNote = () => (
   <SectionMessage>
@@ -106,4 +106,17 @@ export const Examples: ExampleIndex[] = [
   {
     id: 'error-group-panel-checkbox',
   },
+  {
+    id: 'custom-radio-examples',
+    title: 'Custom checkboxes',
+    type: 'section',
+  },
+  {
+    id: 'reusable',
+  },
+  {
+    id: 'reusable-group',
+  },
 ];
+
+export default Examples;

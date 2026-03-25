@@ -2,7 +2,7 @@
   "description": "Interactive elements that allow users to select a single option from a list.",
   "displayName": "radio",
   "filePath": "/radio/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/radio/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//radio/index.tsx",
   "props": [
     {
       "defaultValue": "input",
@@ -14,8 +14,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/radio See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/radio/?code_library=react See Docs}",
   "related": [
     "radio-panel"
   ]

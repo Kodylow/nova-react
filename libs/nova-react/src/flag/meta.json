@@ -2,13 +2,13 @@
   "description": "Messages that provide low-priority updates about a process or event",
   "displayName": "flag",
   "filePath": "/flag/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/flag/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//flag/index.tsx",
   "props": [
     {
       "description": "Message Type",
       "name": "messageType",
       "required": false,
-      "type": "\"subtle\" | \"warning\" | \"error\" | \"success\""
+      "type": "\"subtle\" | \"warning\" | \"error\" | \"information\" | \"success\""
     },
     {
       "description": "Tag of Component",
@@ -19,8 +19,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/flag See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/flag/?code_library=react See Docs}",
   "related": [
     "flag-close-button",
     "message-content"

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-tooltip';
 
-export type TooltipProperties<ET extends ElementType = 'span',> = {
+export type TooltipProperties<ET extends ElementType = 'span'> = {
   /** CSS Class Name */
   className?: string;
   /** Tag of Component */
@@ -28,18 +28,16 @@ export type TooltipProperties<ET extends ElementType = 'span',> = {
 
 /**
  * Short message communicating the function or context of a control or object.
- * @docs {@link https://design.visa.com/react/components/tooltip | See Docs}
+ * @docs {@link https://design.visa.com/components/tooltip/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const Tooltip = <ET extends ElementType = 'span',>(
-  { className, tag: Tag = 'span', ...remainingProps }: TooltipProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, 'v-surface', className)} {...remainingProps} />;
+const Tooltip = <ET extends ElementType = 'span'>({
+  className,
+  tag: Tag = 'span',
+  ...remainingProps
+}: TooltipProperties<ET>) => <Tag className={cn(CSS_PREFIX, 'v-surface', className)} {...remainingProps} />;
 
 export default Tooltip;
-
-Tooltip.defaultProps = {
-  tag: 'span',
-};
 
 Tooltip.displayName = 'Tooltip';

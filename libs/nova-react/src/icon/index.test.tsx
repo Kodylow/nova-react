@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ describe('Icon', () => {
     expect(container.firstElementChild?.getAttribute('aria-hidden')).toBe('true');
     expect(container.firstElementChild?.getAttribute('aria-labelledby')).toBe(null);
     expect(container.firstElementChild?.getAttribute('width')).toBe('24');
-    expect(container.firstElementChild?.lastElementChild?.getAttribute('href')).toBe('generic-help-low');
+    expect(container.firstElementChild?.lastElementChild?.getAttribute('href')).toBe('#generic-help-low');
   });
   it('should render the same with default props', async () => {
     const { container } = render(<Icon brand="generic" iconName="help" resolution="low" />);
@@ -39,12 +39,12 @@ describe('Icon', () => {
     expect(container.firstElementChild?.getAttribute('aria-hidden')).toBe('true');
     expect(container.firstElementChild?.getAttribute('aria-labelledby')).toBe(null);
     expect(container.firstElementChild?.getAttribute('width')).toBe('24');
-    expect(container.firstElementChild?.lastElementChild?.getAttribute('href')).toBe('generic-help-low');
+    expect(container.firstElementChild?.lastElementChild?.getAttribute('href')).toBe('#generic-help-low');
   });
 
   it('should have the correct aria-labelledby', () => {
     const { container } = render(<Icon description="test-description" title="test-title" />);
-    expect(container.firstElementChild?.getAttribute('aria-labelledby')).toBe('title-«r2»,description-«r2»');
+    expect(container.firstElementChild?.getAttribute('aria-labelledby')).toBe('title-test-id-0,description-test-id-0');
   });
 
   it('should have the correct aria-labelledby with ariaBaseId', () => {
@@ -54,12 +54,12 @@ describe('Icon', () => {
 
   it('should have the correct aria-labelledby with description only', () => {
     const { container } = render(<Icon description="test-description" />);
-    expect(container.firstElementChild?.getAttribute('aria-labelledby')).toBe('description-«r4»');
+    expect(container.firstElementChild?.getAttribute('aria-labelledby')).toBe('description-test-id-0');
   });
 
   it('should have the correct aria-labelledby with title only', () => {
     const { container } = render(<Icon title="test-title" />);
-    expect(container.firstElementChild?.getAttribute('aria-labelledby')).toBe('title-«r5»');
+    expect(container.firstElementChild?.getAttribute('aria-labelledby')).toBe('title-test-id-0');
   });
 
   it('should render the icon with the correct high resolution', () => {
@@ -81,7 +81,7 @@ describe('Icon', () => {
 
   it('should render the icon with the correct icon name', () => {
     const { container } = render(<Icon iconName="test" />);
-    expect(container.firstElementChild?.lastElementChild?.getAttribute('href')).toBe('generic-test-low');
+    expect(container.firstElementChild?.lastElementChild?.getAttribute('href')).toBe('#generic-test-low');
   });
   it('should render the icon with the correct className with rtl prop', () => {
     const { container } = render(<Icon rtl />);
@@ -112,6 +112,6 @@ describe('Icon', () => {
     expect(container.firstElementChild?.getAttribute('class')).toBe('v-icon v-icon-visa v-icon-high test-class');
     expect(container.firstElementChild?.getAttribute('aria-labelledby')).toBe('title-test-id,description-test-id');
     expect(container.firstElementChild?.getAttribute('width')).toBe('48');
-    expect(container.firstElementChild?.lastElementChild?.getAttribute('href')).toBe('visa-test-high');
+    expect(container.firstElementChild?.lastElementChild?.getAttribute('href')).toBe('#visa-test-high');
   });
 });

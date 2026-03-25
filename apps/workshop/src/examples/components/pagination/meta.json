@@ -2,40 +2,45 @@
   "min-max-pagination": {
     "file": "min-max-pagination.tsx",
     "id": "min-max-pagination",
-    "title": "Pagination with minimum and maximum",
-    "testAvg": 100
+    "title": "Pagination with minimum and maximum"
   },
   "one-digit-pagination": {
     "file": "one-digit-pagination.tsx",
     "id": "one-digit-pagination",
-    "title": "Default pagination with first page selected",
-    "testAvg": 100
+    "title": "Default pagination with first page selected"
   },
   "slim-pagination": {
     "file": "slim-pagination.tsx",
     "id": "slim-pagination",
-    "title": "Default slim pagination",
-    "testAvg": 100
+    "title": "Default slim pagination"
   },
   "last-page-selected": {
     "file": "last-page-selected.tsx",
     "id": "last-page-selected",
-    "title": "Default pagination with last page selected",
-    "testAvg": 100
+    "title": "Default pagination with last page selected"
   },
   "table-pagination": {
     "file": "table-pagination.tsx",
     "id": "table-pagination",
-    "title": "Pagination for tables",
-    "testAvg": 100
+    "title": "Pagination for tables"
   },
   "two-digit-pagination": {
     "file": "two-digit-pagination.tsx",
     "id": "two-digit-pagination",
-    "title": "Default pagination with middle page selected",
-    "testAvg": 100
+    "title": "Default pagination with middle page selected"
   },
-  "meta": {
-    "designReviewDate": "2024-05-09"
+  "controlled-page-state-pagination": {
+    "file": "controlled-page-state-pagination.tsx",
+    "id": "controlled-page-state-pagination",
+    "title": "Pagination with controlled state"
+  },
+  "reusable": {
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable pagination"
   }
 }

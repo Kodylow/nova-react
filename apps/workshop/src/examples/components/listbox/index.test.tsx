@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+import { describe, it, expect } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { axe } from 'jest-axe';
@@ -37,6 +38,7 @@ import { ResizeMultiListbox } from './resize-multi-listbox';
 import { ResizeSingleListbox } from './resize-single-listbox';
 import { SelectedMultiListbox } from './selected-multi-listbox';
 import { SelectedSingleListbox } from './selected-single-listbox';
+import NovaListboxDemo from './reusable';
 
 const examples = [
   { Component: DefaultMultiListbox, id: metaData['default-multi-listbox'].id },
@@ -55,6 +57,7 @@ const examples = [
   { Component: ResizeSingleListbox, id: metaData['resize-single-listbox'].id },
   { Component: SelectedMultiListbox, id: metaData['selected-multi-listbox'].id },
   { Component: SelectedSingleListbox, id: metaData['selected-single-listbox'].id },
+  { Component: NovaListboxDemo, id: metaData['reusable'].id },
 ];
 
 describe('Listbox examples', () => {
@@ -145,7 +148,7 @@ describe('Listbox examples', () => {
     it('should focus correctly on keyboard navigation', async () => {
       render(<OptionSingleListbox />);
       const user = userEvent.setup();
-      const cardOptionC = screen.getByText('Item C');
+      const cardOptionC = screen.getByText('Item D');
       await user.tab();
       await user.keyboard('{ArrowDown}');
       await user.keyboard('{ArrowDown}');
@@ -163,7 +166,7 @@ describe('Listbox examples', () => {
     it('should focus correctly on keyboard navigation', async () => {
       render(<OptionMultiListbox />);
       const user = userEvent.setup();
-      const cardOption = screen.getByText('Item C');
+      const cardOption = screen.getByText('Item D');
       await user.tab();
       await user.keyboard('{ArrowDown}');
       await user.keyboard('{ArrowDown}');

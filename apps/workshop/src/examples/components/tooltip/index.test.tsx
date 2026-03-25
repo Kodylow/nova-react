@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+import { describe, it, expect } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
@@ -23,12 +24,14 @@ import { BottomTooltip } from './bottom-tooltip';
 import { LeftTooltip } from './left-tooltip';
 import { RightTooltip } from './right-tooltip';
 import { TopTooltip } from './top-tooltip';
+import NovaTooltipDemo from './reusable';
 
 const examples = [
   { Component: BottomTooltip, title: metaData['bottom-tooltip'].title },
   { Component: LeftTooltip, title: metaData['left-tooltip'].title },
   { Component: RightTooltip, title: metaData['right-tooltip'].title },
   { Component: TopTooltip, title: metaData['top-tooltip'].title },
+  { Component: NovaTooltipDemo, title: metaData['reusable'].title },
 ];
 
 describe('Tooltip examples', () => {

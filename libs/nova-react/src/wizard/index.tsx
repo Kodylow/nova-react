@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-wizard';
 
-export type WizardProperties<ET extends ElementType = "ol",> = {
+export type WizardProperties<ET extends ElementType = 'ol'> = {
   /** CSS Class Name */
   className?: string;
   /** show wizard in compact */
@@ -32,14 +32,18 @@ export type WizardProperties<ET extends ElementType = "ol",> = {
 
 /**
  * Manages and navigates multi-step processes within your application.
- * @docs {@link https://design.visa.com/react/components/wizard | See Docs}
+ * @docs {@link https://design.visa.com/patterns/wizard | See Docs}
  * @related wizard-step, use-wizard, use-accordion, badge, button
  * @vgar TODO
  * @wcag TODO
  */
-const Wizard = <ET extends ElementType = "ol",>(
-  { className, compact, tag: Tag = 'ol', vertical, ...remainingProps }: WizardProperties<ET>,
-) => (
+const Wizard = <ET extends ElementType = 'ol'>({
+  className,
+  compact,
+  tag: Tag = 'ol',
+  vertical,
+  ...remainingProps
+}: WizardProperties<ET>) => (
   <Tag
     className={cn(CSS_PREFIX, compact && `${CSS_PREFIX}-compact`, vertical && `${CSS_PREFIX}-vertical`, className)}
     {...remainingProps}
@@ -47,9 +51,5 @@ const Wizard = <ET extends ElementType = "ol",>(
 );
 
 export default Wizard;
-
-Wizard.defaultProps = {
-  tag: 'ol',
-};
 
 Wizard.displayName = 'Wizard';

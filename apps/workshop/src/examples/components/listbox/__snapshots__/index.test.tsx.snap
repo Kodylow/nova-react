@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Listbox examples default-multi-listbox should render correctly 1`] = `
+exports[`Listbox examples > default-multi-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -134,7 +134,7 @@ exports[`Listbox examples default-multi-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples default-single-listbox should render correctly 1`] = `
+exports[`Listbox examples > default-single-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -268,7 +268,7 @@ exports[`Listbox examples default-single-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples disabled-multi-listbox should render correctly 1`] = `
+exports[`Listbox examples > disabled-multi-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -409,7 +409,7 @@ exports[`Listbox examples disabled-multi-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples disabled-single-listbox should render correctly 1`] = `
+exports[`Listbox examples > disabled-single-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -550,7 +550,7 @@ exports[`Listbox examples disabled-single-listbox should render correctly 1`] = 
 </div>
 `;
 
-exports[`Listbox examples error-multi-listbox should render correctly 1`] = `
+exports[`Listbox examples > error-multi-listbox should render correctly 1`] = `
 <div>
   <form>
     <fieldset
@@ -704,7 +704,7 @@ exports[`Listbox examples error-multi-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples error-single-listbox should render correctly 1`] = `
+exports[`Listbox examples > error-single-listbox should render correctly 1`] = `
 <div>
   <form>
     <fieldset
@@ -858,7 +858,7 @@ exports[`Listbox examples error-single-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples inline-multi-listbox should render correctly 1`] = `
+exports[`Listbox examples > inline-multi-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -998,7 +998,7 @@ exports[`Listbox examples inline-multi-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples inline-single-listbox should render correctly 1`] = `
+exports[`Listbox examples > inline-single-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -1138,7 +1138,7 @@ exports[`Listbox examples inline-single-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples item-disabled-multi-listbox should render correctly 1`] = `
+exports[`Listbox examples > item-disabled-multi-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -1273,7 +1273,7 @@ exports[`Listbox examples item-disabled-multi-listbox should render correctly 1`
 </div>
 `;
 
-exports[`Listbox examples item-disabled-single-listbox should render correctly 1`] = `
+exports[`Listbox examples > item-disabled-single-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -1408,7 +1408,7 @@ exports[`Listbox examples item-disabled-single-listbox should render correctly 1
 </div>
 `;
 
-exports[`Listbox examples option-multi-listbox should render correctly 1`] = `
+exports[`Listbox examples > option-multi-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -1510,7 +1510,7 @@ exports[`Listbox examples option-multi-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples option-single-listbox should render correctly 1`] = `
+exports[`Listbox examples > option-single-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -1612,7 +1612,7 @@ exports[`Listbox examples option-single-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples resize-multi-listbox should render correctly 1`] = `
+exports[`Listbox examples > resize-multi-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -1746,7 +1746,7 @@ exports[`Listbox examples resize-multi-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples resize-single-listbox should render correctly 1`] = `
+exports[`Listbox examples > resize-single-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -1880,7 +1880,418 @@ exports[`Listbox examples resize-single-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples selected-multi-listbox should render correctly 1`] = `
+exports[`Listbox examples > reusable should render correctly 1`] = `
+<div>
+  <div>
+    <fieldset
+      aria-invalid="false"
+    >
+      <legend
+        class="v-label"
+        for="test-id-0-listbox-container"
+        id="test-id-0-label"
+      >
+        Label (required)
+      </legend>
+      <div
+        class="v-listbox-container"
+        id="test-id-0-listbox-container"
+      >
+        <div
+          aria-invalid="false"
+          aria-labelledby="test-id-0-label test-id-0-message"
+          class="v-listbox v-listbox-scroll"
+          id="test-id-0-listbox"
+        >
+          <label
+            class="v-listbox-item"
+            for="test-id-0-option-0"
+          >
+            <input
+              class="v-radio v-flex-shrink-0"
+              id="test-id-0-option-0"
+              name="test-id-0-options"
+              type="radio"
+            />
+            <span
+              class="v-label"
+            >
+              Item A
+            </span>
+          </label>
+          <label
+            class="v-listbox-item"
+            for="test-id-0-option-1"
+          >
+            <input
+              class="v-radio v-flex-shrink-0"
+              id="test-id-0-option-1"
+              name="test-id-0-options"
+              type="radio"
+            />
+            <span
+              class="v-label"
+            >
+              Item B
+            </span>
+          </label>
+          <label
+            class="v-listbox-item"
+            for="test-id-0-option-2"
+          >
+            <input
+              class="v-radio v-flex-shrink-0"
+              id="test-id-0-option-2"
+              name="test-id-0-options"
+              type="radio"
+            />
+            <span
+              class="v-label"
+            >
+              Item C
+            </span>
+          </label>
+          <label
+            class="v-listbox-item"
+            for="test-id-0-option-3"
+          >
+            <input
+              class="v-radio v-flex-shrink-0"
+              id="test-id-0-option-3"
+              name="test-id-0-options"
+              type="radio"
+            />
+            <span
+              class="v-label"
+            >
+              Item D
+            </span>
+          </label>
+          <label
+            class="v-listbox-item"
+            for="test-id-0-option-4"
+          >
+            <input
+              class="v-radio v-flex-shrink-0"
+              id="test-id-0-option-4"
+              name="test-id-0-options"
+              type="radio"
+            />
+            <span
+              class="v-label"
+            >
+              Item E
+            </span>
+          </label>
+        </div>
+      </div>
+      <span
+        class="v-input-message v-mt-4"
+        id="test-id-0-message"
+      >
+        This is optional text that describes the label in more detail.
+      </span>
+    </fieldset>
+    <div
+      style="margin-top: 24px;"
+    >
+      <details
+        class="v-accordion"
+        id="test-id-1"
+      >
+        <summary
+          class="v-button v-button-large v-button-secondary v-accordion-heading v-gap-2 v-typography-body-2-medium"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right v-icon-rtl v-accordion-toggle-icon v-accordion-toggle-icon-closed"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down v-accordion-toggle-icon v-accordion-toggle-icon-open"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+            />
+          </svg>
+          <div
+            class="v-align-items-center v-flex v-gap-6"
+          >
+            Customize demo
+          </div>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-32"
+        >
+          <form>
+            <div
+              class="v-flex v-flex-col v-gap-16"
+              style="margin-bottom: 32px;"
+            >
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-2-input"
+                >
+                  Label
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-2-input"
+                      type="text"
+                      value="Label (required)"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-3-input"
+                >
+                  Message
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-3-input"
+                      type="text"
+                      value="This is optional text that describes the label in more detail."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-4-input"
+                >
+                  Options
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <textarea
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-4-input"
+                      style="block-size: 100px;"
+                    >
+                      [
+    {
+        "label": "Item A",
+        "value": "option-1"
+    },
+    {
+        "label": "Item B",
+        "value": "option-2"
+    },
+    {
+        "label": "Item C",
+        "value": "option-3"
+    },
+    {
+        "label": "Item D",
+        "value": "option-4"
+    },
+    {
+        "label": "Item E",
+        "value": "option-5"
+    }
+]
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-5-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-5-input"
+                  >
+                    Auto select
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-5-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  checked=""
+                  class="v-checkbox"
+                  id="test-id-6-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-6-input"
+                  >
+                    Contain height
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-6-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-7-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-7-input"
+                  >
+                    Disabled
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-7-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-8-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-8-input"
+                  >
+                    Invalid
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-8-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-9-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-9-input"
+                  >
+                    Multiselect
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-9-message"
+              />
+            </div>
+            <div
+              class="v-flex v-gap-16"
+              style="margin-bottom: 16px;"
+            >
+              <button
+                class="v-button"
+                type="submit"
+              >
+                Apply
+              </button>
+              <button
+                class="v-button v-button-secondary"
+                type="button"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples > selected-multi-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend
@@ -2015,7 +2426,7 @@ exports[`Listbox examples selected-multi-listbox should render correctly 1`] = `
 </div>
 `;
 
-exports[`Listbox examples selected-single-listbox should render correctly 1`] = `
+exports[`Listbox examples > selected-single-listbox should render correctly 1`] = `
 <div>
   <fieldset>
     <legend

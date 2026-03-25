@@ -5,8 +5,7 @@
     "title": "Screen reader-only text",
     "tags": {
       "docs": true
-    },
-    "testAvg": 100
+    }
   },
   "screen-reader-caption-within-table": {
     "file": "screen-reader-caption-within-table.tsx",
@@ -14,7 +13,6 @@
     "title": "Screen reader-only table caption",
     "tags": {
       "docs": true
-    },
-    "testAvg": 100
+    }
   }
 }

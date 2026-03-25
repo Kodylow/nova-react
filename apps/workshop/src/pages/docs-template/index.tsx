@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import { useLocation, useParams } from 'react-router-dom';
 import Example from '../../components/example';
 import ExamplesDirectory from '../../components/examples-directory';
 import VSuspense from '../../components/v-suspense';
-import { DocType, ExampleIndex, ExampleMetaData } from '../../types';
+import type { DocType, ExampleIndex, ExampleMetaData } from '../../types';
 import Styles from './styles.module.scss';
 
 const fetchExamplesMetaData = async (docType: string, docName: string): Promise<Record<string, ExampleMetaData>> =>

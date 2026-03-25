@@ -2,7 +2,7 @@
   "description": "Container used to display content within a banner.",
   "displayName": "BannerContent",
   "filePath": "/banner-content/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/banner-content/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//banner-content/index.tsx",
   "props": [
     {
       "description": "Tag of Component",
@@ -11,6 +11,5 @@
       "type": "ElementType"
     }
   ],
-  "testAvg": 100,
-  "docs": "{@link https://design.visa.com/react/components/banner See Docs}"
+  "docs": "{@link https://design.visa.com/components/banner/?code_library=react See Docs}"
 }

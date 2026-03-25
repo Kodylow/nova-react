@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`useTabs example Auto-select tabs on arrow key press should render correctly 1`] = `
+exports[`useTabs example > Auto-select tabs on arrow key press should render correctly 1`] = `
 <div>
   <ul
     class="v-tabs v-tabs-horizontal"
@@ -62,7 +62,7 @@ exports[`useTabs example Auto-select tabs on arrow key press should render corre
 </div>
 `;
 
-exports[`useTabs example Behavior and usage should render correctly 1`] = `
+exports[`useTabs example > Behavior and usage should render correctly 1`] = `
 <div>
   <ul
     class="v-tabs v-tabs-horizontal"

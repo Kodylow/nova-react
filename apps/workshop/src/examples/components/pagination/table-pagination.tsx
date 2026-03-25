@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ import {
   calculateTotalPages,
   usePagination,
 } from '@visa/nova-react';
-import { CSSProperties, FormEvent, useState } from 'react';
+import { useState, type CSSProperties, type FormEvent } from 'react';
 
 const totalItems = 100;
 
@@ -96,7 +96,7 @@ export const TablePagination = () => {
       </Utility>
       <UtilityFragment>
         <nav aria-label="table pagination" role="navigation">
-          <UtilityFragment vAlignItems="center" vFlex vFlexRow vGap={4}>
+          <UtilityFragment vAlignItems="center" vGap={4}>
             <Pagination>
               <li>
                 <Button

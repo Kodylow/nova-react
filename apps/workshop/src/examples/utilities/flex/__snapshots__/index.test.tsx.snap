@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Flex examples Flex align content around should render correctly 1`] = `
+exports[`Flex examples > Flex align content around should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-content-around v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -22,7 +22,7 @@ exports[`Flex examples Flex align content around should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align content center should render correctly 1`] = `
+exports[`Flex examples > Flex align content center should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-content-center v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -44,7 +44,7 @@ exports[`Flex examples Flex align content center should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align content end should render correctly 1`] = `
+exports[`Flex examples > Flex align content end should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-content-end v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -66,7 +66,7 @@ exports[`Flex examples Flex align content end should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align content evenly should render correctly 1`] = `
+exports[`Flex examples > Flex align content evenly should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-content-evenly v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -88,7 +88,7 @@ exports[`Flex examples Flex align content evenly should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align content space between should render correctly 1`] = `
+exports[`Flex examples > Flex align content space between should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-content-between v-flex v-flex-row v-gap-4"
@@ -110,7 +110,7 @@ exports[`Flex examples Flex align content space between should render correctly 
 </div>
 `;
 
-exports[`Flex examples Flex align content start should render correctly 1`] = `
+exports[`Flex examples > Flex align content start should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-content-start v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -132,7 +132,7 @@ exports[`Flex examples Flex align content start should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align items baseline should render correctly 1`] = `
+exports[`Flex examples > Flex align items baseline should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-items-baseline v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -154,7 +154,7 @@ exports[`Flex examples Flex align items baseline should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align items center should render correctly 1`] = `
+exports[`Flex examples > Flex align items center should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-items-center v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -176,7 +176,7 @@ exports[`Flex examples Flex align items center should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align items end should render correctly 1`] = `
+exports[`Flex examples > Flex align items end should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-items-end v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -198,7 +198,7 @@ exports[`Flex examples Flex align items end should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align items start should render correctly 1`] = `
+exports[`Flex examples > Flex align items start should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-items-start v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -220,7 +220,7 @@ exports[`Flex examples Flex align items start should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align items stretch should render correctly 1`] = `
+exports[`Flex examples > Flex align items stretch should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-align-items-stretch v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -242,7 +242,7 @@ exports[`Flex examples Flex align items stretch should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align self auto should render correctly 1`] = `
+exports[`Flex examples > Flex align self auto should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-gap-4"
@@ -257,7 +257,7 @@ exports[`Flex examples Flex align self auto should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align self center should render correctly 1`] = `
+exports[`Flex examples > Flex align self center should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-gap-4"
@@ -272,7 +272,7 @@ exports[`Flex examples Flex align self center should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align self end should render correctly 1`] = `
+exports[`Flex examples > Flex align self end should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-gap-4"
@@ -287,7 +287,7 @@ exports[`Flex examples Flex align self end should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align self start should render correctly 1`] = `
+exports[`Flex examples > Flex align self start should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-gap-4"
@@ -302,7 +302,7 @@ exports[`Flex examples Flex align self start should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex align self stretch should render correctly 1`] = `
+exports[`Flex examples > Flex align self stretch should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-gap-4"
@@ -317,7 +317,7 @@ exports[`Flex examples Flex align self stretch should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex column reverse should render correctly 1`] = `
+exports[`Flex examples > Flex column reverse should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col-reverse v-gap-4"
@@ -335,7 +335,7 @@ exports[`Flex examples Flex column reverse should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex column should render correctly 1`] = `
+exports[`Flex examples > Flex column should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-4"
@@ -353,7 +353,7 @@ exports[`Flex examples Flex column should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex default should render correctly 1`] = `
+exports[`Flex examples > Flex default should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-gap-4"
@@ -363,7 +363,7 @@ exports[`Flex examples Flex default should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex grow 0 should render correctly 1`] = `
+exports[`Flex examples > Flex grow 0 should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -393,7 +393,7 @@ exports[`Flex examples Flex grow 0 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex grow should render correctly 1`] = `
+exports[`Flex examples > Flex grow should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -417,7 +417,7 @@ exports[`Flex examples Flex grow should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex justify content around should render correctly 1`] = `
+exports[`Flex examples > Flex justify content around should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap v-gap-4 v-justify-content-around"
@@ -439,7 +439,7 @@ exports[`Flex examples Flex justify content around should render correctly 1`] =
 </div>
 `;
 
-exports[`Flex examples Flex justify content center should render correctly 1`] = `
+exports[`Flex examples > Flex justify content center should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap v-gap-4 v-justify-content-center"
@@ -461,7 +461,7 @@ exports[`Flex examples Flex justify content center should render correctly 1`] =
 </div>
 `;
 
-exports[`Flex examples Flex justify content end should render correctly 1`] = `
+exports[`Flex examples > Flex justify content end should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap v-gap-4 v-justify-content-end"
@@ -483,7 +483,7 @@ exports[`Flex examples Flex justify content end should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex justify content evenly should render correctly 1`] = `
+exports[`Flex examples > Flex justify content evenly should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap v-gap-4 v-justify-content-evenly"
@@ -505,7 +505,7 @@ exports[`Flex examples Flex justify content evenly should render correctly 1`] =
 </div>
 `;
 
-exports[`Flex examples Flex justify content space between should render correctly 1`] = `
+exports[`Flex examples > Flex justify content space between should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap v-gap-4 v-justify-content-between"
@@ -527,7 +527,7 @@ exports[`Flex examples Flex justify content space between should render correctl
 </div>
 `;
 
-exports[`Flex examples Flex justify content start should render correctly 1`] = `
+exports[`Flex examples > Flex justify content start should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap v-gap-4 v-justify-content-start"
@@ -549,7 +549,7 @@ exports[`Flex examples Flex justify content start should render correctly 1`] = 
 </div>
 `;
 
-exports[`Flex examples Flex no wrap should render correctly 1`] = `
+exports[`Flex examples > Flex no wrap should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-nowrap v-flex-row v-gap-4"
@@ -577,7 +577,7 @@ exports[`Flex examples Flex no wrap should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex row reverse should render correctly 1`] = `
+exports[`Flex examples > Flex row reverse should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-row-reverse v-gap-4"
@@ -595,7 +595,7 @@ exports[`Flex examples Flex row reverse should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex row should render correctly 1`] = `
+exports[`Flex examples > Flex row should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-row v-gap-4"
@@ -613,7 +613,7 @@ exports[`Flex examples Flex row should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex shrink 0 should render correctly 1`] = `
+exports[`Flex examples > Flex shrink 0 should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -643,7 +643,7 @@ exports[`Flex examples Flex shrink 0 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex shrink should render correctly 1`] = `
+exports[`Flex examples > Flex shrink should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap v-gap-4"
@@ -673,7 +673,7 @@ exports[`Flex examples Flex shrink should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex wrap reverse should render correctly 1`] = `
+exports[`Flex examples > Flex wrap reverse should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-row v-flex-wrap-reverse v-gap-4"
@@ -701,7 +701,7 @@ exports[`Flex examples Flex wrap reverse should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Flex wrap should render correctly 1`] = `
+exports[`Flex examples > Flex wrap should render correctly 1`] = `
 <div>
   <div
     class="v-surface v-flex v-flex-wrap v-gap-4"
@@ -729,7 +729,7 @@ exports[`Flex examples Flex wrap should render correctly 1`] = `
 </div>
 `;
 
-exports[`Flex examples Inline flex should render correctly 1`] = `
+exports[`Flex examples > Inline flex should render correctly 1`] = `
 <div>
   <div
     class="v-flex-inline v-gap-4"

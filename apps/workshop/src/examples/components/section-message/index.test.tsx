@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -49,13 +49,14 @@ import { TitleInformationSectionMessage } from './title-information-section-mess
 import { TitleSuccessSectionMessage } from './title-success-section-message';
 import { TitleWarningSectionMessage } from './title-warning-section-message';
 import { TitleSubtleSectionMessage } from './title-subtle-section-message';
+import NovaSectionMessageDemo from './reusable';
 
 const examples = [
   { Component: DefaultErrorSectionMessage, title: metaData['default-error-section-message'].title },
   { Component: DefaultInformationSectionMessage, title: metaData['default-information-section-message'].title },
   { Component: DefaultSuccessSectionMessage, title: metaData['default-success-section-message'].title },
   { Component: DefaultWarningSectionMessage, title: metaData['default-warning-section-message'].title },
-  { Component: DefaultSubtleSectionMessage, title: metaData['default-subtle-section-message'].title},
+  { Component: DefaultSubtleSectionMessage, title: metaData['default-subtle-section-message'].title },
   { Component: EmptyErrorSectionMessage, title: metaData['empty-error-section-message'].title },
   { Component: EmptyInformationSectionMessage, title: metaData['empty-information-section-message'].title },
   { Component: EmptySuccessSectionMessage, title: metaData['empty-success-section-message'].title },
@@ -81,6 +82,7 @@ const examples = [
   { Component: LinkSuccessSectionMessage, title: metaData['link-success-section-message'].title },
   { Component: LinkWarningSectionMessage, title: metaData['link-warning-section-message'].title },
   { Component: LinkSubtleSectionMessage, title: metaData['link-subtle-section-message'].title },
+  { Component: NovaSectionMessageDemo, title: metaData['reusable'].title },
 ];
 
 describe('Section message examples', () => {

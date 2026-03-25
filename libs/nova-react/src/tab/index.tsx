@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-tab';
 
-export type TabProperties<ET extends ElementType = 'li',> = {
+export type TabProperties<ET extends ElementType = 'li'> = {
   /** section title */
   sectionTitle?: boolean;
   /** Tag of Component */
@@ -28,21 +28,17 @@ export type TabProperties<ET extends ElementType = 'li',> = {
 
 /**
  * Singular tab component to be used in a tab group.
- * @docs {@link https://design.visa.com/react/components/tabs | See Docs}
+ * @docs {@link https://design.visa.com/components/tabs/?code_library=react | See Docs}
  */
-const Tab = <ET extends ElementType = 'li',>(
-  { className, sectionTitle, tag: Tag = 'li', ...remainingProps }: TabProperties<ET>,
-) => (
-  <Tag
-    className={cn(CSS_PREFIX, sectionTitle && `${CSS_PREFIX}-section-title`, className)}
-    {...remainingProps}
-  />
+const Tab = <ET extends ElementType = 'li'>({
+  className,
+  sectionTitle,
+  tag: Tag = 'li',
+  ...remainingProps
+}: TabProperties<ET>) => (
+  <Tag className={cn(CSS_PREFIX, sectionTitle && `${CSS_PREFIX}-section-title`, className)} {...remainingProps} />
 );
 
 export default Tab;
-
-Tab.defaultProps = {
-  tag: 'li',
-};
 
 Tab.displayName = 'Tab';

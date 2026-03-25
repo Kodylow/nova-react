@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,17 +15,17 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType, ReactElement, cloneElement } from 'react';
+import { type ComponentPropsWithRef, type ElementType, type ReactElement, cloneElement } from 'react';
 
 const CSS_PREFIX = 'v-button';
 
-type ButtonCustomProps<ET extends ElementType = 'button',> = {
+type ButtonCustomProps<ET extends ElementType = 'button'> = {
   /** Alternate color scheme */
   alternate?: boolean;
   /** Size of Button */
-  buttonSize?: 'large' | 'small';
+  buttonSize?: 'large' | 'medium' | 'small';
   /** Color Scheme of Button */
-  colorScheme?: 'secondary' | 'tertiary';
+  colorScheme?: 'primary' | 'secondary' | 'tertiary';
   /** Destructive Button */
   destructive?: boolean;
   /** Icon Button */
@@ -36,51 +36,50 @@ type ButtonCustomProps<ET extends ElementType = 'button',> = {
   stacked?: boolean;
   /** Subtle Button */
   subtle?: boolean;
-} & Omit<ComponentPropsWithRef<ET>, ''>;;
+} & Omit<ComponentPropsWithRef<ET>, ''>;
 
-export type ButtonProperties<ET extends ElementType = 'button',> = ButtonCustomProps & (
-  | {
-    /** Cloned Element (not compatible with tag property) */
-    element?: never;
-    /** Tag (not compatible with element property) */
-    tag?: ElementType;
-  }
-  | {
-    /** Cloned Element (not compatible with tag property) */
-    element?: ReactElement<ButtonCustomProps<ET>>;
-    /** Tag (not compatible with element property) */
-    tag?: never;
-  }
-) & Omit<ComponentPropsWithRef<ET>, ''>;
+export type ButtonProperties<ET extends ElementType = 'button'> = ButtonCustomProps &
+  (
+    | {
+        /** Cloned Element (not compatible with tag property) */
+        element?: never;
+        /** Tag (not compatible with element property) */
+        tag?: ElementType;
+      }
+    | {
+        /** Cloned Element (not compatible with tag property) */
+        element?: ReactElement<ButtonCustomProps<ET>>;
+        /** Tag (not compatible with element property) */
+        tag?: never;
+      }
+  ) &
+  Omit<ComponentPropsWithRef<ET>, ''>;
 
 /**
  * Interactive elements enabling users to take actions within an interface.
- * @docs {@link https://design.visa.com/react/components/button | See Docs}
+ * @docs {@link https://design.visa.com/components/button/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const Button = <ET extends ElementType = 'button',>(
-  {
-    alternate,
-    buttonSize,
-    className,
-    colorScheme,
-    destructive,
-    element,
-    iconButton,
-    iconTwoColor,
-    stacked,
-    subtle,
-    tag: Tag = 'button',
-    ...remainingProps
-  }: ButtonProperties<ET>,
-
-) => {
+const Button = <ET extends ElementType = 'button'>({
+  alternate,
+  buttonSize,
+  className,
+  colorScheme,
+  destructive,
+  element,
+  iconButton,
+  iconTwoColor,
+  stacked,
+  subtle,
+  tag: Tag = 'button',
+  ...remainingProps
+}: ButtonProperties<ET>) => {
   const classNames = cn(
     CSS_PREFIX,
     alternate && 'v-alternate',
-    buttonSize && `${CSS_PREFIX}-${buttonSize}`,
-    colorScheme && `${CSS_PREFIX}-${colorScheme}`,
+    buttonSize && buttonSize && buttonSize !== 'medium' && `${CSS_PREFIX}-${buttonSize}`,
+    colorScheme && colorScheme !== 'primary' && `${CSS_PREFIX}-${colorScheme}`,
     destructive && `${CSS_PREFIX}-destructive`,
     iconButton && `${CSS_PREFIX}-icon`,
     iconTwoColor && 'v-icon-two-color',
@@ -99,9 +98,5 @@ const Button = <ET extends ElementType = 'button',>(
 };
 
 export default Button;
-
-Button.defaultProps = {
-  tag: 'button',
-};
 
 Button.displayName = 'Button';

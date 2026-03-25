@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,30 +15,27 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-input';
 
-export type SelectProperties<ET extends ElementType = 'select',> = {
-
+export type SelectProperties<ET extends ElementType = 'select'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * HTML element that allows users to select one option from a list.
- * @docs {@link https://design.visa.com/react/components/select | See Docs}
+ * @docs {@link https://design.visa.com/components/select/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const Select = <ET extends ElementType = 'select',>(
-  { className, tag: Tag = 'select', ...remainingProps }: SelectProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const Select = <ET extends ElementType = 'select'>({
+  className,
+  tag: Tag = 'select',
+  ...remainingProps
+}: SelectProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default Select;
-
-Select.defaultProps = {
-  tag: 'select',
-};
 
 Select.displayName = 'Select';

@@ -2,7 +2,7 @@
   "description": "",
   "displayName": "sectionmessagecontent",
   "filePath": "/section-message-content/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/section-message-content/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//section-message-content/index.tsx",
   "props": [
     {
       "description": "Tag of Component",
@@ -11,6 +11,5 @@
       "type": "ElementType"
     }
   ],
-  "testAvg": 100,
-  "docs": "{@link https://design.visa.com/react/components/section-message See Docs}"
+  "docs": "{@link https://design.visa.com/components/section-message/?code_library=react See Docs}"
 }

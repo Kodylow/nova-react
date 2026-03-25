@@ -14,5 +14,21 @@
   "single-file-upload": {
     "file": "single-file-upload.tsx",
     "id": "single-file-upload"
+  },
+  "file-upload-with-alternate-display-test": {
+    "file": "file-upload-with-alternate-display.test.tsx",
+    "id": "file-upload-with-alternate-display-test"
+  },
+  "multi-file-manual-upload-test": {
+    "file": "multi-file-manual-upload.test.tsx",
+    "id": "multi-file-manual-upload-test"
+  },
+  "multi-file-upload-test": {
+    "file": "multi-file-upload.test.tsx",
+    "id": "multi-file-upload-test"
+  },
+  "single-file-upload-test": {
+    "file": "single-file-upload.test.tsx",
+    "id": "single-file-upload-test"
   }
 }

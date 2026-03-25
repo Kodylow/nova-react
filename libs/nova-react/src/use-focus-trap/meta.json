@@ -2,7 +2,7 @@
   "description": "This hook is used to trap focus inside a container.",
   "displayName": "useFocusTrap",
   "filePath": "/use-focus-trap/index.ts",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/use-focus-trap/index.ts",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//use-focus-trap/index.ts",
   "props": [
     {
       "description": "Document object",
@@ -21,7 +21,7 @@
       "description": "Ref object to use if ref isn't supplied in properties.",
       "name": "ref",
       "required": false,
-      "type": "MutableRefObject<HTMLElementType>"
+      "type": "RefObject<HTMLElementType>"
     }
   ],
   "returnType": [
@@ -40,7 +40,6 @@
     "dialog",
     "panel"
   ],
-  "docs": "{@link https://design.visa.com/react/hooks/use-focus-trap See Docs}",
-  "testAvg": 98,
+  "docs": "{@link https://design.visa.com/developing/react/hooks/usefocustrap/?code_library=react See Docs}",
   "clientSideOnly": true
 }

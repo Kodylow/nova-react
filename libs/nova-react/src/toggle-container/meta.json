@@ -2,7 +2,7 @@
   "description": "Element to contain a group of toggle components.",
   "displayName": "togglecontainer",
   "filePath": "/toggle-container/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/toggle-container/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//toggle-container/index.tsx",
   "props": [
     {
       "defaultValue": "fieldset",
@@ -12,6 +12,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/toggle See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/toggle-button/?code_library=react See Docs}"
 }

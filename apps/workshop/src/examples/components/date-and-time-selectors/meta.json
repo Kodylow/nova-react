@@ -2,70 +2,56 @@
   "default-date-selector": {
     "file": "default-date-selector.tsx",
     "id": "default-date-selector",
-    "title": "Default date selector",
-    "testAvg": 100
+    "title": "Default date selector"
   },
   "read-only-date-selector": {
     "file": "read-only-date-selector.tsx",
     "id": "read-only-date-selector",
-    "title": "Read-only date selector",
-    "testAvg": 100
+    "title": "Read-only date selector"
   },
   "disabled-date-selector": {
     "file": "disabled-date-selector.tsx",
     "id": "disabled-date-selector",
-    "title": "Disabled date selector",
-    "testAvg": 100
+    "title": "Disabled date selector"
   },
   "date-selector-with-error": {
     "file": "date-selector-with-error.tsx",
     "id": "date-selector-with-error",
-    "title": "Date selector with error",
-    "testAvg": 100
+    "title": "Date selector with error"
   },
   "min-max-date-input": {
     "file": "min-max-date-input.tsx",
     "id": "min-max-date-input",
-    "title": "Date selector with disabled dates",
-    "testAvg": 100
+    "title": "Date selector with disabled dates"
   },
   "default-date-range-selector": {
     "file": "default-date-range-selector.tsx",
     "id": "default-date-range-selector",
-    "title": "Default date range selector",
-    "testAvg": 100
+    "title": "Default date range selector"
   },
   "stacked-date-range-selector": {
     "file": "stacked-date-range-selector.tsx",
     "id": "stacked-date-range-selector",
-    "title": "Stacked date range selector",
-    "testAvg": 100
+    "title": "Stacked date range selector"
   },
   "default-time-selector": {
     "file": "default-time-selector.tsx",
     "id": "default-time-selector",
-    "title": "Default time selector",
-    "testAvg": 100
+    "title": "Default time selector"
   },
   "read-only-time-selector": {
     "file": "read-only-time-selector.tsx",
     "id": "read-only-time-selector",
-    "title": "Read-only time selector",
-    "testAvg": 100
+    "title": "Read-only time selector"
   },
   "disabled-time-selector": {
     "file": "disabled-time-selector.tsx",
     "id": "disabled-time-selector",
-    "title": "Disabled time selector",
-    "testAvg": 100
+    "title": "Disabled time selector"
   },
   "time-selector-with-error": {
     "file": "time-selector-with-error.tsx",
     "id": "time-selector-with-error",
-    "title": "Time selector with error",
-    "testAvg": 100
-  },
-  "meta": {
-    "designReviewDate": "2024-05-23"
+    "title": "Time selector with error"
   }
 }

@@ -5,8 +5,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Alternate horizontal navigation with icons",
-    "testAvg": 100
+    "title": "Alternate horizontal navigation with icons"
   },
   "default-horizontal-nav": {
     "file": "default-horizontal-nav.tsx",
@@ -14,8 +13,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default horizontal navigation",
-    "testAvg": 100
+    "title": "Default horizontal navigation"
   },
   "horizontal-advanced-with-floating-ui-nav": {
     "file": "horizontal-advanced-with-floating-ui-nav.tsx",
@@ -23,8 +21,7 @@
     "tags": {
       "custom": true
     },
-    "title": "Horizontal Nav with Logo & Links with Floating UI",
-    "testAvg": 100
+    "title": "Horizontal Nav with Logo & Links with Floating UI"
   },
   "horizontal-with-icons": {
     "file": "horizontal-with-icons.tsx",
@@ -32,8 +29,7 @@
     "tags": {
       "custom": true
     },
-    "title": "Horizontal navigation with icons",
-    "testAvg": 100
+    "title": "Horizontal navigation with icons"
   },
   "horizontal-with-links-nav": {
     "file": "horizontal-with-links-nav.tsx",
@@ -42,7 +38,6 @@
       "docs": true
     },
     "title": "Horizontal with links",
-    "testAvg": 100,
     "changeReason": "docs(horizontal-nav): split them into it's own page VDS-6226",
     "commit": "12ede4b62c1b595a26f5fd505129cd224e54bfac",
     "dateCreated": "2024-06-12 13:44:35 -0400",
@@ -54,8 +49,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Horizontal navigation with active element",
-    "testAvg": 100
+    "title": "Horizontal navigation with active element"
   },
   "alternate-active-element-horizontal-nav": {
     "file": "alternate-active-element-horizontal-nav.tsx",
@@ -63,8 +57,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Alternate horizontal navigation with active element",
-    "testAvg": 100
+    "title": "Alternate horizontal navigation with active element"
   },
   "alternate-horizontal-nav": {
     "file": "alternate-horizontal-nav.tsx",
@@ -72,8 +65,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Alternate horizontal navigation",
-    "testAvg": 100
+    "title": "Alternate horizontal navigation"
   },
   "stacked-horizontal-nav": {
     "file": "stacked-horizontal-nav.tsx",
@@ -81,8 +73,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Stacked horizontal navigation",
-    "testAvg": 100
+    "title": "Stacked horizontal navigation"
   },
   "search-persistent-horizontal-nav": {
     "file": "search-persistent-horizontal-nav.tsx",
@@ -90,8 +81,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default horizontal navigation with persistent search",
-    "testAvg": 90
+    "title": "Default horizontal navigation with persistent search"
   },
   "stacked-search-persistent-horizontal-nav": {
     "file": "stacked-search-persistent-horizontal-nav.tsx",
@@ -99,7 +89,6 @@
     "tags": {
       "docs": true
     },
-    "title": "Stacked horizontal navigation with persistent search",
-    "testAvg": 86
+    "title": "Stacked horizontal navigation with persistent search"
   }
 }

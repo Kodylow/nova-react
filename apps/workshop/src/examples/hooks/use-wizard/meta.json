@@ -2,7 +2,6 @@
   "use-wizard-example": {
     "file": "use-wizard-example.tsx",
     "id": "use-wizard-example",
-    "title": "Behavior and usage",
-    "testAvg": 100
+    "title": "Behavior and usage"
   }
 }

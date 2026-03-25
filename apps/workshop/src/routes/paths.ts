@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import { defaultPreferencesProp } from '../providers/theme-provider';
-import { DocType } from '../types';
+import type { DocType } from '../types';
 
 const VPDS = 'https://design.visa.com';
 
@@ -25,8 +25,12 @@ export const Paths = {
   changeLog: '/changelog',
   sitemap: '/sitemap',
   components: '/components',
-  commitLinkExample: 'unavailable for public use',
-  commitLinkLib: 'unavailable for public use',
+  commitLinkExample: ({ commitId = '', docType = 'components', docName = '', exampleFile = 'index.tsx' }) =>
+    `https://github.com/visa/nova-react/blob/${commitId}/apps/workshop/src/examples/${docType}/${docName}/${exampleFile}`,
+  commitLinkLib: ({ commitId = '', docName = '', isHook = false }) =>
+    `https://github.com/visa/nova-react/blob/${commitId}/libs/nova-react/src/${docName}/index.ts${
+      isHook ? '' : 'x'
+    }`,
   documentationApi: (docType: DocType | ':docType' = ':docType', docName = ':docName') => `/${docType}/${docName}/api`,
   documentationExample: (docType: DocType | ':docType' = ':docType', docName = ':docName', example = ':exampleName') =>
     `/${docType}/${docName}#${example}`,
@@ -39,7 +43,7 @@ export const Paths = {
   root: '/',
   themesDocs: `${VPDS}/styles/themes/${defaultPreferencesProp.themeKey}`,
   vault: 'https://bookmarks.visa.com/vpds-vault-react',
-  ticketLink: ` https://bookmarks.visa.com/vpds-react-create-ticket`,
+  ticketLink: `https://bookmarks.visa.com/vpds-react-create-ticket`,
   versioned: VPDS + '/react/version',
   versionsApi: VPDS + '/versions/react',
   vpds: VPDS,

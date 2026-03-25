@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,6 @@
  **/
  
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'fs';
-import gitlog from 'gitlog';
 import { globSync } from 'glob';
 import { join, parse, resolve } from 'path';
 import { kebabCase } from 'change-case';
@@ -30,11 +29,6 @@ const statsPath = join(examplesPath, metaDataFilename);
 const examples = globSync(`${examplesPath}/**/*.tsx`, {
   ignore: ['**/index.tsx', '**/index.test.tsx', 'index.tsx'],
 }).reverse();
-const defaultGitLogOptions = {
-  repo: resolve('../../'),
-  number: 1,
-  fields: ['authorDate', 'committerDate', 'hash', 'subject'],
-};
 
 const getDirectories = source => {
   const dirFiles = readdirSync(source, { withFileTypes: true });
@@ -57,19 +51,9 @@ const updateExamplesMetaData = () => {
     const exampleId = kebabCase(parsedExampleFilePath.name);
 
     const prevExampleMetaData = metaData[exampleId] || {};
-
-    const gitLogged =
-      gitlog({
-        ...defaultGitLogOptions,
-        file: examplePath,
-      })[0] || {};
-
+    
     metaData[exampleId] = {
       ...prevExampleMetaData,
-      changeReason: gitLogged.subject,
-      commit: gitLogged.hash,
-      dateCreated: gitLogged.authorDate,
-      dateModified: gitLogged.committerDate,
       file: parsedExampleFilePath.base,
       id: exampleId,
     };

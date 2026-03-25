@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,12 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-th';
+const CSS_ROW_PREFIX = 'v-td';
 
-export type ThProperties <ET extends ElementType = 'th',>= {
+export type ThProperties<ET extends ElementType = 'th'> = {
   /** Alt */
   alternate?: boolean;
 
@@ -29,14 +30,21 @@ export type ThProperties <ET extends ElementType = 'th',>= {
 
 /**
  * Table header cell component usually used for titles and column/row descriptions.
- * @docs {@link https://design.visa.com/react/components/table | See Docs}
+ * @docs {@link https://design.visa.com/components/table/?code_library=react | See Docs}
  */
-const Th = <ET extends ElementType = 'th',>(
-  { alternate, className, tag: Tag = 'th', ...remainingProps }: ThProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, alternate && `${CSS_PREFIX}-alt`, className)} {...remainingProps} />;
+const Th = <ET extends ElementType = 'th'>({
+  alternate,
+  className,
+  scope,
+  tag: Tag = 'th',
+  ...remainingProps
+}: ThProperties<ET>) => {
+  const cssPrefix = scope === 'row' ? CSS_ROW_PREFIX : CSS_PREFIX;
+  return (
+    <Tag className={cn(cssPrefix, alternate && `${CSS_PREFIX}-alt`, className)} scope={scope} {...remainingProps} />
+  );
+};
 
 export default Th;
 
 Th.displayName = 'Th';
-
-Th.defaultProps = { tag: 'th' };

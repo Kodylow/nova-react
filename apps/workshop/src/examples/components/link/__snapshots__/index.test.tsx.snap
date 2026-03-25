@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Link examples Alternate link with trailing icon should render correctly 1`] = `
+exports[`Link examples > Alternate link with trailing icon should render correctly 1`] = `
 <div>
   <a
     class="v-link v-alternate v-link-no-underline"
@@ -18,16 +18,14 @@ exports[`Link examples Alternate link with trailing icon should render correctly
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-        fill-rule="evenodd"
+        d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
       />
     </svg>
   </a>
 </div>
 `;
 
-exports[`Link examples Default link should render correctly 1`] = `
+exports[`Link examples > Default link should render correctly 1`] = `
 <div>
   <a
     class="v-link"
@@ -38,7 +36,7 @@ exports[`Link examples Default link should render correctly 1`] = `
 </div>
 `;
 
-exports[`Link examples Disabled link should render correctly 1`] = `
+exports[`Link examples > Disabled link should render correctly 1`] = `
 <div>
   <a
     aria-disabled="true"
@@ -50,7 +48,7 @@ exports[`Link examples Disabled link should render correctly 1`] = `
 </div>
 `;
 
-exports[`Link examples Inline link should render correctly 1`] = `
+exports[`Link examples > Inline link should render correctly 1`] = `
 <div>
   <p>
     This is a sentence with an inline 
@@ -65,7 +63,7 @@ exports[`Link examples Inline link should render correctly 1`] = `
 </div>
 `;
 
-exports[`Link examples Inline link with trailing icon should render correctly 1`] = `
+exports[`Link examples > Inline link with trailing icon should render correctly 1`] = `
 <div>
   <p>
     This is a sentence with an inline
@@ -87,13 +85,11 @@ exports[`Link examples Inline link with trailing icon should render correctly 1`
       >
         <path
           class="v-icon-secondary"
-          d="M14 6H16L16 0H10V2L12.5393 2L6 8.54302L7.45688 9.99991L14 3.46442V6Z"
+          d="M16 0V6H14V3.46484L7.45703 10L6 8.54297L12.5391 2H10V0H16Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M0 1H8V3H2V14H13V8H15V16H0V1Z"
-          fill-rule="evenodd"
+          d="M8 3H2V14H13V8H15V16H0V1H8V3Z"
         />
         <defs>
           <clippath>
@@ -109,7 +105,7 @@ exports[`Link examples Inline link with trailing icon should render correctly 1`
 </div>
 `;
 
-exports[`Link examples Link coded as a button should render correctly 1`] = `
+exports[`Link examples > Link coded as a button should render correctly 1`] = `
 <div>
   <button
     class="v-link v-link-no-underline"
@@ -126,15 +122,11 @@ exports[`Link examples Link coded as a button should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M10 10H6V14H10V10ZM4 8V16H12V8H4Z"
-        fill-rule="evenodd"
+        d="M12 8V16H4V8H12ZM6 14H10V10H6V14Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M4 2H12V4H4V2ZM2 4.18359V0H14V4.18359H16V12.1836H14V6.18359H2V12.1836H0V4.18359H2Z"
-        fill-rule="evenodd"
+        d="M14 0V4.18359H16V12.1836H14V6.18359H2V12.1836H0V4.18359H2V0H14ZM4 4H12V2H4V4Z"
       />
       <defs>
         <clippath>
@@ -149,7 +141,7 @@ exports[`Link examples Link coded as a button should render correctly 1`] = `
 </div>
 `;
 
-exports[`Link examples Link that opens in a new tab should render correctly 1`] = `
+exports[`Link examples > Link that opens in a new tab should render correctly 1`] = `
 <div>
   <a
     aria-label="Destination label (opens in a new tab)"
@@ -170,13 +162,11 @@ exports[`Link examples Link that opens in a new tab should render correctly 1`] 
     >
       <path
         class="v-icon-secondary"
-        d="M14 6H16L16 0H10V2L12.5393 2L6 8.54302L7.45688 9.99991L14 3.46442V6Z"
+        d="M16 0V6H14V3.46484L7.45703 10L6 8.54297L12.5391 2H10V0H16Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M0 1H8V3H2V14H13V8H15V16H0V1Z"
-        fill-rule="evenodd"
+        d="M8 3H2V14H13V8H15V16H0V1H8V3Z"
       />
       <defs>
         <clippath>
@@ -191,11 +181,12 @@ exports[`Link examples Link that opens in a new tab should render correctly 1`] 
 </div>
 `;
 
-exports[`Link examples Link uses React Router DOM should render correctly 1`] = `
+exports[`Link examples > Link uses React Router DOM should render correctly 1`] = `
 <div>
   This 
   <a
     class="v-link"
+    data-discover="true"
     href="/"
   >
     link
@@ -204,7 +195,7 @@ exports[`Link examples Link uses React Router DOM should render correctly 1`] = 
 </div>
 `;
 
-exports[`Link examples Link with custom typography should render correctly 1`] = `
+exports[`Link examples > Link with custom typography should render correctly 1`] = `
 <div>
   <a
     class="v-link v-link-no-underline"
@@ -225,9 +216,7 @@ exports[`Link examples Link with custom typography should render correctly 1`] =
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
     </p>
@@ -235,7 +224,7 @@ exports[`Link examples Link with custom typography should render correctly 1`] =
 </div>
 `;
 
-exports[`Link examples Link with leading icon should render correctly 1`] = `
+exports[`Link examples > Link with leading icon should render correctly 1`] = `
 <div>
   <a
     class="v-link v-link-no-underline"
@@ -252,7 +241,7 @@ exports[`Link examples Link with leading icon should render correctly 1`] = `
     >
       <path
         class="v-icon-primary"
-        d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+        d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
       />
       <defs>
         <clippath>
@@ -268,7 +257,7 @@ exports[`Link examples Link with leading icon should render correctly 1`] = `
 </div>
 `;
 
-exports[`Link examples Link with trailing icon should render correctly 1`] = `
+exports[`Link examples > Link with trailing icon should render correctly 1`] = `
 <div>
   <a
     class="v-link v-link-no-underline"
@@ -286,9 +275,7 @@ exports[`Link examples Link with trailing icon should render correctly 1`] = `
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-        fill-rule="evenodd"
+        d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
       />
     </svg>
   </a>

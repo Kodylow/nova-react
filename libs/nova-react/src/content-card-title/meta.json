@@ -2,7 +2,7 @@
   "description": "Title component for content card. Extends typography component.",
   "displayName": "contentcardtitle",
   "filePath": "/content-card-title/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/content-card-title/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//content-card-title/index.tsx",
   "props": [
     {
       "description": "Color variant",
@@ -24,6 +24,5 @@
       "type": "\"label\" | \"body-1\" | \"body-2-bold\" | \"body-2-link\" | \"body-2-medium\" | \"body-2\" | \"body-3\" | \"button-large\" | \"button-medium\" | \"button-small\" | \"display-1\" | \"display-2\" | \"headline-1\" | \"headline-2\" | \"headline-3\" | \"headline-4\" | \"label-active\" | \"label-large-active\" | \"label-large\" | \"label-small\" | \"overline\" | \"subtitle-1\" | \"subtitle-2\" | \"subtitle-3\""
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/content-card See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/content-card/?code_library=react See Docs}"
 }

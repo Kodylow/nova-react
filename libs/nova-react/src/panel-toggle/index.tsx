@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import cn from 'clsx';
-import Button, { ButtonProperties } from '../button';
+import Button, { type ButtonProperties } from '../button';
 
 const CSS_PREFIX = 'v-panel-toggle';
 
@@ -23,11 +23,11 @@ export type PanelToggleProperties = ButtonProperties;
 
 /**
  * Button used with a panel component to hide or show the panel.
- * @docs {@link https://design.visa.com/react/components/panel | See Docs}
+ * @docs {@link https://design.visa.com/components/panel/?code_library=react | See Docs}
  */
-const PanelToggle = (
-  { className, ...remainingProps }: PanelToggleProperties,
-) => <Button className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const PanelToggle = ({ className, ...remainingProps }: PanelToggleProperties) => (
+  <Button className={cn(CSS_PREFIX, className)} {...remainingProps} />
+);
 
 export default PanelToggle;
 

@@ -2,97 +2,90 @@
   "default-multi-listbox": {
     "file": "default-multi-listbox.tsx",
     "id": "default-multi-listbox",
-    "title": "Default multi-select listbox",
-    "testAvg": 100
+    "title": "Default multi-select listbox"
   },
   "default-single-listbox": {
     "file": "default-single-listbox.tsx",
     "id": "default-single-listbox",
-    "title": "Default single-select listbox",
-    "testAvg": 100
+    "title": "Default single-select listbox"
   },
   "disabled-multi-listbox": {
     "file": "disabled-multi-listbox.tsx",
     "id": "disabled-multi-listbox",
-    "title": "Disabled multi-select listbox",
-    "testAvg": 100
+    "title": "Disabled multi-select listbox"
   },
   "disabled-single-listbox": {
     "file": "disabled-single-listbox.tsx",
     "id": "disabled-single-listbox",
-    "title": "Disabled single-select listbox",
-    "testAvg": 100
+    "title": "Disabled single-select listbox"
   },
   "error-multi-listbox": {
     "file": "error-multi-listbox.tsx",
     "id": "error-multi-listbox",
-    "title": "Multi-select listbox with error",
-    "testAvg": 100
+    "title": "Multi-select listbox with error"
   },
   "error-single-listbox": {
     "file": "error-single-listbox.tsx",
     "id": "error-single-listbox",
-    "title": "Single-select listbox with error",
-    "testAvg": 100
+    "title": "Single-select listbox with error"
   },
   "inline-multi-listbox": {
     "file": "inline-multi-listbox.tsx",
     "id": "inline-multi-listbox",
-    "title": "Multi-select listbox with inline message",
-    "testAvg": 100
+    "title": "Multi-select listbox with inline message"
   },
   "inline-single-listbox": {
     "file": "inline-single-listbox.tsx",
     "id": "inline-single-listbox",
-    "title": "Single-select listbox with inline message",
-    "testAvg": 100
+    "title": "Single-select listbox with inline message"
   },
   "item-disabled-multi-listbox": {
     "file": "item-disabled-multi-listbox.tsx",
     "id": "item-disabled-multi-listbox",
-    "title": "Multi-select listbox with disabled item",
-    "testAvg": 100
+    "title": "Multi-select listbox with disabled item"
   },
   "item-disabled-single-listbox": {
     "file": "item-disabled-single-listbox.tsx",
     "id": "item-disabled-single-listbox",
-    "title": "Single-select listbox with disabled item",
-    "testAvg": 100
+    "title": "Single-select listbox with disabled item"
   },
   "option-multi-listbox": {
     "file": "option-multi-listbox.tsx",
     "id": "option-multi-listbox",
-    "title": "Multi-select listbox with custom hook",
-    "testAvg": 100
+    "title": "Multi-select listbox with custom hook"
   },
   "option-single-listbox": {
     "file": "option-single-listbox.tsx",
     "id": "option-single-listbox",
-    "title": "Single-select listbox with custom hook",
-    "testAvg": 100
+    "title": "Single-select listbox with custom hook"
   },
   "resize-multi-listbox": {
     "file": "resize-multi-listbox.tsx",
     "id": "resize-multi-listbox",
-    "title": "Multi-select listbox with resize property",
-    "testAvg": 100
+    "title": "Multi-select listbox with resize property"
   },
   "resize-single-listbox": {
     "file": "resize-single-listbox.tsx",
     "id": "resize-single-listbox",
-    "title": "Single-select listbox with resize property",
-    "testAvg": 100
+    "title": "Single-select listbox with resize property"
   },
   "selected-multi-listbox": {
     "file": "selected-multi-listbox.tsx",
     "id": "selected-multi-listbox",
-    "title": "Multi-select listbox with selected item",
-    "testAvg": 100
+    "title": "Multi-select listbox with selected item"
   },
   "selected-single-listbox": {
     "file": "selected-single-listbox.tsx",
     "id": "selected-single-listbox",
-    "title": "Single-select listbox with selected item",
-    "testAvg": 100
+    "title": "Single-select listbox with selected item"
+  },
+  "reusable": {
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable listbox"
   }
 }

@@ -2,7 +2,7 @@
   "description": "Text elements to only be read by screen readers but not shown visually on screen.",
   "displayName": "screenreader",
   "filePath": "/screen-reader/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/screen-reader/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//screen-reader/index.tsx",
   "props": [
     {
       "defaultValue": "span",
@@ -11,6 +11,5 @@
       "required": false,
       "type": "ElementType"
     }
-  ],
-  "testAvg": 100
+  ]
 }

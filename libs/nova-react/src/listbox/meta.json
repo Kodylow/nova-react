@@ -2,7 +2,7 @@
   "description": "Container that displays a list of items available for selection.",
   "displayName": "listbox",
   "filePath": "/listbox/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/listbox/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//listbox/index.tsx",
   "props": [
     {
       "description": "Multiselect",
@@ -26,8 +26,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/listbox See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/listbox/?code_library=react See Docs}",
   "related": [
     "listbox-container",
     "listbox-item",

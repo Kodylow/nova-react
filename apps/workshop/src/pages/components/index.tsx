@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,15 +29,11 @@ import {
 } from '@visa/nova-react';
 import { capitalCase } from 'change-case';
 import { lazy, Suspense, useMemo, useRef, useState } from 'react';
-import ReactGA from 'react-ga4';
 import { NavLink } from 'react-router-dom';
 import { PageContent, PageHeader, PageTitle } from '../../components/page';
 import meta from '../../examples/meta.json';
 import { Paths } from '../../routes/paths';
 import Styles from './styles.module.scss';
-import { GA_TRACKING_ID } from '../../constants';
-
-ReactGA.initialize(GA_TRACKING_ID);
 
 const components = meta.components;
 

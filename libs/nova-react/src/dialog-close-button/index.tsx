@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,20 +15,18 @@
  *
  **/
 import cn from 'clsx';
-import MessageCloseButton, { MessageCloseButtonProperties } from '../message-close-button';
+import MessageCloseButton, { type MessageCloseButtonProperties } from '../message-close-button';
 
 export type DialogCloseButtonProperties = MessageCloseButtonProperties;
 
 /**
  * Button that appears in dialog pop-up windows to close them.
- * @docs {@link https://design.visa.com/react/components/dialog | See Docs}
+ * @docs {@link https://design.visa.com/components/dialog/?code_library=react | See Docs}
  */
-const DialogCloseButton = (
-  { children, className, ...remainingProps }: DialogCloseButtonProperties,
-) => (
-  <MessageCloseButton
-    className={cn('-v-mt-20 -v-ml-12 -v-mr-18', className)}
-    {...remainingProps}>{children}</MessageCloseButton>
+const DialogCloseButton = ({ children, className, ...remainingProps }: DialogCloseButtonProperties) => (
+  <MessageCloseButton className={cn('-v-mt-20 -v-ml-12 -v-mr-18', className)} {...remainingProps}>
+    {children}
+  </MessageCloseButton>
 );
 
 export default DialogCloseButton;

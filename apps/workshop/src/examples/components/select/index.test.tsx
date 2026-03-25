@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+import { vi, describe, it, expect } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
@@ -26,6 +27,7 @@ import { ErrorSelect } from './error-select';
 import { InlineSelect } from './inline-select';
 import { ReadOnlySelect } from './read-only-select';
 import { SelectWithInlineMessage } from './select-with-inline-message';
+import NovaSelectDemo from './reusable';
 
 const examples = [
   { Component: DefaultSelect, title: metaData['default-select'].title },
@@ -35,6 +37,7 @@ const examples = [
   { Component: ReadOnlySelect, title: metaData['read-only-select'].title },
   { Component: SelectWithInlineMessage, title: metaData['select-with-inline-message'].title },
   { Component: CardExpirationSelect, title: metaData['card-expiration'].title },
+  { Component: NovaSelectDemo, title: metaData['reusable'].title },
 ];
 
 describe('Select examples', () => {
@@ -104,7 +107,7 @@ describe('Select examples', () => {
       }
     });
     it('show alert if valid', () => {
-      const windowMock = jest.spyOn(window, 'alert').mockImplementation(() => {});
+      const windowMock = vi.spyOn(window, 'alert').mockImplementation(() => {});
       const { container } = render(<CardExpirationSelect />);
       const submitButton = screen.getByText('Submit');
       const monthSelect = container.querySelector('#card-expiration-select-month')!;

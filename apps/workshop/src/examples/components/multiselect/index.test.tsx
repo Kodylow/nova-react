@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+import { describe, it, expect } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { useCombobox, UseComboboxStateChangeTypes } from 'downshift';
 import { axe } from 'jest-axe';
@@ -21,21 +22,46 @@ import {
   DefaultMultiselect,
   comboboxStateReducer as defaultMultiselectComboboxStateReducer,
 } from './default-multiselect';
-import { DisabledMultiselect, comboboxStateReducer as disabledMultiselectComboboxReducer } from './disabled-multiselect';
+import {
+  DisabledMultiselect,
+  comboboxStateReducer as disabledMultiselectComboboxReducer,
+} from './disabled-multiselect';
 import metaData from './meta.json';
-import { MultiselectWithDisabledOption, comboboxStateReducer as disabledOptionComboboxReducer } from './multiselect-with-disabled-option';
+import {
+  MultiselectWithDisabledOption,
+  comboboxStateReducer as disabledOptionComboboxReducer,
+} from './multiselect-with-disabled-option';
 import { MultiselectWithError, comboboxStateReducer as errorComboboxReducer } from './multiselect-with-error';
-import { MultiselectWithFilterableMenuAndAutomaticSelection, comboboxStateReducer as automaticFilterComboboxReducer } from './multiselect-with-filterable-menu-and-automatic-selection';
-import { MultiselectWithFilterableMenuAndManualSelection, comboboxStateReducer as manualFilterComboboxReducer } from './multiselect-with-filterable-menu-and-manual-selection';
+import {
+  MultiselectWithFilterableMenuAndAutomaticSelection,
+  comboboxStateReducer as automaticFilterComboboxReducer,
+} from './multiselect-with-filterable-menu-and-automatic-selection';
+import {
+  MultiselectWithFilterableMenuAndManualSelection,
+  comboboxStateReducer as manualFilterComboboxReducer,
+} from './multiselect-with-filterable-menu-and-manual-selection';
 import {
   MultiselectWithInlineMessage,
   comboboxStateReducer as inlineMessageComboboxReducer,
 } from './multiselect-with-inline-message';
-import { MultiselectWithMultipleSelectionsAndVerticalScroll, comboboxStateReducer as multipleSelectionAndScrollComboboxReducer } from './multiselect-with-multiple-selections-and-vertical-scroll';
-import { MultiselectWithScrollbar, comboboxStateReducer as withScrollbarComboboxReducer } from './multiselect-with-scrollbar';
-import { MultiselectWithSelectAndUnselectAllButtons, comboboxStateReducer as selectAllUnselectAllComboboxReducer } from './multiselect-with-select-and-unselect-all-buttons';
-import { MultiselectWithoutDropdownChevron, comboboxStateReducer as withoutChevronComboboxReducer } from './multiselect-without-dropdown-chevron';
+import {
+  MultiselectWithMultipleSelectionsAndVerticalScroll,
+  comboboxStateReducer as multipleSelectionAndScrollComboboxReducer,
+} from './multiselect-with-multiple-selections-and-vertical-scroll';
+import {
+  MultiselectWithScrollbar,
+  comboboxStateReducer as withScrollbarComboboxReducer,
+} from './multiselect-with-scrollbar';
+import {
+  MultiselectWithSelectAndUnselectAllButtons,
+  comboboxStateReducer as selectAllUnselectAllComboboxReducer,
+} from './multiselect-with-select-and-unselect-all-buttons';
+import {
+  MultiselectWithoutDropdownChevron,
+  comboboxStateReducer as withoutChevronComboboxReducer,
+} from './multiselect-without-dropdown-chevron';
 import { ReadOnlyMultiselect } from './read-only-multiselect';
+import NovaMultiselectDemo from './reusable';
 
 const examples = [
   { Component: DefaultMultiselect, title: metaData['default-multiselect'].title },
@@ -62,6 +88,7 @@ const examples = [
     Component: MultiselectWithFilterableMenuAndAutomaticSelection,
     title: metaData['multiselect-with-filterable-menu-and-automatic-selection'].title,
   },
+  { Component: NovaMultiselectDemo, title: metaData['reusable'].title },
 ];
 
 describe('Multiselect examples', () => {
@@ -110,7 +137,10 @@ describe('Multiselect examples', () => {
       it('should update state with changes but keep highlightedIndex when MenuMouseLeave action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = defaultMultiselectComboboxStateReducer(state, { type: useCombobox.stateChangeTypes.MenuMouseLeave, changes });
+        const newState = defaultMultiselectComboboxStateReducer(state, {
+          type: useCombobox.stateChangeTypes.MenuMouseLeave,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, highlightedIndex: state.highlightedIndex });
       });
@@ -118,7 +148,10 @@ describe('Multiselect examples', () => {
       it('should keep the menu open and maintain highlightedIndex when InputKeyDownEnter action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = defaultMultiselectComboboxStateReducer(state, { type: useCombobox.stateChangeTypes.InputKeyDownEnter, changes });
+        const newState = defaultMultiselectComboboxStateReducer(state, {
+          type: useCombobox.stateChangeTypes.InputKeyDownEnter,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
@@ -126,7 +159,10 @@ describe('Multiselect examples', () => {
       it('should keep the menu open and maintain highlightedIndex when ItemClick action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = defaultMultiselectComboboxStateReducer(state, { type: useCombobox.stateChangeTypes.ItemClick, changes });
+        const newState = defaultMultiselectComboboxStateReducer(state, {
+          type: useCombobox.stateChangeTypes.ItemClick,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
@@ -134,7 +170,10 @@ describe('Multiselect examples', () => {
       it('should return changes as default when unknown action type is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = defaultMultiselectComboboxStateReducer(state, { type: 'unknown_action_type' as UseComboboxStateChangeTypes, changes });
+        const newState = defaultMultiselectComboboxStateReducer(state, {
+          type: 'unknown_action_type' as UseComboboxStateChangeTypes,
+          changes,
+        });
 
         expect(newState).toEqual(changes);
       });
@@ -227,14 +266,20 @@ describe('Multiselect examples', () => {
       it('should update state with changes but keep highlightedIndex when MenuMouseLeave action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = inlineMessageComboboxReducer(state, { type: useCombobox.stateChangeTypes.MenuMouseLeave, changes });
+        const newState = inlineMessageComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.MenuMouseLeave,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, highlightedIndex: state.highlightedIndex });
       });
       it('should keep the menu open and maintain highlightedIndex when InputKeyDownEnter action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = inlineMessageComboboxReducer(state, { type: useCombobox.stateChangeTypes.InputKeyDownEnter, changes });
+        const newState = inlineMessageComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.InputKeyDownEnter,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
@@ -248,7 +293,10 @@ describe('Multiselect examples', () => {
       it('should return changes as default when unknown action type is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = inlineMessageComboboxReducer(state, { type: 'unknown_action_type' as UseComboboxStateChangeTypes, changes });
+        const newState = inlineMessageComboboxReducer(state, {
+          type: 'unknown_action_type' as UseComboboxStateChangeTypes,
+          changes,
+        });
 
         expect(newState).toEqual(changes);
       });
@@ -362,7 +410,10 @@ describe('Multiselect examples', () => {
       it('should return changes as default when unknown action type is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = errorComboboxReducer(state, { type: 'unknown_action_type' as UseComboboxStateChangeTypes, changes });
+        const newState = errorComboboxReducer(state, {
+          type: 'unknown_action_type' as UseComboboxStateChangeTypes,
+          changes,
+        });
 
         expect(newState).toEqual(changes);
       });
@@ -421,14 +472,14 @@ describe('Multiselect examples', () => {
         const input = container.querySelector('input')!;
         const submitButton = container.querySelector('#multiselect-with-error-submit-button')!;
         fireEvent.click(submitButton);
-        expect(input.getAttribute('aria-invalid')).toBe("true");
+        expect(input.getAttribute('aria-invalid')).toBe('true');
 
         const resetButton = container.querySelector('#multiselect-with-error-reset-button')!;
         fireEvent.click(resetButton);
-        expect(input.getAttribute('aria-invalid')).toBe("false");
+        expect(input.getAttribute('aria-invalid')).toBe('false');
       });
     });
-  })
+  });
   describe('multiselect-with-disabled-option', () => {
     describe('comboboxStateReducer', () => {
       it('should return the same state when InputClick action is dispatched', () => {
@@ -465,28 +516,40 @@ describe('Multiselect examples', () => {
       it('should update state with changes but keep highlightedIndex when MenuMouseLeave action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = disabledOptionComboboxReducer(state, { type: useCombobox.stateChangeTypes.MenuMouseLeave, changes });
+        const newState = disabledOptionComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.MenuMouseLeave,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, highlightedIndex: state.highlightedIndex });
       });
       it('should keep the menu open and maintain highlightedIndex when InputKeyDownEnter action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = disabledOptionComboboxReducer(state, { type: useCombobox.stateChangeTypes.InputKeyDownEnter, changes });
+        const newState = disabledOptionComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.InputKeyDownEnter,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
       it('should keep the menu open and maintain highlightedIndex when ItemClick action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = disabledOptionComboboxReducer(state, { type: useCombobox.stateChangeTypes.ItemClick, changes });
+        const newState = disabledOptionComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.ItemClick,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
       it('should return changes as default when unknown action type is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = disabledOptionComboboxReducer(state, { type: 'unknown_action_type' as UseComboboxStateChangeTypes, changes });
+        const newState = disabledOptionComboboxReducer(state, {
+          type: 'unknown_action_type' as UseComboboxStateChangeTypes,
+          changes,
+        });
 
         expect(newState).toEqual(changes);
       });
@@ -541,7 +604,7 @@ describe('Multiselect examples', () => {
         expect(inputContainer).toHaveTextContent('');
       });
     });
-  })
+  });
   describe('disabled-multiselect', () => {
     describe('comboboxStateReducer', () => {
       it('should return the same state when InputClick action is dispatched', () => {
@@ -578,27 +641,40 @@ describe('Multiselect examples', () => {
       it('should update state with changes but keep highlightedIndex when MenuMouseLeave action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = disabledMultiselectComboboxReducer(state, { type: useCombobox.stateChangeTypes.MenuMouseLeave, changes });
+        const newState = disabledMultiselectComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.MenuMouseLeave,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, highlightedIndex: state.highlightedIndex });
       });
       it('should keep the menu open and maintain highlightedIndex when InputKeyDownEnter action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = disabledMultiselectComboboxReducer(state, { type: useCombobox.stateChangeTypes.InputKeyDownEnter, changes });
+        const newState = disabledMultiselectComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.InputKeyDownEnter,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
       it('should keep the menu open and maintain highlightedIndex when ItemClick action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = disabledMultiselectComboboxReducer(state, { type: useCombobox.stateChangeTypes.ItemClick, changes });
+        const newState = disabledMultiselectComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.ItemClick,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
       it('should return changes as default when unknown action type is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
-        const changes = { highlightedIndex: 1, isOpen: true }; const newState = disabledMultiselectComboboxReducer(state, { type: 'unknown_action_type' as UseComboboxStateChangeTypes, changes });
+        const changes = { highlightedIndex: 1, isOpen: true };
+        const newState = disabledMultiselectComboboxReducer(state, {
+          type: 'unknown_action_type' as UseComboboxStateChangeTypes,
+          changes,
+        });
 
         expect(newState).toEqual(changes);
       });
@@ -683,7 +759,7 @@ describe('Multiselect examples', () => {
         expect(inputContainer).toHaveTextContent('');
       });
     });
-  })
+  });
   describe('read-only-multiselect', () => {
     describe('comboboxStateReducer', () => {
       it('should return the same state when InputClick action is dispatched', () => {
@@ -720,27 +796,40 @@ describe('Multiselect examples', () => {
       it('should update state with changes but keep highlightedIndex when MenuMouseLeave action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = disabledMultiselectComboboxReducer(state, { type: useCombobox.stateChangeTypes.MenuMouseLeave, changes });
+        const newState = disabledMultiselectComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.MenuMouseLeave,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, highlightedIndex: state.highlightedIndex });
       });
       it('should keep the menu open and maintain highlightedIndex when InputKeyDownEnter action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = disabledMultiselectComboboxReducer(state, { type: useCombobox.stateChangeTypes.InputKeyDownEnter, changes });
+        const newState = disabledMultiselectComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.InputKeyDownEnter,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
       it('should keep the menu open and maintain highlightedIndex when ItemClick action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = disabledMultiselectComboboxReducer(state, { type: useCombobox.stateChangeTypes.ItemClick, changes });
+        const newState = disabledMultiselectComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.ItemClick,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
       it('should return changes as default when unknown action type is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
-        const changes = { highlightedIndex: 1, isOpen: true }; const newState = disabledMultiselectComboboxReducer(state, { type: 'unknown_action_type' as UseComboboxStateChangeTypes, changes });
+        const changes = { highlightedIndex: 1, isOpen: true };
+        const newState = disabledMultiselectComboboxReducer(state, {
+          type: 'unknown_action_type' as UseComboboxStateChangeTypes,
+          changes,
+        });
 
         expect(newState).toEqual(changes);
       });
@@ -825,7 +914,7 @@ describe('Multiselect examples', () => {
         expect(inputContainer).toHaveTextContent('');
       });
     });
-  })
+  });
 
   describe('without-chevron-multiselect', () => {
     describe('withoutChevronComboboxReducer', () => {
@@ -863,7 +952,10 @@ describe('Multiselect examples', () => {
       it('should update state with changes but keep highlightedIndex when MenuMouseLeave action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = withoutChevronComboboxReducer(state, { type: useCombobox.stateChangeTypes.MenuMouseLeave, changes });
+        const newState = withoutChevronComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.MenuMouseLeave,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, highlightedIndex: state.highlightedIndex });
       });
@@ -871,7 +963,10 @@ describe('Multiselect examples', () => {
       it('should keep the menu open and maintain highlightedIndex when InputKeyDownEnter action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = withoutChevronComboboxReducer(state, { type: useCombobox.stateChangeTypes.InputKeyDownEnter, changes });
+        const newState = withoutChevronComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.InputKeyDownEnter,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
@@ -879,7 +974,10 @@ describe('Multiselect examples', () => {
       it('should keep the menu open and maintain highlightedIndex when ItemClick action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = withoutChevronComboboxReducer(state, { type: useCombobox.stateChangeTypes.ItemClick, changes });
+        const newState = withoutChevronComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.ItemClick,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
@@ -887,13 +985,15 @@ describe('Multiselect examples', () => {
       it('should return changes as default when unknown action type is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = withoutChevronComboboxReducer(state, { type: 'unknown_action_type' as UseComboboxStateChangeTypes, changes });
+        const newState = withoutChevronComboboxReducer(state, {
+          type: 'unknown_action_type' as UseComboboxStateChangeTypes,
+          changes,
+        });
 
         expect(newState).toEqual(changes);
       });
     });
     describe('without-chevron multiselect behavior', () => {
-
       it('should toggle the selected item after clicking the item', () => {
         const { container } = render(<MultiselectWithoutDropdownChevron />);
         const input = container.querySelector('input')!;
@@ -980,7 +1080,10 @@ describe('Multiselect examples', () => {
       it('should update state with changes but keep highlightedIndex when MenuMouseLeave action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = multipleSelectionAndScrollComboboxReducer(state, { type: useCombobox.stateChangeTypes.MenuMouseLeave, changes });
+        const newState = multipleSelectionAndScrollComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.MenuMouseLeave,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, highlightedIndex: state.highlightedIndex });
       });
@@ -988,7 +1091,10 @@ describe('Multiselect examples', () => {
       it('should keep the menu open and maintain highlightedIndex when InputKeyDownEnter action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = multipleSelectionAndScrollComboboxReducer(state, { type: useCombobox.stateChangeTypes.InputKeyDownEnter, changes });
+        const newState = multipleSelectionAndScrollComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.InputKeyDownEnter,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
@@ -996,7 +1102,10 @@ describe('Multiselect examples', () => {
       it('should keep the menu open and maintain highlightedIndex when ItemClick action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = multipleSelectionAndScrollComboboxReducer(state, { type: useCombobox.stateChangeTypes.ItemClick, changes });
+        const newState = multipleSelectionAndScrollComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.ItemClick,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
@@ -1004,13 +1113,15 @@ describe('Multiselect examples', () => {
       it('should return changes as default when unknown action type is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = multipleSelectionAndScrollComboboxReducer(state, { type: 'unknown_action_type' as UseComboboxStateChangeTypes, changes });
+        const newState = multipleSelectionAndScrollComboboxReducer(state, {
+          type: 'unknown_action_type' as UseComboboxStateChangeTypes,
+          changes,
+        });
 
         expect(newState).toEqual(changes);
       });
     });
     describe('multiple-selection-and-scroll multiselect behavior', () => {
-
       it('should toggle the selected item after clicking the item', () => {
         const { container } = render(<MultiselectWithMultipleSelectionsAndVerticalScroll />);
         const input = container.querySelector('input')!;
@@ -1019,9 +1130,13 @@ describe('Multiselect examples', () => {
         fireEvent.click(optionAItem);
         const inputContainer = container.querySelector('.v-input-container')!;
         expect(inputContainer).not.toHaveTextContent('Option A');
-        expect(inputContainer).toHaveTextContent('Option BOption COption DOption EOption FOption GOption HOption IOption JOption KOption L');
+        expect(inputContainer).toHaveTextContent(
+          'Option BOption COption DOption EOption FOption GOption HOption IOption JOption KOption L'
+        );
         fireEvent.click(optionAItem);
-        expect(inputContainer).toHaveTextContent('Option BOption COption DOption EOption FOption GOption HOption IOption JOption KOption LOption A');
+        expect(inputContainer).toHaveTextContent(
+          'Option BOption COption DOption EOption FOption GOption HOption IOption JOption KOption LOption A'
+        );
       });
       it('should open when typing starts', () => {
         const { container } = render(<MultiselectWithMultipleSelectionsAndVerticalScroll />);
@@ -1038,7 +1153,9 @@ describe('Multiselect examples', () => {
         expect(inputContainer).not.toHaveTextContent('Option A');
         expect(inputContainer).toHaveTextContent('Option B');
         fireEvent.keyDown(input, { key: 'Enter' });
-        expect(inputContainer).toHaveTextContent('Option BOption COption DOption EOption FOption GOption HOption IOption JOption KOption LOption A');
+        expect(inputContainer).toHaveTextContent(
+          'Option BOption COption DOption EOption FOption GOption HOption IOption JOption KOption LOption A'
+        );
       });
       it('should remove the selected item after clicking the remove button', () => {
         const { container } = render(<MultiselectWithMultipleSelectionsAndVerticalScroll />);
@@ -1046,7 +1163,9 @@ describe('Multiselect examples', () => {
         const removeButton = container.querySelector('button[aria-label="Remove Option A"]')!;
         fireEvent.click(removeButton);
         expect(inputContainer).not.toHaveTextContent('Option A');
-        expect(inputContainer).toHaveTextContent('Option BOption COption DOption EOption FOption GOption HOption IOption JOption KOption L');
+        expect(inputContainer).toHaveTextContent(
+          'Option BOption COption DOption EOption FOption GOption HOption IOption JOption KOption L'
+        );
       });
       it('toggle an item from the listbox using a keyboard', () => {
         const { container } = render(<MultiselectWithMultipleSelectionsAndVerticalScroll />);
@@ -1096,7 +1215,10 @@ describe('Multiselect examples', () => {
       it('should update state with changes but keep highlightedIndex when MenuMouseLeave action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = selectAllUnselectAllComboboxReducer(state, { type: useCombobox.stateChangeTypes.MenuMouseLeave, changes });
+        const newState = selectAllUnselectAllComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.MenuMouseLeave,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, highlightedIndex: state.highlightedIndex });
       });
@@ -1104,7 +1226,10 @@ describe('Multiselect examples', () => {
       it('should keep the menu open and maintain highlightedIndex when InputKeyDownEnter action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = selectAllUnselectAllComboboxReducer(state, { type: useCombobox.stateChangeTypes.InputKeyDownEnter, changes });
+        const newState = selectAllUnselectAllComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.InputKeyDownEnter,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
@@ -1112,7 +1237,10 @@ describe('Multiselect examples', () => {
       it('should keep the menu open and maintain highlightedIndex when ItemClick action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = selectAllUnselectAllComboboxReducer(state, { type: useCombobox.stateChangeTypes.ItemClick, changes });
+        const newState = selectAllUnselectAllComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.ItemClick,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
@@ -1120,13 +1248,15 @@ describe('Multiselect examples', () => {
       it('should return changes as default when unknown action type is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = selectAllUnselectAllComboboxReducer(state, { type: 'unknown_action_type' as UseComboboxStateChangeTypes, changes });
+        const newState = selectAllUnselectAllComboboxReducer(state, {
+          type: 'unknown_action_type' as UseComboboxStateChangeTypes,
+          changes,
+        });
 
         expect(newState).toEqual(changes);
       });
     });
     describe('select-all-unselect-all-multiselect behavior', () => {
-
       it('should toggle the selected item after clicking the item', () => {
         const { container } = render(<MultiselectWithSelectAndUnselectAllButtons />);
         const input = container.querySelector('input')!;
@@ -1197,7 +1327,6 @@ describe('Multiselect examples', () => {
     });
   });
 
-
   describe('multiselect-with-scrollbar', () => {
     describe('withScrollbarComboboxReducer', () => {
       it('should return the same state when InputClick action is dispatched', () => {
@@ -1234,7 +1363,10 @@ describe('Multiselect examples', () => {
       it('should update state with changes but keep highlightedIndex when MenuMouseLeave action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = withScrollbarComboboxReducer(state, { type: useCombobox.stateChangeTypes.MenuMouseLeave, changes });
+        const newState = withScrollbarComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.MenuMouseLeave,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, highlightedIndex: state.highlightedIndex });
       });
@@ -1242,7 +1374,10 @@ describe('Multiselect examples', () => {
       it('should keep the menu open and maintain highlightedIndex when InputKeyDownEnter action is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { selectedItem: 'item', isOpen: false };
-        const newState = withScrollbarComboboxReducer(state, { type: useCombobox.stateChangeTypes.InputKeyDownEnter, changes });
+        const newState = withScrollbarComboboxReducer(state, {
+          type: useCombobox.stateChangeTypes.InputKeyDownEnter,
+          changes,
+        });
 
         expect(newState).toEqual({ ...changes, isOpen: true, highlightedIndex: state.highlightedIndex });
       });
@@ -1258,7 +1393,10 @@ describe('Multiselect examples', () => {
       it('should return changes as default when unknown action type is dispatched', () => {
         const state = { selectedItem: undefined, inputValue: '', highlightedIndex: 0, isOpen: false };
         const changes = { highlightedIndex: 1, isOpen: true };
-        const newState = withScrollbarComboboxReducer(state, { type: 'unknown_action_type' as UseComboboxStateChangeTypes, changes });
+        const newState = withScrollbarComboboxReducer(state, {
+          type: 'unknown_action_type' as UseComboboxStateChangeTypes,
+          changes,
+        });
 
         expect(newState).toEqual(changes);
       });
@@ -1426,7 +1564,6 @@ describe('Multiselect examples', () => {
         fireEvent.change(input, { target: { value: 'C' } });
         fireEvent.keyDown(input, { key: 'Enter' });
         expect(inputContainer).not.toHaveTextContent('Option C'); // Enter keypress isn't enough because this is manual selection
-
 
         fireEvent.keyDown(input, { key: 'ArrowDown' });
         fireEvent.keyDown(input, { key: 'Enter' });

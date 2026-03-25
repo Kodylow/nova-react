@@ -2,18 +2,29 @@
   "description": "Label used with a progress component for textual representation of status.",
   "displayName": "progresslabel",
   "filePath": "/progress-label/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/progress-label/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//progress-label/index.tsx",
   "props": [
+    {
+      "description": "Color variant",
+      "name": "colorScheme",
+      "required": false,
+      "type": "\"subtle\" | \"active\" | \"default\" | \"on-active\""
+    },
     {
       "defaultValue": "label",
       "description": "Tag of Component",
       "name": "tag",
       "required": false,
       "type": "ElementType"
+    },
+    {
+      "description": "Style variant",
+      "name": "variant",
+      "required": false,
+      "type": "\"label\" | \"body-1\" | \"body-2-bold\" | \"body-2-link\" | \"body-2-medium\" | \"body-2\" | \"body-3\" | \"button-large\" | \"button-medium\" | \"button-small\" | \"display-1\" | \"display-2\" | \"headline-1\" | \"headline-2\" | \"headline-3\" | \"headline-4\" | \"label-active\" | \"label-large-active\" | \"label-large\" | \"label-small\" | \"overline\" | \"subtitle-1\" | \"subtitle-2\" | \"subtitle-3\""
     }
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/progress See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/progress/?code_library=react See Docs}"
 }

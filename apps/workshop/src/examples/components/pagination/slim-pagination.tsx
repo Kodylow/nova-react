@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,39 +15,51 @@
  *
  **/
 import { VisaChevronLeftTiny, VisaChevronRightTiny } from '@visa/nova-icons-react';
-import { Button, Pagination } from '@visa/nova-react';
+import { Button, Pagination, usePagination } from '@visa/nova-react';
 
 export const SlimPagination = () => {
+  const { pages, selectedPage, isFirstPage, isLastPage, onPageChange, onPreviousPage, onNextPage } = usePagination({
+    totalPages: 10,
+    compact: true,
+    blockMaxLength: 5,
+  });
+
   return (
     <nav aria-label="pagination">
-      <Pagination className="v-flex v-flex-row v-align-items-center v-gap-4">
+      <Pagination className="v-align-items-center v-gap-4">
         <li>
-          <Button aria-label="Go to previous page" buttonSize="small" colorScheme="tertiary" disabled iconButton>
+          <Button
+            aria-label="Go to previous page"
+            buttonSize="small"
+            colorScheme="tertiary"
+            disabled={isFirstPage}
+            iconButton
+            onClick={onPreviousPage}
+          >
             <VisaChevronLeftTiny rtl />
           </Button>
         </li>
+        {pages.map(page => (
+          <li key={page} className="v-mobile-container-hide">
+            <Button
+              aria-current={page === selectedPage ? 'true' : undefined}
+              aria-label={`Page ${page}`}
+              colorScheme="tertiary"
+              onClick={() => onPageChange(+page)}
+            >
+              {page}
+            </Button>
+          </li>
+        ))}
         <li>
-          <Button aria-current="true" aria-label="Page 1" colorScheme="tertiary">
-            1
-          </Button>
-        </li>
-        <li className="v-mobile-container-hide">
-          <Button aria-label="Page 2" colorScheme="tertiary">
-            2
-          </Button>
-        </li>
-        <li className="v-mobile-container-hide">
-          <Button aria-label="Page 3" colorScheme="tertiary">
-            3
-          </Button>
-        </li>
-        <li className="v-mobile-container-hide">
-          <Button aria-label="Page 4" colorScheme="tertiary">
-            4
-          </Button>
-        </li>
-        <li>
-          <Button aria-label="Go to next page" buttonSize="small" colorScheme="tertiary" iconButton>
+          <Button
+            aria-label="Go to next page"
+            buttonSize="small"
+            colorScheme="tertiary"
+            disabled={isLastPage}
+            iconButton
+            onClick={onNextPage}
+          >
             <VisaChevronRightTiny rtl />
           </Button>
         </li>

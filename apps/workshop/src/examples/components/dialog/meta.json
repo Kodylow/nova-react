@@ -2,37 +2,40 @@
   "close-button-dialog": {
     "file": "close-button-dialog.tsx",
     "id": "close-button-dialog",
-    "title": "Dialog without close icon button",
-    "testAvg": 100
+    "title": "Dialog without close icon button"
   },
   "default-dialog": {
     "file": "default-dialog.tsx",
     "id": "default-dialog",
-    "title": "Default dialog",
-    "testAvg": 100
+    "title": "Default dialog"
   },
   "error-dialog": {
     "file": "error-dialog.tsx",
     "id": "error-dialog",
-    "title": "Error dialog",
-    "testAvg": 100
+    "title": "Error dialog"
   },
   "success-dialog": {
     "file": "success-dialog.tsx",
     "id": "success-dialog",
-    "title": "Success dialog",
-    "testAvg": 100
+    "title": "Success dialog"
   },
   "touring-tips-dialog": {
     "file": "touring-tips-dialog.tsx",
     "id": "touring-tips-dialog",
-    "title": "Touring tips dialog",
-    "testAvg": 100
+    "title": "Touring tips dialog"
   },
   "warning-dialog": {
     "file": "warning-dialog.tsx",
     "id": "warning-dialog",
-    "title": "Warning dialog",
-    "testAvg": 100
+    "title": "Warning dialog"
+  },
+  "reusable": {
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable dialog"
   }
 }

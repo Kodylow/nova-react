@@ -1,7 +1,6 @@
 {
   "footer-layout": {
     "file": "footer-layout.tsx",
-    "id": "footer-layout",
-    "testAvg": 100
+    "id": "footer-layout"
   }
 }

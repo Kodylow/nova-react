@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,10 +14,20 @@
  * limitations under the License.
  *
  **/
-import { Button, ContentCard, Surface, Typography, Utility, UtilityFragment, VSpacing } from '@visa/nova-react';
-import { VisaEditTiny } from '@visa/nova-icons-react';
-import { JSX } from 'react';
 
+import { Button, ContentCard, Surface, Typography, Utility, UtilityFragment, type VSpacing } from '@visa/nova-react';
+import { VisaEditTiny } from '@visa/nova-icons-react';
+import type { JSX } from 'react';
+
+/**
+ * Step configuration object
+ *
+ * @property label - Step label text
+ * @property title - Step title displayed in summary
+ * @property inputLabel - (optional) Label for input field
+ * @property inputId - (optional) ID for input element
+ * @property buttonId - (optional) ID for button element
+ */
 interface Step {
   label: string;
   title: string;
@@ -26,6 +36,23 @@ interface Step {
   buttonId?: string;
 }
 
+/**
+ * Props for the SummaryPage component
+ *
+ * Supports two rendering modes:
+ * 1. Standalone page with ContentCard wrapper and action buttons
+ * 2. Inline summary with Surface wrapper for single-page wizard
+ *
+ * @property steps - Array of step configuration objects
+ * @property inputValues - Input values corresponding to each step
+ * @property onStepClick - Callback when edit button clicked, receives step index
+ * @property renderActionButtons - (optional) Render function for action buttons in standalone mode
+ * @property vPaddingHorizontal - (optional) Horizontal padding for inline mode
+ * @property maxWidth - (optional) Max width for standalone mode
+ * @property surfaceProps - (optional) Additional props for Surface wrapper in inline mode
+ * @property containerProps - (optional) Additional props for container Utility in inline mode
+ * @property editButtonRefs - (optional) Refs array for edit buttons to manage focus
+ */
 interface SummaryPageProps {
   steps: Step[];
   inputValues: string[];
@@ -38,6 +65,10 @@ interface SummaryPageProps {
   editButtonRefs?: (HTMLButtonElement | null)[];
 }
 
+/**
+ * Renders summary of wizard steps with edit capabilities.
+ * Adapts layout based on whether it's used standalone or inline.
+ */
 export const SummaryPage = ({
   steps,
   inputValues,
@@ -49,8 +80,10 @@ export const SummaryPage = ({
   containerProps = {},
   editButtonRefs = [],
 }: SummaryPageProps) => {
+  // Exclude the summary step itself (last step) from the list
   const summarySteps = steps.slice(0, steps.length - 1);
 
+  // Core summary content rendered in both modes
   const renderSummaryContent = () => (
     <>
       <Typography tag="h2" variant="headline-2">

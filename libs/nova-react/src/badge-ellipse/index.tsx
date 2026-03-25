@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,9 +14,8 @@
  * limitations under the License.
  *
  **/
-import React from 'react';
 import cn from 'clsx';
-import { CSSProperties } from 'react';
+import type { CSSProperties, FC, SVGProps } from 'react';
 
 const CSS_PREFIX = 'v-icon v-icon-tiny v-ellipse';
 
@@ -25,13 +24,9 @@ export type VisaBadgeEllipseProperties = {
   className?: string;
   /** aria-label */
   'aria-label'?: string;
-} & React.SVGProps<SVGSVGElement>;
+} & SVGProps<SVGSVGElement>;
 
-const BadgeEllipse: React.FC<VisaBadgeEllipseProperties> = ({
-  className,
-  'aria-label': ariaLabel,
-  ...remainingProps
-}) => (
+const BadgeEllipse: FC<VisaBadgeEllipseProperties> = ({ className, 'aria-label': ariaLabel, ...remainingProps }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className={cn(CSS_PREFIX, className)}

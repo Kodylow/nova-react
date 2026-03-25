@@ -2,13 +2,13 @@
   "description": "Messages indicating the global status of an application or website.",
   "displayName": "banner",
   "filePath": "/banner/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/banner/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//banner/index.tsx",
   "props": [
     {
       "description": "Message Type",
       "name": "messageType",
       "required": false,
-      "type": "\"subtle\" | \"warning\" | \"error\" | \"success\""
+      "type": "\"subtle\" | \"warning\" | \"error\" | \"information\" | \"success\""
     },
     {
       "description": "Tag of Component",
@@ -19,8 +19,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/banner See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/banner/?code_library=react See Docs}",
   "related": [
     "banner-close-button",
     "message-content"

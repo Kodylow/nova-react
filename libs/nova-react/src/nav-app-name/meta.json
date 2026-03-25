@@ -2,7 +2,7 @@
   "description": "Containing element for app name styles within a Nav.",
   "displayName": "navappname",
   "filePath": "/nav-app-name/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/nav-app-name/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//nav-app-name/index.tsx",
   "props": [
     {
       "defaultValue": "div",
@@ -12,6 +12,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/horizontal-navigation See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/horizontal-navigation/?code_library=react See Docs}"
 }

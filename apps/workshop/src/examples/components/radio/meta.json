@@ -2,91 +2,94 @@
   "disabled-panel-radio": {
     "file": "disabled-panel-radio.tsx",
     "id": "disabled-panel-radio",
-    "title": "Disabled radio button panel",
-    "testAvg": 100
+    "title": "Disabled radio button panel"
   },
   "disabled-radio": {
     "file": "disabled-radio.tsx",
     "id": "disabled-radio",
-    "title": "Disabled radio button",
-    "testAvg": 100
+    "title": "Disabled radio button"
   },
   "error-group-panel-radio": {
     "file": "error-group-panel-radio.tsx",
     "id": "error-group-panel-radio",
-    "title": "Radio button panel group with error",
-    "testAvg": 100
+    "title": "Radio button panel group with error"
   },
   "error-radio": {
     "file": "error-radio.tsx",
     "id": "error-radio",
-    "title": "Radio button with error",
-    "testAvg": 100
+    "title": "Radio button with error"
   },
   "group-panel-radio": {
     "file": "group-panel-radio.tsx",
     "id": "group-panel-radio",
-    "title": "Radio button panel group",
-    "testAvg": 100
+    "title": "Radio button panel group"
   },
   "group-radio": {
     "file": "group-radio.tsx",
     "id": "group-radio",
-    "title": "Radio button group",
-    "testAvg": 100
+    "title": "Radio button group"
   },
   "with-description-panel-radio": {
     "file": "with-description-panel-radio.tsx",
     "id": "with-description-panel-radio",
-    "title": "Radio button panel",
-    "testAvg": 100
+    "title": "Radio button panel"
   },
   "with-description-radio": {
     "file": "with-description-radio.tsx",
     "id": "with-description-radio",
-    "title": "Radio button with description",
-    "testAvg": 100
+    "title": "Radio button with description"
   },
   "with-label-radio": {
     "file": "with-label-radio.tsx",
     "id": "with-label-radio",
-    "title": "Radio button with label",
-    "testAvg": 100
+    "title": "Radio button with label"
   },
   "without-description-panel-radio": {
     "file": "without-description-panel-radio.tsx",
     "id": "without-description-panel-radio",
-    "title": "Radio button panel without description",
-    "testAvg": 100
+    "title": "Radio button panel without description"
   },
   "without-visible-label-radio": {
     "file": "without-visible-label-radio.tsx",
     "id": "without-visible-label-radio",
-    "title": "Radio button without visible label",
-    "testAvg": 100
+    "title": "Radio button without visible label"
   },
   "disabled-selected-radio": {
     "file": "disabled-selected-radio.tsx",
     "id": "disabled-selected-radio",
-    "title": "Disabled and selected radio button",
-    "testAvg": 100
+    "title": "Disabled and selected radio button"
   },
   "error-group-radio": {
     "file": "error-group-radio.tsx",
     "id": "error-group-radio",
-    "title": "Radio button group with error",
-    "testAvg": 100
+    "title": "Radio button group with error"
   },
   "horizontal-group-radio": {
     "file": "horizontal-group-radio.tsx",
     "id": "horizontal-group-radio",
-    "title": "Horizontal radio button group",
-    "testAvg": 100
+    "title": "Horizontal radio button group"
   },
   "selected-radio": {
     "file": "selected-radio.tsx",
     "id": "selected-radio",
-    "title": "Selected radio button",
-    "testAvg": 100
+    "title": "Selected radio button"
+  },
+  "reusable": {
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable radio button"
+  },
+  "reusable-group": {
+    "file": "reusable-group.tsx",
+    "id": "reusable-group",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable radio button group"
   }
 }

@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`List item examples Account clickthrough list should render correctly 1`] = `
+exports[`List item examples > Account clickthrough list should render correctly 1`] = `
 <div>
   <section
     aria-label="List title"
@@ -21,7 +21,7 @@ exports[`List item examples Account clickthrough list should render correctly 1`
         <a
           class="v-button v-button-tertiary v-align-items-center v-flex v-justify-content-between v-pl-0 v-pr-4 v-py-6"
           href="./list-item"
-          style="--v-button-default-border-radius: 0px; min-block-size: 64px;"
+          style="color: var(--palette-default-text); --v-button-default-border-radius: 0px; min-block-size: 64px;"
         >
           <div
             class="v-flex v-gap-3"
@@ -54,6 +54,7 @@ exports[`List item examples Account clickthrough list should render correctly 1`
               </div>
               <div
                 class="v-flex v-flex-col"
+                style="color: var(--palette-default-text);"
               >
                 <p
                   class="v-typography-overline"
@@ -81,15 +82,14 @@ exports[`List item examples Account clickthrough list should render correctly 1`
               class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right"
               focusable="false"
               height="16"
+              style="color: var(--palette-default-active);"
               viewBox="0 0 16 16"
               width="16"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
           </div>
@@ -101,7 +101,7 @@ exports[`List item examples Account clickthrough list should render correctly 1`
         <a
           class="v-button v-button-tertiary v-align-items-center v-flex v-justify-content-between v-pl-0 v-pr-4 v-py-6"
           href="./list-item"
-          style="--v-button-default-border-radius: 0px; min-block-size: 64px;"
+          style="color: var(--palette-default-text); --v-button-default-border-radius: 0px; min-block-size: 64px;"
         >
           <div
             class="v-flex v-gap-3"
@@ -134,6 +134,7 @@ exports[`List item examples Account clickthrough list should render correctly 1`
               </div>
               <div
                 class="v-flex v-flex-col"
+                style="color: var(--palette-default-text);"
               >
                 <p
                   class="v-typography-overline"
@@ -161,15 +162,14 @@ exports[`List item examples Account clickthrough list should render correctly 1`
               class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right"
               focusable="false"
               height="16"
+              style="color: var(--palette-default-active);"
               viewBox="0 0 16 16"
               width="16"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
           </div>
@@ -181,7 +181,7 @@ exports[`List item examples Account clickthrough list should render correctly 1`
         <a
           class="v-button v-button-tertiary v-align-items-center v-flex v-justify-content-between v-pl-0 v-pr-4 v-py-6"
           href="./list-item"
-          style="--v-button-default-border-radius: 0px; min-block-size: 64px;"
+          style="color: var(--palette-default-text); --v-button-default-border-radius: 0px; min-block-size: 64px;"
         >
           <div
             class="v-flex v-gap-3"
@@ -214,6 +214,7 @@ exports[`List item examples Account clickthrough list should render correctly 1`
               </div>
               <div
                 class="v-flex v-flex-col"
+                style="color: var(--palette-default-text);"
               >
                 <p
                   class="v-typography-overline"
@@ -241,15 +242,14 @@ exports[`List item examples Account clickthrough list should render correctly 1`
               class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right"
               focusable="false"
               height="16"
+              style="color: var(--palette-default-active);"
               viewBox="0 0 16 16"
               width="16"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
           </div>
@@ -261,7 +261,7 @@ exports[`List item examples Account clickthrough list should render correctly 1`
         <a
           class="v-button v-button-tertiary v-align-items-center v-flex v-justify-content-between v-pl-0 v-pr-4 v-py-6"
           href="./list-item"
-          style="--v-button-default-border-radius: 0px; min-block-size: 64px;"
+          style="color: var(--palette-default-text); --v-button-default-border-radius: 0px; min-block-size: 64px;"
         >
           <div
             class="v-flex v-gap-3"
@@ -294,6 +294,7 @@ exports[`List item examples Account clickthrough list should render correctly 1`
               </div>
               <div
                 class="v-flex v-flex-col"
+                style="color: var(--palette-default-text);"
               >
                 <p
                   class="v-typography-overline"
@@ -321,15 +322,14 @@ exports[`List item examples Account clickthrough list should render correctly 1`
               class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right"
               focusable="false"
               height="16"
+              style="color: var(--palette-default-active);"
               viewBox="0 0 16 16"
               width="16"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
           </div>
@@ -340,7 +340,7 @@ exports[`List item examples Account clickthrough list should render correctly 1`
 </div>
 `;
 
-exports[`List item examples Checkbox list should render correctly 1`] = `
+exports[`List item examples > Checkbox list should render correctly 1`] = `
 <div>
   <fieldset
     aria-label="Section title"
@@ -362,7 +362,7 @@ exports[`List item examples Checkbox list should render correctly 1`] = `
         <label
           class="v-label v-align-items-center v-flex v-gap-8 v-justify-content-between v-px-8 v-py-6 v-action v-action-secondary"
           for="checkbox-list-1"
-          style="min-block-size: 64px; inline-size: 100%;"
+          style="border: unset; min-block-size: 64px; inline-size: 100%;"
         >
           <div
             class="v-align-items-center v-flex v-gap-8"
@@ -393,7 +393,7 @@ exports[`List item examples Checkbox list should render correctly 1`] = `
         <label
           class="v-label v-align-items-center v-flex v-gap-8 v-justify-content-between v-px-8 v-py-6 v-action v-action-secondary"
           for="checkbox-list-2"
-          style="min-block-size: 64px; inline-size: 100%;"
+          style="border: unset; min-block-size: 64px; inline-size: 100%;"
         >
           <div
             class="v-align-items-center v-flex v-gap-8"
@@ -424,7 +424,7 @@ exports[`List item examples Checkbox list should render correctly 1`] = `
         <label
           class="v-label v-align-items-center v-flex v-gap-8 v-justify-content-between v-px-8 v-py-6 v-action v-action-secondary"
           for="checkbox-list-3"
-          style="min-block-size: 64px; inline-size: 100%;"
+          style="border: unset; min-block-size: 64px; inline-size: 100%;"
         >
           <div
             class="v-align-items-center v-flex v-gap-8"
@@ -455,7 +455,7 @@ exports[`List item examples Checkbox list should render correctly 1`] = `
         <label
           class="v-label v-align-items-center v-flex v-gap-8 v-justify-content-between v-px-8 v-py-6 v-action v-action-secondary"
           for="checkbox-list-4"
-          style="min-block-size: 64px; inline-size: 100%;"
+          style="border: unset; min-block-size: 64px; inline-size: 100%;"
         >
           <div
             class="v-align-items-center v-flex v-gap-8"
@@ -485,7 +485,7 @@ exports[`List item examples Checkbox list should render correctly 1`] = `
 </div>
 `;
 
-exports[`List item examples Clickthrough list should render correctly 1`] = `
+exports[`List item examples > Clickthrough list should render correctly 1`] = `
 <div>
   <ul
     class="v-content-card v-p-4"
@@ -497,7 +497,7 @@ exports[`List item examples Clickthrough list should render correctly 1`] = `
       <a
         class="v-button v-button-tertiary v-align-items-center v-flex v-justify-content-between v-pl-8 v-pr-4 v-py-6"
         href="./list-item"
-        style="--v-button-default-border-radius: 0px; min-block-size: 64px;"
+        style="color: var(--palette-default-text); --v-button-default-border-radius: 0px; min-block-size: 64px;"
       >
         <span
           class="v-typography-label-large"
@@ -509,15 +509,14 @@ exports[`List item examples Clickthrough list should render correctly 1`] = `
           class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right"
           focusable="false"
           height="16"
+          style="color: var(--palette-default-active);"
           viewBox="0 0 16 16"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -528,7 +527,7 @@ exports[`List item examples Clickthrough list should render correctly 1`] = `
       <a
         class="v-button v-button-tertiary v-align-items-center v-flex v-justify-content-between v-pl-8 v-pr-4 v-py-6"
         href="./list-item"
-        style="--v-button-default-border-radius: 0px; min-block-size: 64px;"
+        style="color: var(--palette-default-text); --v-button-default-border-radius: 0px; min-block-size: 64px;"
       >
         <span
           class="v-typography-label-large"
@@ -540,15 +539,14 @@ exports[`List item examples Clickthrough list should render correctly 1`] = `
           class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right"
           focusable="false"
           height="16"
+          style="color: var(--palette-default-active);"
           viewBox="0 0 16 16"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -559,7 +557,7 @@ exports[`List item examples Clickthrough list should render correctly 1`] = `
       <a
         class="v-button v-button-tertiary v-align-items-center v-flex v-justify-content-between v-pl-8 v-pr-4 v-py-6"
         href="./list-item"
-        style="--v-button-default-border-radius: 0px; min-block-size: 64px;"
+        style="color: var(--palette-default-text); --v-button-default-border-radius: 0px; min-block-size: 64px;"
       >
         <span
           class="v-typography-label-large"
@@ -571,15 +569,14 @@ exports[`List item examples Clickthrough list should render correctly 1`] = `
           class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right"
           focusable="false"
           height="16"
+          style="color: var(--palette-default-active);"
           viewBox="0 0 16 16"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -590,7 +587,7 @@ exports[`List item examples Clickthrough list should render correctly 1`] = `
       <a
         class="v-button v-button-tertiary v-align-items-center v-flex v-justify-content-between v-pl-8 v-pr-4 v-py-6"
         href="./list-item"
-        style="--v-button-default-border-radius: 0px; min-block-size: 64px;"
+        style="color: var(--palette-default-text); --v-button-default-border-radius: 0px; min-block-size: 64px;"
       >
         <span
           class="v-typography-label-large"
@@ -602,15 +599,14 @@ exports[`List item examples Clickthrough list should render correctly 1`] = `
           class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right"
           focusable="false"
           height="16"
+          style="color: var(--palette-default-active);"
           viewBox="0 0 16 16"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -619,7 +615,7 @@ exports[`List item examples Clickthrough list should render correctly 1`] = `
 </div>
 `;
 
-exports[`List item examples Default checkbox list item should render correctly 1`] = `
+exports[`List item examples > Default checkbox list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -630,7 +626,7 @@ exports[`List item examples Default checkbox list item should render correctly 1
       <label
         class="v-label v-align-items-center v-flex v-gap-8 v-px-8 v-py-6 v-action v-action-secondary"
         for="default-checkbox-list-item"
-        style="min-block-size: 64px; inline-size: 100%;"
+        style="border: unset; min-block-size: 64px; inline-size: 100%;"
       >
         <input
           class="v-checkbox"
@@ -650,7 +646,7 @@ exports[`List item examples Default checkbox list item should render correctly 1
 </div>
 `;
 
-exports[`List item examples Default clickthrough list item should render correctly 1`] = `
+exports[`List item examples > Default clickthrough list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -661,7 +657,7 @@ exports[`List item examples Default clickthrough list item should render correct
       <a
         class="v-button v-button-tertiary v-align-items-center v-flex v-justify-content-between v-pl-8 v-pr-4 v-py-6"
         href="./list-item"
-        style="--v-button-default-border-radius: 0px; min-block-size: 64px;"
+        style="color: var(--palette-default-text); --v-button-default-border-radius: 0px; min-block-size: 64px;"
       >
         <span
           class="v-typography-label-large"
@@ -673,15 +669,14 @@ exports[`List item examples Default clickthrough list item should render correct
           class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right"
           focusable="false"
           height="16"
+          style="color: var(--palette-default-active);"
           viewBox="0 0 16 16"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -690,7 +685,7 @@ exports[`List item examples Default clickthrough list item should render correct
 </div>
 `;
 
-exports[`List item examples Default list should render correctly 1`] = `
+exports[`List item examples > Default list should render correctly 1`] = `
 <div>
   <ul
     class="v-content-card v-p-4"
@@ -760,7 +755,7 @@ exports[`List item examples Default list should render correctly 1`] = `
 </div>
 `;
 
-exports[`List item examples Default list with dividers should render correctly 1`] = `
+exports[`List item examples > Default list with dividers should render correctly 1`] = `
 <div>
   <ul
     class="v-content-card v-p-4"
@@ -850,7 +845,7 @@ exports[`List item examples Default list with dividers should render correctly 1
 </div>
 `;
 
-exports[`List item examples Default list with section title and hyperlink should render correctly 1`] = `
+exports[`List item examples > Default list with section title and hyperlink should render correctly 1`] = `
 <div>
   <section
     aria-label="Section title"
@@ -884,9 +879,7 @@ exports[`List item examples Default list with section title and hyperlink should
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -960,7 +953,7 @@ exports[`List item examples Default list with section title and hyperlink should
 </div>
 `;
 
-exports[`List item examples Default list with title should render correctly 1`] = `
+exports[`List item examples > Default list with title should render correctly 1`] = `
 <div>
   <section
     aria-label="List title"
@@ -1040,7 +1033,7 @@ exports[`List item examples Default list with title should render correctly 1`] 
 </div>
 `;
 
-exports[`List item examples Default radio list item should render correctly 1`] = `
+exports[`List item examples > Default radio list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1051,7 +1044,7 @@ exports[`List item examples Default radio list item should render correctly 1`] 
       <label
         class="v-label v-align-items-center v-flex v-gap-8 v-px-8 v-py-6 v-action v-action-secondary"
         for="default-radio-list-item"
-        style="min-block-size: 64px; inline-size: 100%;"
+        style="border: unset; min-block-size: 64px; inline-size: 100%;"
       >
         <input
           class="v-radio"
@@ -1071,7 +1064,7 @@ exports[`List item examples Default radio list item should render correctly 1`] 
 </div>
 `;
 
-exports[`List item examples Default switch list item should render correctly 1`] = `
+exports[`List item examples > Default switch list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1102,7 +1095,7 @@ exports[`List item examples Default switch list item should render correctly 1`]
 </div>
 `;
 
-exports[`List item examples Disabled card art clickthrough list item should render correctly 1`] = `
+exports[`List item examples > Disabled card art clickthrough list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1123,7 +1116,7 @@ exports[`List item examples Disabled card art clickthrough list item should rend
         >
           <div
             class="v-align-items-center v-flex v-justify-content-center"
-            style="opacity: 0.3; mix-blend-mode: luminosity; border-radius: 2px; inline-size: 40px; block-size: 25px;"
+            style="background-color: var(--palette-default-active-pressed); opacity: 0.3; mix-blend-mode: luminosity; border-radius: 2px; inline-size: 40px; block-size: 25px;"
           >
             <svg
               aria-label="Visa"
@@ -1158,9 +1151,7 @@ exports[`List item examples Disabled card art clickthrough list item should rend
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -1169,7 +1160,7 @@ exports[`List item examples Disabled card art clickthrough list item should rend
 </div>
 `;
 
-exports[`List item examples Disabled card art with number clickthrough list item should render correctly 1`] = `
+exports[`List item examples > Disabled card art with number clickthrough list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1193,7 +1184,7 @@ exports[`List item examples Disabled card art with number clickthrough list item
           >
             <div
               class="v-align-items-center v-flex v-justify-content-center"
-              style="opacity: 0.3; mix-blend-mode: luminosity; border-radius: 2px; inline-size: 40px; block-size: 25px;"
+              style="background-color: var(--palette-default-active-pressed); opacity: 0.3; mix-blend-mode: luminosity; border-radius: 2px; inline-size: 40px; block-size: 25px;"
             >
               <svg
                 aria-label="Visa"
@@ -1234,9 +1225,7 @@ exports[`List item examples Disabled card art with number clickthrough list item
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -1245,7 +1234,7 @@ exports[`List item examples Disabled card art with number clickthrough list item
 </div>
 `;
 
-exports[`List item examples Disabled checkbox list item should render correctly 1`] = `
+exports[`List item examples > Disabled checkbox list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1256,7 +1245,7 @@ exports[`List item examples Disabled checkbox list item should render correctly 
       <label
         class="v-label v-align-items-center v-flex v-gap-8 v-px-8 v-py-6 v-action v-action-secondary"
         for="disabled-checkbox-list-item"
-        style="min-block-size: 64px; inline-size: 100%;"
+        style="border: unset; min-block-size: 64px; inline-size: 100%;"
       >
         <input
           class="v-checkbox"
@@ -1277,7 +1266,7 @@ exports[`List item examples Disabled checkbox list item should render correctly 
 </div>
 `;
 
-exports[`List item examples Disabled clickthrough list item should render correctly 1`] = `
+exports[`List item examples > Disabled clickthrough list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1309,9 +1298,7 @@ exports[`List item examples Disabled clickthrough list item should render correc
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -1320,7 +1307,7 @@ exports[`List item examples Disabled clickthrough list item should render correc
 </div>
 `;
 
-exports[`List item examples Disabled leading icon clickthrough list item should render correctly 1`] = `
+exports[`List item examples > Disabled leading icon clickthrough list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1351,9 +1338,7 @@ exports[`List item examples Disabled leading icon clickthrough list item should 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5 14.9392C5 18.8392 8.136 22.0002 12 22.0002C15.864 22.0002 19 18.8392 19 14.9392V5.29721C16.425 5.08821 13.983 4.07621 12 2.36621C10.017 4.07621 7.575 5.08821 5 5.29721V14.9392ZM3 14.9395V5.2965C3 4.2705 3.775 3.3885 4.807 3.3065C7.238 3.1175 9.527 2.0725 11.29 0.2955C11.682 -0.0985 12.318 -0.0985 12.71 0.2955C14.473 2.0725 16.762 3.1175 19.194 3.3065C20.225 3.3885 21 4.2705 21 5.2965V14.9395C21 19.9415 16.972 24.0005 12 24.0005C7.028 24.0005 3 19.9415 3 14.9395ZM15.2933 9.29325C15.6842 8.90225 16.3162 8.90225 16.7072 9.29325C17.0982 9.68325 17.0982 10.3162 16.7072 10.7072L11.7073 15.7072C11.3162 16.0972 10.6842 16.0972 10.2933 15.7072L7.29325 12.7072C6.90225 12.3162 6.90225 11.6833 7.29325 11.2933C7.68425 10.9023 8.31625 10.9023 8.70725 11.2933L11.0002 13.5852L15.2933 9.29325Z"
-              fill-rule="evenodd"
+              d="M11.29 0.295288C11.682 -0.0985655 12.318 -0.0985655 12.71 0.295288C14.473 2.07229 16.7623 3.11703 19.1943 3.30603C20.2251 3.38817 20.9999 4.27045 21 5.29626V14.9398C20.9998 19.9417 16.9719 24.0004 12 24.0004C7.02812 24.0004 3.00019 19.9417 3 14.9398V5.29626C3.0001 4.27046 3.77487 3.38818 4.80664 3.30603C7.23764 3.11703 9.52704 2.07229 11.29 0.295288ZM12 2.36658C10.017 4.07647 7.57491 5.08825 5 5.29724V14.9388C5 18.8388 8.136 22.0004 12 22.0004C15.864 22.0004 19 18.8388 19 14.9388V5.29724C16.4251 5.08825 13.983 4.07647 12 2.36658ZM15.293 9.29333C15.684 8.90235 16.316 8.90239 16.707 9.29333C17.098 9.68334 17.098 10.3164 16.707 10.7074L11.707 15.7074C11.316 16.0972 10.6839 16.0973 10.293 15.7074L7.29297 12.7074C6.90209 12.3165 6.90219 11.6833 7.29297 11.2933C7.68395 10.9024 8.31603 10.9024 8.70703 11.2933L11 13.5853L15.293 9.29333Z"
             />
           </svg>
           <span
@@ -1373,9 +1358,7 @@ exports[`List item examples Disabled leading icon clickthrough list item should 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -1384,7 +1367,7 @@ exports[`List item examples Disabled leading icon clickthrough list item should 
 </div>
 `;
 
-exports[`List item examples Disabled leading image clickthrough list item should render correctly 1`] = `
+exports[`List item examples > Disabled leading image clickthrough list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1426,9 +1409,7 @@ exports[`List item examples Disabled leading image clickthrough list item should
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -1437,7 +1418,7 @@ exports[`List item examples Disabled leading image clickthrough list item should
 </div>
 `;
 
-exports[`List item examples Disabled radio list item should render correctly 1`] = `
+exports[`List item examples > Disabled radio list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1448,7 +1429,7 @@ exports[`List item examples Disabled radio list item should render correctly 1`]
       <label
         class="v-label v-align-items-center v-flex v-gap-8 v-px-8 v-py-6 v-action v-action-secondary"
         for="disabled-radio-list-item"
-        style="min-block-size: 64px; inline-size: 100%;"
+        style="border: unset; min-block-size: 64px; inline-size: 100%;"
       >
         <input
           class="v-radio"
@@ -1469,7 +1450,7 @@ exports[`List item examples Disabled radio list item should render correctly 1`]
 </div>
 `;
 
-exports[`List item examples Disabled switch list item should render correctly 1`] = `
+exports[`List item examples > Disabled switch list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1501,7 +1482,7 @@ exports[`List item examples Disabled switch list item should render correctly 1`
 </div>
 `;
 
-exports[`List item examples Indicator line list item should render correctly 1`] = `
+exports[`List item examples > Indicator line list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1511,7 +1492,7 @@ exports[`List item examples Indicator line list item should render correctly 1`]
       style="min-block-size: 64px;"
     >
       <div
-        style="inline-size: 5px; block-size: 56px; border-radius: 10px;"
+        style="background-color: var(--palette-default-active); inline-size: 5px; block-size: 56px; border-radius: 10px;"
       />
       <span
         class="v-typography-label-large"
@@ -1523,7 +1504,7 @@ exports[`List item examples Indicator line list item should render correctly 1`]
 </div>
 `;
 
-exports[`List item examples Leading card art list item should render correctly 1`] = `
+exports[`List item examples > Leading card art list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1534,7 +1515,7 @@ exports[`List item examples Leading card art list item should render correctly 1
     >
       <div
         class="v-align-items-center v-flex v-justify-content-center"
-        style="border-radius: 2px; inline-size: 40px; block-size: 25px;"
+        style="background-color: var(--palette-default-active-pressed); border-radius: 2px; inline-size: 40px; block-size: 25px;"
       >
         <svg
           aria-label="Visa"
@@ -1562,7 +1543,7 @@ exports[`List item examples Leading card art list item should render correctly 1
 </div>
 `;
 
-exports[`List item examples Leading icon list item should render correctly 1`] = `
+exports[`List item examples > Leading icon list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1576,15 +1557,14 @@ exports[`List item examples Leading icon list item should render correctly 1`] =
         class="v-icon v-icon-generic v-icon-low v-icon-information"
         focusable="false"
         height="24"
+        style="color: var(--palette-default-active-subtle);"
         viewBox="0 0 24 24"
         width="24"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M22 12C22 6.47728 17.5227 2 12 2C6.47728 2 2 6.47728 2 12C2 17.5227 6.47728 22 12 22C17.5227 22 22 17.5227 22 12ZM24 12C24 18.6273 18.6273 24 12 24C5.37272 24 0 18.6273 0 12C0 5.37272 5.37272 0 12 0C18.6273 0 24 5.37272 24 12ZM10.0898 17.9795H11.5898L13.2598 9.26953H11.7698L10.0898 17.9795ZM12.9998 5.83008C12.4475 5.83008 11.9998 6.27779 11.9998 6.83008C11.9773 7.07168 12.0578 7.31157 12.2216 7.4906C12.3854 7.66963 12.6172 7.77113 12.8598 7.77008C13.4121 7.77008 13.8598 7.32236 13.8598 6.77008C13.8793 6.5292 13.7977 6.29109 13.6345 6.11279C13.4714 5.93449 13.2415 5.83207 12.9998 5.83008Z"
-          fill-rule="evenodd"
+          d="M12 0C18.6273 0 24 5.37272 24 12C24 18.6273 18.6273 24 12 24C5.37272 24 0 18.6273 0 12C0 5.37272 5.37272 0 12 0ZM12 2C6.47728 2 2 6.47728 2 12C2 17.5227 6.47728 22 12 22C17.5227 22 22 17.5227 22 12C22 6.47728 17.5227 2 12 2ZM13.2598 9.26953L11.5898 17.9795H10.0898L11.7695 9.26953H13.2598ZM13 5.83008C13.2415 5.83212 13.4717 5.93414 13.6348 6.1123C13.7979 6.2906 13.8788 6.52963 13.8594 6.77051C13.8591 7.32259 13.4115 7.77051 12.8594 7.77051C12.6169 7.77143 12.3854 7.66915 12.2217 7.49023C12.058 7.31122 11.9774 7.07161 12 6.83008C12 6.27779 12.4477 5.83008 13 5.83008Z"
         />
       </svg>
       <span
@@ -1597,7 +1577,7 @@ exports[`List item examples Leading icon list item should render correctly 1`] =
 </div>
 `;
 
-exports[`List item examples Leading icon with background list item should render correctly 1`] = `
+exports[`List item examples > Leading icon with background list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1608,29 +1588,25 @@ exports[`List item examples Leading icon with background list item should render
     >
       <div
         class="v-flex v-p-8"
-        style="border-radius: 4px;"
+        style="background-color: var(--palette-default-surface-3); border-radius: 4px;"
       >
         <svg
           aria-hidden="true"
           class="v-icon v-icon-visa v-icon-low v-icon-account"
           focusable="false"
           height="24"
-          style="--v-icon-primary: currentColor; --v-icon-secondary: currentColor;"
+          style="color: var(--palette-default-text-subtle); --v-icon-primary: currentColor; --v-icon-secondary: currentColor;"
           viewBox="0 0 24 24"
           width="24"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M12 14C7.58172 14 4 17.5817 4 22V24H2V22C2 16.4772 6.47715 12 12 12C17.5228 12 22 16.4772 22 22V24H20V22C20 17.5817 16.4183 14 12 14Z"
-            fill-rule="evenodd"
+            d="M12 12C17.5228 12 22 16.4772 22 22V24H20V22C20 17.5817 16.4183 14 12 14C7.58172 14 4 17.5817 4 22V24H2V22C2 16.4772 6.47715 12 12 12Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8ZM12 10C14.7614 10 17 7.76142 17 5C17 2.23858 14.7614 0 12 0C9.23858 0 7 2.23858 7 5C7 7.76142 9.23858 10 12 10Z"
-            fill-rule="evenodd"
+            d="M12 0C14.7614 0 17 2.23858 17 5C17 7.76142 14.7614 10 12 10C9.23858 10 7 7.76142 7 5C7 2.23858 9.23858 0 12 0ZM12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2Z"
           />
         </svg>
       </div>
@@ -1644,7 +1620,7 @@ exports[`List item examples Leading icon with background list item should render
 </div>
 `;
 
-exports[`List item examples Leading image list item should render correctly 1`] = `
+exports[`List item examples > Leading image list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1668,7 +1644,7 @@ exports[`List item examples Leading image list item should render correctly 1`] 
 </div>
 `;
 
-exports[`List item examples One-line list item should render correctly 1`] = `
+exports[`List item examples > One-line list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1687,7 +1663,7 @@ exports[`List item examples One-line list item should render correctly 1`] = `
 </div>
 `;
 
-exports[`List item examples One-line, two-column list item should render correctly 1`] = `
+exports[`List item examples > One-line, two-column list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1711,7 +1687,7 @@ exports[`List item examples One-line, two-column list item should render correct
 </div>
 `;
 
-exports[`List item examples Radio list should render correctly 1`] = `
+exports[`List item examples > Radio list should render correctly 1`] = `
 <div>
   <fieldset
     aria-label="Section title"
@@ -1733,7 +1709,7 @@ exports[`List item examples Radio list should render correctly 1`] = `
         <label
           class="v-label v-align-items-center v-flex v-gap-8 v-justify-content-between v-px-8 v-py-6 v-action v-action-secondary"
           for="radio-list-1"
-          style="min-block-size: 64px; inline-size: 100%;"
+          style="border: unset; min-block-size: 64px; inline-size: 100%;"
         >
           <div
             class="v-align-items-center v-flex v-gap-8"
@@ -1764,7 +1740,7 @@ exports[`List item examples Radio list should render correctly 1`] = `
         <label
           class="v-label v-align-items-center v-flex v-gap-8 v-justify-content-between v-px-8 v-py-6 v-action v-action-secondary"
           for="radio-list-2"
-          style="min-block-size: 64px; inline-size: 100%;"
+          style="border: unset; min-block-size: 64px; inline-size: 100%;"
         >
           <div
             class="v-align-items-center v-flex v-gap-8"
@@ -1795,7 +1771,7 @@ exports[`List item examples Radio list should render correctly 1`] = `
         <label
           class="v-label v-align-items-center v-flex v-gap-8 v-justify-content-between v-px-8 v-py-6 v-action v-action-secondary"
           for="radio-list-3"
-          style="min-block-size: 64px; inline-size: 100%;"
+          style="border: unset; min-block-size: 64px; inline-size: 100%;"
         >
           <div
             class="v-align-items-center v-flex v-gap-8"
@@ -1826,7 +1802,7 @@ exports[`List item examples Radio list should render correctly 1`] = `
         <label
           class="v-label v-align-items-center v-flex v-gap-8 v-justify-content-between v-px-8 v-py-6 v-action v-action-secondary"
           for="radio-list-4"
-          style="min-block-size: 64px; inline-size: 100%;"
+          style="border: unset; min-block-size: 64px; inline-size: 100%;"
         >
           <div
             class="v-align-items-center v-flex v-gap-8"
@@ -1856,7 +1832,7 @@ exports[`List item examples Radio list should render correctly 1`] = `
 </div>
 `;
 
-exports[`List item examples Three-line list item should render correctly 1`] = `
+exports[`List item examples > Three-line list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1885,7 +1861,7 @@ exports[`List item examples Three-line list item should render correctly 1`] = `
 </div>
 `;
 
-exports[`List item examples Trailing card art list item should render correctly 1`] = `
+exports[`List item examples > Trailing card art list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1901,7 +1877,7 @@ exports[`List item examples Trailing card art list item should render correctly 
       </span>
       <div
         class="v-align-items-center v-flex v-justify-content-center"
-        style="border-radius: 2px; inline-size: 40px; block-size: 25px;"
+        style="background-color: var(--palette-default-active-pressed); border-radius: 2px; inline-size: 40px; block-size: 25px;"
       >
         <svg
           aria-label="Visa"
@@ -1924,7 +1900,7 @@ exports[`List item examples Trailing card art list item should render correctly 
 </div>
 `;
 
-exports[`List item examples Trailing icon list item should render correctly 1`] = `
+exports[`List item examples > Trailing icon list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1943,15 +1919,14 @@ exports[`List item examples Trailing icon list item should render correctly 1`] 
         class="v-icon v-icon-generic v-icon-low v-icon-information"
         focusable="false"
         height="24"
+        style="color: var(--palette-default-active-subtle);"
         viewBox="0 0 24 24"
         width="24"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M22 12C22 6.47728 17.5227 2 12 2C6.47728 2 2 6.47728 2 12C2 17.5227 6.47728 22 12 22C17.5227 22 22 17.5227 22 12ZM24 12C24 18.6273 18.6273 24 12 24C5.37272 24 0 18.6273 0 12C0 5.37272 5.37272 0 12 0C18.6273 0 24 5.37272 24 12ZM10.0898 17.9795H11.5898L13.2598 9.26953H11.7698L10.0898 17.9795ZM12.9998 5.83008C12.4475 5.83008 11.9998 6.27779 11.9998 6.83008C11.9773 7.07168 12.0578 7.31157 12.2216 7.4906C12.3854 7.66963 12.6172 7.77113 12.8598 7.77008C13.4121 7.77008 13.8598 7.32236 13.8598 6.77008C13.8793 6.5292 13.7977 6.29109 13.6345 6.11279C13.4714 5.93449 13.2415 5.83207 12.9998 5.83008Z"
-          fill-rule="evenodd"
+          d="M12 0C18.6273 0 24 5.37272 24 12C24 18.6273 18.6273 24 12 24C5.37272 24 0 18.6273 0 12C0 5.37272 5.37272 0 12 0ZM12 2C6.47728 2 2 6.47728 2 12C2 17.5227 6.47728 22 12 22C17.5227 22 22 17.5227 22 12C22 6.47728 17.5227 2 12 2ZM13.2598 9.26953L11.5898 17.9795H10.0898L11.7695 9.26953H13.2598ZM13 5.83008C13.2415 5.83212 13.4717 5.93414 13.6348 6.1123C13.7979 6.2906 13.8788 6.52963 13.8594 6.77051C13.8591 7.32259 13.4115 7.77051 12.8594 7.77051C12.6169 7.77143 12.3854 7.66915 12.2217 7.49023C12.058 7.31122 11.9774 7.07161 12 6.83008C12 6.27779 12.4477 5.83008 13 5.83008Z"
         />
       </svg>
     </li>
@@ -1959,7 +1934,7 @@ exports[`List item examples Trailing icon list item should render correctly 1`] 
 </div>
 `;
 
-exports[`List item examples Trailing icon with background list item should render correctly 1`] = `
+exports[`List item examples > Trailing icon with background list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -1975,29 +1950,25 @@ exports[`List item examples Trailing icon with background list item should rende
       </span>
       <div
         class="v-flex v-p-8"
-        style="border-radius: 4px;"
+        style="background-color: var(--palette-default-surface-3); border-radius: 4px;"
       >
         <svg
           aria-hidden="true"
           class="v-icon v-icon-visa v-icon-low v-icon-account"
           focusable="false"
           height="24"
-          style="--v-icon-primary: currentColor; --v-icon-secondary: currentColor;"
+          style="color: var(--palette-default-text-subtle); --v-icon-primary: currentColor; --v-icon-secondary: currentColor;"
           viewBox="0 0 24 24"
           width="24"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M12 14C7.58172 14 4 17.5817 4 22V24H2V22C2 16.4772 6.47715 12 12 12C17.5228 12 22 16.4772 22 22V24H20V22C20 17.5817 16.4183 14 12 14Z"
-            fill-rule="evenodd"
+            d="M12 12C17.5228 12 22 16.4772 22 22V24H20V22C20 17.5817 16.4183 14 12 14C7.58172 14 4 17.5817 4 22V24H2V22C2 16.4772 6.47715 12 12 12Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8ZM12 10C14.7614 10 17 7.76142 17 5C17 2.23858 14.7614 0 12 0C9.23858 0 7 2.23858 7 5C7 7.76142 9.23858 10 12 10Z"
-            fill-rule="evenodd"
+            d="M12 0C14.7614 0 17 2.23858 17 5C17 7.76142 14.7614 10 12 10C9.23858 10 7 7.76142 7 5C7 2.23858 9.23858 0 12 0ZM12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2Z"
           />
         </svg>
       </div>
@@ -2006,7 +1977,7 @@ exports[`List item examples Trailing icon with background list item should rende
 </div>
 `;
 
-exports[`List item examples Trailing image list item should render correctly 1`] = `
+exports[`List item examples > Trailing image list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"
@@ -2030,7 +2001,7 @@ exports[`List item examples Trailing image list item should render correctly 1`]
 </div>
 `;
 
-exports[`List item examples Transactions list should render correctly 1`] = `
+exports[`List item examples > Transactions list should render correctly 1`] = `
 <div>
   <section
     aria-label="Transactions"
@@ -2064,9 +2035,7 @@ exports[`List item examples Transactions list should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </a>
@@ -2224,7 +2193,7 @@ exports[`List item examples Transactions list should render correctly 1`] = `
 </div>
 `;
 
-exports[`List item examples Two-line list item should render correctly 1`] = `
+exports[`List item examples > Two-line list item should render correctly 1`] = `
 <div>
   <ul
     style="max-inline-size: 343px;"

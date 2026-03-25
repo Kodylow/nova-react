@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Panel examples Default responsive panel should render correctly 1`] = `
+exports[`Panel examples > Default responsive panel should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
@@ -35,7 +35,7 @@ exports[`Panel examples Default responsive panel should render correctly 1`] = `
             >
               <path
                 class="v-icon-primary"
-                d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+                d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
               />
               <defs>
                 <clippath>
@@ -67,7 +67,7 @@ exports[`Panel examples Default responsive panel should render correctly 1`] = `
 </div>
 `;
 
-exports[`Panel examples Modal expandable panel should render correctly 1`] = `
+exports[`Panel examples > Modal expandable panel should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
@@ -88,15 +88,11 @@ exports[`Panel examples Modal expandable panel should render correctly 1`] = `
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
-          fill-rule="evenodd"
+          d="M7 8L13.6064 15L15 13.5244L9.78613 8L15 2.47559L13.6064 1L7 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
-          fill-rule="evenodd"
+          d="M1 8L7.60645 15L9 13.5244L3.78613 8L9 2.47559L7.60645 1L1 8Z"
         />
       </svg>
     </button>
@@ -120,15 +116,11 @@ exports[`Panel examples Modal expandable panel should render correctly 1`] = `
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-            fill-rule="evenodd"
+            d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-            fill-rule="evenodd"
+            d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
           />
         </svg>
       </button>
@@ -162,7 +154,7 @@ exports[`Panel examples Modal expandable panel should render correctly 1`] = `
 </div>
 `;
 
-exports[`Panel examples Modal expandable panel with secondary button should render correctly 1`] = `
+exports[`Panel examples > Modal expandable panel with secondary button should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
@@ -183,15 +175,11 @@ exports[`Panel examples Modal expandable panel with secondary button should rend
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
-          fill-rule="evenodd"
+          d="M7 8L13.6064 15L15 13.5244L9.78613 8L15 2.47559L13.6064 1L7 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
-          fill-rule="evenodd"
+          d="M1 8L7.60645 15L9 13.5244L3.78613 8L9 2.47559L7.60645 1L1 8Z"
         />
       </svg>
     </button>
@@ -215,15 +203,11 @@ exports[`Panel examples Modal expandable panel with secondary button should rend
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-            fill-rule="evenodd"
+            d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-            fill-rule="evenodd"
+            d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
           />
         </svg>
       </button>
@@ -257,7 +241,7 @@ exports[`Panel examples Modal expandable panel with secondary button should rend
 </div>
 `;
 
-exports[`Panel examples Modal expandable panel with skrim should render correctly 1`] = `
+exports[`Panel examples > Modal expandable panel with skrim should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
@@ -278,15 +262,11 @@ exports[`Panel examples Modal expandable panel with skrim should render correctl
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
-          fill-rule="evenodd"
+          d="M7 8L13.6064 15L15 13.5244L9.78613 8L15 2.47559L13.6064 1L7 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
-          fill-rule="evenodd"
+          d="M1 8L7.60645 15L9 13.5244L3.78613 8L9 2.47559L7.60645 1L1 8Z"
         />
       </svg>
     </button>
@@ -310,15 +290,11 @@ exports[`Panel examples Modal expandable panel with skrim should render correctl
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-            fill-rule="evenodd"
+            d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-            fill-rule="evenodd"
+            d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
           />
         </svg>
       </button>
@@ -352,7 +328,7 @@ exports[`Panel examples Modal expandable panel with skrim should render correctl
 </div>
 `;
 
-exports[`Panel examples Modal panel should render correctly 1`] = `
+exports[`Panel examples > Modal panel should render correctly 1`] = `
 <div>
   <button
     class="v-button"
@@ -393,7 +369,7 @@ exports[`Panel examples Modal panel should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+              d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
             />
             <defs>
               <clippath>
@@ -425,7 +401,7 @@ exports[`Panel examples Modal panel should render correctly 1`] = `
 </div>
 `;
 
-exports[`Panel examples Responsive expanded panel should render correctly 1`] = `
+exports[`Panel examples > Responsive expanded panel should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
@@ -447,15 +423,11 @@ exports[`Panel examples Responsive expanded panel should render correctly 1`] = 
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-          fill-rule="evenodd"
+          d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-          fill-rule="evenodd"
+          d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
         />
       </svg>
     </button>
@@ -493,7 +465,7 @@ exports[`Panel examples Responsive expanded panel should render correctly 1`] = 
 </div>
 `;
 
-exports[`Panel examples Tabbed modal expandable panel should render correctly 1`] = `
+exports[`Panel examples > Tabbed modal expandable panel should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
@@ -514,15 +486,11 @@ exports[`Panel examples Tabbed modal expandable panel should render correctly 1`
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
-          fill-rule="evenodd"
+          d="M7 8L13.6064 15L15 13.5244L9.78613 8L15 2.47559L13.6064 1L7 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
-          fill-rule="evenodd"
+          d="M1 8L7.60645 15L9 13.5244L3.78613 8L9 2.47559L7.60645 1L1 8Z"
         />
       </svg>
     </button>
@@ -546,15 +514,11 @@ exports[`Panel examples Tabbed modal expandable panel should render correctly 1`
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-            fill-rule="evenodd"
+            d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-            fill-rule="evenodd"
+            d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
           />
         </svg>
       </button>
@@ -636,7 +600,7 @@ exports[`Panel examples Tabbed modal expandable panel should render correctly 1`
 </div>
 `;
 
-exports[`Panel examples Tabbed responsive expanded panel should render correctly 1`] = `
+exports[`Panel examples > Tabbed responsive expanded panel should render correctly 1`] = `
 <div>
   <div
     class="v-flex"
@@ -658,15 +622,11 @@ exports[`Panel examples Tabbed responsive expanded panel should render correctly
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-          fill-rule="evenodd"
+          d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-          fill-rule="evenodd"
+          d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
         />
       </svg>
     </button>

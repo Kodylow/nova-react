@@ -2,7 +2,7 @@
   "description": "Represents an individual step within a multi-step wizard process.",
   "displayName": "wizardstep",
   "filePath": "/wizard-step/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/wizard-step/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//wizard-step/index.tsx",
   "props": [
     {
       "description": "Cloned Element (not compatible with tag property)",
@@ -18,8 +18,7 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/wizard See Docs}",
+  "docs": "{@link https://design.visa.com/patterns/wizard See Docs}",
   "vgar": "TODO",
-  "wcag": "TODO",
-  "testAvg": 100
+  "wcag": "TODO"
 }

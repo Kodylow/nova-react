@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Tabs should render defaults correctly 1`] = `
+exports[`Tabs > should render defaults correctly 1`] = `
 <div>
   <ul
     class="v-tabs v-tabs-horizontal"

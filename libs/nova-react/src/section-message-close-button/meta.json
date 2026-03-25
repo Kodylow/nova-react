@@ -2,7 +2,7 @@
   "description": "Close button for section message component.",
   "displayName": "SectionMessageCloseButton",
   "filePath": "/section-message-close-button/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/section-message-close-button/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//section-message-close-button/index.tsx",
   "props": [
     {
       "description": "Alternate color scheme",
@@ -14,7 +14,7 @@
       "description": "Size of Button",
       "name": "buttonSize",
       "required": false,
-      "type": "\"small\" | \"large\""
+      "type": "\"small\" | \"large\" | \"medium\""
     },
     {
       "description": "@required",
@@ -26,7 +26,7 @@
       "description": "Color Scheme of Button",
       "name": "colorScheme",
       "required": false,
-      "type": "\"secondary\" | \"tertiary\""
+      "type": "\"primary\" | \"secondary\" | \"tertiary\""
     },
     {
       "description": "Destructive Button",
@@ -71,6 +71,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/section-message See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/section-message/?code_library=react See Docs}"
 }

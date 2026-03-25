@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`VisaLogo should render defaults correctly 1`] = `
+exports[`VisaLogo > should render defaults correctly 1`] = `
 <div>
   <svg
     aria-hidden="true"
@@ -19,7 +19,7 @@ exports[`VisaLogo should render defaults correctly 1`] = `
 </div>
 `;
 
-exports[`VisaLogo should render with label correctly 1`] = `
+exports[`VisaLogo > should render with label correctly 1`] = `
 <div>
   <svg
     aria-label="Visa Logo"

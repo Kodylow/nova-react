@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,8 +30,8 @@ import {
   Utility,
   UtilityFragment,
 } from '@visa/nova-react';
-import { UseComboboxState, UseComboboxStateChangeOptions, useCombobox } from 'downshift';
-import { useState } from 'react';
+import { useCombobox, type UseComboboxState, type UseComboboxStateChangeOptions } from 'downshift';
+import { useId, useState } from 'react';
 
 type Item = { value: string };
 
@@ -57,7 +57,20 @@ export const stateReducer = <ItemType,>(
       }
     : changes;
 
+/**
+ * NOTE: Error styling relies on the Label and InputContainer being direct siblings within the
+ * DropdownContainer. Wrapping either element in an extra container (e.g., a <div>) will
+ * break the sibling CSS selector and prevent error styles from being applied.
+ *
+ * Forcing error styles with utility classes like `v-input-error` on a
+ * parent will cause non-listbox text content (e.g., a <span>subtitle</span> inside a
+ * ListboxItem) to also turn red, which may not be the desired behavior.
+ *
+ * Keep the Label and InputContainer as direct children of DropdownContainer to ensure
+ * error states render correctly.
+ */
 export const ErrorCombobox = () => {
+  const id = useId();
   const [errorState, setErrorState] = useState(false);
 
   const {
@@ -72,6 +85,7 @@ export const ErrorCombobox = () => {
     isOpen,
     selectedItem,
   } = useCombobox({
+    id,
     items,
     itemToString,
     stateReducer,

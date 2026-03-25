@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Typography examples Body 1 should render correctly 1`] = `
+exports[`Typography examples > Body 1 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-body-1"
@@ -10,7 +10,7 @@ exports[`Typography examples Body 1 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Body 2 bold should render correctly 1`] = `
+exports[`Typography examples > Body 2 bold should render correctly 1`] = `
 <div>
   <p
     class="v-typography-body-2-bold"
@@ -20,7 +20,7 @@ exports[`Typography examples Body 2 bold should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Body 2 medium should render correctly 1`] = `
+exports[`Typography examples > Body 2 medium should render correctly 1`] = `
 <div>
   <p
     class="v-typography-body-2-medium"
@@ -30,7 +30,7 @@ exports[`Typography examples Body 2 medium should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Body 2 should render correctly 1`] = `
+exports[`Typography examples > Body 2 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-body-2"
@@ -40,7 +40,7 @@ exports[`Typography examples Body 2 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Body 3 should render correctly 1`] = `
+exports[`Typography examples > Body 3 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-body-3"
@@ -50,7 +50,7 @@ exports[`Typography examples Body 3 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Button large should render correctly 1`] = `
+exports[`Typography examples > Button large should render correctly 1`] = `
 <div>
   <p
     class="v-typography-button-large"
@@ -60,7 +60,7 @@ exports[`Typography examples Button large should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Button medium should render correctly 1`] = `
+exports[`Typography examples > Button medium should render correctly 1`] = `
 <div>
   <p
     class="v-typography-button-medium"
@@ -70,7 +70,7 @@ exports[`Typography examples Button medium should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Button small should render correctly 1`] = `
+exports[`Typography examples > Button small should render correctly 1`] = `
 <div>
   <p
     class="v-typography-button-small"
@@ -80,7 +80,7 @@ exports[`Typography examples Button small should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Display 1 should render correctly 1`] = `
+exports[`Typography examples > Display 1 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-display-1"
@@ -90,7 +90,7 @@ exports[`Typography examples Display 1 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Display 2 should render correctly 1`] = `
+exports[`Typography examples > Display 2 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-display-2"
@@ -100,7 +100,7 @@ exports[`Typography examples Display 2 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Headline 1 should render correctly 1`] = `
+exports[`Typography examples > Headline 1 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-headline-1"
@@ -110,7 +110,7 @@ exports[`Typography examples Headline 1 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Headline 2 should render correctly 1`] = `
+exports[`Typography examples > Headline 2 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-headline-2"
@@ -120,7 +120,7 @@ exports[`Typography examples Headline 2 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Headline 3 should render correctly 1`] = `
+exports[`Typography examples > Headline 3 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-headline-3"
@@ -130,7 +130,7 @@ exports[`Typography examples Headline 3 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Headline 4 should render correctly 1`] = `
+exports[`Typography examples > Headline 4 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-headline-4"
@@ -140,7 +140,7 @@ exports[`Typography examples Headline 4 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Label active should render correctly 1`] = `
+exports[`Typography examples > Label active should render correctly 1`] = `
 <div>
   <p
     class="v-typography-label-active"
@@ -150,7 +150,7 @@ exports[`Typography examples Label active should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Label large active should render correctly 1`] = `
+exports[`Typography examples > Label large active should render correctly 1`] = `
 <div>
   <p
     class="v-typography-label-large-active"
@@ -160,7 +160,7 @@ exports[`Typography examples Label large active should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Label large should render correctly 1`] = `
+exports[`Typography examples > Label large should render correctly 1`] = `
 <div>
   <p
     class="v-typography-label-large"
@@ -170,7 +170,7 @@ exports[`Typography examples Label large should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Label should render correctly 1`] = `
+exports[`Typography examples > Label should render correctly 1`] = `
 <div>
   <p
     class="v-typography-label"
@@ -180,7 +180,7 @@ exports[`Typography examples Label should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Label small should render correctly 1`] = `
+exports[`Typography examples > Label small should render correctly 1`] = `
 <div>
   <p
     class="v-typography-label-small"
@@ -190,7 +190,7 @@ exports[`Typography examples Label small should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Overline should render correctly 1`] = `
+exports[`Typography examples > Overline should render correctly 1`] = `
 <div>
   <p
     class="v-typography-overline"
@@ -200,7 +200,7 @@ exports[`Typography examples Overline should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Subtitle 1 should render correctly 1`] = `
+exports[`Typography examples > Subtitle 1 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-subtitle-1"
@@ -210,7 +210,7 @@ exports[`Typography examples Subtitle 1 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Subtitle 2 should render correctly 1`] = `
+exports[`Typography examples > Subtitle 2 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-subtitle-2"
@@ -220,7 +220,7 @@ exports[`Typography examples Subtitle 2 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Subtitle 3 should render correctly 1`] = `
+exports[`Typography examples > Subtitle 3 should render correctly 1`] = `
 <div>
   <p
     class="v-typography-subtitle-3"
@@ -230,7 +230,7 @@ exports[`Typography examples Subtitle 3 should render correctly 1`] = `
 </div>
 `;
 
-exports[`Typography examples Typography color active should render correctly 1`] = `
+exports[`Typography examples > Typography color active should render correctly 1`] = `
 <div>
   <p
     class="v-typography-color-active"
@@ -240,7 +240,7 @@ exports[`Typography examples Typography color active should render correctly 1`]
 </div>
 `;
 
-exports[`Typography examples Typography color default should render correctly 1`] = `
+exports[`Typography examples > Typography color default should render correctly 1`] = `
 <div>
   <p
     class="v-typography-color-default"
@@ -250,7 +250,7 @@ exports[`Typography examples Typography color default should render correctly 1`
 </div>
 `;
 
-exports[`Typography examples Typography color on active should render correctly 1`] = `
+exports[`Typography examples > Typography color on active should render correctly 1`] = `
 <div>
   <p
     class="v-typography-color-on-active"
@@ -260,7 +260,7 @@ exports[`Typography examples Typography color on active should render correctly 
 </div>
 `;
 
-exports[`Typography examples Typography color subtle should render correctly 1`] = `
+exports[`Typography examples > Typography color subtle should render correctly 1`] = `
 <div>
   <p
     class="v-typography-color-subtle"

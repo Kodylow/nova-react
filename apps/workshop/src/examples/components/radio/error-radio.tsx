@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
-import { ChangeEvent, useRef, useState } from 'react';
+import { useRef, useState, type ChangeEvent } from 'react';
 import { VisaErrorTiny } from '@visa/nova-icons-react';
 import { Button, InputMessage, Label, Radio, Utility, UtilityFragment } from '@visa/nova-react';
 

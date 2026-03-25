@@ -2,7 +2,7 @@
   "description": "Visual element used to separate and group information on a page.",
   "displayName": "divider",
   "filePath": "/divider/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/divider/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//divider/index.tsx",
   "props": [
     {
       "description": "Divider Type",
@@ -13,6 +13,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/divider See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/divider/?code_library=react See Docs}"
 }

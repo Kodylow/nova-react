@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-table';
 
-export type TableProperties<ET extends ElementType = 'table',> = {
+export type TableProperties<ET extends ElementType = 'table'> = {
   /** Alt */
   alternate?: boolean;
   /** Borders all around the table and cells */
@@ -31,20 +31,27 @@ export type TableProperties<ET extends ElementType = 'table',> = {
   keyValue?: boolean;
   /** Subtle header */
   subtle?: boolean;
-} &
-  //We omit the border prop so it doesn't clash with our custom prop
-  Omit<ComponentPropsWithRef<ET>, 'border'>;
+  /** Padding size for the table */
+  tableSize?: 'large' | 'medium' | 'small';
+} & Omit<ComponentPropsWithRef<ET>, 'border'>; //We omit the border prop so it doesn't clash with our custom prop
 
 /**
  * Grid that organizes information, enabling data interaction, manipulation, and criteria-based analysis using columns and rows.
- * @docs {@link https://design.visa.com/react/components/table | See Docs}
+ * @docs {@link https://design.visa.com/components/table/?code_library=react | See Docs}
  * @related table-wrapper, tbody, td, th, thead, tr
  * @vgar TODO
  * @wcag TODO
  */
-const Table = <ET extends ElementType = 'table',>(
-  { alternate, border, borderBlock, className, keyValue, subtle, ...remainingProps }: TableProperties<ET>,
-) => (
+const Table = <ET extends ElementType = 'table'>({
+  alternate,
+  border,
+  borderBlock,
+  className,
+  keyValue,
+  subtle,
+  tableSize,
+  ...remainingProps
+}: TableProperties<ET>) => (
   <table
     {...remainingProps}
     className={cn(
@@ -54,6 +61,7 @@ const Table = <ET extends ElementType = 'table',>(
       borderBlock && `${CSS_PREFIX}-border-block`,
       keyValue && `${CSS_PREFIX}-key-value`,
       subtle && `${CSS_PREFIX}-subtle`,
+      tableSize && tableSize !== 'medium' && `${CSS_PREFIX}-${tableSize}`,
       className
     )}
   />

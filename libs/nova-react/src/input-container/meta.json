@@ -2,7 +2,7 @@
   "description": "Container for styling input elements.",
   "displayName": "inputcontainer",
   "filePath": "/input-container/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/input-container/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//input-container/index.tsx",
   "props": [
     {
       "description": "Type of Surface",
@@ -17,8 +17,7 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/input See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/input/?code_library=react See Docs}",
   "related": [
     "combobox",
     "input",

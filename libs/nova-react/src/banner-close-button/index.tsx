@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,18 +15,18 @@
  *
  **/
 import cn from 'clsx';
-import MessageCloseButton, { MessageCloseButtonProperties } from '../message-close-button';
+import MessageCloseButton, { type MessageCloseButtonProperties } from '../message-close-button';
 
 export type BannerCloseButtonProperties = MessageCloseButtonProperties;
 
 /**
  * Close button used in upper corner of banner.
- * @docs {@link https://design.visa.com/react/components/banner | See Docs}
+ * @docs {@link https://design.visa.com/components/banner/?code_library=react | See Docs}
  */
-const BannerCloseButton = (
-  { children, className, ...remainingProps }: BannerCloseButtonProperties,
-) => (
-  <MessageCloseButton className={cn('-v-mt-8 -v-mr-16', className)} {...remainingProps}>{children}</MessageCloseButton>
+const BannerCloseButton = ({ children, className, ...remainingProps }: BannerCloseButtonProperties) => (
+  <MessageCloseButton className={cn('-v-mt-8 -v-mr-16', className)} {...remainingProps}>
+    {children}
+  </MessageCloseButton>
 );
 
 export default BannerCloseButton;

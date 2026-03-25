@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ import {
 import { Link } from 'react-router-dom';
 import Code from '../../../components/code';
 import { Paths } from '../../../routes';
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 const OnKeyNavigationTable = () => (
   <Utility vPaddingVertical={12}>
@@ -47,51 +47,51 @@ const OnKeyNavigationTable = () => (
         </Thead>
         <Tbody>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>Arrow Down</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Focus the next element, looping to the top of the list</Td>
           </Tr>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>Arrow Up</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Focus the previous element, looping to the bottom of the list</Td>
           </Tr>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>End</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Focus the last element</Td>
           </Tr>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>Home</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Focus the first element</Td>
           </Tr>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>Shift + Tab</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Jumps out of the listbox, focus the previous focusable element</Td>
           </Tr>
           <Tr>
-            <Td>
+            <Th scope="row">
               <code>
                 <kbd>Tab</kbd>
               </code>
-            </Td>
+            </Th>
             <Td>Jumps out of the listbox, focus the next focusable element</Td>
           </Tr>
         </Tbody>

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
-import React, { CSSProperties, useEffect } from 'react';
+import React, { type CSSProperties, useEffect } from 'react';
 import {
   Button,
   Dialog,
@@ -30,9 +30,13 @@ import {
 
 import { VisaCloseTiny, VisaDeleteTiny } from '@visa/nova-icons-react';
 
-import { UploadDialogProps } from './types';
+import type { UploadDialogProps } from './types';
 import { UploadCard } from './upload-card';
 
+/**
+ * Dialog component for reviewing and managing queued files before manual upload.
+ * Displays file queue with add/remove capabilities and focus trap for keyboard accessibility.
+ */
 export const UploadDialog: React.FC<UploadDialogProps> = ({
   isOpen,
   title = 'Upload files',
@@ -44,8 +48,10 @@ export const UploadDialog: React.FC<UploadDialogProps> = ({
   onDeleteQueuedFile,
   dialogId = 'upload-dialog',
 }) => {
+  // Focus trap ensures keyboard navigation stays within dialog when open
   const { onKeyNavigation, ref: dialogRef } = useFocusTrap();
 
+  // Sync dialog native open/close state with isOpen prop
   useEffect(() => {
     if (isOpen) {
       dialogRef.current?.showModal?.();
@@ -65,12 +71,14 @@ export const UploadDialog: React.FC<UploadDialogProps> = ({
         ref={dialogRef}
         onKeyDown={e => onKeyNavigation(e, dialogRef.current?.open)}
       >
+        {/* Close button positioned top-right */}
         <UtilityFragment style={{ marginInlineEnd: 4, float: 'inline-end' }}>
           <DialogCloseButton onClick={onClose}>
             <VisaCloseTiny />
           </DialogCloseButton>
         </UtilityFragment>
         <DialogContent style={{ overflowY: 'visible' }}>
+          {/* Header section with title and description */}
           <Utility vPaddingHorizontal={24}>
             <DialogHeader id={`${dialogId}-title`} variant="headline-4">
               {title}
@@ -79,6 +87,7 @@ export const UploadDialog: React.FC<UploadDialogProps> = ({
               {description}
             </Typography>
           </Utility>
+          {/* Button to add more files */}
           <Utility vAlignItems="center" vFlex vFlexWrap vGap={8} vPaddingTop={16} vPaddingHorizontal={24}>
             <Button colorScheme="secondary" onClick={onSelectFiles}>
               Select file(s)
@@ -88,13 +97,14 @@ export const UploadDialog: React.FC<UploadDialogProps> = ({
             <Divider dividerType="decorative" />
           </UtilityFragment>
 
+          {/* File queue list area with minimum height */}
           <UtilityFragment
             vPaddingVertical={12}
             vFlex
             vFlexCol
             vGap={8}
             vPaddingHorizontal={24}
-            style={{ minHeight: 266 }}
+            style={{ minHeight: 'min(25vh, 266px)' }}
           >
             <Utility tag="ul" vFlex vFlexCol vGap={8}>
               {queuedFiles.map(queuedFile => (
@@ -118,6 +128,7 @@ export const UploadDialog: React.FC<UploadDialogProps> = ({
           <UtilityFragment>
             <Divider dividerType="decorative" />
           </UtilityFragment>
+          {/* Action buttons: Upload and Cancel */}
           <Utility vAlignItems="center" vFlex vFlexWrap vGap={8} vPaddingTop={16} vPaddingHorizontal={24}>
             <Button onClick={onUpload}>Upload</Button>
             <Button colorScheme="secondary" onClick={onClose}>

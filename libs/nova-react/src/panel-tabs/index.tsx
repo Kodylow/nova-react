@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import cn from 'clsx';
-import Tabs, { TabsProperties } from '../tabs';
+import Tabs, { type TabsProperties } from '../tabs';
 
 const CSS_PREFIX = 'v-panel-tabs';
 
@@ -23,11 +23,11 @@ export type PanelTabsProperties = TabsProperties;
 
 /**
  * Tabs to be used with panel component.
- * @docs {@link https://design.visa.com/react/components/panel | See Docs}
+ * @docs {@link https://design.visa.com/components/panel/?code_library=react | See Docs}
  */
-const PanelTabs = (
-  { className, ...remainingProps }: PanelTabsProperties,
-) => <Tabs className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const PanelTabs = ({ className, ...remainingProps }: PanelTabsProperties) => (
+  <Tabs className={cn(CSS_PREFIX, className)} {...remainingProps} />
+);
 
 export default PanelTabs;
 

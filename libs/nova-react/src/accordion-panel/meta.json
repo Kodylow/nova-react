@@ -2,7 +2,7 @@
   "description": "Component containing the content of the accordion.",
   "displayName": "accordionpanel",
   "filePath": "/accordion-panel/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/accordion-panel/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//accordion-panel/index.tsx",
   "props": [
     {
       "defaultValue": "div",
@@ -12,6 +12,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/accordion See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/accordion/?code_library=react See Docs}"
 }

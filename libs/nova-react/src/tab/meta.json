@@ -2,7 +2,7 @@
   "description": "Singular tab component to be used in a tab group.",
   "displayName": "tab",
   "filePath": "/tab/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/tab/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//tab/index.tsx",
   "props": [
     {
       "description": "section title",
@@ -18,6 +18,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/tabs See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/tabs/?code_library=react See Docs}"
 }

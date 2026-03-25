@@ -1,9 +1,23 @@
 {
-  "description": "This hook is used to manage pagination events, state, and visible page blocks.",
+  "description": "This hook is used to manage pagination events, state, and visible page blocks. Supports both controlled and uncontrolled usage.",
   "displayName": "usePagination",
   "filePath": "/use-pagination/index.ts",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/use-pagination/index.ts",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//use-pagination/index.ts",
   "props": [
+    {
+      "defaultValue": 3,
+      "description": "Max block length for all blocks, this gets overwritten by `startBlockMaxLength`, `middleBlockMaxLength`, `endBlockMaxLength`",
+      "name": "blockMaxLength",
+      "required": false,
+      "type": "number"
+    },
+    {
+      "defaultValue": false,
+      "description": "Doesn't chunk pages",
+      "name": "compact",
+      "required": false,
+      "type": "boolean"
+    },
     {
       "defaultValue": 1,
       "description": "Default selected page",
@@ -33,11 +47,23 @@
       "type": "number"
     },
     {
+      "description": "Currently selected page (controlled)",
+      "name": "selectedPage",
+      "required": false,
+      "type": "number"
+    },
+    {
       "defaultValue": -1,
       "description": "What to separate the pagination array up with, usually this separator will be replaced with icon or ellipses when shown in the UI",
       "name": "separator",
       "required": false,
       "type": "string | number"
+    },
+    {
+      "description": "Function to set the selected page (controlled)",
+      "name": "setSelectedPage",
+      "required": false,
+      "type": "(page: number) => void"
     },
     {
       "defaultValue": 3,
@@ -54,6 +80,7 @@
       "type": "number"
     },
     {
+      "defaultValue": 1,
       "description": "Length of total pages",
       "name": "totalPages",
       "required": true,
@@ -112,7 +139,6 @@
   "related": [
     "pagination"
   ],
-  "docs": "{@link https://design.visa.com/react/hooks/use-pagination See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/pagination/?code_library=react See Docs}",
   "clientSideOnly": true
 }

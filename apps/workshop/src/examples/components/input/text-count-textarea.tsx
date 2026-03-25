@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  **/
 import { VisaErrorTiny } from '@visa/nova-icons-react';
 import { Button, InputContainer, InputMessage, Label, Textarea, Utility, UtilityFragment } from '@visa/nova-react';
-import { ChangeEvent, useState } from 'react';
+import { useState, type ChangeEvent } from 'react';
 
 // TIP: Customize this ID, pass it as a prop, or auto-generate it with useId() from @react
 const id = 'text-count-textarea';

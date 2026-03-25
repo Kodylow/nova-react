@@ -2,8 +2,7 @@
   "description": "Table data cell component typically used for displaying data and content.",
   "displayName": "td",
   "filePath": "/td/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/td/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//td/index.tsx",
   "props": [],
-  "docs": "{@link https://design.visa.com/react/components/table See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/table/?code_library=react See Docs}"
 }

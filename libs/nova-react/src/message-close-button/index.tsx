@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,8 +15,8 @@
  *
  **/
 import { VisaCloseTiny } from '@visa/nova-icons-react';
-import { ReactNode } from 'react';
-import Button, { ButtonProperties } from '../button';
+import { type ReactNode } from 'react';
+import Button, { type ButtonProperties } from '../button';
 
 export type MessageCloseButtonProperties = {
   /** @required */
@@ -26,18 +26,12 @@ export type MessageCloseButtonProperties = {
 /**
  * Close button for message component.
  */
-const MessageCloseButton = (
-  { children = <VisaCloseTiny />, ...remainingProps }: MessageCloseButtonProperties,
-
-) => (
-  <Button
-    aria-label={'Close'}
-    buttonSize="small"
-    colorScheme="tertiary"
-    iconButton
-    subtle
-    {...remainingProps}
-  >
+const MessageCloseButton = ({
+  'aria-label': ariaLabel = 'Close',
+  children = <VisaCloseTiny />,
+  ...remainingProps
+}: MessageCloseButtonProperties) => (
+  <Button aria-label={ariaLabel} buttonSize="small" colorScheme="tertiary" iconButton subtle {...remainingProps}>
     {children}
   </Button>
 );
@@ -45,8 +39,3 @@ const MessageCloseButton = (
 export default MessageCloseButton;
 
 MessageCloseButton.displayName = 'MessageCloseButton';
-
-MessageCloseButton.defaultProps = {
-  ariaLabel: 'Close',
-  children: <VisaCloseTiny />,
-};

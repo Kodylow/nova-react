@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`usePagination example Behavior and usage should render correctly 1`] = `
+exports[`usePagination example > Behavior and usage should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-16"
@@ -127,9 +127,7 @@ exports[`usePagination example Behavior and usage should render correctly 1`] = 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>

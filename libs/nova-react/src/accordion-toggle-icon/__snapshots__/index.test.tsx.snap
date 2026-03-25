@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`AccordionToggleIcon should render defaults correctly 1`] = `
+exports[`AccordionToggleIcon > should render defaults correctly 1`] = `
 <div>
   <svg
     aria-hidden="true"
@@ -13,9 +13,7 @@ exports[`AccordionToggleIcon should render defaults correctly 1`] = `
   >
     <path
       class="v-icon-primary"
-      clip-rule="evenodd"
-      d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-      fill-rule="evenodd"
+      d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
     />
   </svg>
   <svg
@@ -29,9 +27,7 @@ exports[`AccordionToggleIcon should render defaults correctly 1`] = `
   >
     <path
       class="v-icon-primary"
-      clip-rule="evenodd"
-      d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-      fill-rule="evenodd"
+      d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
     />
   </svg>
 </div>

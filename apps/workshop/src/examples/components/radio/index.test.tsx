@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+import { describe, it, expect } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
@@ -34,6 +35,7 @@ import { WithDescriptionRadio } from './with-description-radio';
 import { DefaultRadio } from './with-label-radio';
 import { WithoutDescriptionPanelRadio } from './without-description-panel-radio';
 import { NoLabelRadio } from './without-visible-label-radio';
+import NovaRadioDemo from './reusable';
 
 const examples = [
   { Component: DisabledPanelRadio, title: metaData['disabled-panel-radio'].title },
@@ -51,6 +53,7 @@ const examples = [
   { Component: DefaultRadio, title: metaData['with-label-radio'].title },
   { Component: WithoutDescriptionPanelRadio, title: metaData['without-description-panel-radio'].title },
   { Component: NoLabelRadio, title: metaData['without-visible-label-radio'].title },
+  { Component: NovaRadioDemo, title: metaData['reusable'].title },
 ];
 
 describe('Radio examples', () => {

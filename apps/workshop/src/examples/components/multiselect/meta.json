@@ -5,8 +5,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default multiselect",
-    "testAvg": 99
+    "title": "Default multiselect"
   },
   "multiselect-with-inline-message": {
     "file": "multiselect-with-inline-message.tsx",
@@ -14,8 +13,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect with inline message",
-    "testAvg": 99
+    "title": "Multiselect with inline message"
   },
   "multiselect-with-error": {
     "file": "multiselect-with-error.tsx",
@@ -23,8 +21,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect with error",
-    "testAvg": 99
+    "title": "Multiselect with error"
   },
   "multiselect-with-disabled-option": {
     "file": "multiselect-with-disabled-option.tsx",
@@ -32,8 +29,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect with disabled option",
-    "testAvg": 99
+    "title": "Multiselect with disabled option"
   },
   "disabled-multiselect": {
     "file": "disabled-multiselect.tsx",
@@ -41,8 +37,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Disabled multiselect",
-    "testAvg": 99
+    "title": "Disabled multiselect"
   },
   "read-only-multiselect": {
     "file": "read-only-multiselect.tsx",
@@ -50,8 +45,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Read-only multiselect",
-    "testAvg": 94
+    "title": "Read-only multiselect"
   },
   "multiselect-without-dropdown-chevron": {
     "file": "multiselect-without-dropdown-chevron.tsx",
@@ -59,8 +53,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect without dropdown chevron",
-    "testAvg": 99
+    "title": "Multiselect without dropdown chevron"
   },
   "multiselect-with-multiple-selections": {
     "file": "multiselect-with-multiple-selections.tsx",
@@ -68,8 +61,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect with multiple selections",
-    "testAvg": 31
+    "title": "Multiselect with multiple selections"
   },
   "multiselect-with-multiple-selections-and-vertical-scroll": {
     "file": "multiselect-with-multiple-selections-and-vertical-scroll.tsx",
@@ -77,8 +69,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect with multiple selections and vertical scroll",
-    "testAvg": 99
+    "title": "Multiselect with multiple selections and vertical scroll"
   },
   "multiselect-with-select-and-unselect-all-buttons": {
     "file": "multiselect-with-select-and-unselect-all-buttons.tsx",
@@ -86,8 +77,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect with select and unselect all buttons",
-    "testAvg": 96
+    "title": "Multiselect with select and unselect all buttons"
   },
   "multiselect-with-scrollbar": {
     "file": "multiselect-with-scrollbar.tsx",
@@ -95,8 +85,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect with scrollbar",
-    "testAvg": 99
+    "title": "Multiselect with scrollbar"
   },
   "multiselect-with-filterable-menu-and-manual-selection": {
     "file": "multiselect-with-filterable-menu-and-manual-selection.tsx",
@@ -104,8 +93,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect with filterable menu and manual selection",
-    "testAvg": 99
+    "title": "Multiselect with filterable menu and manual selection"
   },
   "multiselect-with-filterable-menu-and-automatic-selection": {
     "file": "multiselect-with-filterable-menu-and-automatic-selection.tsx",
@@ -113,8 +101,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect with filterable menu and automatic selection",
-    "testAvg": 99
+    "title": "Multiselect with filterable menu and automatic selection"
   },
   "select-only-multiselect": {
     "file": "select-only-multiselect.tsx",
@@ -122,8 +109,7 @@
     "tags": {
       "custom": true
     },
-    "title": "Select-only multiselect",
-    "testAvg": 100
+    "title": "Select-only multiselect"
   },
   "select-clear-all-multiselect": {
     "file": "select-clear-all-multiselect.tsx",
@@ -131,11 +117,19 @@
     "tags": {
       "docs": true
     },
-    "title": "Multiselect with select/clear all menu",
-    "testAvg": 100
+    "title": "Multiselect with select/clear all menu"
   },
   "filterable": {
     "file": "filterable.tsx",
     "id": "filterable"
+  },
+  "reusable": {
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable multiselect"
   }
 }

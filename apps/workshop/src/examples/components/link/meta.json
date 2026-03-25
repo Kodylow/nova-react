@@ -6,8 +6,7 @@
       "alternate": true,
       "docs": true
     },
-    "title": "Alternate link with trailing icon",
-    "testAvg": 100
+    "title": "Alternate link with trailing icon"
   },
   "custom-tag-link": {
     "file": "custom-tag-link.tsx",
@@ -15,8 +14,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Link coded as a button",
-    "testAvg": 100
+    "title": "Link coded as a button"
   },
   "default-link": {
     "file": "default-link.tsx",
@@ -24,8 +22,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default link",
-    "testAvg": 100
+    "title": "Default link"
   },
   "disabled-link": {
     "file": "disabled-link.tsx",
@@ -33,8 +30,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Disabled link",
-    "testAvg": 100
+    "title": "Disabled link"
   },
   "inline-link": {
     "file": "inline-link.tsx",
@@ -42,8 +38,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Inline link",
-    "testAvg": 100
+    "title": "Inline link"
   },
   "react-router-link": {
     "file": "react-router-link.tsx",
@@ -51,14 +46,12 @@
     "tags": {
       "custom": true
     },
-    "title": "Link uses React Router DOM",
-    "testAvg": 100
+    "title": "Link uses React Router DOM"
   },
   "without-underline-link": {
     "file": "without-underline-link.tsx",
     "id": "without-underline-link",
-    "title": "Inline link with trailing icon",
-    "testAvg": 100
+    "title": "Inline link with trailing icon"
   },
   "custom-typography-link": {
     "file": "custom-typography-link.tsx",
@@ -66,14 +59,12 @@
     "tags": {
       "custom": true
     },
-    "title": "Link with custom typography",
-    "testAvg": 100
+    "title": "Link with custom typography"
   },
   "disabled-custom-tag-link": {
     "file": "disabled-custom-tag-link.tsx",
     "id": "disabled-custom-tag-link",
-    "title": "Disabled link coded as a button",
-    "testAvg": 100
+    "title": "Disabled link coded as a button"
   },
   "leading-icon-link": {
     "file": "leading-icon-link.tsx",
@@ -81,14 +72,12 @@
     "tags": {
       "docs": true
     },
-    "title": "Link with leading icon",
-    "testAvg": 100
+    "title": "Link with leading icon"
   },
   "new-tab-link": {
     "file": "new-tab-link.tsx",
     "id": "new-tab-link",
-    "title": "Link that opens in a new tab",
-    "testAvg": 100
+    "title": "Link that opens in a new tab"
   },
   "trailing-icon-link": {
     "file": "trailing-icon-link.tsx",
@@ -96,7 +85,6 @@
     "tags": {
       "docs": true
     },
-    "title": "Link with trailing icon",
-    "testAvg": 100
+    "title": "Link with trailing icon"
   }
 }

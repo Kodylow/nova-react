@@ -2,7 +2,7 @@
   "description": "This hook is used to control the state of a wizard component.",
   "displayName": "useWizard",
   "filePath": "/use-wizard/index.ts",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/use-wizard/index.ts",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//use-wizard/index.ts",
   "props": [
     {
       "defaultValue": true,
@@ -33,13 +33,14 @@
       "type": "boolean"
     },
     {
+      "defaultValue": 1,
       "description": "Length of steps",
       "name": "length",
       "required": true,
       "type": "number"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/hooks/use-wizard See Docs}",
+  "docs": "{@link https://design.visa.com/patterns/wizard See Docs}",
   "returnType": [
     {
       "description": "Return the current step of the wizard",
@@ -127,6 +128,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "testAvg": 100,
   "clientSideOnly": true
 }

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,27 +15,25 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-content-card-image';
 
-export type ContentCardImageProperties<ET extends ElementType = 'div',> = {
+export type ContentCardImageProperties<ET extends ElementType = 'div'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Hero image for content card.
- * @docs {@link https://design.visa.com/react/components/content-card | See Docs}
+ * @docs {@link https://design.visa.com/components/content-card/?code_library=react | See Docs}
  */
-const ContentCardImage = <ET extends ElementType = 'div',>(
-  { className, tag: Tag = 'div', ...remainingProps }: ContentCardImageProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const ContentCardImage = <ET extends ElementType = 'div'>({
+  className,
+  tag: Tag = 'div',
+  ...remainingProps
+}: ContentCardImageProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default ContentCardImage;
-
-ContentCardImage.defaultProps = {
-  tag: 'div',
-};
 
 ContentCardImage.displayName = 'ContentCardImage';

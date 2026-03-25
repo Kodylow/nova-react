@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+import { describe, it, expect } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
@@ -36,6 +37,7 @@ import { StandaloneCheckbox } from './standalone-checkbox';
 import { ValidationCheckbox } from './validation-checkbox';
 import { WithDescriptionPanelCheckbox } from './with-description-panel-checkbox';
 import { WithoutDescriptionPanelCheckbox } from './without-description-panel-checkbox';
+import ReusableCheckboxDemo from './reusable';
 
 const examples = [
   { Component: CheckedCheckbox, title: metaData['checked-checkbox'].title },
@@ -55,6 +57,7 @@ const examples = [
   { Component: ValidationCheckbox, title: metaData['validation-checkbox'].title },
   { Component: WithDescriptionPanelCheckbox, title: metaData['with-description-panel-checkbox'].title },
   { Component: WithoutDescriptionPanelCheckbox, title: metaData['without-description-panel-checkbox'].title },
+  { Component: ReusableCheckboxDemo, title: metaData['reusable'].title },
 ];
 
 describe('Checkbox examples', () => {

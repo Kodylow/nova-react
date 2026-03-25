@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,14 @@
  * limitations under the License.
  *
  **/
-import { VisaAddAltTiny, VisaMediaFastForwardTiny, VisaMediaRewindTiny, VisaPinFillTiny, VisaSearchLow } from "@visa/nova-icons-react";
+
+import {
+  VisaAddAltTiny,
+  VisaMediaFastForwardTiny,
+  VisaMediaRewindTiny,
+  VisaPinFillTiny,
+  VisaSearchLow,
+} from '@visa/nova-icons-react';
 import {
   Button,
   Divider,
@@ -29,26 +36,50 @@ import {
   Utility,
   UtilityFragment,
 } from "@visa/nova-react";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ChatContext from "./shared/chat-context";
+import "./full-page-navigation-css.scss";
 
-const id = "full-page-vertical-navigation";
+// Base ID for aria attributes and element IDs
+const id = 'full-page-vertical-navigation';
 
-const FullPageNavigation = () => {
+/**
+ * Props for the FullPageNavigation component
+ *
+ * @property isSmallScreen - (optional) Collapses navigation to icon-only mode for smaller viewports
+ */
+type FullPageNavigationProps = {
+  isSmallScreen?: boolean;
+};
+
+/**
+ * Collapsible sidebar navigation for full-page chat with search input, organized chat history, and new chat action.
+ * Uses ChatContext to manage conversation state and organizes chat history by time periods (pinned, recent, older).
+*/
+const FullPageNavigation = ({ isSmallScreen }: FullPageNavigationProps) => {
   const { setResponses } = useContext(ChatContext);
+
+  // Controls whether sidebar shows labels or icons only
   const [navExpanded, setNavExpanded] = useState(true);
 
+  useEffect(() => {
+    setNavExpanded(!isSmallScreen);
+  }, [isSmallScreen]);
+
+  // Clears current conversation and starts fresh
   const startNewChat = () => {
     setResponses([]);
   };
 
   return (
-    <Nav id={id} orientation="vertical" tag="header" style={{ blockSize: 'auto' }}>
+    <Nav id={id} orientation="vertical" tag="header" className="full-page-nav" style={{ blockSize: 'auto' }}>
+      {/* Skip link only shown when expanded */}
       {navExpanded && (
         <Link skipLink href="#full-page-content">
           Skip to content
         </Link>
       )}
+      {/* Logo, search, and chat history - hidden when collapsed */}
       {navExpanded ? (
         <>
           <UtilityFragment
@@ -65,7 +96,7 @@ const FullPageNavigation = () => {
               href="https://www.visa.com"
               id={`${id}-home-link`}
               noUnderline
-              style={{ backgroundColor: "transparent" }}
+              style={{ backgroundColor: 'transparent' }}
             >
               <NavAppName>
                 <Typography variant="subtitle-1">Application name</Typography>
@@ -73,7 +104,7 @@ const FullPageNavigation = () => {
             </Link>
           </UtilityFragment>
 
-          {/* Search Component */}
+          {/* Search input - implement search logic as needed */}
           <Utility vMarginHorizontal={24} vMarginBottom={24}>
             <Utility vFlex vFlexCol vGap={4}>
               <InputContainer>
@@ -85,6 +116,7 @@ const FullPageNavigation = () => {
             </Utility>
           </Utility>
 
+          {/* Chat history organized by time sections */}
           <nav aria-label="default vertical navigation">
             <Utility vGap={8}>
               <Tabs orientation="vertical">
@@ -103,25 +135,20 @@ const FullPageNavigation = () => {
                 <Tab sectionTitle>2 days ago</Tab>
                 {['Chat name 1', 'Chat name 2', 'Chat name 3'].map((chatName, index) => (
                   <Tab key={`2-days-history-${index}`}>
-                    <Button
-                      colorScheme="tertiary"
-                      element={<a href="./chat">{chatName}</a>}
-                    />
+                    <Button colorScheme="tertiary" element={<a href="./chat">{chatName}</a>} />
                   </Tab>
                 ))}
 
                 <Tab sectionTitle>1 week ago</Tab>
                 {['Chat name 4', 'Chat name 5', 'Chat name 6'].map((chatName, index) => (
                   <Tab key={`1-week-history-${index}`}>
-                    <Button
-                      colorScheme="tertiary"
-                      element={<a href="./chat">{chatName}</a>}
-                    />
+                    <Button colorScheme="tertiary" element={<a href="./chat">{chatName}</a>} />
                   </Tab>
                 ))}
               </Tabs>
             </Utility>
           </nav>
+          {/* Footer section with new chat button */}
           <Utility vFlex vFlexCol vAlignSelf="stretch" vGap={30} vMarginTop="auto">
             <Divider dividerType="decorative" />
             <Utility vAlignSelf="center" vGap={16} vMarginBottom={4}>
@@ -138,7 +165,10 @@ const FullPageNavigation = () => {
             </Utility>
           </Utility>
         </>
-      ) : (<div style={{ flex: 1 }} />)}
+      ) : (
+        <div style={{ flex: 1 }} />
+      )}
+      {/* Collapse/expand toggle button */}
       <UtilityFragment vMarginLeft={navExpanded ? 'auto' : 5} vMarginRight={navExpanded ? 8 : 5}>
         <Button
           aria-label="Side bar"

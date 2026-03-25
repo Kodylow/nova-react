@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -128,6 +128,13 @@ code {
   min-width: 350px;
   border-radius: 0;
 }
+.checkered-background:has(.chat-example),
+.patterns-background:has(.chat-example) {
+  padding: 0 !important;
+  background: none !important;
+  border-radius: 0;
+}
+
 
 .patterns-background {
   background-color: var(--palette-default-surface-3);

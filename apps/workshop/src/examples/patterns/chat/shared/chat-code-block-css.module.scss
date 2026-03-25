@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@
 .overflowContainer {
   border-radius: var(--size-rounded-large);
   border: 1px solid var(--palette-default-border);
-  inline-size: 100%;
+  max-inline-size: calc(100cqi - 208px);
   overflow: auto;
   z-index: 0;
 }

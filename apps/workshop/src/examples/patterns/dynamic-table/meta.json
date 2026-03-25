@@ -1,0 +1,357 @@
+{
+  "default": {
+    "file": "default.tsx",
+    "id": "default",
+    "title": "Default table",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "multiple-action-buttons": {
+    "file": "multiple-action-buttons.tsx",
+    "id": "multiple-action-buttons",
+    "title": "Table with multiple action buttons",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "column-header-actions": {
+    "file": "column-header-actions.tsx",
+    "id": "column-header-actions",
+    "title": "Table with column header actions",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "vertical-scroll-and-sticky-row": {
+    "file": "vertical-scroll-and-sticky-row.tsx",
+    "id": "vertical-scroll-and-sticky-row",
+    "title": "Table with vertical scroll and sticky row",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "pinned-column-and-horizontal-scroll": {
+    "file": "pinned-column-and-horizontal-scroll.tsx",
+    "id": "pinned-column-and-horizontal-scroll",
+    "title": "Table with pinned column and horizontal scroll",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "vertical-and-horizontal-scroll": {
+    "file": "vertical-and-horizontal-scroll.tsx",
+    "id": "vertical-and-horizontal-scroll",
+    "title": "Table with vertical and horizontal scroll",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "notifications": {
+    "file": "notifications.tsx",
+    "id": "notifications",
+    "title": "Table with notifications",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "indeterminate-linear-progress": {
+    "file": "indeterminate-linear-progress.tsx",
+    "id": "indeterminate-linear-progress",
+    "title": "Table with indeterminate linear progress",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "indeterminate-circular-progress": {
+    "file": "indeterminate-circular-progress.tsx",
+    "id": "indeterminate-circular-progress",
+    "title": "Table with indeterminate circular progress",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "data-fetch-on-accordion-toggle": {
+    "file": "data-fetch-on-accordion-toggle.tsx",
+    "id": "data-fetch-on-accordion-toggle",
+    "title": "Table with data fetch on accordion toggle",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "data-fetch-on-pagination": {
+    "file": "data-fetch-on-pagination.tsx",
+    "id": "data-fetch-on-pagination",
+    "title": "Table with data fetch on pagination",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "multi-select": {
+    "file": "multi-select.tsx",
+    "id": "multi-select",
+    "title": "Multi-select table",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "single-row-expandable": {
+    "file": "single-row-expandable.tsx",
+    "id": "single-row-expandable",
+    "title": "Single row expandable table",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "multi-row-expandable": {
+    "file": "multi-row-expandable.tsx",
+    "id": "multi-row-expandable",
+    "title": "Multi-row expandable table",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "selection-based-action-bar": {
+    "file": "selection-based-action-bar.tsx",
+    "id": "selection-based-action-bar",
+    "title": "Selection-based action bar",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "search-action-bar": {
+    "file": "search-action-bar.tsx",
+    "id": "search-action-bar",
+    "title": "Search action bar",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "subtle-action-bar": {
+    "file": "subtle-action-bar.tsx",
+    "id": "subtle-action-bar",
+    "title": "Subtle action bar",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "toggle-action-bar": {
+    "file": "toggle-action-bar.tsx",
+    "id": "toggle-action-bar",
+    "title": "Toggle action bar",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "pagination": {
+    "file": "pagination.tsx",
+    "id": "pagination",
+    "title": "Table with pagination",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "action-bar-and-pagination": {
+    "file": "action-bar-and-pagination.tsx",
+    "id": "action-bar-and-pagination",
+    "title": "Table with action bar and pagination",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "filter-dialog": {
+    "file": "filter-dialog.tsx",
+    "id": "filter-dialog",
+    "title": "Table with filter dialog",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "in-table-filters": {
+    "file": "in-table-filters.tsx",
+    "id": "in-table-filters",
+    "title": "Table with in-table filters",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "filters": {
+    "file": "filters.tsx",
+    "id": "filters",
+    "title": "Table with multiple filter layouts",
+    "tags": {
+      "patterns": true
+    }
+  },
+  "accordion-filter-items": {
+    "file": "accordion-filter-items.tsx",
+    "id": "accordion-filter-items",
+    "title": "Accordion filter items",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "action-bar": {
+    "file": "action-bar.tsx",
+    "id": "action-bar",
+    "title": "Action bar",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "actions-button": {
+    "file": "actions-button.tsx",
+    "id": "actions-button",
+    "title": "Actions button",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "badge": {
+    "file": "badge.tsx",
+    "id": "badge",
+    "title": "Badge",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "chip-filters": {
+    "file": "chip-filters.tsx",
+    "id": "chip-filters",
+    "title": "Chip filters",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "dropdown-menu-button": {
+    "file": "dropdown-menu-button.tsx",
+    "id": "dropdown-menu-button",
+    "title": "Dropdown menu button",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "dynamic-table-data": {
+    "file": "dynamic-table-data.json",
+    "id": "dynamic-table-data",
+    "title": "Dynamic table data",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "dynamic-table-constants": {
+    "file": "dynamic-table.constants.tsx",
+    "id": "dynamic-table-constants",
+    "title": "Dynamic table constants",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "dynamic-table-styles": {
+    "file": "dynamic-table.scss",
+    "id": "dynamic-table-styles",
+    "title": "Dynamic table styles",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "dynamic-table-utils": {
+    "file": "dynamic-table.utils.tsx",
+    "id": "dynamic-table-utils",
+    "title": "Dynamic table utils",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "filter-checkbox-groups": {
+    "file": "filter-checkbox-groups.tsx",
+    "id": "filter-checkbox-groups",
+    "title": "Filter checkbox groups",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "filter-utils": {
+    "file": "filters.utils.tsx",
+    "id": "filter-utils",
+    "title": "Filter utils",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "generate-demo-data": {
+    "file": "generate-demo-data.utils.tsx",
+    "id": "generate-demo-data",
+    "title": "Generate demo data",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "mock-table-api": {
+    "file": "mock-table-api.utils.tsx",
+    "id": "mock-table-api",
+    "title": "Mock table API",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "pagination-shared": {
+    "file": "pagination-shared.tsx",
+    "id": "pagination-shared",
+    "title": "Pagination",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "sort-icon": {
+    "file": "sort-icon.tsx",
+    "id": "sort-icon",
+    "title": "Sort icon",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "table-dropdown-button": {
+    "file": "table-dropdown-button.tsx",
+    "id": "table-dropdown-button",
+    "title": "Table dropdown button",
+    "tags": {
+      "patterns": true,
+      "isShared": true
+    }
+  },
+  "reusable": {
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "title": "Reusable dynamic table"
+  },
+  "reusable-async": {
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "file": "reusable-async.tsx",
+    "id": "reusable-async",
+    "title": "Reusable dynamic table with async data"
+  }
+}

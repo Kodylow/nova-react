@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,14 +16,10 @@
  **/
 import { Button, Tab, Tabs, useTabs } from '@visa/nova-react';
 import { sentenceCase } from 'change-case';
-import ReactGA from 'react-ga4';
 import { useParams } from 'react-router-dom';
 import ApiPage from '../../pages/api';
 import DocsTemplate from '../../pages/docs-template';
 import { PageContent, PageHeader, PageTitle } from '../page';
-import { GA_TRACKING_ID } from '../../constants';
-
-ReactGA.initialize(GA_TRACKING_ID);
 
 const ComponentLayout = () => {
   const { docName = '' } = useParams();

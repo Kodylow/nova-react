@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Badge examples Default negative badge should render correctly 1`] = `
+exports[`Badge examples > Default negative badge should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-critical"
@@ -17,15 +17,11 @@ exports[`Badge examples Default negative badge should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9 4H7V8H9V4ZM8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11C9 10.4477 8.55228 10 8 10Z"
-        fill-rule="evenodd"
+        d="M8 10C8.55228 10 9 10.4477 9 11C9 11.5523 8.55228 12 8 12C7.44772 12 7 11.5523 7 11C7 10.4477 7.44772 10 8 10ZM9 8H7V4H9V8Z"
       />
       <defs>
         <clippath>
@@ -41,7 +37,7 @@ exports[`Badge examples Default negative badge should render correctly 1`] = `
 </div>
 `;
 
-exports[`Badge examples Default neutral badge should render correctly 1`] = `
+exports[`Badge examples > Default neutral badge should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-neutral"
@@ -58,9 +54,7 @@ exports[`Badge examples Default neutral badge should render correctly 1`] = `
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7 5V3H9V5H7ZM6 9H7V10V11H6V13H7H9H10V11H9V10V8V7H6V9Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM6 7V9H7V11H6V13H10V11H9V7H6ZM7 3V5H9V3H7Z"
       />
       <defs>
         <clippath>
@@ -76,7 +70,7 @@ exports[`Badge examples Default neutral badge should render correctly 1`] = `
 </div>
 `;
 
-exports[`Badge examples Default positive badge should render correctly 1`] = `
+exports[`Badge examples > Default positive badge should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-stable"
@@ -93,15 +87,11 @@ exports[`Badge examples Default positive badge should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C8.74542 2 9.4591 2.13593 10.1176 2.38437L11.6319 0.870034C10.542 0.313733 9.30764 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 7.21837 15.8879 6.46293 15.6789 5.74886L13.9678 7.37472C13.9891 7.58024 14 7.78885 14 8Z"
-        fill-rule="evenodd"
+        d="M8 0C9.30716 0 10.5403 0.315171 11.6299 0.871094L10.1162 2.38477C9.45802 2.13659 8.74502 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 7.78891 13.9881 7.58047 13.9668 7.375L15.6768 5.75C15.8857 6.46393 16 7.21854 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M15 3.46597L7.72838 10.9961L5 8.18244L6.42533 6.71257L7.72838 8.05635L13.5747 1.99609L15 3.46597Z"
-        fill-rule="evenodd"
+        d="M15 3.46582L7.72852 10.9961L5 8.18262L6.42578 6.71289L7.72852 8.05664L13.5742 1.99609L15 3.46582Z"
       />
     </svg>
      Label
@@ -109,7 +99,7 @@ exports[`Badge examples Default positive badge should render correctly 1`] = `
 </div>
 `;
 
-exports[`Badge examples Default subtle badge should render correctly 1`] = `
+exports[`Badge examples > Default subtle badge should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-subtle"
@@ -126,15 +116,11 @@ exports[`Badge examples Default subtle badge should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M7 4H9V7.19575L10.47 6.277L11.53 7.973L7 10.8042V4Z"
-        fill-rule="evenodd"
+        d="M9 7.19531L10.4697 6.27734L11.5303 7.97266L7 10.8047V4H9V7.19531Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14V16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 10.3904 1.0484 12.5348 2.70861 14H1V16H6V11H4V12.4724C2.77174 11.3731 2 9.77615 2 8Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16V14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 9.77573 2.77224 11.3714 4 12.4707V11H6V16H1V14H2.70898C1.04865 12.5348 0 10.3905 0 8C0 3.58172 3.58172 0 8 0Z"
       />
       <defs>
         <clippath>
@@ -150,7 +136,7 @@ exports[`Badge examples Default subtle badge should render correctly 1`] = `
 </div>
 `;
 
-exports[`Badge examples Default warning badge should render correctly 1`] = `
+exports[`Badge examples > Default warning badge should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-warning"
@@ -167,13 +153,11 @@ exports[`Badge examples Default warning badge should render correctly 1`] = `
     >
       <path
         class="v-icon-secondary"
-        d="M7 8H9V10H7V8Z"
+        d="M9 10H7V8H9V10Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2.74153 12L8.0005 2.9846L13.2595 12H2.74153ZM15.8643 12.4961L8.86428 0.496094H7.13672L0.136719 12.4961L1.0005 14H15.0005L15.8643 12.4961Z"
-        fill-rule="evenodd"
+        d="M15.8643 12.4961L15.001 14H1.00098L0.136719 12.4961L7.13672 0.496094H8.86426L15.8643 12.4961ZM2.74121 12H13.2598L8.00098 2.98438L2.74121 12Z"
       />
     </svg>
      Label
@@ -181,7 +165,7 @@ exports[`Badge examples Default warning badge should render correctly 1`] = `
 </div>
 `;
 
-exports[`Badge examples Negative badge with indicator should render correctly 1`] = `
+exports[`Badge examples > Negative badge with indicator should render correctly 1`] = `
 <div>
   <div
     aria-label="error"
@@ -208,7 +192,7 @@ exports[`Badge examples Negative badge with indicator should render correctly 1`
 </div>
 `;
 
-exports[`Badge examples Negative badge without background should render correctly 1`] = `
+exports[`Badge examples > Negative badge without background should render correctly 1`] = `
 <div>
   <div
     aria-label="error"
@@ -235,7 +219,7 @@ exports[`Badge examples Negative badge without background should render correctl
 </div>
 `;
 
-exports[`Badge examples Negative badge without icon should render correctly 1`] = `
+exports[`Badge examples > Negative badge without icon should render correctly 1`] = `
 <div>
   <div
     aria-label="error"
@@ -246,7 +230,7 @@ exports[`Badge examples Negative badge without icon should render correctly 1`] 
 </div>
 `;
 
-exports[`Badge examples Negative icon badge with background should render correctly 1`] = `
+exports[`Badge examples > Negative icon badge with background should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-icon v-badge-critical"
@@ -263,16 +247,14 @@ exports[`Badge examples Negative icon badge with background should render correc
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9 1H7V11H9V1ZM8 15C8.55228 15 9 14.5523 9 14C9 13.4477 8.55228 13 8 13C7.44772 13 7 13.4477 7 14C7 14.5523 7.44772 15 8 15Z"
-        fill-rule="evenodd"
+        d="M8 13C8.55228 13 9 13.4477 9 14C9 14.5523 8.55228 15 8 15C7.44772 15 7 14.5523 7 14C7 13.4477 7.44772 13 8 13ZM9 11H7V1H9V11Z"
       />
     </svg>
   </div>
 </div>
 `;
 
-exports[`Badge examples Negative icon badge without background should render correctly 1`] = `
+exports[`Badge examples > Negative icon badge without background should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-icon v-badge-critical v-badge-clear"
@@ -289,16 +271,14 @@ exports[`Badge examples Negative icon badge without background should render cor
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9 1H7V11H9V1ZM8 15C8.55228 15 9 14.5523 9 14C9 13.4477 8.55228 13 8 13C7.44772 13 7 13.4477 7 14C7 14.5523 7.44772 15 8 15Z"
-        fill-rule="evenodd"
+        d="M8 13C8.55228 13 9 13.4477 9 14C9 14.5523 8.55228 15 8 15C7.44772 15 7 14.5523 7 14C7 13.4477 7.44772 13 8 13ZM9 11H7V1H9V11Z"
       />
     </svg>
   </div>
 </div>
 `;
 
-exports[`Badge examples Neutral badge icon without background should render correctly 1`] = `
+exports[`Badge examples > Neutral badge icon without background should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-icon v-badge-neutral v-badge-clear"
@@ -315,9 +295,7 @@ exports[`Badge examples Neutral badge icon without background should render corr
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7 5V3H9V5H7ZM6 9H7V10V11H6V13H7H9H10V11H9V10V8V7H6V9Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM6 7V9H7V11H6V13H10V11H9V7H6ZM7 3V5H9V3H7Z"
       />
       <defs>
         <clippath>
@@ -332,7 +310,7 @@ exports[`Badge examples Neutral badge icon without background should render corr
 </div>
 `;
 
-exports[`Badge examples Neutral badge with indicator should render correctly 1`] = `
+exports[`Badge examples > Neutral badge with indicator should render correctly 1`] = `
 <div>
   <div
     aria-label="information"
@@ -359,7 +337,7 @@ exports[`Badge examples Neutral badge with indicator should render correctly 1`]
 </div>
 `;
 
-exports[`Badge examples Neutral badge without background should render correctly 1`] = `
+exports[`Badge examples > Neutral badge without background should render correctly 1`] = `
 <div>
   <div
     aria-label="information"
@@ -386,7 +364,7 @@ exports[`Badge examples Neutral badge without background should render correctly
 </div>
 `;
 
-exports[`Badge examples Neutral badge without icon should render correctly 1`] = `
+exports[`Badge examples > Neutral badge without icon should render correctly 1`] = `
 <div>
   <div
     aria-label="information"
@@ -397,7 +375,7 @@ exports[`Badge examples Neutral badge without icon should render correctly 1`] =
 </div>
 `;
 
-exports[`Badge examples Neutral icon badge should render correctly 1`] = `
+exports[`Badge examples > Neutral icon badge should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-icon v-badge-neutral"
@@ -414,9 +392,7 @@ exports[`Badge examples Neutral icon badge should render correctly 1`] = `
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7 5V3H9V5H7ZM6 9H7V10V11H6V13H7H9H10V11H9V10V8V7H6V9Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM6 7V9H7V11H6V13H10V11H9V7H6ZM7 3V5H9V3H7Z"
       />
       <defs>
         <clippath>
@@ -431,7 +407,7 @@ exports[`Badge examples Neutral icon badge should render correctly 1`] = `
 </div>
 `;
 
-exports[`Badge examples Positive badge with indicator should render correctly 1`] = `
+exports[`Badge examples > Positive badge with indicator should render correctly 1`] = `
 <div>
   <div
     aria-label="success"
@@ -458,7 +434,7 @@ exports[`Badge examples Positive badge with indicator should render correctly 1`
 </div>
 `;
 
-exports[`Badge examples Positive badge without background should render correctly 1`] = `
+exports[`Badge examples > Positive badge without background should render correctly 1`] = `
 <div>
   <div
     aria-label="success"
@@ -485,7 +461,7 @@ exports[`Badge examples Positive badge without background should render correctl
 </div>
 `;
 
-exports[`Badge examples Positive badge without icon should render correctly 1`] = `
+exports[`Badge examples > Positive badge without icon should render correctly 1`] = `
 <div>
   <div
     aria-label="success"
@@ -496,7 +472,7 @@ exports[`Badge examples Positive badge without icon should render correctly 1`] 
 </div>
 `;
 
-exports[`Badge examples Positive icon badge with background should render correctly 1`] = `
+exports[`Badge examples > Positive icon badge with background should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-icon v-badge-stable"
@@ -513,14 +489,14 @@ exports[`Badge examples Positive icon badge with background should render correc
     >
       <path
         class="v-icon-primary"
-        d="M15.7443 3.43912L5.03718 14.1462L0.330078 9.43912L1.74429 8.0249L5.03718 11.3178L14.3301 2.0249L15.7443 3.43912Z"
+        d="M15.7441 3.43896L5.03711 14.146L0.330078 9.43896L1.74414 8.0249L5.03711 11.3179L14.3301 2.0249L15.7441 3.43896Z"
       />
     </svg>
   </div>
 </div>
 `;
 
-exports[`Badge examples Positive icon badge without background should render correctly 1`] = `
+exports[`Badge examples > Positive icon badge without background should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-icon v-badge-stable v-badge-clear"
@@ -537,14 +513,14 @@ exports[`Badge examples Positive icon badge without background should render cor
     >
       <path
         class="v-icon-primary"
-        d="M15.7443 3.43912L5.03718 14.1462L0.330078 9.43912L1.74429 8.0249L5.03718 11.3178L14.3301 2.0249L15.7443 3.43912Z"
+        d="M15.7441 3.43896L5.03711 14.146L0.330078 9.43896L1.74414 8.0249L5.03711 11.3179L14.3301 2.0249L15.7441 3.43896Z"
       />
     </svg>
   </div>
 </div>
 `;
 
-exports[`Badge examples Subtle badge with indicator should render correctly 1`] = `
+exports[`Badge examples > Subtle badge with indicator should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-subtle"
@@ -570,7 +546,7 @@ exports[`Badge examples Subtle badge with indicator should render correctly 1`] 
 </div>
 `;
 
-exports[`Badge examples Subtle badge without background should render correctly 1`] = `
+exports[`Badge examples > Subtle badge without background should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-subtle v-badge-clear"
@@ -596,7 +572,7 @@ exports[`Badge examples Subtle badge without background should render correctly 
 </div>
 `;
 
-exports[`Badge examples Subtle badge without icon should render correctly 1`] = `
+exports[`Badge examples > Subtle badge without icon should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-subtle"
@@ -606,7 +582,7 @@ exports[`Badge examples Subtle badge without icon should render correctly 1`] = 
 </div>
 `;
 
-exports[`Badge examples Warning badge with indicator should render correctly 1`] = `
+exports[`Badge examples > Warning badge with indicator should render correctly 1`] = `
 <div>
   <div
     aria-label="warning"
@@ -633,7 +609,7 @@ exports[`Badge examples Warning badge with indicator should render correctly 1`]
 </div>
 `;
 
-exports[`Badge examples Warning badge without background should render correctly 1`] = `
+exports[`Badge examples > Warning badge without background should render correctly 1`] = `
 <div>
   <div
     aria-label="warning"
@@ -660,7 +636,7 @@ exports[`Badge examples Warning badge without background should render correctly
 </div>
 `;
 
-exports[`Badge examples Warning badge without icon should render correctly 1`] = `
+exports[`Badge examples > Warning badge without icon should render correctly 1`] = `
 <div>
   <div
     aria-label="warning"
@@ -671,7 +647,7 @@ exports[`Badge examples Warning badge without icon should render correctly 1`] =
 </div>
 `;
 
-exports[`Badge examples Warning icon badge with background should render correctly 1`] = `
+exports[`Badge examples > Warning icon badge with background should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-icon v-badge-warning"
@@ -688,20 +664,18 @@ exports[`Badge examples Warning icon badge with background should render correct
     >
       <path
         class="v-icon-secondary"
-        d="M7 8H9V10H7V8Z"
+        d="M9 10H7V8H9V10Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2.74153 12L8.0005 2.9846L13.2595 12H2.74153ZM15.8643 12.4961L8.86428 0.496094H7.13672L0.136719 12.4961L1.0005 14H15.0005L15.8643 12.4961Z"
-        fill-rule="evenodd"
+        d="M15.8643 12.4961L15.001 14H1.00098L0.136719 12.4961L7.13672 0.496094H8.86426L15.8643 12.4961ZM2.74121 12H13.2598L8.00098 2.98438L2.74121 12Z"
       />
     </svg>
   </div>
 </div>
 `;
 
-exports[`Badge examples Warning icon badge without background should render correctly 1`] = `
+exports[`Badge examples > Warning icon badge without background should render correctly 1`] = `
 <div>
   <div
     class="v-badge v-badge-icon v-badge-warning v-badge-clear"
@@ -718,13 +692,11 @@ exports[`Badge examples Warning icon badge without background should render corr
     >
       <path
         class="v-icon-secondary"
-        d="M7 8H9V10H7V8Z"
+        d="M9 10H7V8H9V10Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2.74153 12L8.0005 2.9846L13.2595 12H2.74153ZM15.8643 12.4961L8.86428 0.496094H7.13672L0.136719 12.4961L1.0005 14H15.0005L15.8643 12.4961Z"
-        fill-rule="evenodd"
+        d="M15.8643 12.4961L15.001 14H1.00098L0.136719 12.4961L7.13672 0.496094H8.86426L15.8643 12.4961ZM2.74121 12H13.2598L8.00098 2.98438L2.74121 12Z"
       />
     </svg>
   </div>

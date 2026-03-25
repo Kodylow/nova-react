@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+
 import {
   autoUpdate,
   FloatingFocusManager,
@@ -56,11 +57,12 @@ import {
   UtilityFragment,
   VisaLogo,
 } from '@visa/nova-react';
-import { CSSProperties, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 
-// TIP: Customize this ID, pass it as a prop, or auto-generate it with useId() from @react
+// Base ID for aria attributes and element IDs - customize for unique identification
 const id = 'alternate-horizontal-nav';
 
+// Account dropdown menu items - replace with real user profile actions
 const accountSubItems = [
   {
     tabLabel: 'Account item 1',
@@ -74,6 +76,7 @@ const accountSubItems = [
   },
 ];
 
+// Submenu items for navigation tab with dropdown - replace with actual sub-navigation
 const label4SubItems = [
   {
     tabLabel: 'L1 label 4 item 1',
@@ -87,18 +90,29 @@ const label4SubItems = [
   },
 ];
 
+/**
+ * Top navigation bar with dark theme, used by MixedApplicationLayout.
+ * Similar to HorizontalNavLayout but with alternate styling.
+ */
 export const AlternateHorizontalNavLayout = () => {
+  // Refs for managing keyboard focus on search input and button
   const searchInputRef = useRef<HTMLInputElement>(null);
   const searchButtonRef = useRef<HTMLButtonElement>(null);
 
+  // State for desktop dropdown menus
   const [accountMenuOpen, setAccountMenuOpen] = useState(false);
+  const [label4Open, setLabel4Open] = useState(false);
+
+  // State for mobile menu and its nested dropdowns
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileAccountMenuOpen, setMobileAccountMenuOpen] = useState(false);
   const [mobileLabel4MenuOpen, setMobileLabel4MenuOpen] = useState(false);
+
+  // Search UI state
   const [expandSearch, setExpandSearch] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [label4Open, setLabel4Open] = useState(false);
   const searchInitiallyActivated = useRef(false);
 
+  // Moves focus to search input when expanded, back to button when collapsed
   useEffect(() => {
     if (expandSearch && searchInitiallyActivated.current) {
       searchInputRef.current?.focus();
@@ -108,12 +122,7 @@ export const AlternateHorizontalNavLayout = () => {
     }
   }, [expandSearch]);
 
-  // For dropdown menus in the horizontal nav, we use floating UI for
-  // -opening
-  // -positioning
-  // -dismissing
-
-  // floating-ui setup for the account dropdown
+  // Setup for account dropdown: handles positioning and interactions
   const {
     context: accountFloatingContext,
     floatingStyles: accountFloatingStyles,
@@ -132,7 +141,7 @@ export const AlternateHorizontalNavLayout = () => {
     dismissAccountMenu,
   ]);
 
-  // floating-ui setup for the label4 tab dropdown
+  // Setup for navigation dropdown (label4): handles positioning and interactions
   const {
     context: label4FloatingContext,
     floatingStyles: label4FloatingStyles,
@@ -151,6 +160,7 @@ export const AlternateHorizontalNavLayout = () => {
     dismissLabel4Menu,
   ]);
 
+  // Toggles mobile navigation drawer open and closed
   const onToggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -161,9 +171,12 @@ export const AlternateHorizontalNavLayout = () => {
         Skip to content
       </Link>
       <UtilityFragment vJustifyContent="between">
+        {/* Main navigation container with alternate styling */}
         <Nav id={id} orientation="horizontal" tag="header" alternate>
+          {/* Default nav: logo, tabs, actions */}
           {!expandSearch ? (
             <>
+              {/* Mobile menu toggle button */}
               <UtilityFragment vContainerHide="desktop">
                 <DropdownButton
                   aria-controls={`${id}-mobile-menu`}
@@ -184,6 +197,7 @@ export const AlternateHorizontalNavLayout = () => {
                   )}
                 </DropdownButton>
               </UtilityFragment>
+              {/* Logo and app name */}
               <UtilityFragment vFlex vGap={16}>
                 <Link
                   aria-label="Visa Application Name Home"
@@ -203,6 +217,7 @@ export const AlternateHorizontalNavLayout = () => {
                   </UtilityFragment>
                 </Link>
               </UtilityFragment>
+              {/* Desktop navigation tabs - hidden on mobile */}
               <UtilityFragment vFlex vJustifyContent="end" vFlexGrow vMarginLeft="auto" vContainerHide="mobile">
                 <nav aria-label="global">
                   <UtilityFragment vGap={4}>
@@ -228,6 +243,7 @@ export const AlternateHorizontalNavLayout = () => {
                           element={<a href="./application-layouts">L1 label 3</a>}
                         />
                       </Tab>
+                      {/* Tab with dropdown submenu */}
                       <Tab>
                         <DropdownButton
                           aria-expanded={label4Open}
@@ -265,11 +281,9 @@ export const AlternateHorizontalNavLayout = () => {
                               <Listbox>
                                 {label4SubItems.map(label4SubItem => (
                                   <li key={label4SubItem.id}>
-                                    <UtilityFragment vPaddingVertical={4} vPaddingHorizontal={8}>
-                                      <ListboxItem<'a'> href={label4SubItem.href} tag="a">
-                                        {label4SubItem.tabLabel}
-                                      </ListboxItem>
-                                    </UtilityFragment>
+                                    <ListboxItem<'a'> href={label4SubItem.href} tag="a">
+                                      {label4SubItem.tabLabel}
+                                    </ListboxItem>
                                   </li>
                                 ))}
                               </Listbox>
@@ -288,6 +302,7 @@ export const AlternateHorizontalNavLayout = () => {
                   </UtilityFragment>
                 </nav>
               </UtilityFragment>
+              {/* Action buttons: search, notifications, account */}
               <Utility vFlex vGap={8} vMarginLeft={8}>
                 <Button
                   aria-label="search site"
@@ -295,10 +310,14 @@ export const AlternateHorizontalNavLayout = () => {
                   buttonSize="large"
                   colorScheme="tertiary"
                   iconButton
-                  onClick={() => { setExpandSearch(true); searchInitiallyActivated.current = true; }}
+                  onClick={() => {
+                    setExpandSearch(true);
+                    searchInitiallyActivated.current = true;
+                  }}
                 >
                   <VisaSearchLow />
                 </Button>
+                {/* Notifications button with badge */}
                 <UtilityFragment vContainerHide="mobile">
                   <Button
                     aria-label="notifications"
@@ -313,6 +332,7 @@ export const AlternateHorizontalNavLayout = () => {
                     </Badge>
                   </Button>
                 </UtilityFragment>
+                {/* Account dropdown menu */}
                 <UtilityFragment vContainerHide="mobile">
                   <Tab tag="div">
                     <DropdownButton
@@ -353,11 +373,9 @@ export const AlternateHorizontalNavLayout = () => {
                             {accountSubItems.map(accountSubItem => (
                               <UtilityFragment key={accountSubItem.id}>
                                 <li>
-                                  <UtilityFragment vPaddingVertical={4} vPaddingHorizontal={8}>
-                                    <ListboxItem<'a'> href={accountSubItem.href} tag="a">
-                                      {accountSubItem.tabLabel}
-                                    </ListboxItem>
-                                  </UtilityFragment>
+                                  <ListboxItem<'a'> href={accountSubItem.href} tag="a">
+                                    {accountSubItem.tabLabel}
+                                  </ListboxItem>
                                 </li>
                               </UtilityFragment>
                             ))}
@@ -370,6 +388,7 @@ export const AlternateHorizontalNavLayout = () => {
               </Utility>
             </>
           ) : (
+            /* Expanded search replaces entire nav bar */
             <UtilityFragment vFlex>
               <Surface
                 style={
@@ -406,6 +425,7 @@ export const AlternateHorizontalNavLayout = () => {
           )}
         </Nav>
       </UtilityFragment>
+      {/* Mobile navigation drawer with alternate styling */}
       <UtilityFragment vContainerHide="desktop" vHide={!mobileMenuOpen}>
         <Nav
           alternate
@@ -414,6 +434,7 @@ export const AlternateHorizontalNavLayout = () => {
           id={`${id}-mobile-menu`}
           orientation="vertical"
         >
+          {/* Mobile nav items */}
           <Tabs orientation="vertical">
             <Tab>
               <Button
@@ -434,9 +455,10 @@ export const AlternateHorizontalNavLayout = () => {
                 buttonSize="large"
                 colorScheme="tertiary"
                 element={<a href="./application-layouts">L1 label 3</a>}
-                />
+              />
             </Tab>
-                <Tab>
+            {/* Tab with expandable submenu in mobile */}
+            <Tab>
               <Button
                 aria-expanded={mobileLabel4MenuOpen}
                 aria-controls={mobileLabel4MenuOpen ? `${id}-account-sub-menu` : 'undefined'}
@@ -462,6 +484,7 @@ export const AlternateHorizontalNavLayout = () => {
                 </Tabs>
               )}
             </Tab>
+            {/* Notifications item (badge inline on mobile) */}
             <Tab>
               <Button
                 buttonSize="large"
@@ -486,7 +509,8 @@ export const AlternateHorizontalNavLayout = () => {
           <UtilityFragment vMarginTop={5}>
             <Divider dividerType="decorative" />
           </UtilityFragment>
-          <UtilityFragment vMarginTop={6} className='v-tabs-vertical'>
+          {/* Account section at bottom of mobile menu */}
+          <UtilityFragment vMarginTop={6} className="v-tabs-vertical">
             <Tab tag="div">
               <Button
                 aria-expanded={mobileAccountMenuOpen}

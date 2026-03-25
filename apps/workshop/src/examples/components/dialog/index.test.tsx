@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+import { vi, describe, it, expect } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { axe } from 'jest-axe';
@@ -27,6 +28,7 @@ import { ErrorDialog } from './error-dialog';
 import { SuccessDialog } from './success-dialog';
 import { TouringTipsDialog } from './touring-tips-dialog';
 import { WarningDialog } from './warning-dialog';
+import NovaDialogDemo from './reusable';
 
 const examples = [
   { Component: CloseButtonDialog, title: metaData['close-button-dialog'].title },
@@ -35,19 +37,20 @@ const examples = [
   { Component: SuccessDialog, title: metaData['success-dialog'].title },
   { Component: TouringTipsDialog, title: metaData['touring-tips-dialog'].title },
   { Component: WarningDialog, title: metaData['warning-dialog'].title },
+  { Component: NovaDialogDemo, title: metaData['reusable'].title },
 ];
 
 /**
  * Workaround until jest testing environment supports HTMLDialogElement.
  * Issue: https://github.com/jsdom/jsdom/issues/3294
  */
-HTMLDialogElement.prototype.show = jest.fn(function mock(this: HTMLDialogElement) {
+HTMLDialogElement.prototype.show = vi.fn(function mock(this: HTMLDialogElement) {
   this.open = true;
 });
-HTMLDialogElement.prototype.showModal = jest.fn(function mock(this: HTMLDialogElement) {
+HTMLDialogElement.prototype.showModal = vi.fn(function mock(this: HTMLDialogElement) {
   this.open = true;
 });
-HTMLDialogElement.prototype.close = jest.fn(function mock(this: HTMLDialogElement) {
+HTMLDialogElement.prototype.close = vi.fn(function mock(this: HTMLDialogElement) {
   this.open = false;
 });
 

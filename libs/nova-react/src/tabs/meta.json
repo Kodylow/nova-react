@@ -2,7 +2,7 @@
   "description": "Organizational element that separates content and allows users to switch between views.",
   "displayName": "tabs",
   "filePath": "/tabs/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/tabs/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//tabs/index.tsx",
   "props": [
     {
       "defaultValue": "horizontal",
@@ -27,8 +27,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/tabs See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/tabs/?code_library=react See Docs}",
   "related": [
     "tab",
     "tab-suffix",

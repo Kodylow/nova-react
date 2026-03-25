@@ -2,7 +2,7 @@
   "description": "Binary control that allows users to toggle between two states, such as on/off.",
   "displayName": "switch",
   "filePath": "/switch/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/switch/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//switch/index.tsx",
   "props": [
     {
       "defaultValue": "input",
@@ -14,8 +14,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/switch See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/switch/?code_library=react See Docs}",
   "related": [
     "switch-label"
   ]

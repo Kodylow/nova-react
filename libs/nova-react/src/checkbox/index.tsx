@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,35 +15,40 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType, HTMLElementType } from 'react';
+import { type ComponentPropsWithRef, type ElementType, type HTMLElementType } from 'react';
 
 const CSS_PREFIX = 'v-checkbox';
 
-export type CheckboxProperties<ET extends ElementType = 'input',> = (
+export type CheckboxProperties<ET extends ElementType = 'input'> = (
   | {
-    /** Whether a checkbox is indeterminate state, only allowable on "input" tag types. This should only be set to true if checked is false. */
-    indeterminate?: never;
-    /** Tag of Component */
-    tag: Exclude<ElementType, 'input'>;
-  }
+      /** Whether a checkbox is indeterminate state, only allowable on "input" tag types. This should only be set to true if checked is false. */
+      indeterminate?: never;
+      /** Tag of Component */
+      tag: Exclude<ElementType, 'input'>;
+    }
   | {
-    /** Whether a checkbox is indeterminate state, only allowable on "input" tag types. This should only be set to true if checked is false. */
-    indeterminate?: boolean;
-    /** Tag of Component */
-    tag?: 'input';
-  }
-) & Omit<ComponentPropsWithRef<ET>, ''>;
+      /** Whether a checkbox is indeterminate state, only allowable on "input" tag types. This should only be set to true if checked is false. */
+      indeterminate?: boolean;
+      /** Tag of Component */
+      tag?: 'input';
+    }
+) &
+  Omit<ComponentPropsWithRef<ET>, ''>;
 
 /**
  * Interactive element enabling users to select one or more independent options from a group.
- * @docs {@link https://design.visa.com/react/components/checkbox | See Docs}
+ * @docs {@link https://design.visa.com/components/checkbox/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  * @related checkbox-panel
  */
-const Checkbox = <ET extends ElementType = 'input',>(
-  { className, indeterminate, tag: Tag = 'input', ref, ...remainingProps }: CheckboxProperties<ET>
-) => (
+const Checkbox = <ET extends ElementType = 'input'>({
+  className,
+  indeterminate,
+  tag: Tag = 'input',
+  ref,
+  ...remainingProps
+}: CheckboxProperties<ET>) => (
   <Tag
     className={cn(CSS_PREFIX, className)}
     ref={(el: HTMLElementType) => {
@@ -57,9 +62,5 @@ const Checkbox = <ET extends ElementType = 'input',>(
 );
 
 export default Checkbox;
-
-Checkbox.defaultProps = {
-  tag: 'input',
-};
 
 Checkbox.displayName = 'Checkbox';

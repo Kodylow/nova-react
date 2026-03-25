@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType, cloneElement } from 'react';
+import { Children, type ComponentPropsWithRef, type ElementType, type ReactNode, cloneElement } from 'react';
 
 export type BreakPoints = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'desktop' | 'mobile';
 
@@ -74,7 +74,7 @@ export type VPoint =
 
 export type VSpacing = VPoint | 'auto' | 'inherit';
 
-export type UtilityFragmentProperties<ET extends ElementType = 'div',> = {
+export type UtilityFragmentProperties<ET extends ElementType = 'div'> = {
   vAlignContent?: DefaultPositions | 'around' | 'between' | 'evenly';
   vAlignItems?: DefaultPositions | 'baseline' | 'stretch';
   vAlignSelf?: DefaultPositions | 'auto' | 'stretch';
@@ -117,11 +117,11 @@ export type UtilityFragmentProperties<ET extends ElementType = 'div',> = {
 
 /**
  * Wraps around a component and add Nova utility classes to its direct child without adding extra elements to the DOM.
- * @docs {@link https://design.visa.com/react/utilities/api | See Docs}
+ * @docs {@link https://design.visa.com/base-elements/responsive-grid-system/breakpoints/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const UtilityFragment = <ET extends ElementType = 'div',>({
+const UtilityFragment = <ET extends ElementType = 'div'>({
   children,
   className,
   vAlignContent,
@@ -164,6 +164,31 @@ const UtilityFragment = <ET extends ElementType = 'div',>({
   vRowGap,
   ...remainingProps
 }: UtilityFragmentProperties<ET>) => {
+  if (Children.count(children) > 1) {
+    // if a UtilityFragment has more than one child, log a warning with details about the first child
+    const firstChild = Children.toArray(children)[0] as ReactNode & {
+      type?: { displayName?: string; name?: string };
+      props?: Record<string, unknown>;
+    };
+    const childType = firstChild?.type?.displayName || firstChild?.type?.name || firstChild?.type || typeof firstChild;
+    const props = firstChild?.props;
+
+    const identifiers = [
+      props?.id && `id="${props.id}"`,
+      props?.className && `className="${props.className}"`,
+      props?.['data-testid'] && `data-testid="${props['data-testid']}"`,
+    ]
+      .filter(Boolean)
+      .join(', ');
+
+    // number of children and type of first child
+    console.warn(
+      `Warning: UtilityFragment expected to receive a single React element child. Received %d children instead.\nFirst child: <%s>${identifiers ? ` (${identifiers})` : ''}`,
+      Children.count(children),
+      childType
+    );
+  }
+
   const classNames =
     cn(
       vAlignContent && `v-align-content-${vAlignContent}`,
@@ -172,7 +197,7 @@ const UtilityFragment = <ET extends ElementType = 'div',>({
       (vColGap || vColGap === 0) && `v-col-gap-${vColGap}`,
       vContainerHide && `v-${vContainerHide}-container-hide`,
       vElevation && `v-elevation-${vElevation}`,
-      (vFlex || vFlexCol || vRowGap) && 'v-flex',
+      (vFlex || vFlexCol || vFlexColReverse || vFlexRow || vFlexRowReverse) && 'v-flex',
       vFlexCol && 'v-flex-col',
       vFlexColReverse && 'v-flex-col-reverse',
       vFlexGrow && 'v-flex-grow',

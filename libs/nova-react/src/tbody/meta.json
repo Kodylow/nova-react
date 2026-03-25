@@ -2,8 +2,7 @@
   "description": "Table body component that contains all the tr and td cells.",
   "displayName": "Tbody",
   "filePath": "/tbody/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/tbody/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//tbody/index.tsx",
   "props": [],
-  "docs": "{@link https://design.visa.com/react/components/table See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/table/?code_library=react See Docs}"
 }

@@ -2,7 +2,7 @@
   "description": "Compact displays summarizing or directing users to more information.",
   "displayName": "contentcard",
   "filePath": "/content-card/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/content-card/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//content-card/index.tsx",
   "props": [
     {
       "description": "Show bottom border on content card",
@@ -26,8 +26,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/content-card See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/content-card/?code_library=react See Docs}",
   "related": [
     "content-card-body",
     "content-card-image",

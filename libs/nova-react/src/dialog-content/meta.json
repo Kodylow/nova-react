@@ -2,7 +2,7 @@
   "description": "Component used to display content within a dialog.",
   "displayName": "DialogContent",
   "filePath": "/dialog-content/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/dialog-content/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//dialog-content/index.tsx",
   "props": [
     {
       "description": "Tag of Component",
@@ -11,6 +11,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/dialog See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/dialog/?code_library=react See Docs}"
 }

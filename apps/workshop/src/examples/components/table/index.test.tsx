@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@ import { OuterBorderColumnRowDividerTable } from './outer-border-column-row-tabl
 import { OuterBorderSubtleHeaderTable } from './outer-border-subtle-header-table';
 import { ScrollTable } from './scroll-table';
 import { SmallPaddingBandedTable } from './small-padding-banded-table';
+import NovaTableDemo from './reusable';
 
 const examples = [
   { Component: GroupHeadersEmptyCellTable, title: metaData['group-headers-empty-cell-table'].title },
@@ -43,6 +44,7 @@ const examples = [
   { Component: OuterBorderSubtleHeaderTable, title: metaData['outer-border-subtle-header-table'].title },
   { Component: ScrollTable, title: metaData['scroll-table'].title },
   { Component: SmallPaddingBandedTable, title: metaData['small-padding-banded-table'].title },
+  { Component: NovaTableDemo, title: metaData['reusable'].title },
 ];
 
 describe('Table examples', () => {

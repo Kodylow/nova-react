@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-nav';
 
-export type NavProperties<ET extends ElementType = 'nav',> = {
+export type NavProperties<ET extends ElementType = 'nav'> = {
   /** Alternate */
   alternate?: boolean;
   /** Drawer */
@@ -32,14 +32,19 @@ export type NavProperties<ET extends ElementType = 'nav',> = {
 
 /**
  * Menu or panel at the top or next to page content that links to important pages or features.
- * @docs {@link https://design.visa.com/react/components/nav | See Docs}
+ * @docs {@link https://design.visa.com/components/horizontal-navigation/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  * @related tab, tabs
  */
-const Nav = <ET extends ElementType = 'nav',>(
-  { alternate, className, drawer, orientation, tag: Tag = 'nav', ...remainingProps }: NavProperties<ET>,
-) => (
+const Nav = <ET extends ElementType = 'nav'>({
+  alternate,
+  className,
+  drawer,
+  orientation,
+  tag: Tag = 'nav',
+  ...remainingProps
+}: NavProperties<ET>) => (
   <Tag
     className={cn(
       CSS_PREFIX,
@@ -53,9 +58,5 @@ const Nav = <ET extends ElementType = 'nav',>(
 );
 
 export default Nav;
-
-Nav.defaultProps = {
-  tag: 'nav',
-};
 
 Nav.displayName = 'Nav';

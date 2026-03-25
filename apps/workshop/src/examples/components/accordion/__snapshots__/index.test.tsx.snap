@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Accordion examples Accordion group with arrow key navigation should render correctly 1`] = `
+exports[`Accordion examples > Accordion group with arrow key navigation should render correctly 1`] = `
 <div>
   <div
     class="v-accordion"
@@ -23,9 +23,7 @@ exports[`Accordion examples Accordion group with arrow key navigation should ren
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       Accordion title 1
@@ -56,9 +54,7 @@ exports[`Accordion examples Accordion group with arrow key navigation should ren
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       Accordion title 2
@@ -89,9 +85,7 @@ exports[`Accordion examples Accordion group with arrow key navigation should ren
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       Accordion title 3
@@ -109,7 +103,7 @@ exports[`Accordion examples Accordion group with arrow key navigation should ren
 </div>
 `;
 
-exports[`Accordion examples Accordion with badge should render correctly 1`] = `
+exports[`Accordion examples > Accordion with badge should render correctly 1`] = `
 <div>
   <details
     class="v-accordion"
@@ -129,9 +123,7 @@ exports[`Accordion examples Accordion with badge should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       <svg
@@ -146,9 +138,7 @@ exports[`Accordion examples Accordion with badge should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
       Accordion title
@@ -166,15 +156,11 @@ exports[`Accordion examples Accordion with badge should render correctly 1`] = `
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C8.74542 2 9.4591 2.13593 10.1176 2.38437L11.6319 0.870034C10.542 0.313733 9.30764 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 7.21837 15.8879 6.46293 15.6789 5.74886L13.9678 7.37472C13.9891 7.58024 14 7.78885 14 8Z"
-            fill-rule="evenodd"
+            d="M8 0C9.30716 0 10.5403 0.315171 11.6299 0.871094L10.1162 2.38477C9.45802 2.13659 8.74502 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 7.78891 13.9881 7.58047 13.9668 7.375L15.6768 5.75C15.8857 6.46393 16 7.21854 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M15 3.46597L7.72838 10.9961L5 8.18244L6.42533 6.71257L7.72838 8.05635L13.5747 1.99609L15 3.46597Z"
-            fill-rule="evenodd"
+            d="M15 3.46582L7.72852 10.9961L5 8.18262L6.42578 6.71289L7.72852 8.05664L13.5742 1.99609L15 3.46582Z"
           />
         </svg>
         Label
@@ -191,7 +177,7 @@ exports[`Accordion examples Accordion with badge should render correctly 1`] = `
 </div>
 `;
 
-exports[`Accordion examples Accordion with icon should render correctly 1`] = `
+exports[`Accordion examples > Accordion with icon should render correctly 1`] = `
 <div>
   <details
     class="v-accordion"
@@ -210,9 +196,7 @@ exports[`Accordion examples Accordion with icon should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       <svg
@@ -226,9 +210,7 @@ exports[`Accordion examples Accordion with icon should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
       <svg
@@ -242,11 +224,11 @@ exports[`Accordion examples Accordion with icon should render correctly 1`] = `
       >
         <path
           class="v-icon-secondary"
-          d="M17 12.001H15C15 11.451 14.55 11.001 14 11.001V9.00098C15.65 9.00098 17 10.351 17 12.001Z"
+          d="M14 9.00098C15.65 9.00098 17 10.351 17 12.001H15C15 11.451 14.55 11.001 14 11.001V9.00098Z"
         />
         <path
           class="v-icon-primary"
-          d="M19 20.001H5C2.24 20.001 0 17.761 0 15.001C0 12.751 1.5 10.821 3.59 10.201C3.98 8.36098 5.58 7.00098 7.5 7.00098C7.74 7.00098 7.98 7.02098 8.21 7.06098C9.51 5.16098 11.66 4.00098 14 4.00098C17.66 4.00098 20.67 6.82098 20.97 10.401C22.79 11.181 24 12.981 24 15.001C24 17.761 21.76 20.001 19 20.001ZM7.5 9.00098C6.4 9.00098 5.5 9.90098 5.5 11.001V11.881L4.62 12.021C3.13 12.211 2 13.491 2 15.001C2 16.651 3.35 18.001 5 18.001H19C20.65 18.001 22 16.651 22 15.001C22 13.631 21.08 12.431 19.75 12.091L18.98 11.891L19 11.001C19 8.24098 16.76 6.00098 14 6.00098C12.13 6.00098 10.43 7.03098 9.56 8.70098L9.13 9.52098L8.28 9.16098C8.04 9.05098 7.77 9.00098 7.5 9.00098Z"
+          d="M14 4.00098C17.66 4.00098 20.6697 6.82137 20.9697 10.4014C22.7897 11.1814 24 12.981 24 15.001C24 17.761 21.76 20.001 19 20.001H5C2.24 20.001 0 17.761 0 15.001C0 12.751 1.49995 10.8212 3.58984 10.2012C3.97984 8.36117 5.58 7.00098 7.5 7.00098C7.73996 7.00098 7.97999 7.02056 8.20996 7.06055C9.50998 5.16071 11.6601 4.00098 14 4.00098ZM14 6.00098C12.13 6.00098 10.4296 7.03117 9.55957 8.70117L9.12988 9.52051L8.28027 9.16113C8.04027 9.05113 7.77 9.00098 7.5 9.00098C6.4 9.00098 5.5 9.90098 5.5 11.001V11.8809L4.62012 12.0205C3.13012 12.2105 2 13.491 2 15.001C2 16.651 3.35 18.001 5 18.001H19C20.65 18.001 22 16.651 22 15.001C22 13.631 21.08 12.4308 19.75 12.0908L18.9805 11.8906L19 11.001C19 8.24098 16.76 6.00098 14 6.00098Z"
         />
       </svg>
       Accordion title
@@ -262,7 +244,7 @@ exports[`Accordion examples Accordion with icon should render correctly 1`] = `
 </div>
 `;
 
-exports[`Accordion examples Custom multi-select accordion group with accordion expanded by default should render correctly 1`] = `
+exports[`Accordion examples > Custom multi-select accordion group with accordion expanded by default should render correctly 1`] = `
 <div>
   <div
     class="v-accordion"
@@ -285,9 +267,7 @@ exports[`Accordion examples Custom multi-select accordion group with accordion e
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
       Accordion title 1
@@ -318,9 +298,7 @@ exports[`Accordion examples Custom multi-select accordion group with accordion e
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
       Accordion title 2
@@ -351,9 +329,7 @@ exports[`Accordion examples Custom multi-select accordion group with accordion e
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       Accordion title 3
@@ -371,7 +347,7 @@ exports[`Accordion examples Custom multi-select accordion group with accordion e
 </div>
 `;
 
-exports[`Accordion examples Custom single-select accordion group with accordion expanded by default should render correctly 1`] = `
+exports[`Accordion examples > Custom single-select accordion group with accordion expanded by default should render correctly 1`] = `
 <div>
   <div
     class="v-accordion"
@@ -394,9 +370,7 @@ exports[`Accordion examples Custom single-select accordion group with accordion 
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
       Accordion title 1
@@ -427,9 +401,7 @@ exports[`Accordion examples Custom single-select accordion group with accordion 
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       Accordion title 2
@@ -460,9 +432,7 @@ exports[`Accordion examples Custom single-select accordion group with accordion 
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       Accordion title 3
@@ -480,7 +450,7 @@ exports[`Accordion examples Custom single-select accordion group with accordion 
 </div>
 `;
 
-exports[`Accordion examples Default accordion should render correctly 1`] = `
+exports[`Accordion examples > Default accordion should render correctly 1`] = `
 <div>
   <details
     class="v-accordion"
@@ -499,9 +469,7 @@ exports[`Accordion examples Default accordion should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       <svg
@@ -515,9 +483,7 @@ exports[`Accordion examples Default accordion should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
       Accordion title
@@ -533,7 +499,7 @@ exports[`Accordion examples Default accordion should render correctly 1`] = `
 </div>
 `;
 
-exports[`Accordion examples Default multi-select accordion group should render correctly 1`] = `
+exports[`Accordion examples > Default multi-select accordion group should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-6"
@@ -555,9 +521,7 @@ exports[`Accordion examples Default multi-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -571,9 +535,7 @@ exports[`Accordion examples Default multi-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 1
@@ -603,9 +565,7 @@ exports[`Accordion examples Default multi-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -619,9 +579,7 @@ exports[`Accordion examples Default multi-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 2
@@ -651,9 +609,7 @@ exports[`Accordion examples Default multi-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -667,9 +623,7 @@ exports[`Accordion examples Default multi-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 3
@@ -686,7 +640,7 @@ exports[`Accordion examples Default multi-select accordion group should render c
 </div>
 `;
 
-exports[`Accordion examples Default single-select accordion group should render correctly 1`] = `
+exports[`Accordion examples > Default single-select accordion group should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-6"
@@ -708,9 +662,7 @@ exports[`Accordion examples Default single-select accordion group should render 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -724,9 +676,7 @@ exports[`Accordion examples Default single-select accordion group should render 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 1
@@ -756,9 +706,7 @@ exports[`Accordion examples Default single-select accordion group should render 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -772,9 +720,7 @@ exports[`Accordion examples Default single-select accordion group should render 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 2
@@ -804,9 +750,7 @@ exports[`Accordion examples Default single-select accordion group should render 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -820,9 +764,7 @@ exports[`Accordion examples Default single-select accordion group should render 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 3
@@ -839,7 +781,7 @@ exports[`Accordion examples Default single-select accordion group should render 
 </div>
 `;
 
-exports[`Accordion examples Disabled accordion should render correctly 1`] = `
+exports[`Accordion examples > Disabled accordion should render correctly 1`] = `
 <div>
   <div
     class="v-accordion"
@@ -863,9 +805,7 @@ exports[`Accordion examples Disabled accordion should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       Accordion title
@@ -883,7 +823,7 @@ exports[`Accordion examples Disabled accordion should render correctly 1`] = `
 </div>
 `;
 
-exports[`Accordion examples Disabled subtle accordion should render correctly 1`] = `
+exports[`Accordion examples > Disabled subtle accordion should render correctly 1`] = `
 <div>
   <div
     class="v-accordion"
@@ -906,9 +846,7 @@ exports[`Accordion examples Disabled subtle accordion should render correctly 1`
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       <p
@@ -931,7 +869,7 @@ exports[`Accordion examples Disabled subtle accordion should render correctly 1`
 </div>
 `;
 
-exports[`Accordion examples Multi-select accordion group with accordion expanded by default should render correctly 1`] = `
+exports[`Accordion examples > Multi-select accordion group with accordion expanded by default should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-6"
@@ -954,9 +892,7 @@ exports[`Accordion examples Multi-select accordion group with accordion expanded
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -970,9 +906,7 @@ exports[`Accordion examples Multi-select accordion group with accordion expanded
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 1
@@ -1002,9 +936,7 @@ exports[`Accordion examples Multi-select accordion group with accordion expanded
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1018,9 +950,7 @@ exports[`Accordion examples Multi-select accordion group with accordion expanded
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 2
@@ -1050,9 +980,7 @@ exports[`Accordion examples Multi-select accordion group with accordion expanded
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1066,9 +994,7 @@ exports[`Accordion examples Multi-select accordion group with accordion expanded
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 3
@@ -1085,7 +1011,7 @@ exports[`Accordion examples Multi-select accordion group with accordion expanded
 </div>
 `;
 
-exports[`Accordion examples Multi-select accordion group with disabled accordion should render correctly 1`] = `
+exports[`Accordion examples > Multi-select accordion group with disabled accordion should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-6"
@@ -1112,9 +1038,7 @@ exports[`Accordion examples Multi-select accordion group with disabled accordion
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         Accordion title 1
@@ -1150,9 +1074,7 @@ exports[`Accordion examples Multi-select accordion group with disabled accordion
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         Accordion title 2
@@ -1188,9 +1110,7 @@ exports[`Accordion examples Multi-select accordion group with disabled accordion
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         Accordion title 3
@@ -1209,7 +1129,7 @@ exports[`Accordion examples Multi-select accordion group with disabled accordion
 </div>
 `;
 
-exports[`Accordion examples Native single-select accordion group should render correctly 1`] = `
+exports[`Accordion examples > Native single-select accordion group should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-6"
@@ -1232,9 +1152,7 @@ exports[`Accordion examples Native single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1248,9 +1166,7 @@ exports[`Accordion examples Native single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 1
@@ -1281,9 +1197,7 @@ exports[`Accordion examples Native single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1297,9 +1211,7 @@ exports[`Accordion examples Native single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 2
@@ -1330,9 +1242,7 @@ exports[`Accordion examples Native single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1346,9 +1256,7 @@ exports[`Accordion examples Native single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 3
@@ -1365,7 +1273,260 @@ exports[`Accordion examples Native single-select accordion group should render c
 </div>
 `;
 
-exports[`Accordion examples Single-select accordion group with accordion expanded by default should render correctly 1`] = `
+exports[`Accordion examples > Reusable accordion should render correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="v-flex v-flex-col v-gap-6"
+    >
+      <details
+        class="v-accordion"
+        id="test-id-0"
+        name="reusable-accordion-demo"
+      >
+        <summary
+          class="v-button v-button-large v-button-secondary v-accordion-heading v-gap-2 v-typography-body-2-medium"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right v-icon-rtl v-accordion-toggle-icon v-accordion-toggle-icon-closed"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down v-accordion-toggle-icon v-accordion-toggle-icon-open"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+            />
+          </svg>
+          <div
+            class="v-align-items-center v-flex v-gap-6"
+          >
+            Success title 1
+          </div>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-32"
+        >
+          <p>
+            This is required text that describes the accordion in more detail.
+          </p>
+        </div>
+      </details>
+    </div>
+    <div
+      style="margin-top: 24px;"
+    />
+    <details
+      class="v-accordion"
+      id="test-id-1"
+    >
+      <summary
+        class="v-button v-button-large v-button-secondary v-accordion-heading v-gap-2 v-typography-body-2-medium"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right v-icon-rtl v-accordion-toggle-icon v-accordion-toggle-icon-closed"
+          focusable="false"
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="v-icon-primary"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down v-accordion-toggle-icon v-accordion-toggle-icon-open"
+          focusable="false"
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="v-icon-primary"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+          />
+        </svg>
+        <div
+          class="v-align-items-center v-flex v-gap-6"
+        >
+          Customize demo
+        </div>
+      </summary>
+      <div
+        class="v-accordion-panel v-px-32"
+      >
+        <form>
+          <div
+            class="v-flex v-flex-col v-gap-16"
+            style="margin-bottom: 32px;"
+          >
+            <div>
+              <label
+                class="v-label"
+                for="accordions"
+              >
+                Accordions
+              </label>
+              <div
+                class="v-surface v-input-container"
+              >
+                <input
+                  class="v-input"
+                  id="accordions"
+                  type="number"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                class="v-label"
+                for="description"
+              >
+                Description
+              </label>
+              <div
+                class="v-surface v-input-container"
+              >
+                <input
+                  class="v-input"
+                  id="description"
+                  type="text"
+                  value="This is required text that describes the accordion in more detail."
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                class="v-label"
+                for="title"
+              >
+                Title
+              </label>
+              <div
+                class="v-surface v-input-container"
+              >
+                <input
+                  class="v-input"
+                  id="title"
+                  type="text"
+                  value="Success title"
+                />
+              </div>
+            </div>
+            <label
+              class="v-label"
+            >
+              <input
+                class="v-checkbox"
+                type="checkbox"
+              />
+              Disabled
+            </label>
+            <label
+              class="v-label"
+            >
+              <input
+                class="v-checkbox"
+                type="checkbox"
+              />
+              Multiselect
+            </label>
+            <label
+              class="v-label"
+            >
+              <input
+                checked=""
+                class="v-checkbox"
+                type="checkbox"
+              />
+              Padding
+            </label>
+            <label
+              class="v-label"
+            >
+              <input
+                class="v-checkbox"
+                type="checkbox"
+              />
+              Show badge
+            </label>
+            <label
+              class="v-label"
+            >
+              <input
+                class="v-checkbox"
+                type="checkbox"
+              />
+              Show icon
+            </label>
+            <label
+              class="v-label"
+            >
+              <input
+                checked=""
+                class="v-checkbox"
+                type="checkbox"
+              />
+              Show toggle icon
+            </label>
+            <label
+              class="v-label"
+            >
+              <input
+                class="v-checkbox"
+                type="checkbox"
+              />
+              Subtle
+            </label>
+          </div>
+          <div
+            class="v-flex v-gap-16"
+            style="margin-bottom: 16px;"
+          >
+            <button
+              class="v-button"
+              type="submit"
+            >
+              Apply
+            </button>
+            <button
+              class="v-button v-button-secondary"
+              type="button"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples > Single-select accordion group with accordion expanded by default should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-6"
@@ -1388,9 +1549,7 @@ exports[`Accordion examples Single-select accordion group with accordion expande
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1404,9 +1563,7 @@ exports[`Accordion examples Single-select accordion group with accordion expande
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 1
@@ -1436,9 +1593,7 @@ exports[`Accordion examples Single-select accordion group with accordion expande
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1452,9 +1607,7 @@ exports[`Accordion examples Single-select accordion group with accordion expande
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 2
@@ -1484,9 +1637,7 @@ exports[`Accordion examples Single-select accordion group with accordion expande
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1500,9 +1651,7 @@ exports[`Accordion examples Single-select accordion group with accordion expande
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 3
@@ -1519,7 +1668,7 @@ exports[`Accordion examples Single-select accordion group with accordion expande
 </div>
 `;
 
-exports[`Accordion examples Subtle accordion should render correctly 1`] = `
+exports[`Accordion examples > Subtle accordion should render correctly 1`] = `
 <div>
   <details
     class="v-accordion"
@@ -1539,9 +1688,7 @@ exports[`Accordion examples Subtle accordion should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       <svg
@@ -1555,9 +1702,7 @@ exports[`Accordion examples Subtle accordion should render correctly 1`] = `
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
       Accordion title
@@ -1574,7 +1719,7 @@ exports[`Accordion examples Subtle accordion should render correctly 1`] = `
 </div>
 `;
 
-exports[`Accordion examples Subtle accordion with icon should render correctly 1`] = `
+exports[`Accordion examples > Subtle accordion with icon should render correctly 1`] = `
 <div>
   <details
     class="v-accordion"
@@ -1594,9 +1739,7 @@ exports[`Accordion examples Subtle accordion with icon should render correctly 1
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-          fill-rule="evenodd"
+          d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
         />
       </svg>
       <svg
@@ -1610,9 +1753,7 @@ exports[`Accordion examples Subtle accordion with icon should render correctly 1
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
       <svg
@@ -1626,11 +1767,11 @@ exports[`Accordion examples Subtle accordion with icon should render correctly 1
       >
         <path
           class="v-icon-secondary"
-          d="M17 12.001H15C15 11.451 14.55 11.001 14 11.001V9.00098C15.65 9.00098 17 10.351 17 12.001Z"
+          d="M14 9.00098C15.65 9.00098 17 10.351 17 12.001H15C15 11.451 14.55 11.001 14 11.001V9.00098Z"
         />
         <path
           class="v-icon-primary"
-          d="M19 20.001H5C2.24 20.001 0 17.761 0 15.001C0 12.751 1.5 10.821 3.59 10.201C3.98 8.36098 5.58 7.00098 7.5 7.00098C7.74 7.00098 7.98 7.02098 8.21 7.06098C9.51 5.16098 11.66 4.00098 14 4.00098C17.66 4.00098 20.67 6.82098 20.97 10.401C22.79 11.181 24 12.981 24 15.001C24 17.761 21.76 20.001 19 20.001ZM7.5 9.00098C6.4 9.00098 5.5 9.90098 5.5 11.001V11.881L4.62 12.021C3.13 12.211 2 13.491 2 15.001C2 16.651 3.35 18.001 5 18.001H19C20.65 18.001 22 16.651 22 15.001C22 13.631 21.08 12.431 19.75 12.091L18.98 11.891L19 11.001C19 8.24098 16.76 6.00098 14 6.00098C12.13 6.00098 10.43 7.03098 9.56 8.70098L9.13 9.52098L8.28 9.16098C8.04 9.05098 7.77 9.00098 7.5 9.00098Z"
+          d="M14 4.00098C17.66 4.00098 20.6697 6.82137 20.9697 10.4014C22.7897 11.1814 24 12.981 24 15.001C24 17.761 21.76 20.001 19 20.001H5C2.24 20.001 0 17.761 0 15.001C0 12.751 1.49995 10.8212 3.58984 10.2012C3.97984 8.36117 5.58 7.00098 7.5 7.00098C7.73996 7.00098 7.97999 7.02056 8.20996 7.06055C9.50998 5.16071 11.6601 4.00098 14 4.00098ZM14 6.00098C12.13 6.00098 10.4296 7.03117 9.55957 8.70117L9.12988 9.52051L8.28027 9.16113C8.04027 9.05113 7.77 9.00098 7.5 9.00098C6.4 9.00098 5.5 9.90098 5.5 11.001V11.8809L4.62012 12.0205C3.13012 12.2105 2 13.491 2 15.001C2 16.651 3.35 18.001 5 18.001H19C20.65 18.001 22 16.651 22 15.001C22 13.631 21.08 12.4308 19.75 12.0908L18.9805 11.8906L19 11.001C19 8.24098 16.76 6.00098 14 6.00098Z"
         />
       </svg>
       Accordion title
@@ -1647,7 +1788,7 @@ exports[`Accordion examples Subtle accordion with icon should render correctly 1
 </div>
 `;
 
-exports[`Accordion examples Subtle multi-select accordion group should render correctly 1`] = `
+exports[`Accordion examples > Subtle multi-select accordion group should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-6"
@@ -1670,9 +1811,7 @@ exports[`Accordion examples Subtle multi-select accordion group should render co
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1686,9 +1825,7 @@ exports[`Accordion examples Subtle multi-select accordion group should render co
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 1
@@ -1720,9 +1857,7 @@ exports[`Accordion examples Subtle multi-select accordion group should render co
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1736,9 +1871,7 @@ exports[`Accordion examples Subtle multi-select accordion group should render co
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 2
@@ -1770,9 +1903,7 @@ exports[`Accordion examples Subtle multi-select accordion group should render co
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1786,9 +1917,7 @@ exports[`Accordion examples Subtle multi-select accordion group should render co
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 3
@@ -1806,7 +1935,7 @@ exports[`Accordion examples Subtle multi-select accordion group should render co
 </div>
 `;
 
-exports[`Accordion examples Subtle single-select accordion group should render correctly 1`] = `
+exports[`Accordion examples > Subtle single-select accordion group should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-6"
@@ -1829,9 +1958,7 @@ exports[`Accordion examples Subtle single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1845,9 +1972,7 @@ exports[`Accordion examples Subtle single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 1
@@ -1879,9 +2004,7 @@ exports[`Accordion examples Subtle single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1895,9 +2018,7 @@ exports[`Accordion examples Subtle single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 2
@@ -1929,9 +2050,7 @@ exports[`Accordion examples Subtle single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
         <svg
@@ -1945,9 +2064,7 @@ exports[`Accordion examples Subtle single-select accordion group should render c
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
         Accordion title 3

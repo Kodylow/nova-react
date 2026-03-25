@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,28 +15,25 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-panel-body';
 
-export type PanelBodyProperties<ET extends ElementType = 'div',> = {
-
+export type PanelBodyProperties<ET extends ElementType = 'div'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Container for panel body elements.
- * @docs {@link https://design.visa.com/react/components/panel | See Docs}
+ * @docs {@link https://design.visa.com/components/panel/?code_library=react | See Docs}
  */
-const PanelBody = <ET extends ElementType = 'div',>(
-  { className, tag: Tag = 'div', ...remainingProps }: PanelBodyProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const PanelBody = <ET extends ElementType = 'div'>({
+  className,
+  tag: Tag = 'div',
+  ...remainingProps
+}: PanelBodyProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default PanelBody;
-
-PanelBody.defaultProps = {
-  tag: 'div',
-};
 
 PanelBody.displayName = 'PanelBody';

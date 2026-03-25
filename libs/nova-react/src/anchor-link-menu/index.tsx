@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,31 +15,28 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-anchor-link-menu';
 
-export type AnchorLinkMenuProperties<ET extends ElementType = 'aside',> = {
-
+export type AnchorLinkMenuProperties<ET extends ElementType = 'aside'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Menu of links that navigate to sections within the current page.
- * @docs {@link https://design.visa.com/react/components/anchor-link-menu | See Docs}
+ * @docs {@link https://design.visa.com/components/anchor-link-menu/?code_library=react | See Docs}
  * @related anchor-link-menu-header
  * @vgar TODO
  * @wcag TODO
  */
-const AnchorLinkMenu = <ET extends ElementType = 'aside',>(
-  { className, tag: Tag = 'aside', ...remainingProps }: AnchorLinkMenuProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const AnchorLinkMenu = <ET extends ElementType = 'aside'>({
+  className,
+  tag: Tag = 'aside',
+  ...remainingProps
+}: AnchorLinkMenuProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default AnchorLinkMenu;
-
-AnchorLinkMenu.defaultProps = {
-  tag: 'aside',
-};
 
 AnchorLinkMenu.displayName = 'AnchorLinkMenu';

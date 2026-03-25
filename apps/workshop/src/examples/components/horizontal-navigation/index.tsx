@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ import { MessageIcon } from '@visa/nova-icons-react';
 import { SectionMessage, SectionMessageContent, Typography } from '@visa/nova-react';
 import packageJson from '../../../../package.json';
 import PackageInstaller from '../../../components/package-installer';
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 const ExampleIntro = () => (
   <SectionMessage messageType="success" className="v-flex v-align-items-center">

@@ -2,7 +2,7 @@
   "description": "Container for elements used inside listbox.",
   "displayName": "listboxitem",
   "filePath": "/listbox-item/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/listbox-item/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//listbox-item/index.tsx",
   "props": [
     {
       "defaultValue": "li",
@@ -12,6 +12,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/listbox See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/listbox/?code_library=react See Docs}"
 }

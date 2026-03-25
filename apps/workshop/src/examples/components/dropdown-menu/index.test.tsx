@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,12 +23,14 @@ import { DefaultDropdownMenu } from './default-dropdown-menu';
 import { IconDropdownMenu } from './icon-dropdown-menu';
 import { DropdownMenuWithTabs } from './dropdown-menu-with-tabs';
 import { DropdownMenuWithLeadingIcons } from './dropdown-menu-with-leading-icons';
+import NovaDropdownMenuDemo from './reusable';
 
 const examples = [
   { Component: DefaultDropdownMenu, title: metaData['default-dropdown-menu'].title },
   { Component: IconDropdownMenu, title: metaData['icon-dropdown-menu'].title },
   { Component: DropdownMenuWithTabs, title: metaData['dropdown-menu-with-tabs'].title },
   { Component: DropdownMenuWithLeadingIcons, title: metaData['dropdown-menu-with-leading-icons'].title },
+  { Component: NovaDropdownMenuDemo, title: metaData['reusable'].title },
 ];
 
 describe('Dropdown menu examples', () => {

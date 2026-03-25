@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -129,6 +129,16 @@ describe('UtilityFragment', () => {
     expect(container.firstChild).toHaveClass('v-flex-col-reverse');
   });
 
+  it('applies v-flex base class when vFlexColReverse is set', () => {
+    const { container } = render(
+      <UtilityFragment vFlexColReverse>
+        <div>Test Content</div>
+      </UtilityFragment>
+    );
+
+    expect(container.firstChild).toHaveClass('v-flex');
+  });
+
   it('applies vFlexGrow correctly', () => {
     const { container } = render(
       <UtilityFragment vFlexGrow>
@@ -179,6 +189,16 @@ describe('UtilityFragment', () => {
     expect(container.firstChild).toHaveClass('v-flex-row');
   });
 
+  it('applies v-flex base class when vFlexRow is set', () => {
+    const { container } = render(
+      <UtilityFragment vFlexRow>
+        <div>Test Content</div>
+      </UtilityFragment>
+    );
+
+    expect(container.firstChild).toHaveClass('v-flex');
+  });
+
   it('applies vFlexRowReverse correctly', () => {
     const { container } = render(
       <UtilityFragment vFlexRowReverse>
@@ -187,6 +207,16 @@ describe('UtilityFragment', () => {
     );
 
     expect(container.firstChild).toHaveClass('v-flex-row-reverse');
+  });
+
+  it('applies v-flex base class when vFlexRowReverse is set', () => {
+    const { container } = render(
+      <UtilityFragment vFlexRowReverse>
+        <div>Test Content</div>
+      </UtilityFragment>
+    );
+
+    expect(container.firstChild).toHaveClass('v-flex');
   });
 
   it('applies vFlexShrink correctly', () => {
@@ -417,6 +447,16 @@ describe('UtilityFragment', () => {
     );
 
     expect(container.firstChild).toHaveClass('v-row-gap-4');
+  });
+
+  it('does not apply v-flex base class when only vRowGap is set', () => {
+    const { container } = render(
+      <UtilityFragment vRowGap={4}>
+        <div>Test Content</div>
+      </UtilityFragment>
+    );
+
+    expect(container.firstChild).not.toHaveClass('v-flex');
   });
 
   it('applies vElevation correctly', () => {

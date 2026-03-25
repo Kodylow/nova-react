@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Dropdown menu examples Default icon button dropdown menu should render correctly 1`] = `
+exports[`Dropdown menu examples > Default icon button dropdown menu should render correctly 1`] = `
 <div>
   <div
     style="block-size: 250px;"
@@ -23,9 +23,7 @@ exports[`Dropdown menu examples Default icon button dropdown menu should render 
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M11 24C11 25.6569 9.65685 27 8 27C6.34315 27 5 25.6569 5 24C5 22.3431 6.34315 21 8 21C9.65685 21 11 22.3431 11 24ZM43 24C43 25.6569 41.6569 27 40 27C38.3431 27 37 25.6569 37 24C37 22.3431 38.3431 21 40 21C41.6569 21 43 22.3431 43 24ZM24 27C25.6569 27 27 25.6569 27 24C27 22.3431 25.6569 21 24 21C22.3431 21 21 22.3431 21 24C21 25.6569 22.3431 27 24 27Z"
-          fill-rule="evenodd"
+          d="M8 21C9.65685 21 11 22.3431 11 24C11 25.6569 9.65685 27 8 27C6.34315 27 5 25.6569 5 24C5 22.3431 6.34315 21 8 21ZM24 21C25.6569 21 27 22.3431 27 24C27 25.6569 25.6569 27 24 27C22.3431 27 21 25.6569 21 24C21 22.3431 22.3431 21 24 21ZM40 21C41.6569 21 43 22.3431 43 24C43 25.6569 41.6569 27 40 27C38.3431 27 37 25.6569 37 24C37 22.3431 38.3431 21 40 21Z"
         />
       </svg>
     </button>
@@ -33,7 +31,7 @@ exports[`Dropdown menu examples Default icon button dropdown menu should render 
 </div>
 `;
 
-exports[`Dropdown menu examples Default text button dropdown menu should render correctly 1`] = `
+exports[`Dropdown menu examples > Default text button dropdown menu should render correctly 1`] = `
 <div>
   <div
     style="block-size: 250px;"
@@ -56,9 +54,7 @@ exports[`Dropdown menu examples Default text button dropdown menu should render 
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
     </button>
@@ -66,7 +62,7 @@ exports[`Dropdown menu examples Default text button dropdown menu should render 
 </div>
 `;
 
-exports[`Dropdown menu examples Dropdown menu with leading icons and destructive action should render correctly 1`] = `
+exports[`Dropdown menu examples > Dropdown menu with leading icons and destructive action should render correctly 1`] = `
 <div>
   <div
     style="block-size: 250px;"
@@ -89,9 +85,7 @@ exports[`Dropdown menu examples Dropdown menu with leading icons and destructive
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-          fill-rule="evenodd"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
         />
       </svg>
     </button>
@@ -99,7 +93,7 @@ exports[`Dropdown menu examples Dropdown menu with leading icons and destructive
 </div>
 `;
 
-exports[`Dropdown menu examples Dropdown menu with tabs should render correctly 1`] = `
+exports[`Dropdown menu examples > Dropdown menu with tabs should render correctly 1`] = `
 <div>
   <div
     style="block-size: 250px;"
@@ -122,12 +116,576 @@ exports[`Dropdown menu examples Dropdown menu with tabs should render correctly 
       >
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M11 24C11 25.6569 9.65685 27 8 27C6.34315 27 5 25.6569 5 24C5 22.3431 6.34315 21 8 21C9.65685 21 11 22.3431 11 24ZM43 24C43 25.6569 41.6569 27 40 27C38.3431 27 37 25.6569 37 24C37 22.3431 38.3431 21 40 21C41.6569 21 43 22.3431 43 24ZM24 27C25.6569 27 27 25.6569 27 24C27 22.3431 25.6569 21 24 21C22.3431 21 21 22.3431 21 24C21 25.6569 22.3431 27 24 27Z"
-          fill-rule="evenodd"
+          d="M8 21C9.65685 21 11 22.3431 11 24C11 25.6569 9.65685 27 8 27C6.34315 27 5 25.6569 5 24C5 22.3431 6.34315 21 8 21ZM24 21C25.6569 21 27 22.3431 27 24C27 25.6569 25.6569 27 24 27C22.3431 27 21 25.6569 21 24C21 22.3431 22.3431 21 24 21ZM40 21C41.6569 21 43 22.3431 43 24C43 25.6569 41.6569 27 40 27C38.3431 27 37 25.6569 37 24C37 22.3431 38.3431 21 40 21Z"
         />
       </svg>
     </button>
+  </div>
+</div>
+`;
+
+exports[`Dropdown menu examples > Reusable dropdown menu should render correctly 1`] = `
+<div>
+  <div>
+    <button
+      aria-controls="test-id-13"
+      aria-expanded="false"
+      class="v-button v-dropdown"
+      id="test-id-13-button"
+    >
+      Action
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+        focusable="false"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="v-icon-primary"
+          d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+        />
+      </svg>
+    </button>
+    <div
+      style="margin-top: 24px;"
+    >
+      <details
+        class="v-accordion"
+        id="test-id-1"
+      >
+        <summary
+          class="v-button v-button-large v-button-secondary v-accordion-heading v-gap-2 v-typography-body-2-medium"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right v-icon-rtl v-accordion-toggle-icon v-accordion-toggle-icon-closed"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down v-accordion-toggle-icon v-accordion-toggle-icon-open"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+            />
+          </svg>
+          <div
+            class="v-align-items-center v-flex v-gap-6"
+          >
+            Customize demo
+          </div>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-32"
+        >
+          <form>
+            <div
+              class="v-flex v-flex-col v-gap-16"
+              style="margin-bottom: 32px;"
+            >
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-2-input"
+                >
+                  Label
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-2-input"
+                      placeholder="Primary action"
+                      type="text"
+                      value="Action"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-3-input"
+                >
+                  Menu options (JSON)
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <textarea
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-3-input"
+                      style="block-size: 100px;"
+                    >
+                      [
+    {
+        "disabled": true,
+        "label": "Label 1"
+    },
+    {
+        "label": "Label 2",
+        "selected": true
+    },
+    {
+        "label": "Label 3"
+    },
+    {
+        "label": "Label 4"
+    }
+]
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-4-input"
+                >
+                  Max width
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-4-input"
+                      placeholder="100px"
+                      type="text"
+                      value="unset"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-5-input"
+                >
+                  Offset
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-5-input"
+                      placeholder="2"
+                      type="number"
+                      value="0"
+                    />
+                    0
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-flex-wrap v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-6-select"
+                  id="test-id-6-label"
+                >
+                  Button color scheme
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <select
+                      aria-describedby="test-id-6-message"
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-6-select"
+                    >
+                      <option
+                        hidden=""
+                      />
+                      <option
+                        value="primary"
+                      >
+                        Primary
+                      </option>
+                      <option
+                        value="secondary"
+                      >
+                        Secondary
+                      </option>
+                      <option
+                        value="tertiary"
+                      >
+                        Tertiary
+                      </option>
+                    </select>
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+                      focusable="false"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="v-input-message"
+                    id="test-id-6-message"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-flex-wrap v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-7-select"
+                  id="test-id-7-label"
+                >
+                  Button size
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <select
+                      aria-describedby="test-id-7-message"
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-7-select"
+                    >
+                      <option
+                        hidden=""
+                      />
+                      <option
+                        value="small"
+                      >
+                        Small
+                      </option>
+                      <option
+                        value="medium"
+                      >
+                        Medium
+                      </option>
+                      <option
+                        value="large"
+                      >
+                        Large
+                      </option>
+                    </select>
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+                      focusable="false"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="v-input-message"
+                    id="test-id-7-message"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-flex-wrap v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-8-select"
+                  id="test-id-8-label"
+                >
+                  Placement
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <select
+                      aria-describedby="test-id-8-message"
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-8-select"
+                    >
+                      <option
+                        hidden=""
+                      />
+                      <option
+                        value="bottom"
+                      >
+                        Bottom
+                      </option>
+                      <option
+                        value="bottom-end"
+                      >
+                        Bottom end
+                      </option>
+                      <option
+                        value="bottom-start"
+                      >
+                        Bottom start
+                      </option>
+                      <option
+                        value="left"
+                      >
+                        Left
+                      </option>
+                      <option
+                        value="left-end"
+                      >
+                        Left end
+                      </option>
+                      <option
+                        value="left-start"
+                      >
+                        Left start
+                      </option>
+                      <option
+                        value="right"
+                      >
+                        Right
+                      </option>
+                      <option
+                        value="right-end"
+                      >
+                        Right end
+                      </option>
+                      <option
+                        value="right-start"
+                      >
+                        Right start
+                      </option>
+                      <option
+                        value="top"
+                      >
+                        Top
+                      </option>
+                      <option
+                        value="top-start"
+                      >
+                        Top start
+                      </option>
+                      <option
+                        value="top-end"
+                      >
+                        Top end
+                      </option>
+                    </select>
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+                      focusable="false"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="v-input-message"
+                    id="test-id-8-message"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-describedby="test-id-9-description"
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-9-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-9-input"
+                  >
+                    Icon button
+                  </label>
+                  <span
+                    class="v-input-message"
+                    id="test-id-9-description"
+                  >
+                    It is recommended to use the small button size and tertiary color scheme with this option.
+                  </span>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-9-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  checked=""
+                  class="v-checkbox"
+                  id="test-id-10-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-10-input"
+                  >
+                    Show prefix icons
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-10-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-11-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-11-input"
+                  >
+                    Show suffix icons
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-11-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  checked=""
+                  class="v-checkbox"
+                  id="test-id-12-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-12-input"
+                  >
+                    Show toggle icon
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-12-message"
+              />
+            </div>
+            <div
+              class="v-flex v-gap-16"
+              style="margin-bottom: 16px;"
+            >
+              <button
+                class="v-button"
+                type="submit"
+              >
+                Apply
+              </button>
+              <button
+                class="v-button v-button-secondary"
+                type="button"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </details>
+    </div>
   </div>
 </div>
 `;

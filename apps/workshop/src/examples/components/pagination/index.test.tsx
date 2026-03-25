@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,25 +14,30 @@
  * limitations under the License.
  *
  **/
+import { describe, it, expect } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { axe } from 'jest-axe';
 
 import metaData from './meta.json';
 
-import { LastDigitPagination } from './last-page-selected';
+import { ControlledPageStatePagination } from './controlled-page-state-pagination';
+import { LastPageSelected } from './last-page-selected';
 import { MinMaxPagination } from './min-max-pagination';
 import { OneDigitPagination } from './one-digit-pagination';
 import { SlimPagination } from './slim-pagination';
 import { TablePagination } from './table-pagination';
 import { TwoDigitPagination } from './two-digit-pagination';
+import NovaPaginationDemo from './reusable';
 
 const examples = [
   { Component: MinMaxPagination, title: metaData['min-max-pagination'].title },
   { Component: TablePagination, title: metaData['table-pagination'].title },
   { Component: OneDigitPagination, title: metaData['one-digit-pagination'].title },
   { Component: SlimPagination, title: metaData['slim-pagination'].title },
-  { Component: LastDigitPagination, title: metaData['last-page-selected'].title },
+  { Component: LastPageSelected, title: metaData['last-page-selected'].title },
   { Component: TwoDigitPagination, title: metaData['two-digit-pagination'].title },
+  { Component: ControlledPageStatePagination, title: metaData['controlled-page-state-pagination'].title },
+  { Component: NovaPaginationDemo, title: metaData['reusable'].title },
 ];
 
 describe('Pagination examples', () => {

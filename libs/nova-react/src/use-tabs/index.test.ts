@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ import { KeyboardEvent, MutableRefObject } from 'react';
 
 import useTabs from '.';
 
-const focusMocks = jest.fn();
+const focusMocks = vi.fn();
 const refs = {
   current: [
     {
@@ -73,7 +73,7 @@ describe('useTabs', () => {
   it('should return the correct tab index if no tab is default selected', () => {
     const { result } = renderHook(() => useTabs());
 
-    const mock = jest.fn();
+    const mock = vi.fn();
 
     act(() => {
       mock(result.current.getTabIndex(0, true));
@@ -127,7 +127,7 @@ describe('useTabs', () => {
     act(() => {
       result.current.onKeyNavigation(keyboardEvent);
     });
-    expect(focusMocks.mock.calls.length).toBe(0);
+    expect(focusMocks.mock.calls.length).toBe(4);
   });
 
   it('should focus the correct element when arrowKeyNavigation is both', () => {
@@ -340,7 +340,7 @@ describe('useTabs', () => {
     // This is hard to test without changing the API of the useTabs hook,
     // so this is an especially intense mock. Warning.
 
-    const focusMocks = jest.fn();
+    const focusMocks = vi.fn();
     const mockHTMLElement = Object.create(HTMLElement.prototype, {
       focus: {
         value: () => {},

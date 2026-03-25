@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,22 @@
  * limitations under the License.
  *
  **/
+
 import { Flag, FlagCloseButton, FlagContent, ScreenReader, UtilityFragment } from '@visa/nova-react';
 import { VisaCloseTiny, MessageIcon } from '@visa/nova-icons-react';
 
+/**
+ * @property show - Controls flag visibility
+ * @property onClose - Callback when user closes the flag
+ */
 interface SaveFlagProps {
   show: boolean;
   onClose: () => void;
 }
 
+/**
+ * Success flag notification shown when user saves wizard progress.
+ */
 export const SaveFlag = ({ show, onClose }: SaveFlagProps) => {
   if (!show) return null;
 

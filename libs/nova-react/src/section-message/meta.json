@@ -2,13 +2,13 @@
   "description": "Section-level messages providing information about the status of a page or action.",
   "displayName": "sectionmessage",
   "filePath": "/section-message/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/section-message/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//section-message/index.tsx",
   "props": [
     {
       "description": "Message Type",
       "name": "messageType",
       "required": false,
-      "type": "\"subtle\" | \"warning\" | \"error\" | \"success\""
+      "type": "\"subtle\" | \"warning\" | \"error\" | \"information\" | \"success\""
     },
     {
       "description": "Tag of Component",
@@ -19,8 +19,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/section-message See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/section-message/?code_library=react See Docs}",
   "related": [
     "section-message-close-button",
     "message-content"

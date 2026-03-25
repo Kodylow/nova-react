@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import cn from 'clsx';
-import Typography, { TypographyProperties } from '../typography';
+import Typography, { type TypographyProperties } from '../typography';
 
 const CSS_PREFIX = 'v-content-card-title';
 
@@ -23,16 +23,12 @@ export type ContentCardTitleProperties = TypographyProperties;
 
 /**
  * Title component for content card. Extends typography component.
- * @docs {@link https://design.visa.com/react/components/content-card | See Docs}
+ * @docs {@link https://design.visa.com/components/content-card/?code_library=react | See Docs}
  */
-const ContentCardTitle = (
-  { className, tag = 'h3', ...remainingProps }: ContentCardTitleProperties,
-) => <Typography className={cn(CSS_PREFIX, className)} tag={tag} {...remainingProps} />;
+const ContentCardTitle = ({ className, tag = 'h3', ...remainingProps }: ContentCardTitleProperties) => (
+  <Typography className={cn(CSS_PREFIX, className)} tag={tag} {...remainingProps} />
+);
 
 export default ContentCardTitle;
-
-ContentCardTitle.defaultProps = {
-  tag: 'h3',
-};
 
 ContentCardTitle.displayName = 'ContentCardTitle';

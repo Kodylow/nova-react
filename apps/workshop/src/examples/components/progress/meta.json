@@ -5,8 +5,7 @@
     "tags": {
       "custom": true
     },
-    "title": "Custom size determinate circular progress indicator",
-    "testAvg": 100
+    "title": "Custom size determinate circular progress indicator"
   },
   "complete-progress": {
     "file": "complete-progress.tsx",
@@ -14,8 +13,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Completed linear progress indicator",
-    "testAvg": 100
+    "title": "Completed linear progress indicator"
   },
   "determinate-circular-progress": {
     "file": "determinate-circular-progress.tsx",
@@ -23,8 +21,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Large determinate circular progress indicator",
-    "testAvg": 100
+    "title": "Large determinate circular progress indicator"
   },
   "determinate-circular-small-progress": {
     "file": "determinate-circular-small-progress.tsx",
@@ -32,8 +29,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Small determinate circular progress indicator",
-    "testAvg": 100
+    "title": "Small determinate circular progress indicator"
   },
   "determinate-progress": {
     "file": "determinate-progress.tsx",
@@ -41,8 +37,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Determinate linear progress indicator",
-    "testAvg": 100
+    "title": "Determinate linear progress indicator"
   },
   "error-progress": {
     "file": "error-progress.tsx",
@@ -50,8 +45,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Error linear progress indicator",
-    "testAvg": 100
+    "title": "Error linear progress indicator"
   },
   "indeterminate-circular-progress": {
     "file": "indeterminate-circular-progress.tsx",
@@ -59,8 +53,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Large indeterminate circular progress indicator",
-    "testAvg": 100
+    "title": "Large indeterminate circular progress indicator"
   },
   "indeterminate-circular-small-progress": {
     "file": "indeterminate-circular-small-progress.tsx",
@@ -68,8 +61,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Small indeterminate circular progress indicator",
-    "testAvg": 100
+    "title": "Small indeterminate circular progress indicator"
   },
   "indeterminate-progress": {
     "file": "indeterminate-progress.tsx",
@@ -77,8 +69,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Indeterminate linear progress indicator",
-    "testAvg": 100
+    "title": "Indeterminate linear progress indicator"
   },
   "determinate-no-label-progress": {
     "file": "determinate-no-label-progress.tsx",
@@ -86,8 +77,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Determinate linear progress indicator without visible label",
-    "testAvg": 100
+    "title": "Determinate linear progress indicator without visible label"
   },
   "indeterminate-no-label-progress": {
     "file": "indeterminate-no-label-progress.tsx",
@@ -95,8 +85,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Indeterminate linear progress indicator without visible label",
-    "testAvg": 100
+    "title": "Indeterminate linear progress indicator without visible label"
   },
   "complete-circular-progress": {
     "file": "complete-circular-progress.tsx",
@@ -104,8 +93,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Completed determinate circular progress indicator",
-    "testAvg": 100
+    "title": "Completed determinate circular progress indicator"
   },
   "error-circular-progress": {
     "file": "error-circular-progress.tsx",
@@ -113,7 +101,15 @@
     "tags": {
       "docs": true
     },
-    "title": "Error determinate circular progress indicator",
-    "testAvg": 100
+    "title": "Error determinate circular progress indicator"
+  },
+  "reusable": {
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable progress indicator"
   }
 }

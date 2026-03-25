@@ -2,7 +2,7 @@
   "description": "Element to show hidden elements within pagination component, usually used with ellipsis icon.",
   "displayName": "paginationoverflow",
   "filePath": "/pagination-overflow/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/pagination-overflow/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//pagination-overflow/index.tsx",
   "props": [
     {
       "defaultValue": "li",
@@ -12,6 +12,5 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/pagination See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/pagination/?code_library=react See Docs}"
 }

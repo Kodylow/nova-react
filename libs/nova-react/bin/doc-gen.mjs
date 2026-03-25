@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,19 +15,13 @@
  *
  **/
 import { existsSync, readFileSync, writeFileSync } from 'fs';
-import gitlog from 'gitlog';
 import { globSync } from 'glob';
 import { resolve } from 'path';
 import { parse } from 'react-docgen-typescript';
 import createExports from './component-exports.mjs';
 
 /// Constants:
-const baseRepoPath = 'https://github.com/visa/nova-react/blob/main/libs/nova-react/src';
-const defaultGitLogOptions = {
-  repo: resolve('../../'),
-  number: 1,
-  fields: ['authorDate', 'committerDate', 'hash', 'subject'],
-};
+const baseRepoPath = 'https://github.com/visa/nova-react/blob/main/libs/nova-react/src/';
 const metaDataFilename = 'meta.json';
 const filenameRegex = new RegExp('/[^/]*$');
 const options = {
@@ -55,21 +49,6 @@ const sortObjectsFromKey = (array, key) =>
     return x < y ? -1 : x > y ? 1 : 0;
   });
 
-const getModificationDates = examplePath => {
-  const gitLogged =
-    gitlog({
-      ...defaultGitLogOptions,
-      file: examplePath,
-    })[0] || {};
-
-  return {
-    changeReason: gitLogged.subject,
-    commit: gitLogged.hash,
-    dateCreated: gitLogged.authorDate,
-    dateModified: gitLogged.committerDate,
-  };
-};
-
 const generateDocs = () => {
   // Holds paths to all components/COMPONENT/example/index.json
   const allComponentIndexFiles = globSync(`${resolve('src')}/*/index.{ts,tsx}`, {
@@ -87,6 +66,19 @@ const generateDocs = () => {
     const prevMetaData = existsSync(packageJsonFilePath)
       ? JSON.parse(readFileSync(packageJsonFilePath, 'utf-8')) || {}
       : {};
+
+    // @TODO: temporary fix for react-docgen-typescript <2.4.0. Remove when we update to 2.4.0
+    // For hooks only: create a map of existing defaultValues to preserve them
+    const isHook = displayName.toLowerCase().startsWith('use');
+    const prevDefaultValues = {};
+    if (isHook && prevMetaData.props) {
+      prevMetaData.props.forEach(prop => {
+        if (prop.defaultValue !== undefined) {
+          prevDefaultValues[prop.name] = prop.defaultValue;
+        }
+      });
+    }
+
     const metaData = {
       ...prevMetaData,
       description,
@@ -96,7 +88,9 @@ const generateDocs = () => {
       props: sortObjectsFromKey(
         Object.values(props).map(({ defaultValue, description, name, required, type }) => {
           return {
-            defaultValue: defaultValue?.value,
+            // @TODO: temporary fix for react-docgen-typescript <2.4.0. Revert when we update to 2.4.0
+            // For hooks: preserve existing defaultValue if parser can't extract it
+            defaultValue: defaultValue?.value ?? (isHook ? prevDefaultValues[name] : undefined),
             description,
             name,
             required,
@@ -109,7 +103,6 @@ const generateDocs = () => {
         }),
         'name'
       ),
-      ...getModificationDates(filePath),
       ...tags,
       related: tags?.related?.replaceAll(' ', '').split(','),
     };

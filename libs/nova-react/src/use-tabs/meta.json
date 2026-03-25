@@ -2,7 +2,7 @@
   "description": "This hook allows us to set the <defaultSelected> value, which indicates that we are selecting that item by default.",
   "displayName": "useTabs",
   "filePath": "/use-tabs/index.ts",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/use-tabs/index.ts",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//use-tabs/index.ts",
   "props": [
     {
       "defaultValue": null,
@@ -26,10 +26,22 @@
       "type": "number"
     },
     {
+      "description": "Selected tab index change handler for controlled state, must also pass selected state",
+      "name": "onSelectedIndexChange",
+      "required": false,
+      "type": "(index: number) => void"
+    },
+    {
       "description": "Ref for the tab elements",
       "name": "ref",
       "required": false,
-      "type": "MutableRefObject<HTMLElementType[]>"
+      "type": "RefObject<HTMLElementType[]>"
+    },
+    {
+      "description": "Selected tab index for controlled state, must also pass onSelectedChange",
+      "name": "selectedIndex",
+      "required": false,
+      "type": "number"
     }
   ],
   "vgar": "TODO",
@@ -65,7 +77,6 @@
     "nav",
     "tabs"
   ],
-  "docs": "{@link https://design.visa.com/react/hooks/use-tabs See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/tabs/?code_library=react See Docs}",
   "clientSideOnly": true
 }

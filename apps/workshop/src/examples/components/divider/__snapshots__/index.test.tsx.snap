@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Divider examples Decorative divider should render correctly 1`] = `
+exports[`Divider examples > Decorative divider should render correctly 1`] = `
 <div>
   <hr
     aria-hidden="true"
@@ -9,7 +9,7 @@ exports[`Divider examples Decorative divider should render correctly 1`] = `
 </div>
 `;
 
-exports[`Divider examples Default divider should render correctly 1`] = `
+exports[`Divider examples > Default divider should render correctly 1`] = `
 <div>
   <hr
     class="v-divider"
@@ -17,7 +17,7 @@ exports[`Divider examples Default divider should render correctly 1`] = `
 </div>
 `;
 
-exports[`Divider examples Section divider should render correctly 1`] = `
+exports[`Divider examples > Section divider should render correctly 1`] = `
 <div>
   <hr
     class="v-divider v-divider-section"

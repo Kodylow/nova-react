@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, CSSProperties, ElementType } from 'react';
+import type { ComponentPropsWithRef, CSSProperties, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-progress';
 const SIZES = {
@@ -23,7 +23,7 @@ const SIZES = {
   small: 48,
 };
 
-export type ProgressCircularProperties<ET extends ElementType = 'div',> = {
+export type ProgressCircularProperties<ET extends ElementType = 'div'> = {
   /** If the Progress is Indeterminate Progress */
   indeterminate?: boolean;
   /** Is Paused */
@@ -36,23 +36,21 @@ export type ProgressCircularProperties<ET extends ElementType = 'div',> = {
 
 /**
  * Circular indicator used to show the progress of a task or process.
- * @docs {@link https://design.visa.com/react/components/progress | See Docs}
+ * @docs {@link https://design.visa.com/components/progress/?code_library=react | See Docs}
  * @related progress-label
  * @vgar TODO
  * @wcag TODO
  */
-const ProgressCircular = <ET extends ElementType = 'div',>(
-  {
-    className,
-    children,
-    indeterminate = false,
-    paused = false,
-    progressSize = 'large',
-    style,
-    value,
-    ...remainingProps
-  }: ProgressCircularProperties<ET>,
-) => {
+const ProgressCircular = <ET extends ElementType = 'div'>({
+  className,
+  children,
+  indeterminate = false,
+  paused = false,
+  progressSize = 'large',
+  style,
+  value,
+  ...remainingProps
+}: ProgressCircularProperties<ET>) => {
   const width: number = typeof progressSize === 'string' ? SIZES[progressSize] : progressSize;
   const strokeDasharray = 2 * Math.PI * (width / 2 - 2);
 

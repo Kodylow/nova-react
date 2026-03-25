@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,17 +15,17 @@
  *
  **/
 import cn from 'clsx';
-import MessageContent, { MessageContentProperties } from '../message-content';
+import MessageContent, { type MessageContentProperties } from '../message-content';
 
 export type DialogContentProperties = MessageContentProperties;
 
 /**
  * Component used to display content within a dialog.
- * @docs {@link https://design.visa.com/react/components/dialog | See Docs}
+ * @docs {@link https://design.visa.com/components/dialog/?code_library=react | See Docs}
  */
-const DialogContent = (
-  { className, ...remainingProps }: DialogContentProperties,
-) => <MessageContent className={cn('v-pb-2 v-pr-2', className)} {...remainingProps} />;
+const DialogContent = ({ className, ...remainingProps }: DialogContentProperties) => (
+  <MessageContent className={cn('v-pb-2 v-pr-2', className)} {...remainingProps} />
+);
 
 export default DialogContent;
 

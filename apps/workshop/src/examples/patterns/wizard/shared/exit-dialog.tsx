@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +14,25 @@
  * limitations under the License.
  *
  **/
+
 import { Button, Dialog, DialogCloseButton, DialogContent, DialogHeader, Typography, Utility } from '@visa/nova-react';
 import { VisaCloseTiny, MessageIcon } from '@visa/nova-icons-react';
-import { RefObject } from 'react';
+import type { RefObject } from 'react';
 
+/**
+ * @property exitDialogId - Unique ID for dialog accessibility attributes
+ * @property exitDialogRef - Dialog ref for programmatic control (open/close)
+ * @property onKeyNavigation - Keyboard handler that constrains focus within the dialog while open
+ */
 interface ExitDialogProps {
   exitDialogId: string;
   exitDialogRef: RefObject<HTMLDialogElement>;
   onKeyNavigation: (e: React.KeyboardEvent<HTMLDialogElement>, isOpen?: boolean) => void;
 }
 
+/**
+ * Warning dialog shown when user attempts to exit the wizard.
+ */
 export const ExitDialog = ({ exitDialogId, exitDialogRef, onKeyNavigation }: ExitDialogProps) => {
   return (
     <Dialog

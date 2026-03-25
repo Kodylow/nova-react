@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
  * limitations under the License.
  *
  **/
-import { KeyboardEvent, MutableRefObject, useCallback, useEffect, useRef, useState } from 'react';
-import { FocusableHTMLElement } from '../types';
+import { type KeyboardEvent, type RefObject, useCallback, useEffect, useRef, useState } from 'react';
+import { type FocusableHTMLElement } from '../types';
 
 type UseListboxOptions<HTMLElementType> = {
   /** Auto select (not compatible with multi-select listbox) */
@@ -23,7 +23,7 @@ type UseListboxOptions<HTMLElementType> = {
   /** Default selected elements */
   defaultSelected?: number | number[];
   /** Ref for the tab elements */
-  ref?: MutableRefObject<(HTMLElementType | null)[]>;
+  ref?: RefObject<(HTMLElementType | null)[]>;
 };
 
 const defaultOptions = {
@@ -32,16 +32,17 @@ const defaultOptions = {
 } satisfies Partial<UseListboxOptions<HTMLElement>>;
 
 /**
- * @docs {@link https://design.visa.com/react/hooks/use-listbox | See Docs}
+ * @docs {@link https://design.visa.com/components/listbox/?code_library=react | See Docs}
  * @description This hook is used to manage the selected state and keyboard navigation of listbox component.
  * @related listbox
  * @vgar TODO
  * @wcag TODO
  */
 export const useListbox = <HTMLElementType extends FocusableHTMLElement = HTMLLIElement>(
-  useListboxOptions?: UseListboxOptions<HTMLElementType>
+  useListboxOptions: UseListboxOptions<HTMLElementType> = defaultOptions
 ) => {
   const { defaultSelected, ...options } = { ...defaultOptions, ...useListboxOptions };
+
   // Custom refs if ref not provided
   const customRefs = useRef<(HTMLElementType | null)[]>([]);
   const firstFocusableIndex = useRef<number | null>(null);
@@ -55,6 +56,11 @@ export const useListbox = <HTMLElementType extends FocusableHTMLElement = HTMLLI
   /// Derived State
   // Allows for multiple listbox to be selected
   const multiple = Array.isArray(selectedIndices);
+
+  // Apply fix for invalid configuration BEFORE any usage
+  if (multiple && options.autoSelect) {
+    options.autoSelect = false;
+  }
   // Current index of the focused element
   const currentIndexOfTheFocusableList = focusedIndex === -1 ? 0 : focusableIndices.indexOf(focusedIndex);
   // Number of focusable elements
@@ -62,7 +68,7 @@ export const useListbox = <HTMLElementType extends FocusableHTMLElement = HTMLLI
   // Index for the last focusable element
   const lastFocusableIndex = focusableLength - 1;
   // Ref based on the options or custom refs
-  const ref: MutableRefObject<(HTMLElementType | null)[]> = options?.ref || customRefs;
+  const ref: RefObject<(HTMLElementType | null)[]> = options?.ref || customRefs;
 
   // Callback to determine if an index is selected
   const isIndexSelected = useCallback(
@@ -139,13 +145,15 @@ export const useListbox = <HTMLElementType extends FocusableHTMLElement = HTMLLI
     [isIndexSelected, multiple]
   );
 
-  // Throw error if inappropriate props passed
+  // Warn if inappropriate props passed
   useEffect(() => {
-    if (multiple && options.autoSelect)
-      throw new Error(
-        'ERROR useListbox: autoSelect is not compatible with multi select listbox, try removing {autoSelect: true} or set autoSelect to false, or make only one element in the listbox selected by default'
+    const opts = { ...defaultOptions, ...useListboxOptions };
+    if (multiple && opts.autoSelect) {
+      console.warn(
+        `⚠️ useListbox: autoSelect is not compatible with multiple selection listbox. autoSelect will be set to false when multiple is true.`
       );
-  }, [options, multiple]);
+    }
+  }, [useListboxOptions, multiple]);
 
   // When ref updates update our focusable indices
   useEffect(() => {
@@ -177,8 +185,3 @@ export const useListbox = <HTMLElementType extends FocusableHTMLElement = HTMLLI
 export default useListbox;
 
 useListbox.displayName = 'useListbox';
-
-useListbox.defaultProps = {
-  autoSelect: false,
-  defaultSelected: -1,
-};

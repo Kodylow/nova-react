@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ import {
   Utility,
   UtilityFragment,
 } from '@visa/nova-react';
-import { UseComboboxState, UseComboboxStateChangeOptions, useCombobox, useMultipleSelection } from 'downshift';
+import { useCombobox, useMultipleSelection, type UseComboboxState, type UseComboboxStateChangeOptions } from 'downshift';
 import { useState } from 'react';
 
 type Item = { value: string; disabled?: boolean };
@@ -111,6 +111,7 @@ export const MultiselectWithDisabledOption = () => {
     isOpen,
     setHighlightedIndex,
   } = useCombobox({
+    id,
     items,
     itemToString,
     inputValue,

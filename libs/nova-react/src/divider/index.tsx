@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,24 +15,26 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-divider';
 
-export type DividerProperties<ET extends ElementType = 'div',> = {
+export type DividerProperties<ET extends ElementType = 'div'> = {
   /** Divider Type */
   dividerType?: 'decorative' | 'section';
 } & ComponentPropsWithRef<ET>;
 
 /**
  * Visual element used to separate and group information on a page.
- * @docs {@link https://design.visa.com/react/components/divider | See Docs}
+ * @docs {@link https://design.visa.com/components/divider/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const Divider = <ET extends ElementType = 'div',>(
-  { className, dividerType, ...remainingProps }: DividerProperties<ET>,
-) => (
+const Divider = <ET extends ElementType = 'div'>({
+  className,
+  dividerType,
+  ...remainingProps
+}: DividerProperties<ET>) => (
   <hr
     aria-hidden={dividerType === 'decorative' ? true : undefined}
     className={cn(CSS_PREFIX, dividerType && `${CSS_PREFIX}-${dividerType}`, className)}
@@ -41,9 +43,5 @@ const Divider = <ET extends ElementType = 'div',>(
 );
 
 export default Divider;
-
-Divider.defaultProps = {
-  title: 'Separator',
-};
 
 Divider.displayName = 'Divider';

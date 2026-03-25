@@ -3,6 +3,7 @@
     "allowImportingTsExtensions": false,
     "declaration": true,
     "declarationDir": "dist",
+    "outDir": "dist",
     "noEmit": false
   },
   "extends": "../../tsconfig.json",

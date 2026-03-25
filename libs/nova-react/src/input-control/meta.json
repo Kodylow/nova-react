@@ -2,7 +2,7 @@
   "description": "Container for icons controlling form elements, such as a dropdown icon for a select element.",
   "displayName": "inputcontrol",
   "filePath": "/input-control/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/input-control/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//input-control/index.tsx",
   "props": [
     {
       "defaultValue": "div",
@@ -12,8 +12,7 @@
       "type": "ElementType"
     }
   ],
-  "docs": "{@link https://design.visa.com/react/components/input See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/input/?code_library=react See Docs}",
   "related": [
     "select"
   ]

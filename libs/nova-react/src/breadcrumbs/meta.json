@@ -2,7 +2,7 @@
   "description": "Supplemental navigation indicating the user's location in a site or app.",
   "displayName": "breadcrumbs",
   "filePath": "/breadcrumbs/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/breadcrumbs/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//breadcrumbs/index.tsx",
   "props": [
     {
       "description": "Use Custom Separator",
@@ -20,6 +20,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/breadcrumbs See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/breadcrumbs/?code_library=react See Docs}"
 }

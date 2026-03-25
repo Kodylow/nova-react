@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,11 +18,11 @@ import { renderHook, act } from '@testing-library/react';
 
 import useDebounce from '.';
 
-jest.useFakeTimers();
+vi.useFakeTimers();
 
 describe('useDebounce', () => {
   it('delays the callback by the default delay', () => {
-    const callback = jest.fn();
+    const callback = vi.fn();
 
     const { result } = renderHook(() => useDebounce(callback));
 
@@ -35,14 +35,14 @@ describe('useDebounce', () => {
 
     // Advance timers by the delay
     act(() => {
-      jest.advanceTimersByTime(250);
+      vi.advanceTimersByTime(250);
     });
 
     // Now the callback should have been called
     expect(callback).toHaveBeenCalled();
   });
   it('delays the callback by the specified delay', () => {
-    const callback = jest.fn();
+    const callback = vi.fn();
     const delay = 250;
     const { result } = renderHook(() => useDebounce(callback, delay));
 
@@ -55,7 +55,7 @@ describe('useDebounce', () => {
 
     // Advance timers by the delay
     act(() => {
-      jest.advanceTimersByTime(delay);
+      vi.advanceTimersByTime(delay);
     });
 
     // Now the callback should have been called
@@ -63,7 +63,7 @@ describe('useDebounce', () => {
   });
 
   it('should reset the callback after recall', () => {
-    const callback = jest.fn();
+    const callback = vi.fn();
     const delay = 250;
     const { result } = renderHook(() => useDebounce(callback, delay));
 
@@ -76,7 +76,7 @@ describe('useDebounce', () => {
 
     // Advance timers by the delay
     act(() => {
-      jest.advanceTimersByTime(delay - 1);
+      vi.advanceTimersByTime(delay - 1);
     });
     // Callback should not have been called yet
     expect(callback).not.toHaveBeenCalled();
@@ -86,7 +86,7 @@ describe('useDebounce', () => {
     });
     // Advance timers by the delay
     act(() => {
-      jest.advanceTimersByTime(delay);
+      vi.advanceTimersByTime(delay);
     });
 
     // Now the callback should have been called

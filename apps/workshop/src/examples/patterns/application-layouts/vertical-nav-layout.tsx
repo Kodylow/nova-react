@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,184 +14,198 @@
  * limitations under the License.
  *
  **/
-import {
-    VisaAccountTiny,
-    VisaChevronDownTiny,
-    VisaChevronUpTiny,
-    VisaMediaFastForwardTiny,
-    VisaMediaRewindTiny,
-    VisaStatisticsTiny,
-    VisaSettingsTiny,
-    VisaSecurityTiny,
-    VisaNotesTiny,
-    VisaSupportTicketTiny,
-  } from '@visa/nova-icons-react';
-  import {
-    Button,
-    Divider,
-    Link,
-    Nav,
-    NavAppName,
-    Tab,
-    TabSuffix,
-    Tabs,
-    Typography,
-    Utility,
-    UtilityFragment,
-    VisaLogo,
-  } from '@visa/nova-react';
-  import { useState } from 'react';
-  
 
-  const id = 'vertical-no-main-navigation';
-  
-  const tabsContent = [
-    {
-      tabLabel: 'L1 label 1',
-      id: `${id}-tab-0`,
-      icon: <VisaStatisticsTiny />,
-      href: './application-layouts',
-    },
-    {
-      tabLabel: 'L1 label 2',
-      id: `${id}-tab-1`,
-      icon: <VisaSettingsTiny />,
-      href: './application-layouts',
-    },
-    {
-      tabLabel: 'L1 label 3',
-      id: `${id}-tab-2`,
-      icon: <VisaSecurityTiny />,
-      href: './application-layouts',
-    },
-    {
-      tabLabel: 'L1 label 4',
-      id: `${id}-tab-3`,
-      icon: <VisaNotesTiny />,
-      href: './application-layouts',
-    },
-    {
-      tabLabel: 'L1 label 5',
-      id: `${id}-tab-4`,
-      icon: <VisaSupportTicketTiny />,
-      href: './application-layouts',
-    },
-  ];
-  
-  const accountSubItems = [
-    {
-      tabLabel: 'Account item 1',
-      id: `${id}-account-sub-item-0`,
-      href: './application-layouts',
-    },
-    {
-      tabLabel: 'Account item 2',
-      id: `${id}-account-sub-item-1`,
-      href: './application-layouts',
-    },
-  ];
-  
-  export const VerticalNavigationLayout = () => {
-    const [navExpanded, setNavExpanded] = useState(true);
-    const [accountTabOpen, setAccountTabOpen] = useState(false);
-  
-    return (
-      <Nav id={id} orientation="vertical" tag="header">
-        {navExpanded && (
-          <Link skipLink href="#content">
-            Skip to content
-          </Link>
-        )}
-        {navExpanded && (
-          <>
-            <UtilityFragment
-              vFlex
-              vFlexCol
-              vGap={12}
-              vMarginTop={16}
-              vMarginRight={16}
-              vMarginBottom={30}
-              vMarginLeft={20}
+import {
+  VisaAccountTiny,
+  VisaChevronDownTiny,
+  VisaChevronUpTiny,
+  VisaMediaFastForwardTiny,
+  VisaMediaRewindTiny,
+  VisaStatisticsTiny,
+  VisaSettingsTiny,
+  VisaSecurityTiny,
+  VisaNotesTiny,
+  VisaSupportTicketTiny,
+} from '@visa/nova-icons-react';
+import {
+  Button,
+  Divider,
+  Link,
+  Nav,
+  NavAppName,
+  Tab,
+  TabSuffix,
+  Tabs,
+  Typography,
+  Utility,
+  UtilityFragment,
+  VisaLogo,
+} from '@visa/nova-react';
+import { useState } from 'react';
+
+// Base ID for aria attributes and element IDs - customize for unique identification
+const id = 'vertical-no-main-navigation';
+
+// Navigation tab items with icons - customize labels, icons, and hrefs for your app
+const tabsContent = [
+  {
+    tabLabel: 'L1 label 1',
+    id: `${id}-tab-0`,
+    icon: <VisaStatisticsTiny />,
+    href: './application-layouts',
+  },
+  {
+    tabLabel: 'L1 label 2',
+    id: `${id}-tab-1`,
+    icon: <VisaSettingsTiny />,
+    href: './application-layouts',
+  },
+  {
+    tabLabel: 'L1 label 3',
+    id: `${id}-tab-2`,
+    icon: <VisaSecurityTiny />,
+    href: './application-layouts',
+  },
+  {
+    tabLabel: 'L1 label 4',
+    id: `${id}-tab-3`,
+    icon: <VisaNotesTiny />,
+    href: './application-layouts',
+  },
+  {
+    tabLabel: 'L1 label 5',
+    id: `${id}-tab-4`,
+    icon: <VisaSupportTicketTiny />,
+    href: './application-layouts',
+  },
+];
+
+// Account dropdown menu items - replace with real user profile actions
+const accountSubItems = [
+  {
+    tabLabel: 'Account item 1',
+    id: `${id}-account-sub-item-0`,
+    href: './application-layouts',
+  },
+  {
+    tabLabel: 'Account item 2',
+    id: `${id}-account-sub-item-1`,
+    href: './application-layouts',
+  },
+];
+
+/**
+ * Left sidebar navigation component used by VerticalApplicationLayout.
+ */
+export const VerticalNavigationLayout = () => {
+  // Controls whether sidebar is expanded (with labels) or collapsed (icons only)
+  const [navExpanded, setNavExpanded] = useState(true);
+  // Controls whether account dropdown menu is open
+  const [accountTabOpen, setAccountTabOpen] = useState(false);
+
+  return (
+    <Nav id={id} orientation="vertical" tag="header">
+      {navExpanded && (
+        <Link skipLink href="#content">
+          Skip to content
+        </Link>
+      )}
+      {/* Logo, app name, and navigation tabs - hidden when collapsed */}
+      {navExpanded && (
+        <>
+          <UtilityFragment
+            vFlex
+            vFlexCol
+            vGap={12}
+            vMarginTop={16}
+            vMarginRight={16}
+            vMarginBottom={30}
+            vMarginLeft={20}
+          >
+            <Link
+              aria-label="Visa Application Name Home"
+              href="https://www.visa.com"
+              id={`${id}-home-link`}
+              noUnderline
+              style={{ backgroundColor: 'transparent' }}
             >
-              <Link
-                aria-label="Visa Application Name Home"
-                href="https://www.visa.com"
-                id={`${id}-home-link`}
-                noUnderline
-                style={{ backgroundColor: 'transparent' }}
-              >
-                <VisaLogo />
-                <NavAppName>
-                  <Typography variant="subtitle-1">Application name</Typography>
-                </NavAppName>
-              </Link>
-            </UtilityFragment>
-            <nav aria-label="global">
-              <UtilityFragment vGap={8}>
-                <Tabs orientation="vertical">
-                  {tabsContent.map(tabContent => (
-                    <Tab key={tabContent.id}>
-                      <Button
-                        colorScheme="tertiary"
-                        element={<a href="./application-layouts">
+              <VisaLogo />
+              <NavAppName>
+                <Typography variant="subtitle-1">Application name</Typography>
+              </NavAppName>
+            </Link>
+          </UtilityFragment>
+          {/* Main navigation tabs with icons and labels */}
+          <nav aria-label="global">
+            <UtilityFragment vGap={8}>
+              <Tabs orientation="vertical">
+                {tabsContent.map(tabContent => (
+                  <Tab key={tabContent.id}>
+                    <Button
+                      colorScheme="tertiary"
+                      element={
+                        <a href="./application-layouts">
                           {tabContent.icon}
                           {tabContent.tabLabel}
-                        </a>}
+                        </a>
+                      }
+                    />
+                  </Tab>
+                ))}
+              </Tabs>
+            </UtilityFragment>
+          </nav>
+        </>
+      )}
+      {/* Footer section: account menu (when expanded) and collapse toggle */}
+      <Utility vFlex vFlexCol vAlignSelf="stretch" vGap={4} vMarginTop="auto">
+        {/* Account menu with expandable submenu */}
+        {navExpanded && (
+          <>
+            <Divider dividerType="decorative" />
+            <Tab tag="div">
+              <Button
+                aria-expanded={accountTabOpen}
+                aria-controls={`${id}-account-sub-menu`}
+                aria-label="Alex Miller"
+                buttonSize="large"
+                colorScheme="tertiary"
+                onClick={() => setAccountTabOpen(!accountTabOpen)}
+              >
+                <VisaAccountTiny />
+                Alex Miller
+                <TabSuffix element={accountTabOpen ? <VisaChevronUpTiny /> : <VisaChevronDownTiny />} />
+              </Button>
+              <UtilityFragment vHide={!accountTabOpen}>
+                <Tabs orientation="vertical" id={`${id}-account-sub-menu`} aria-hidden={!accountTabOpen}>
+                  {accountSubItems.map(accountSubItem => (
+                    <Tab key={accountSubItem.id} id={accountSubItem.id}>
+                      <Button
+                        colorScheme="tertiary"
+                        element={<a href={accountSubItem.href}>{accountSubItem.tabLabel}</a>}
                       />
                     </Tab>
                   ))}
                 </Tabs>
               </UtilityFragment>
-            </nav>
+            </Tab>
           </>
         )}
-        <Utility vFlex vFlexCol vAlignSelf="stretch" vGap={4} vMarginTop="auto">
-          {navExpanded && (
-            <>
-              <Divider dividerType="decorative" />
-              <Tab tag="div">
-                <Button
-                  aria-expanded={accountTabOpen}
-                  aria-controls={`${id}-account-sub-menu`}
-                  aria-label="Alex Miller"
-                  buttonSize="large"
-                  colorScheme="tertiary"
-                  onClick={() => setAccountTabOpen(!accountTabOpen)}
-                >
-                  <VisaAccountTiny />
-                  Alex Miller
-                  <TabSuffix element={accountTabOpen ? <VisaChevronUpTiny /> : <VisaChevronDownTiny />} />
-                </Button>
-                <UtilityFragment vHide={!accountTabOpen}>
-                  <Tabs orientation="vertical" id={`${id}-account-sub-menu`} aria-hidden={!accountTabOpen}>
-                    {accountSubItems.map(accountSubItem => (
-                      <Tab key={accountSubItem.id} id={accountSubItem.id}>
-                        <Button
-                          colorScheme="tertiary"
-                          element={<a href={accountSubItem.href}>{accountSubItem.tabLabel}</a>}
-                        />
-                      </Tab>
-                    ))}
-                  </Tabs>
-                </UtilityFragment>
-              </Tab>
-            </>
-          )}
-          <UtilityFragment vMarginLeft={navExpanded ? 'auto' : 5} vMarginRight={navExpanded ? 8 : 5}>
-            <Button
-              aria-label="Side bar"
-              aria-expanded={!!navExpanded}
-              buttonSize="small"
-              colorScheme="tertiary"
-              iconButton
-              onClick={() => setNavExpanded(!navExpanded)}
-              subtle
-            >
-              {navExpanded ? <VisaMediaRewindTiny rtl /> : <VisaMediaFastForwardTiny rtl />}
-            </Button>
-          </UtilityFragment>
-        </Utility>
-      </Nav>
-    );
-  };
-  
+        {/* Collapse/expand toggle button */}
+        <UtilityFragment vMarginLeft={navExpanded ? 'auto' : 5} vMarginRight={navExpanded ? 8 : 5}>
+          <Button
+            aria-label="Side bar"
+            aria-expanded={!!navExpanded}
+            buttonSize="small"
+            colorScheme="tertiary"
+            iconButton
+            onClick={() => setNavExpanded(!navExpanded)}
+            subtle
+          >
+            {navExpanded ? <VisaMediaRewindTiny rtl /> : <VisaMediaFastForwardTiny rtl />}
+          </Button>
+        </UtilityFragment>
+      </Utility>
+    </Nav>
+  );
+};

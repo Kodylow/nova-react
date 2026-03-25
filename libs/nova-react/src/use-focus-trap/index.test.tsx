@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ import { act, renderHook } from '@testing-library/react';
 import { KeyboardEvent, MutableRefObject } from 'react';
 import { useFocusTrap } from './index';
 
-const focusMocks = jest.fn();
+const focusMocks = vi.fn();
 
 const mockFirstElement = {
   id: 'first',
@@ -63,7 +63,7 @@ describe('useFocusTrap', () => {
       })
     );
 
-    const mockFn = jest.fn();
+    const mockFn = vi.fn();
 
     const keyboardEvent = {
       key: 'Tab',
@@ -85,7 +85,7 @@ describe('useFocusTrap', () => {
       })
     );
 
-    const mockFn = jest.fn();
+    const mockFn = vi.fn();
 
     const keyboardEvent = {
       key: 'Tab',
@@ -147,7 +147,7 @@ describe('useFocusTrap', () => {
       })
     );
 
-    const mockFn = jest.fn();
+    const mockFn = vi.fn();
 
     const keyboardEvent = {
       key: 'Tab',

@@ -2,7 +2,7 @@
   "description": "Interactive element enabling users to select a single option from a list.",
   "displayName": "dropdownmenu",
   "filePath": "/dropdown-menu/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/dropdown-menu/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//dropdown-menu/index.tsx",
   "props": [
     {
       "defaultValue": "div",
@@ -14,8 +14,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/dropdown-menu See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/dropdown-menu/?code_library=react See Docs}",
   "related": [
     "dropdown-button",
     "dropdown-container"

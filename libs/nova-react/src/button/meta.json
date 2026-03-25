@@ -2,7 +2,7 @@
   "description": "Interactive elements enabling users to take actions within an interface.",
   "displayName": "button",
   "filePath": "/button/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/button/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//button/index.tsx",
   "props": [
     {
       "description": "Alternate color scheme",
@@ -14,13 +14,13 @@
       "description": "Size of Button",
       "name": "buttonSize",
       "required": false,
-      "type": "\"small\" | \"large\""
+      "type": "\"small\" | \"large\" | \"medium\""
     },
     {
       "description": "Color Scheme of Button",
       "name": "colorScheme",
       "required": false,
-      "type": "\"secondary\" | \"tertiary\""
+      "type": "\"primary\" | \"secondary\" | \"tertiary\""
     },
     {
       "description": "Destructive Button",
@@ -68,6 +68,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/button See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/button/?code_library=react See Docs}"
 }

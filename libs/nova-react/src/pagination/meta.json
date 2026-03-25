@@ -2,8 +2,15 @@
   "description": "Set of links used to navigate content split across multiple pages.",
   "displayName": "pagination",
   "filePath": "/pagination/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/pagination/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//pagination/index.tsx",
   "props": [
+    {
+      "defaultValue": "horizontal",
+      "description": "Layout orientation - automatically applies flex-row (horizontal) or flex-col (vertical)",
+      "name": "orientation",
+      "required": false,
+      "type": "\"horizontal\" | \"vertical\""
+    },
     {
       "defaultValue": "ul",
       "description": "Tag of Component",
@@ -14,8 +21,7 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "docs": "{@link https://design.visa.com/react/components/pagination See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/pagination/?code_library=react See Docs}",
   "related": [
     "pagination-overflow",
     "use-pagination"

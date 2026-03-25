@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-panel';
 
-export type PanelProperties<ET extends ElementType = 'div',> = {
-
+export type PanelProperties<ET extends ElementType = 'div'> = {
   /** Expandable */
   expandable?: boolean;
   /** Responsive */
@@ -33,14 +32,19 @@ export type PanelProperties<ET extends ElementType = 'div',> = {
 
 /**
  * Collapsible or persistent containers used to present supplementary information.
- * @docs {@link https://design.visa.com/react/components/panel | See Docs}
+ * @docs {@link https://design.visa.com/components/panel/?code_library=react | See Docs}
  * @related panel-body, panel-content, panel-header, panel-toggle, use-focus-trap
  * @vgar TODO
  * @wcag TODO
  */
-const Panel = <ET extends ElementType = 'div',>(
-  { className, expandable, responsive, skrim, tag: Tag = 'div', ...remainingProps }: PanelProperties<ET>,
-) => (
+const Panel = <ET extends ElementType = 'div'>({
+  className,
+  expandable,
+  responsive,
+  skrim,
+  tag: Tag = 'div',
+  ...remainingProps
+}: PanelProperties<ET>) => (
   <Tag
     className={cn(
       CSS_PREFIX,
@@ -54,9 +58,5 @@ const Panel = <ET extends ElementType = 'div',>(
 );
 
 export default Panel;
-
-Panel.defaultProps = {
-  tag: 'div',
-};
 
 Panel.displayName = 'Panel';

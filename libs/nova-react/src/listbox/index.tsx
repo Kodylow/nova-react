@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-listbox';
 
-export type ListboxProperties<ET extends ElementType = 'ul',> = {
+export type ListboxProperties<ET extends ElementType = 'ul'> = {
   /** Multiselect */
   multiselect?: boolean;
   /** Scroll */
@@ -30,14 +30,18 @@ export type ListboxProperties<ET extends ElementType = 'ul',> = {
 
 /**
  * Container that displays a list of items available for selection.
- * @docs {@link https://design.visa.com/react/components/listbox | See Docs}
+ * @docs {@link https://design.visa.com/components/listbox/?code_library=react | See Docs}
  * @related listbox-container, listbox-item, use-listbox
  * @vgar TODO
  * @wcag TODO
  */
-const Listbox = <ET extends ElementType = 'ul',>(
-  { className, multiselect, scroll, tag: Tag = 'ul', ...remainingProps }: ListboxProperties<ET>,
-) => (
+const Listbox = <ET extends ElementType = 'ul'>({
+  className,
+  multiselect,
+  scroll,
+  tag: Tag = 'ul',
+  ...remainingProps
+}: ListboxProperties<ET>) => (
   <Tag
     className={cn(CSS_PREFIX, multiselect && `${CSS_PREFIX}-multiselect`, scroll && `${CSS_PREFIX}-scroll`, className)}
     {...remainingProps}
@@ -45,9 +49,5 @@ const Listbox = <ET extends ElementType = 'ul',>(
 );
 
 export default Listbox;
-
-Listbox.defaultProps = {
-  tag: 'ul',
-};
 
 Listbox.displayName = 'Listbox';

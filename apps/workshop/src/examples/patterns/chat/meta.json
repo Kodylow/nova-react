@@ -3,7 +3,6 @@
     "file": "responses.json",
     "id": "responses",
     "title": "Responses",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -13,7 +12,6 @@
     "file": "response-chat-bubble.tsx",
     "id": "response-chat-bubble",
     "title": "Response chat bubble",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -23,7 +21,6 @@
     "file": "user-chat-bubble.tsx",
     "id": "user-chat-bubble",
     "title": "User chat bubble",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -33,7 +30,6 @@
     "file": "chat-input.tsx",
     "id": "chat-input",
     "title": "Chat input",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -43,7 +39,6 @@
     "file": "chat-context.tsx",
     "id": "chat-context",
     "title": "Chat context",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -83,7 +78,6 @@
     "file": "chat-suggestions.tsx",
     "id": "chat-suggestions",
     "title": "Chat suggestions",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -93,7 +87,6 @@
     "file": "chat-provider.tsx",
     "id": "chat-provider",
     "title": "Chat provider",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isShared": true
@@ -103,7 +96,6 @@
     "file": "default-dialog-chat.tsx",
     "id": "default-dialog-chat",
     "title": "Default dialog chat",
-    "testAvg": 100,
     "tags": {
       "patterns": true
     }
@@ -112,7 +104,6 @@
     "file": "full-page-chat-card.tsx",
     "id": "full-page-chat-card",
     "title": "Full page chat card",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isSubComponent": true
@@ -122,7 +113,6 @@
     "file": "full-page-navigation.tsx",
     "id": "full-page-navigation",
     "title": "Full page navigation",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isSubComponent": true
@@ -132,7 +122,6 @@
     "file": "full-page-css.scss",
     "id": "full-page-css",
     "title": "Full page css",
-    "testAvg": 100,
     "tags": {
       "patterns": true,
       "isSubComponent": true
@@ -142,7 +131,6 @@
     "file": "default-full-page-chat.tsx",
     "id": "default-full-page-chat",
     "title": "Default full page chat",
-    "testAvg": 100,
     "tags": {
       "patterns": true
     },
@@ -156,7 +144,6 @@
     "file": "default-panel-chat.tsx",
     "id": "default-panel-chat",
     "title": "Default panel chat",
-    "testAvg": 100,
     "tags": {
       "patterns": true
     }

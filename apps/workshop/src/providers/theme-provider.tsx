@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import clsx from 'clsx';
-import { ReactNode, createContext, useCallback, useContext, useEffect, useId, useRef, useState } from 'react';
+import { createContext, useCallback, useContext, useEffect, useId, useRef, useState, type ReactNode } from 'react';
 
 type DefaultPreferences = { darkMode?: boolean; themeKey?: string };
 

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 export const Examples: ExampleIndex[] = [
   { id: 'default-switches-section', title: 'Default switches', type: 'section' },
@@ -24,6 +24,8 @@ export const Examples: ExampleIndex[] = [
   },
   { id: 'disabled-switch' },
   { id: 'disabled-switch-on' },
+  { id: 'Custom switch example', title: 'Custom switches', type: 'section' },
+  { id: 'reusable' },
 ];
 
 export default Examples;

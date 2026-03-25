@@ -2,28 +2,30 @@
   "bottom-tooltip": {
     "file": "bottom-tooltip.tsx",
     "id": "bottom-tooltip",
-    "title": "Bottom-positioned tooltip",
-    "testAvg": 100
+    "title": "Bottom-positioned tooltip"
   },
   "left-tooltip": {
     "file": "left-tooltip.tsx",
     "id": "left-tooltip",
-    "title": "Left-positioned tooltip",
-    "testAvg": 100
+    "title": "Left-positioned tooltip"
   },
   "right-tooltip": {
     "file": "right-tooltip.tsx",
     "id": "right-tooltip",
-    "title": "Right-positioned tooltip",
-    "testAvg": 100
+    "title": "Right-positioned tooltip"
   },
   "top-tooltip": {
     "file": "top-tooltip.tsx",
     "id": "top-tooltip",
-    "title": "Top-positioned tooltip",
-    "testAvg": 100
+    "title": "Top-positioned tooltip"
   },
-  "meta": {
-    "designReviewDate": "2024-05-09"
+  "reusable": {
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "title": "Reusable tooltip"
   }
 }

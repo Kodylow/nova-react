@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Select examples Default select should render correctly 1`] = `
+exports[`Select examples > Default select should render correctly 1`] = `
 <div>
   <fieldset
     class="v-flex v-flex-col v-gap-6"
@@ -63,9 +63,7 @@ exports[`Select examples Default select should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -74,7 +72,7 @@ exports[`Select examples Default select should render correctly 1`] = `
 </div>
 `;
 
-exports[`Select examples Disabled select should render correctly 1`] = `
+exports[`Select examples > Disabled select should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-16"
@@ -143,9 +141,7 @@ exports[`Select examples Disabled select should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>
@@ -177,7 +173,7 @@ exports[`Select examples Disabled select should render correctly 1`] = `
 </div>
 `;
 
-exports[`Select examples Read-only select should render correctly 1`] = `
+exports[`Select examples > Read-only select should render correctly 1`] = `
 <div>
   <fieldset
     class="v-flex v-flex-col v-gap-6"
@@ -248,9 +244,7 @@ exports[`Select examples Read-only select should render correctly 1`] = `
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -259,7 +253,409 @@ exports[`Select examples Read-only select should render correctly 1`] = `
 </div>
 `;
 
-exports[`Select examples Select for card expiration should render correctly 1`] = `
+exports[`Select examples > Reusable select should render correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="v-flex v-flex-col v-flex-wrap v-gap-4"
+    >
+      <label
+        class="v-label"
+        for="test-id-0-select"
+        id="test-id-0-label"
+      >
+        Label
+         
+      </label>
+      <div
+        class="v-flex v-flex-col v-flex-grow v-gap-4"
+      >
+        <div
+          class="v-surface v-input-container"
+        >
+          <select
+            aria-describedby="test-id-0-message"
+            aria-invalid="false"
+            class="v-input"
+            id="test-id-0-select"
+          >
+            <option
+              hidden=""
+            />
+            <option
+              value="1"
+            >
+              Option 1
+            </option>
+            <option
+              value="2"
+            >
+              Option 2
+            </option>
+            <option
+              value="3"
+            >
+              Option 3
+            </option>
+            <option
+              value="4"
+            >
+              Option 4
+            </option>
+            <option
+              value="5"
+            >
+              Option 5
+            </option>
+          </select>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+            />
+          </svg>
+        </div>
+        <span
+          class="v-input-message"
+          id="test-id-0-message"
+        >
+          This is optional text that describes the label in more detail.
+        </span>
+      </div>
+    </div>
+    <div
+      style="margin-top: 24px;"
+    >
+      <details
+        class="v-accordion"
+        id="test-id-1"
+      >
+        <summary
+          class="v-button v-button-large v-button-secondary v-accordion-heading v-gap-2 v-typography-body-2-medium"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right v-icon-rtl v-accordion-toggle-icon v-accordion-toggle-icon-closed"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down v-accordion-toggle-icon v-accordion-toggle-icon-open"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+            />
+          </svg>
+          <div
+            class="v-align-items-center v-flex v-gap-6"
+          >
+            Customize demo
+          </div>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-32"
+        >
+          <form>
+            <div
+              class="v-flex v-flex-col v-gap-16"
+              style="margin-bottom: 32px;"
+            >
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-2-input"
+                >
+                  Label
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-2-input"
+                      type="text"
+                      value="Label"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-3-input"
+                >
+                  Message
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-3-input"
+                      type="text"
+                      value="This is optional text that describes the label in more detail."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-4-input"
+                >
+                  Error message
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-4-input"
+                      type="text"
+                      value="This is required text that describes the error in more detail."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-5-input"
+                >
+                  Options
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <textarea
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-5-input"
+                      style="block-size: 100px;"
+                    >
+                      [
+    {
+        "label": "Option 1",
+        "value": 1
+    },
+    {
+        "label": "Option 2",
+        "value": 2
+    },
+    {
+        "label": "Option 3",
+        "value": 3
+    },
+    {
+        "label": "Option 4",
+        "value": 4
+    },
+    {
+        "label": "Option 5",
+        "value": 5
+    }
+]
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-6-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-6-input"
+                  >
+                    Disabled
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-6-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-7-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-7-input"
+                  >
+                    Inline
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-7-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-8-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-8-input"
+                  >
+                    Invalid
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-8-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-9-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-9-input"
+                  >
+                    Readonly
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-9-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-10-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-10-input"
+                  >
+                    Required
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-10-message"
+              />
+            </div>
+            <div
+              class="v-flex v-gap-16"
+              style="margin-bottom: 16px;"
+            >
+              <button
+                class="v-button"
+                type="submit"
+              >
+                Apply
+              </button>
+              <button
+                class="v-button v-button-secondary"
+                type="button"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Select examples > Select for card expiration should render correctly 1`] = `
 <div>
   <form
     class="v-flex v-flex-col v-gap-6"
@@ -370,9 +766,7 @@ exports[`Select examples Select for card expiration should render correctly 1`] 
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                fill-rule="evenodd"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
               />
             </svg>
           </div>
@@ -401,11 +795,6 @@ exports[`Select examples Select for card expiration should render correctly 1`] 
               hidden=""
               value=""
             />
-            <option
-              value="2025"
-            >
-              25
-            </option>
             <option
               value="2026"
             >
@@ -456,6 +845,11 @@ exports[`Select examples Select for card expiration should render correctly 1`] 
             >
               35
             </option>
+            <option
+              value="2036"
+            >
+              36
+            </option>
           </select>
           <div
             class="v-input-control"
@@ -471,9 +865,7 @@ exports[`Select examples Select for card expiration should render correctly 1`] 
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                fill-rule="evenodd"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
               />
             </svg>
           </div>
@@ -492,7 +884,7 @@ exports[`Select examples Select for card expiration should render correctly 1`] 
 </div>
 `;
 
-exports[`Select examples Select with error should render correctly 1`] = `
+exports[`Select examples > Select with error should render correctly 1`] = `
 <div>
   <form
     class="v-flex v-flex-col v-gap-16"
@@ -563,9 +955,7 @@ exports[`Select examples Select with error should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>
@@ -591,7 +981,7 @@ exports[`Select examples Select with error should render correctly 1`] = `
 </div>
 `;
 
-exports[`Select examples Select with inline label should render correctly 1`] = `
+exports[`Select examples > Select with inline label should render correctly 1`] = `
 <div>
   <fieldset
     class="v-align-items-center v-flex v-flex-row v-gap-6"
@@ -654,9 +1044,7 @@ exports[`Select examples Select with inline label should render correctly 1`] = 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -665,7 +1053,7 @@ exports[`Select examples Select with inline label should render correctly 1`] = 
 </div>
 `;
 
-exports[`Select examples Select with inline message should render correctly 1`] = `
+exports[`Select examples > Select with inline message should render correctly 1`] = `
 <div>
   <fieldset
     aria-labelledby="select-with-inline-message-message"
@@ -730,9 +1118,7 @@ exports[`Select examples Select with inline message should render correctly 1`] 
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>

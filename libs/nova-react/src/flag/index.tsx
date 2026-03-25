@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import cn from 'clsx';
-import Message, { MessageProperties } from '../message';
+import Message, { type MessageProperties } from '../message';
 
 const CSS_PREFIX = 'v-flag';
 
@@ -23,14 +23,14 @@ export type FlagProperties = MessageProperties;
 
 /**
  * Messages that provide low-priority updates about a process or event
- * @docs {@link https://design.visa.com/react/components/flag | See Docs}
+ * @docs {@link https://design.visa.com/components/flag/?code_library=react | See Docs}
  * @related flag-close-button, message-content
  * @vgar TODO
  * @wcag TODO
  */
-const Flag = (
-  { className, ...remainingProps }: FlagProperties,
-) => <Message className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const Flag = ({ className, ...remainingProps }: FlagProperties) => (
+  <Message className={cn(CSS_PREFIX, className)} {...remainingProps} />
+);
 
 export default Flag;
 

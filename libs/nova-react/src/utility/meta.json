@@ -2,7 +2,7 @@
   "description": "Component used to create a div, by default, with the correct Nova utility style classes applied.",
   "displayName": "Utility",
   "filePath": "/utility/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/utility/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//utility/index.tsx",
   "props": [
     {
       "description": "Cloned Element (not compatible with tag property)",
@@ -248,8 +248,7 @@
   ],
   "vgar": "2.1",
   "wcag": "2.1",
-  "docs": "{@link https://design.visa.com/react/utilities/api See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/base-elements/responsive-grid-system/breakpoints/?code_library=react See Docs}",
   "related": [
     "utility-fragment"
   ]

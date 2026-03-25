@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,8 +22,8 @@ import { UseButtonDebounceExample } from './use-button-debounce-example';
 
 const examples = [{ Component: UseButtonDebounceExample, title: metaData['use-button-debounce-example'].title }];
 
-beforeAll(() => jest.useFakeTimers());
-afterAll(() => jest.useRealTimers());
+beforeAll(() => vi.useFakeTimers());
+afterAll(() => vi.useRealTimers());
 
 describe('useDebounce example', () => {
   examples.forEach(({ Component, title }) => {
@@ -42,7 +42,7 @@ describe('useDebounce example', () => {
 
       // Advance timers by the delay
       act(() => {
-        jest.advanceTimersByTime(1000);
+        vi.advanceTimersByTime(1000);
       });
 
       expect(screen.queryByText('Button click successful, many thanks')).toBeInTheDocument();

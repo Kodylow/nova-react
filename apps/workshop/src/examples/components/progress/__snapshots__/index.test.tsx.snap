@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Progress examples Completed determinate circular progress indicator should render correctly 1`] = `
+exports[`Progress examples > Completed determinate circular progress indicator should render correctly 1`] = `
 <div>
   <div
     aria-labelledby="large-complete-circular-progress completed-circular-screen-reader-message"
@@ -38,7 +38,7 @@ exports[`Progress examples Completed determinate circular progress indicator sho
 </div>
 `;
 
-exports[`Progress examples Completed linear progress indicator should render correctly 1`] = `
+exports[`Progress examples > Completed linear progress indicator should render correctly 1`] = `
 <div>
   <progress
     aria-valuenow="100"
@@ -67,15 +67,11 @@ exports[`Progress examples Completed linear progress indicator should render cor
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C8.74542 2 9.4591 2.13593 10.1176 2.38437L11.6319 0.870034C10.542 0.313733 9.30764 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 7.21837 15.8879 6.46293 15.6789 5.74886L13.9678 7.37472C13.9891 7.58024 14 7.78885 14 8Z"
-          fill-rule="evenodd"
+          d="M8 0C9.30716 0 10.5403 0.315171 11.6299 0.871094L10.1162 2.38477C9.45802 2.13659 8.74502 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 7.78891 13.9881 7.58047 13.9668 7.375L15.6768 5.75C15.8857 6.46393 16 7.21854 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M15 3.46597L7.72838 10.9961L5 8.18244L6.42533 6.71257L7.72838 8.05635L13.5747 1.99609L15 3.46597Z"
-          fill-rule="evenodd"
+          d="M15 3.46582L7.72852 10.9961L5 8.18262L6.42578 6.71289L7.72852 8.05664L13.5742 1.99609L15 3.46582Z"
         />
       </svg>
       File is now uploaded.
@@ -87,7 +83,7 @@ exports[`Progress examples Completed linear progress indicator should render cor
 </div>
 `;
 
-exports[`Progress examples Custom size determinate circular progress indicator should render correctly 1`] = `
+exports[`Progress examples > Custom size determinate circular progress indicator should render correctly 1`] = `
 <div>
   <div
     aria-labelledby="circular-custom-size-determinate-progress"
@@ -140,7 +136,7 @@ exports[`Progress examples Custom size determinate circular progress indicator s
 </div>
 `;
 
-exports[`Progress examples Determinate linear progress indicator should render correctly 1`] = `
+exports[`Progress examples > Determinate linear progress indicator should render correctly 1`] = `
 <div>
   <progress
     class="v-progress v-progress-bar v-my-8"
@@ -182,7 +178,7 @@ exports[`Progress examples Determinate linear progress indicator should render c
 </div>
 `;
 
-exports[`Progress examples Determinate linear progress indicator without visible label should render correctly 1`] = `
+exports[`Progress examples > Determinate linear progress indicator without visible label should render correctly 1`] = `
 <div>
   <progress
     class="v-progress v-progress-bar v-my-8"
@@ -221,7 +217,7 @@ exports[`Progress examples Determinate linear progress indicator without visible
 </div>
 `;
 
-exports[`Progress examples Error determinate circular progress indicator should render correctly 1`] = `
+exports[`Progress examples > Error determinate circular progress indicator should render correctly 1`] = `
 <div>
   <span
     class="v-input-message v-input-error"
@@ -238,15 +234,11 @@ exports[`Progress examples Error determinate circular progress indicator should 
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9 4H7V8H9V4ZM8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11C9 10.4477 8.55228 10 8 10Z"
-        fill-rule="evenodd"
+        d="M8 10C8.55228 10 9 10.4477 9 11C9 11.5523 8.55228 12 8 12C7.44772 12 7 11.5523 7 11C7 10.4477 7.44772 10 8 10ZM9 8H7V4H9V8Z"
       />
       <defs>
         <clippath>
@@ -262,7 +254,7 @@ exports[`Progress examples Error determinate circular progress indicator should 
 </div>
 `;
 
-exports[`Progress examples Error linear progress indicator should render correctly 1`] = `
+exports[`Progress examples > Error linear progress indicator should render correctly 1`] = `
 <div>
   <progress
     class="v-progress v-progress-bar v-progress-error v-my-8"
@@ -290,15 +282,11 @@ exports[`Progress examples Error linear progress indicator should render correct
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
-          fill-rule="evenodd"
+          d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M9 4H7V8H9V4ZM8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11C9 10.4477 8.55228 10 8 10Z"
-          fill-rule="evenodd"
+          d="M8 10C8.55228 10 9 10.4477 9 11C9 11.5523 8.55228 12 8 12C7.44772 12 7 11.5523 7 11C7 10.4477 7.44772 10 8 10ZM9 8H7V4H9V8Z"
         />
         <defs>
           <clippath>
@@ -318,7 +306,7 @@ exports[`Progress examples Error linear progress indicator should render correct
 </div>
 `;
 
-exports[`Progress examples Indeterminate linear progress indicator should render correctly 1`] = `
+exports[`Progress examples > Indeterminate linear progress indicator should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-12"
@@ -350,15 +338,11 @@ exports[`Progress examples Indeterminate linear progress indicator should render
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
-            fill-rule="evenodd"
+            d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
-            fill-rule="evenodd"
+            d="M7 11H5V5H7V11ZM11 11H9V5H11V11Z"
           />
           <defs>
             <clippath>
@@ -376,7 +360,7 @@ exports[`Progress examples Indeterminate linear progress indicator should render
 </div>
 `;
 
-exports[`Progress examples Indeterminate linear progress indicator without visible label should render correctly 1`] = `
+exports[`Progress examples > Indeterminate linear progress indicator without visible label should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-12"
@@ -408,15 +392,11 @@ exports[`Progress examples Indeterminate linear progress indicator without visib
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
-            fill-rule="evenodd"
+            d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
-            fill-rule="evenodd"
+            d="M7 11H5V5H7V11ZM11 11H9V5H11V11Z"
           />
           <defs>
             <clippath>
@@ -434,7 +414,7 @@ exports[`Progress examples Indeterminate linear progress indicator without visib
 </div>
 `;
 
-exports[`Progress examples Large determinate circular progress indicator should render correctly 1`] = `
+exports[`Progress examples > Large determinate circular progress indicator should render correctly 1`] = `
 <div>
   <div
     aria-labelledby="large-determinate-circular-progress"
@@ -487,7 +467,7 @@ exports[`Progress examples Large determinate circular progress indicator should 
 </div>
 `;
 
-exports[`Progress examples Large indeterminate circular progress indicator should render correctly 1`] = `
+exports[`Progress examples > Large indeterminate circular progress indicator should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-12"
@@ -519,15 +499,11 @@ exports[`Progress examples Large indeterminate circular progress indicator shoul
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
-            fill-rule="evenodd"
+            d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
-            fill-rule="evenodd"
+            d="M7 11H5V5H7V11ZM11 11H9V5H11V11Z"
           />
           <defs>
             <clippath>
@@ -545,7 +521,379 @@ exports[`Progress examples Large indeterminate circular progress indicator shoul
 </div>
 `;
 
-exports[`Progress examples Small determinate circular progress indicator should render correctly 1`] = `
+exports[`Progress examples > Reusable progress indicator should render correctly 1`] = `
+<div>
+  <div>
+    <style>
+      
+        .circular-progress-label {
+          block-size: 100%;
+          inline-size: 100%;
+      }
+      
+    </style>
+    <progress
+      class="v-progress v-progress-bar v-my-8"
+      id="test-id-0-progress"
+      max="100"
+      value="70"
+    />
+    <label
+      class="v-progress-label"
+      for="test-id-0-progress"
+    >
+      <div
+        class="v-flex v-gap-4"
+        role="alert"
+      >
+        Filename.jpg
+      </div>
+      <span>
+        70
+        %
+      </span>
+      <span
+        class="v-screen-reader"
+        role="alert"
+      >
+        Loading...
+      </span>
+    </label>
+    <div
+      style="margin-top: 24px;"
+    >
+      <details
+        class="v-accordion"
+        id="test-id-1"
+      >
+        <summary
+          class="v-button v-button-large v-button-secondary v-accordion-heading v-gap-2 v-typography-body-2-medium"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-right v-icon-rtl v-accordion-toggle-icon v-accordion-toggle-icon-closed"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down v-accordion-toggle-icon v-accordion-toggle-icon-open"
+            focusable="false"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="v-icon-primary"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+            />
+          </svg>
+          <div
+            class="v-align-items-center v-flex v-gap-6"
+          >
+            Customize demo
+          </div>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-32"
+        >
+          <form>
+            <div
+              class="v-flex v-flex-col v-gap-16"
+              style="margin-bottom: 32px;"
+            >
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-2-input"
+                >
+                  Message
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-2-input"
+                      type="text"
+                      value="Filename.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-flex-wrap v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-3-select"
+                  id="test-id-3-label"
+                >
+                  Message type
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <select
+                      aria-describedby="test-id-3-message"
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-3-select"
+                    >
+                      <option
+                        hidden=""
+                      />
+                      <option
+                        value="subtle"
+                      >
+                        Subtle
+                      </option>
+                      <option
+                        value="information"
+                      >
+                        Information
+                      </option>
+                      <option
+                        value="error"
+                      >
+                        Error
+                      </option>
+                      <option
+                        value="success"
+                      >
+                        Success
+                      </option>
+                      <option
+                        value="warning"
+                      >
+                        Warning
+                      </option>
+                    </select>
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+                      focusable="false"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="v-input-message"
+                    id="test-id-3-message"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-4-input"
+                >
+                  Progress
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-4-input"
+                      type="number"
+                      value="70"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="v-flex v-flex-col v-flex-wrap v-gap-4"
+              >
+                <label
+                  class="v-label"
+                  for="test-id-5-select"
+                  id="test-id-5-label"
+                >
+                  Type
+                   
+                </label>
+                <div
+                  class="v-flex v-flex-col v-flex-grow v-gap-4"
+                >
+                  <div
+                    class="v-surface v-input-container"
+                  >
+                    <select
+                      aria-describedby="test-id-5-message"
+                      aria-invalid="false"
+                      class="v-input"
+                      id="test-id-5-select"
+                    >
+                      <option
+                        hidden=""
+                      />
+                      <option
+                        value="circular"
+                      >
+                        Circular
+                      </option>
+                      <option
+                        value="linear"
+                      >
+                        Linear
+                      </option>
+                    </select>
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-visa v-icon-tiny v-icon-chevron-down"
+                      focusable="false"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="v-input-message"
+                    id="test-id-5-message"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  checked=""
+                  class="v-checkbox"
+                  id="test-id-6-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-6-input"
+                  >
+                    Determinate
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-6-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-7-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-7-input"
+                  >
+                    Hide message
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-7-message"
+              />
+              <div
+                class="v-flex"
+              >
+                <input
+                  aria-invalid="false"
+                  class="v-checkbox"
+                  id="test-id-8-input"
+                  type="checkbox"
+                />
+                <div
+                  class="v-flex v-flex-col v-gap-2 v-my-10"
+                >
+                  <label
+                    class="v-label"
+                    for="test-id-8-input"
+                  >
+                    Hide progress
+                  </label>
+                </div>
+              </div>
+              <span
+                class="v-input-message v-mt-4"
+                id="test-id-8-message"
+              />
+            </div>
+            <div
+              class="v-flex v-gap-16"
+              style="margin-bottom: 16px;"
+            >
+              <button
+                class="v-button"
+                type="submit"
+              >
+                Apply
+              </button>
+              <button
+                class="v-button v-button-secondary"
+                type="button"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Progress examples > Small determinate circular progress indicator should render correctly 1`] = `
 <div>
   <div
     aria-labelledby="small-determinate-circular-progress"
@@ -594,7 +942,7 @@ exports[`Progress examples Small determinate circular progress indicator should 
 </div>
 `;
 
-exports[`Progress examples Small indeterminate circular progress indicator should render correctly 1`] = `
+exports[`Progress examples > Small indeterminate circular progress indicator should render correctly 1`] = `
 <div>
   <div
     class="v-flex v-flex-col v-gap-12"
@@ -626,15 +974,11 @@ exports[`Progress examples Small indeterminate circular progress indicator shoul
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
-            fill-rule="evenodd"
+            d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
-            fill-rule="evenodd"
+            d="M7 11H5V5H7V11ZM11 11H9V5H11V11Z"
           />
           <defs>
             <clippath>

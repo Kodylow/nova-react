@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-screen-reader';
 
-export type ScreenReaderProperties<ET extends ElementType = 'span',> = {
-
+export type ScreenReaderProperties<ET extends ElementType = 'span'> = {
   /** Tag of Component */
   tag?: ElementType;
 } & ComponentPropsWithRef<ET>;
@@ -28,14 +27,12 @@ export type ScreenReaderProperties<ET extends ElementType = 'span',> = {
 /**
  * Text elements to only be read by screen readers but not shown visually on screen.
  */
-const ScreenReader = <ET extends ElementType = 'span',>(
-  { className, tag: Tag = 'span', ...remainingProps }: ScreenReaderProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const ScreenReader = <ET extends ElementType = 'span'>({
+  className,
+  tag: Tag = 'span',
+  ...remainingProps
+}: ScreenReaderProperties<ET>) => <Tag className={cn(CSS_PREFIX, className)} {...remainingProps} />;
 
 export default ScreenReader;
-
-ScreenReader.defaultProps = {
-  tag: 'span',
-};
 
 ScreenReader.displayName = 'ScreenReader';

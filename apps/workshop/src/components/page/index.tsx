@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  **/
 import { Typography } from '@visa/nova-react';
 import cn from 'clsx';
-import { ElementType, ReactNode, forwardRef } from 'react';
+import { forwardRef, type ElementType, type ReactNode } from 'react';
 import Styles from './styles.module.scss';
 
 type DefaultProps = {

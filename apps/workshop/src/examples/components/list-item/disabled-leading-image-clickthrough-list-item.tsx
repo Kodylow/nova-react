@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  **/
 import { VisaChevronRightTiny } from '@visa/nova-icons-react';
 import { Avatar, Typography, Utility, UtilityFragment, Surface, Button } from '@visa/nova-react';
-import { CSSProperties } from 'react';
+import type { CSSProperties } from 'react';
 
 /// This is the base url for where your site is deployed. `import.meta.env.BASE_URL` is the environment variable used to import the base url for Vite. Change this import to match your build tool's base url.
 const BASE_URL = import.meta.env.BASE_URL;

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ import {
   Utility,
   UtilityFragment,
 } from '@visa/nova-react';
-import { UseComboboxState, UseComboboxStateChangeOptions, useCombobox, useMultipleSelection } from 'downshift';
+import { useCombobox, useMultipleSelection, type UseComboboxState, type UseComboboxStateChangeOptions } from 'downshift';
 import { useMemo, useState } from 'react';
 
 type Item = { value: string };
@@ -101,6 +101,7 @@ export const MultiselectWithFilterableMenuAndAutomaticSelection = () => {
   });
   const { getToggleButtonProps, getLabelProps, getMenuProps, getInputProps, getItemProps, highlightedIndex, isOpen } =
     useCombobox({
+      id,
       items,
       itemToString,
       inputValue,

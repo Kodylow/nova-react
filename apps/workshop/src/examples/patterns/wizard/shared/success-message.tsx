@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,18 @@
  **/
 import { Link, Surface, Typography, Utility, UtilityFragment } from '@visa/nova-react';
 import { VisaSuccessHigh } from '@visa/nova-icons-react';
-import { CSSProperties } from 'react';
+import type { CSSProperties } from 'react';
 
+/**
+ * @property onReset - Callback invoked when user resets the wizard
+ */
 interface SuccessMessageProps {
   onReset: () => void;
 }
 
+/**
+ * Success confirmation page shown after wizard submission.
+ */
 export const SuccessMessage = ({ onReset }: SuccessMessageProps) => {
   return (
     <Utility vFlex vJustifyContent="center" vGap={12}>

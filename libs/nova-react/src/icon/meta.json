@@ -2,7 +2,7 @@
   "description": "Meant for use with sprites only. Uses dom href linking of sprite elements expected to already be in the DOM to render the icon.",
   "displayName": "icon",
   "filePath": "/icon/index.tsx",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/icon/index.tsx",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//icon/index.tsx",
   "props": [
     {
       "description": "Aria Base ID",
@@ -52,7 +52,5 @@
   ],
   "vgar": "TODO",
   "wcag": "TODO",
-  "catalog": "{@link https://design.visa.com/icons See Icons}",
-  "docs": "{@link https://design.visa.com/react/components/icon See Docs}",
-  "testAvg": 100
+  "docs": "{@link https://design.visa.com/components/icons-illustrations See Docs}"
 }

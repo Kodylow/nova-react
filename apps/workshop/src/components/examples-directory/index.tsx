@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ import { kebabCase } from 'change-case';
 import { Link } from 'react-router-dom';
 import useVisibleId from '../../hooks/use-visible-id';
 import { Paths } from '../../routes/paths';
-import { DocType, ExampleIndex, ExampleMetaData } from '../../types';
+import type { DocType, ExampleIndex, ExampleMetaData } from '../../types';
 
 type ExamplesDirectoryProps = {
   docName: string;

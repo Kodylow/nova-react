@@ -2,19 +2,16 @@
   "decorative-divider": {
     "file": "decorative-divider.tsx",
     "id": "decorative-divider",
-    "title": "Decorative divider",
-    "testAvg": 100
+    "title": "Decorative divider"
   },
   "default-divider": {
     "file": "default-divider.tsx",
     "id": "default-divider",
-    "title": "Default divider",
-    "testAvg": 100
+    "title": "Default divider"
   },
   "section-divider": {
     "file": "section-divider.tsx",
     "id": "section-divider",
-    "title": "Section divider",
-    "testAvg": 100
+    "title": "Section divider"
   }
 }

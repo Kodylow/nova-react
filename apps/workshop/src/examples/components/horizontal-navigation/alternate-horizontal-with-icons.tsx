@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,7 +60,7 @@ import {
   UtilityFragment,
   VisaLogo,
 } from '@visa/nova-react';
-import { CSSProperties, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 
 // TIP: Customize this ID, pass it as a prop, or auto-generate it with useId() from @react
 const id = 'alternate-horizontal-nav-with-icons';
@@ -270,11 +270,9 @@ export const AlternateHorizontalNavWithIcons = () => {
                               <Listbox>
                                 {label3SubItems.map(label3SubItem => (
                                   <li key={label3SubItem.id}>
-                                    <UtilityFragment vPaddingVertical={4} vPaddingHorizontal={8}>
-                                      <ListboxItem<'a'> href={label3SubItem.href} tag="a">
-                                        {label3SubItem.tabLabel}
-                                      </ListboxItem>
-                                    </UtilityFragment>
+                                    <ListboxItem<'a'> href={label3SubItem.href} tag="a">
+                                      {label3SubItem.tabLabel}
+                                    </ListboxItem>
                                   </li>
                                 ))}
                               </Listbox>
@@ -351,11 +349,9 @@ export const AlternateHorizontalNavWithIcons = () => {
                             {accountSubItems.map(accountSubItem => (
                               <UtilityFragment key={accountSubItem.id}>
                                 <li>
-                                  <UtilityFragment vPaddingVertical={4} vPaddingHorizontal={8}>
-                                    <ListboxItem<'a'> href={accountSubItem.href} tag="a">
-                                      {accountSubItem.tabLabel}
-                                    </ListboxItem>
-                                  </UtilityFragment>
+                                  <ListboxItem<'a'> href={accountSubItem.href} tag="a">
+                                    {accountSubItem.tabLabel}
+                                  </ListboxItem>
                                 </li>
                               </UtilityFragment>
                             ))}

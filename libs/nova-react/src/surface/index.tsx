@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-surface';
 
-export type SurfaceProperties<ET extends ElementType = 'div',> = {
-
+export type SurfaceProperties<ET extends ElementType = 'div'> = {
   /** Type of Surface */
   surfaceType?: 'alternate';
   /** Tag of Component */
@@ -29,18 +28,19 @@ export type SurfaceProperties<ET extends ElementType = 'div',> = {
 
 /**
  * Styles container to be used for alternate backgrounds.
- * @docs {@link https://design.visa.com/react/components/surface | See Docs}
+ * @docs {@link https://design.visa.com/base-elements/surface/?code_library=react | See Docs}
  * @vgar TODO
  * @wcag TODO
  */
-const Surface = <ET extends ElementType = 'div',>(
-  { className, surfaceType, tag: Tag = 'div', ...remainingProps }: SurfaceProperties<ET>,
-) => <Tag className={cn(CSS_PREFIX, surfaceType && `v-${surfaceType}`, className)} {...remainingProps} />;
+const Surface = <ET extends ElementType = 'div'>({
+  className,
+  surfaceType,
+  tag: Tag = 'div',
+  ...remainingProps
+}: SurfaceProperties<ET>) => (
+  <Tag className={cn(CSS_PREFIX, surfaceType && `v-${surfaceType}`, className)} {...remainingProps} />
+);
 
 export default Surface;
-
-Surface.defaultProps = {
-  tag: 'div',
-};
 
 Surface.displayName = 'Surface';

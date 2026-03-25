@@ -5,8 +5,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Combobox with filterable menu and automatic selection",
-    "testAvg": 100
+    "title": "Combobox with filterable menu and automatic selection"
   },
   "autocomplete-with-manual-selection-combobox": {
     "file": "autocomplete-with-manual-selection-combobox.tsx",
@@ -14,8 +13,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Combobox with filterable menu and manual selection",
-    "testAvg": 100
+    "title": "Combobox with filterable menu and manual selection"
   },
   "clear-button-combobox": {
     "file": "clear-button-combobox.tsx",
@@ -23,8 +21,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Combobox with clear button",
-    "testAvg": 100
+    "title": "Combobox with clear button"
   },
   "error-combobox": {
     "file": "error-combobox.tsx",
@@ -32,8 +29,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Combobox with error",
-    "testAvg": 100
+    "title": "Combobox with error"
   },
   "no-autocomplete-combobox": {
     "file": "no-autocomplete-combobox.tsx",
@@ -41,8 +37,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Default combobox",
-    "testAvg": 100
+    "title": "Default combobox"
   },
   "disabled-combobox": {
     "file": "disabled-combobox.tsx",
@@ -50,8 +45,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Disabled combobox",
-    "testAvg": 100
+    "title": "Disabled combobox"
   },
   "inline-message-combobox": {
     "file": "inline-message-combobox.tsx",
@@ -59,8 +53,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Combobox with inline message",
-    "testAvg": 100
+    "title": "Combobox with inline message"
   },
   "item-disabled-combobox": {
     "file": "item-disabled-combobox.tsx",
@@ -68,8 +61,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Combobox with disabled option",
-    "testAvg": 100
+    "title": "Combobox with disabled option"
   },
   "leading-icon-combobox": {
     "file": "leading-icon-combobox.tsx",
@@ -77,8 +69,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Combobox with leading icon",
-    "testAvg": 100
+    "title": "Combobox with leading icon"
   },
   "no-icon-combobox": {
     "file": "no-icon-combobox.tsx",
@@ -86,8 +77,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Combobox without dropdown chevron",
-    "testAvg": 100
+    "title": "Combobox without dropdown chevron"
   },
   "pre-selected-combobox": {
     "file": "pre-selected-combobox.tsx",
@@ -95,8 +85,7 @@
     "tags": {
       "docs": true
     },
-    "title": "Combobox with selected option",
-    "testAvg": 100
+    "title": "Combobox with selected option"
   },
   "read-only-combobox": {
     "file": "read-only-combobox.tsx",
@@ -104,7 +93,15 @@
     "tags": {
       "docs": true
     },
-    "title": "Read-only combobox",
-    "testAvg": 100
+    "title": "Read-only combobox"
+  },
+  "reusable": {
+    "file": "reusable.tsx",
+    "id": "reusable",
+    "tags": {
+      "custom": true,
+      "AI-first": true
+    },
+    "title": "Reusable combobox"
   }
 }

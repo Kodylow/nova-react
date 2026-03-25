@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +14,13 @@
  * limitations under the License.
  *
  **/
-import { ExampleIndex } from '../../../types';
+import type { ExampleIndex } from '../../../types';
 
 const ScreenReaderDocsPageMessage = () => (
-  <span role="alert" className="v-sr">This page contains many examples with alerts which are included to show developers how to use them in their code. Sorry about the bad experience when the page initially loads!
-</span>
+  <span role="alert" className="v-sr">
+    This page contains many examples with alerts which are included to show developers how to use them in their code.
+    Sorry about the bad experience when the page initially loads!
+  </span>
 );
 
 const Examples: ExampleIndex[] = [
@@ -69,6 +71,7 @@ const Examples: ExampleIndex[] = [
   {
     id: 'circular-custom-size-progress',
   },
+  { id: 'reusable' },
 ];
 
 export default Examples;

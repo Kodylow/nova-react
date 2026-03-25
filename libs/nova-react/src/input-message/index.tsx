@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 import cn from 'clsx';
-import Typography, { TypographyProperties } from '../typography';
+import Typography, { type TypographyProperties } from '../typography';
 
 const CSS_PREFIX = 'v-input-message';
 
@@ -23,16 +23,12 @@ export type InputMessageProperties = TypographyProperties;
 
 /**
  * Message shown beneath input components to provide context or guidance.
- * @docs {@link https://design.visa.com/react/components/input | See Docs}
+ * @docs {@link https://design.visa.com/components/input/?code_library=react | See Docs}
  */
-const InputMessage = (
-  { className, tag = 'span', ...remainingProps }: InputMessageProperties,
-) => <Typography className={cn(CSS_PREFIX, className)} tag={tag} {...remainingProps} />;
+const InputMessage = ({ className, tag = 'span', ...remainingProps }: InputMessageProperties) => (
+  <Typography className={cn(CSS_PREFIX, className)} tag={tag} {...remainingProps} />
+);
 
 export default InputMessage;
-
-InputMessage.defaultProps = {
-  tag: 'span',
-};
 
 InputMessage.displayName = 'InputMessage';

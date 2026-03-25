@@ -2,7 +2,7 @@
   "description": "This hook is used to manage the open state and keyboard navigation of accordions.",
   "displayName": "useAccordion",
   "filePath": "/use-accordion/index.ts",
-  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src/use-accordion/index.ts",
+  "gitLink": "https://github.com/visa/nova-react/blob/main/libs/nova-react/src//use-accordion/index.ts",
   "props": [
     {
       "defaultValue": "",
@@ -15,7 +15,7 @@
       "description": "Ref for the accordion elements",
       "name": "ref",
       "required": false,
-      "type": "MutableRefObject<HTMLElementType[]>"
+      "type": "RefObject<HTMLElementType[]>"
     }
   ],
   "vgar": "TODO",
@@ -45,7 +45,6 @@
   "related": [
     "accordion"
   ],
-  "docs": "{@link https://design.visa.com/react/hooks/use-accordion See Docs}",
-  "testAvg": 100,
+  "docs": "{@link https://design.visa.com/components/accordion/?code_library=react See Docs}",
   "clientSideOnly": true
 }

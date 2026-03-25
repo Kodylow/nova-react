@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
+import type { ComponentPropsWithRef, ElementType } from 'react';
 
 const CSS_PREFIX = 'v-tabs';
 
-export type TabsProperties<ET extends ElementType = 'ul',> = {
+export type TabsProperties<ET extends ElementType = 'ul'> = {
   /** Orientation */
   orientation?: 'horizontal' | 'vertical';
   /** Stacked */
@@ -30,14 +30,18 @@ export type TabsProperties<ET extends ElementType = 'ul',> = {
 
 /**
  * Organizational element that separates content and allows users to switch between views.
- * @docs {@link https://design.visa.com/react/components/tabs | See Docs}
+ * @docs {@link https://design.visa.com/components/tabs/?code_library=react | See Docs}
  * @related tab, tab-suffix, use-tabs
  * @vgar TODO
  * @wcag TODO
  */
-const Tabs = <ET extends ElementType = 'ul',>(
-  { className, orientation = 'horizontal', stacked, tag: Tag = 'ul', ...remainingProps }: TabsProperties<ET>,
-) => (
+const Tabs = <ET extends ElementType = 'ul'>({
+  className,
+  orientation = 'horizontal',
+  stacked,
+  tag: Tag = 'ul',
+  ...remainingProps
+}: TabsProperties<ET>) => (
   <Tag
     className={cn(
       CSS_PREFIX,
@@ -50,10 +54,5 @@ const Tabs = <ET extends ElementType = 'ul',>(
 );
 
 export default Tabs;
-
-Tabs.defaultProps = {
-  orientation: 'horizontal',
-  tag: 'ul',
-};
 
 Tabs.displayName = 'Tabs';

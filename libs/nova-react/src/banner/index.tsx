@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,27 +15,27 @@
  *
  **/
 import cn from 'clsx';
-import { ComponentPropsWithRef, ElementType } from 'react';
-import Message, { MessageProperties } from '../message';
+import type { ComponentPropsWithRef, ElementType } from 'react';
+import Message, { type MessageProperties } from '../message';
 
 const CSS_PREFIX = 'v-banner';
 
-export type BannerProperties<ET extends ElementType = 'div',> = {
-
+export type BannerProperties<ET extends ElementType = 'div'> = {
   /** Message Type */
   messageType?: MessageProperties['messageType'];
-} & Omit<MessageProperties, 'messageType'> & ComponentPropsWithRef<ET>;
+} & Omit<MessageProperties, 'messageType'> &
+  ComponentPropsWithRef<ET>;
 
 /**
  * Messages indicating the global status of an application or website.
- * @docs {@link https://design.visa.com/react/components/banner | See Docs}
+ * @docs {@link https://design.visa.com/components/banner/?code_library=react | See Docs}
  * @related banner-close-button, message-content
  * @vgar TODO
  * @wcag TODO
  */
-const Banner = <ET extends ElementType = 'div',>(
-  { className, ...remainingProps }: BannerProperties<ET>,
-) => <Message className={cn(CSS_PREFIX, className)} {...remainingProps} />;
+const Banner = <ET extends ElementType = 'div'>({ className, ...remainingProps }: BannerProperties<ET>) => (
+  <Message className={cn(CSS_PREFIX, className)} {...remainingProps} />
+);
 
 export default Banner;
 

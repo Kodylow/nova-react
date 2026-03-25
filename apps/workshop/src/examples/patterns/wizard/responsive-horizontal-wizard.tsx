@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  **/
+
 import {
   MessageIcon,
   VisaArrowBackTiny,
@@ -43,16 +44,21 @@ import {
   useFocusTrap,
   useWizard,
 } from '@visa/nova-react';
-import { CSSProperties, ChangeEvent, RefObject, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type CSSProperties, type ChangeEvent, type RefObject } from 'react';
 import { SaveFlag } from './shared/save-flag';
 import { SuccessMessage } from './shared/success-message';
 import { SummaryPage } from './shared/summary-page';
 import { ExitDialog } from './shared/exit-dialog';
 
-// TIP: Customize this ID, pass it as a prop, or auto-generate it with useId() from @react
+// Unique ID for wizard elements. Customize this or use React.useId() for dynamic generation.
 const id = 'responsive-horizontal-wizard';
 const navRegionAriaLabel = 'Responsive horizontal wizard';
 
+/**
+ * Step configuration defining wizard structure.
+ * Each step requires: label (badge text), title, inputLabel, inputId, and buttonId.
+ * The final step (without inputId) is reserved for the summary page.
+ */
 const steps = [
   {
     label: '1',
@@ -92,6 +98,9 @@ const exitDialogId = `${id}-exit-warning-dialog`;
 
 const DEFAULT_INPUT_VALUES = Array(steps.length).fill('');
 
+/**
+ * Multi-step form with responsive horizontal layout, validation, auto-save, and summary review.
+ */
 export const ResponsiveHorizontalWizard = () => {
   const {
     currentStep,
@@ -106,8 +115,7 @@ export const ResponsiveHorizontalWizard = () => {
     onWizardReset,
   } = useWizard({ length: steps.length });
 
-  // Track whether the wizard has been interacted with in order
-  // to control focus within a useEffect
+  // Tracks step changes to trigger focus management in useEffect
   const [hasWizardStepChanged, setHasWizardStepChanged] = useState(false);
 
   const { onKeyNavigation, ref: exitDialogRef } = useFocusTrap();
@@ -118,8 +126,7 @@ export const ResponsiveHorizontalWizard = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [visibleErrorMessages, setVisibleErrorMessages] = useState<boolean[]>(Array(steps.length).fill(true));
 
-  // Create an array of refs to handle focusing input fields on error
-  // https://react.dev/learn/manipulating-the-dom-with-refs#how-to-manage-a-list-of-refs-using-a-ref-callback
+  // Ref maps for programmatic focus management when navigating or encountering errors
   const inputRefs = useRef(new Map());
   function getInputRefMap() {
     if (!inputRefs.current) {
@@ -138,6 +145,7 @@ export const ResponsiveHorizontalWizard = () => {
 
   const editButtonRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
+  // Manages focus after step changes for improved keyboard navigation
   useEffect(() => {
     if (!hasWizardStepChanged) {
       return;
@@ -158,6 +166,12 @@ export const ResponsiveHorizontalWizard = () => {
     setHasWizardStepChanged(false);
   }, [hasWizardStepChanged, currentStep]);
 
+  /**
+   * Updates form data for a specific step.
+   *
+   * @param index - Step index to update
+   * @param event - Input change event containing new value
+   */
   const handleInputChange = (index: number, event: ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     const newInputValues = [...inputValues];
@@ -165,7 +179,10 @@ export const ResponsiveHorizontalWizard = () => {
     setInputValues(newInputValues);
   };
 
-  // On next button click, simulate completion on all steps
+  /**
+   * Validates current step and advances to next.
+   * Shows error if validation fails.
+   */
   const handleClickNext = () => {
     if (!inputValues[currentStep]) {
       onStepError(currentStep);
@@ -185,18 +202,25 @@ export const ResponsiveHorizontalWizard = () => {
     onStepComplete(currentStep);
   };
 
-  // On previous button click, reset the current step status from the list of completed steps
+  /**
+   * Returns to previous step without validation.
+   */
   const handleClickPrevious = () => {
     setHasWizardStepChanged(true);
     setShowSavedFlag(false);
     onStepPrevious();
   };
 
+  /**
+   * Displays save confirmation flag.
+   */
   const handleSave = () => {
     setShowSavedFlag(true);
   };
 
-  // On next button click, simulate completion on all steps
+  /**
+   * Resets wizard to initial state.
+   */
   const handleResetWizard = () => {
     setHasWizardStepChanged(true);
     setInputValues(DEFAULT_INPUT_VALUES);
@@ -204,6 +228,9 @@ export const ResponsiveHorizontalWizard = () => {
     onWizardReset();
   };
 
+  /**
+   * Collects form data and marks wizard as submitted.
+   */
   const handleSubmit = () => {
     const formValues: { [key: string]: string } = {};
     steps.forEach((step, i) => {
@@ -213,17 +240,30 @@ export const ResponsiveHorizontalWizard = () => {
     setFormSubmitted(true);
   };
 
+  /**
+   * Opens exit confirmation dialog.
+   */
   const handleExit = () => {
     exitDialogRef.current?.showModal();
   };
 
+  /**
+   * Hides error section message for a specific step.
+   *
+   * @param stepIndex - Index of the step whose error message should be hidden
+   */
   const handleErrorMessageClose = (stepIndex: number) => {
     const newVisibleErrorMessages = [...visibleErrorMessages];
     newVisibleErrorMessages[stepIndex] = false;
     setVisibleErrorMessages(newVisibleErrorMessages);
   };
 
-  // On step button click, change the current step and reset the status of all steps after the clicked step
+  /**
+   * Handles direct navigation to a step from the wizard nav or summary page.
+   * Validates current step when navigating forward.
+   *
+   * @param i - Target step index
+   */
   const handleClickStep = (i: number) => {
     setHasWizardStepChanged(true);
 
@@ -249,6 +289,9 @@ export const ResponsiveHorizontalWizard = () => {
     }
   };
 
+  /**
+   * Renders the final summary page with review and edit capabilities.
+   */
   const renderSummaryStep = () => (
     <SummaryPage
       steps={steps}
@@ -260,6 +303,11 @@ export const ResponsiveHorizontalWizard = () => {
     />
   );
 
+  /**
+   * Renders wizard action buttons with responsive layouts.
+   * Desktop: Horizontal layout with buttons grouped left/right.
+   * Mobile: Vertical stacked layout with full-width buttons.
+   */
   const renderActionButtons = () => {
     return (
       <>
@@ -325,6 +373,9 @@ export const ResponsiveHorizontalWizard = () => {
     return <SuccessMessage onReset={handleResetWizard} />;
   }
 
+  /**
+   * Renders full horizontal wizard with step labels and titles for larger screens.
+   */
   const renderDesktopWizard = () => {
     return (
       <nav aria-label={`${navRegionAriaLabel}-desktop`} style={{ inlineSize: '100%' }}>
@@ -405,6 +456,9 @@ export const ResponsiveHorizontalWizard = () => {
     );
   };
 
+  /**
+   * Renders compact wizard showing only badge indicators for smaller screens.
+   */
   const renderMobileWizard = () => {
     return (
       <nav aria-label={`${navRegionAriaLabel}-mobile`} style={{ inlineSize: '100%' }}>
@@ -500,7 +554,11 @@ export const ResponsiveHorizontalWizard = () => {
         })}
         {currentStep === steps.length - 1 && renderSummaryStep()}
       </Utility>
-      <ExitDialog exitDialogId={exitDialogId} exitDialogRef={exitDialogRef as RefObject<HTMLDialogElement>} onKeyNavigation={onKeyNavigation} />
+      <ExitDialog
+        exitDialogId={exitDialogId}
+        exitDialogRef={exitDialogRef as RefObject<HTMLDialogElement>}
+        onKeyNavigation={onKeyNavigation}
+      />
     </Utility>
   );
 };

@@ -3,7 +3,6 @@
     "file": "multi-file-upload.tsx",
     "title": "Multi-file upload",
     "id": "multi-file-upload",
-    "testAvg": 89,
     "tags": {
       "patterns": true
     },
@@ -18,7 +17,6 @@
     "file": "single-file-upload.tsx",
     "title": "Single-file upload",
     "id": "single-file-upload",
-    "testAvg": 72,
     "tags": {
       "patterns": true
     },
@@ -33,7 +31,6 @@
     "file": "multi-file-manual-upload.tsx",
     "title": "Multi-file manual upload",
     "id": "multi-file-manual-upload",
-    "testAvg": 84,
     "tags": {
       "patterns": true
     },
@@ -49,7 +46,6 @@
     "file": "file-upload-with-alternate-display.tsx",
     "title": "File upload with alternate display",
     "id": "file-upload-with-alternate-display",
-    "testAvg": 90,
     "tags": {
       "patterns": true
     },
