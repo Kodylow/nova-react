@@ -20,7 +20,6 @@
     "docGen": "node ./bin/doc-gen.mjs",
     "updateDescription": "node ./bin/update-description.mjs",
     "prebuild": "pnpm updateDescription && pnpm docGen",
-    "prepare": "mkdir -p dist && npx @visa/scripts package -c -o ./dist",
     "test": "vitest",
     "test:watch": "vitest --watch",
     "watch": "rollup -c -w --bundleConfigAsCjs"
@@ -60,7 +59,6 @@
     "@types/jest-axe": "^3.5.9",
     "@types/react": "^19.x",
     "@types/react-dom": "^19.x",
-    "@visa/scripts": "^4.3.0",
     "change-case": "^5.0.0",
     "glob": "^10.3.14",
     "jest-axe": "^9.0.0",

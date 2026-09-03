@@ -53,6 +53,27 @@ Our package follows security best practices and ensures the safety of user data.
 
 Available through [NPM](https://www.npmjs.com/).
 
+### Run the workshop locally
+
+The repository includes a pinned Node version, pnpm lockfile, and Docker setup for reproducible development.
+
+```sh
+corepack enable
+corepack prepare pnpm@10.8.0 --activate
+pnpm install --frozen-lockfile
+pnpm build:lib
+pnpm dev:docs
+```
+
+The workshop is available at `http://localhost:3000/react`.
+
+Alternatively, run it with Docker:
+
+```sh
+docker build -t nova-react .
+docker run --rm -p 3000:3000 nova-react
+```
+
 **NPM:**
 
 ```sh

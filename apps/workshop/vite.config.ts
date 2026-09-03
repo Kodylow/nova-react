@@ -29,6 +29,8 @@ export default defineConfig({
     'import.meta.env.VERSION': JSON.stringify(packageJson.version),
   },
   server: {
+    allowedHosts: true,
+    host: '0.0.0.0',
     port: 3000,
   },
   plugins: [react(), svgr({ include: '**/*.svg' })],
