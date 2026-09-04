@@ -14,10 +14,12 @@
  * limitations under the License.
  *
  **/
-import { defineConfig } from 'vitest/config';
+import { configDefaults, defineConfig } from 'vitest/config';
 
 export default defineConfig({
   test: {
+    // These subprocess/HTTP checks use Node's test runner, not jsdom.
+    exclude: [...configDefaults.exclude, 'bin/preview.test.mjs'],
     globals: true,
     environment: 'jsdom',
     environmentOptions: {

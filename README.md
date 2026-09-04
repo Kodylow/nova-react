@@ -24,27 +24,60 @@ From the repository root, run:
 bash run.sh
 ```
 
-Open **http://localhost:3000/react/**. The script installs the locked dependencies
-and starts the workshop directly from the library's TypeScript sources. No Rollup
-build, doc-generation pass, coverage run, private Visa package, or API key is needed.
-On a bare Linux x64/arm64 VM without Node 22.12+, it downloads a checksum-verified
-Node 22 runtime into your user cache (requires curl, wget, or Python 3).
-Otherwise it uses your existing Node installation. No system-wide npm install is needed.
+Open **http://localhost:3000/react/**. The default serves the checked-in workshop
+snapshot: **no npm install, no compilation, no network requests during startup**
+when Node 18+ or Python 3 is available. It includes the real interactive examples,
+API documentation, and source-code views—not a screenshot or placeholder.
 
-After the first install, use `pnpm start` for the shortest restart path, or rerun
-`bash run.sh` to also reconcile dependencies. `bash run.sh --port 3001` selects
-another port; an occupied port causes an error rather than silently moving.
-The dev server listens on `0.0.0.0` and accepts localhost and Replit preview
-hostnames. For another proxy, set Vite's
-`__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS` to its exact hostname.
+For the smallest fresh download:
 
-For an imported project, configure its run command as `bash run.sh`, use Node 22,
-and expose port 3000. Keep long-running VM sessions under a process supervisor;
-do not leave the server attached to a short-lived setup shell.
+```sh
+git clone --depth 1 https://github.com/Kodylow/nova-react.git
+cd nova-react
+bash run.sh
+```
 
-`pnpm dev` and `pnpm dev:docs` use the same source-first path. The small navigation
-manifest is generated automatically on each start, including on a clean clone.
-Component API metadata and source-code views also read from the source tree.
+**Preview is a snapshot, not live source.** To edit components with Vite live reload:
+
+```sh
+bash run.sh --dev
+```
+
+Development installs the locked dependencies and runs directly from TypeScript.
+It needs Node 22.12+; on bare Linux x64/arm64 the script can download a
+checksum-verified Node 22 into the user cache. Preview does the same only when
+neither Node 18+ nor Python 3 is available (requires curl or wget).
+No private Visa package, API key, global pnpm install, or library build is needed.
+With Node available, `npm start` also serves the preview without installation.
+After installing dependencies, `pnpm dev` is the direct development command.
+
+Both modes support `--host ADDRESS` and `--port PORT` (default 0.0.0.0:3000) and fail
+on an occupied port. Preview also accepts the `PORT` environment variable.
+Localhost, literal IP addresses, and Replit preview hostnames are allowed.
+For another proxy, set `__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS` to its exact hostname.
+The root URL redirects to `/react/`; deep-link refreshes work.
+
+For an imported project, configure `bash run.sh` and expose port 3000.
+For persistent VM use, run under a supervisor with a stable runtime PATH.
+Check the service's prerequisites, not just the interactive shell's PATH.
+Stop on a failed startup rather than repeatedly polling a crashed process.
+
+### Updating the instant preview
+
+After changing workshop/library source, install dependencies, then run:
+
+```sh
+pnpm preview:build   # typecheck + build once, package a deterministic snapshot
+pnpm preview:check   # verify source freshness and archive integrity
+pnpm preview:test    # test both zero-dependency servers (Python tests when available)
+```
+
+Commit **both files in `preview/`** alongside source changes. Startup verifies the
+archive checksum but intentionally does not scan the whole source tree; use
+`preview:check` before pushing. Missing or corrupt snapshots fail clearly rather
+than unexpectedly installing dependencies. The compressed snapshot adds roughly
+2.6 MB to a shallow clone; regular clones accumulate previous snapshots in history.
+There are no filesystem extractions or third-party server packages at runtime.
 
 - [About](#about)
 - [Security](#security)
@@ -89,7 +122,7 @@ With Node 22.12+ and pnpm 10.8.0 already available:
 
 ```sh
 pnpm install --frozen-lockfile
-pnpm start
+pnpm dev
 ```
 
 The workshop is available at `http://localhost:3000/react`.
@@ -101,9 +134,9 @@ docker build -t nova-react .
 docker run --rm -p 3000:3000 nova-react
 ```
 
-Docker caches dependency installation separately from source changes and excludes
-local dependencies/build output from its context. It runs the development
-workshop, not a production web server. For a production bundle, run
+The default Docker target serves the checked-in snapshot with zero dependency
+installation. Use `docker build --target development -t nova-react-dev .` for
+the original live-reloading development image. For a production bundle, run
 `pnpm build:docs`; library packaging remains available via `pnpm build:lib`.
 `pnpm dev:packages` retains the original library-watch + workshop workflow.
 The full `pnpm build` / coverage pipeline is intentionally not part of startup.

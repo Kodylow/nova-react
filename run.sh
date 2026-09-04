@@ -4,6 +4,27 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
+mode=preview
+if [ "${1:-}" = "--dev" ]; then mode=dev; shift; fi
+if [ "${1:-}" = "--help" ] || [ "${1:-}" = "-h" ]; then
+  echo "Usage: bash run.sh [--dev] [--host ADDRESS] [--port PORT]"
+  echo "Default: serve the checked-in snapshot without npm install."
+  echo "--dev: install locked dependencies and start live-reloading Vite."
+  exit 0
+fi
+if [ "$mode" = preview ]; then
+  if [ ! -f preview/workshop.tar.gz ] || [ ! -f preview/manifest.json ]; then
+    echo "Preview snapshot is missing. Use bash run.sh --dev, or pnpm preview:build." >&2
+    exit 1
+  fi
+  # A preview needs no npm, pnpm, node_modules, or Node 22.
+  if command -v node >/dev/null 2>&1 && node -e 'process.exit(+process.versions.node.split(".")[0] >= 18 ? 0 : 1)'; then
+    exec node bin/serve-preview.mjs "$@"
+  elif command -v python3 >/dev/null 2>&1; then
+    exec python3 bin/serve-preview.py "$@"
+  fi
+fi
+
 # Replit/Docker provide Node. Bare Linux VMs get a user-local, checksum-verified
 # runtime, without changing system packages or needing root.
 NODE_VERSION=22.23.2
@@ -44,8 +65,10 @@ if ! node_is_supported; then
   export PATH="$runtime/bin:$PATH"
 fi
 
+if [ "$mode" = preview ]; then exec node bin/serve-preview.mjs "$@"; fi
+
 # npm exec works even when Corepack shims aren't enabled or /usr/bin is read-only.
 # The pinned pnpm executable is cached by npm on subsequent starts.
 export COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 npm exec --yes --package=pnpm@10.8.0 -- pnpm install --frozen-lockfile
-exec npm exec --yes --package=pnpm@10.8.0 -- pnpm start "$@"
+exec npm exec --yes --package=pnpm@10.8.0 -- pnpm dev "$@"
