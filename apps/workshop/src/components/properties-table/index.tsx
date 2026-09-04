@@ -44,10 +44,10 @@ import type { LibMetaData, LibPropType } from '../../types';
 const LazyCode = lazy(() => import('../../components/code'));
 
 const fetchSource = async (docName: string): Promise<string> =>
-  (await import(`../../../node_modules/@visa/nova-react/${docName}/index.ts?raw`)).default;
+  (await import(`../../../../../libs/nova-react/src/${docName}/index.ts?raw`)).default;
 
 const fetchHookSource = async (docName: string): Promise<string> =>
-  (await import(`../../../node_modules/@visa/nova-react/${docName}/index.tsx?raw`)).default;
+  (await import(`../../../../../libs/nova-react/src/${docName}/index.tsx?raw`)).default;
 
 type PropertiesTableProperties = {
   docName: string;

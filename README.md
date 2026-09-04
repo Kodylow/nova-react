@@ -16,6 +16,36 @@
  -->
 # Visa Product Design System - Nova React
 
+## Quick start for this fork
+
+From the repository root, run:
+
+```sh
+bash run.sh
+```
+
+Open **http://localhost:3000/react/**. The script installs the locked dependencies
+and starts the workshop directly from the library's TypeScript sources. No Rollup
+build, doc-generation pass, coverage run, private Visa package, or API key is needed.
+On a bare Linux x64/arm64 VM without Node 22.12+, it downloads a checksum-verified
+Node 22 runtime into your user cache (requires curl, wget, or Python 3).
+Otherwise it uses your existing Node installation. No system-wide npm install is needed.
+
+After the first install, use `pnpm start` for the shortest restart path, or rerun
+`bash run.sh` to also reconcile dependencies. `bash run.sh --port 3001` selects
+another port; an occupied port causes an error rather than silently moving.
+The dev server listens on `0.0.0.0` and accepts localhost and Replit preview
+hostnames. For another proxy, set Vite's
+`__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS` to its exact hostname.
+
+For an imported project, configure its run command as `bash run.sh`, use Node 22,
+and expose port 3000. Keep long-running VM sessions under a process supervisor;
+do not leave the server attached to a short-lived setup shell.
+
+`pnpm dev` and `pnpm dev:docs` use the same source-first path. The small navigation
+manifest is generated automatically on each start, including on a clean clone.
+Component API metadata and source-code views also read from the source tree.
+
 - [About](#about)
 - [Security](#security)
 - [Background](#background)
@@ -55,14 +85,11 @@ Available through [NPM](https://www.npmjs.com/).
 
 ### Run the workshop locally
 
-The repository includes a pinned Node version, pnpm lockfile, and Docker setup for reproducible development.
+With Node 22.12+ and pnpm 10.8.0 already available:
 
 ```sh
-corepack enable
-corepack prepare pnpm@10.8.0 --activate
 pnpm install --frozen-lockfile
-pnpm build:lib
-pnpm dev:docs
+pnpm start
 ```
 
 The workshop is available at `http://localhost:3000/react`.
@@ -73,6 +100,17 @@ Alternatively, run it with Docker:
 docker build -t nova-react .
 docker run --rm -p 3000:3000 nova-react
 ```
+
+Docker caches dependency installation separately from source changes and excludes
+local dependencies/build output from its context. It runs the development
+workshop, not a production web server. For a production bundle, run
+`pnpm build:docs`; library packaging remains available via `pnpm build:lib`.
+`pnpm dev:packages` retains the original library-watch + workshop workflow.
+The full `pnpm build` / coverage pipeline is intentionally not part of startup.
+
+This fork removes the unavailable private `@visa/scripts` package from normal
+installation. Upstream maintenance commands `api:json` and `license:update` still
+require that private tool and are not needed to run the workshop.
 
 **NPM:**
 

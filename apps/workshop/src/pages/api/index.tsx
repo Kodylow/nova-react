@@ -24,7 +24,7 @@ import type { LibMetaData } from '../../types';
 const LazyPropsTable = lazy(() => import('../../components/properties-table'));
 
 const fetchMetaData = async (docName: string): Promise<LibMetaData> =>
-  (await import(`../../../node_modules/@visa/nova-react/${docName}/meta.json`)).default;
+  (await import(`../../../../../libs/nova-react/src/${docName}/meta.json`)).default;
 
 const ApiPage = () => {
   const { docName = '' } = useParams();

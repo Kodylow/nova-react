@@ -15,12 +15,13 @@
   },
   "optionalDependencies": {
     "@floating-ui/react": "^0.27.2",
-    "downshift": "^9.0.4"
+    "downshift": "9.0.4"
   },
   "scripts": {
     "analyze": "pnpx vite-bundle-visualizer",
     "build": "tsc && vite build",
-    "dev": "vite --open",
+    "predev": "node ./bin/stat-gen.mjs",
+    "dev": "vite",
     "prebuild": "cp ../../CHANGELOG.md ./public/CHANGELOG.md && pnpm statsGen",
     "preview": "vite preview",
     "statsGen": "node ./bin/stat-gen.mjs",

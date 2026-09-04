@@ -41,9 +41,9 @@ import meta from '../../examples/meta.json';
 const LazyCode = lazy(() => import('../../components/code'));
 
 const fetchSource = async (docName: string): Promise<string> =>
-  (await import(`../../../node_modules/@visa/nova-react/${docName}/index.ts?raw`)).default;
+  (await import(`../../../../../libs/nova-react/src/${docName}/index.ts?raw`)).default;
 const fetchMetaData = async (docName: string): Promise<LibMetaData> =>
-  (await import(`../../../node_modules/@visa/nova-react/${docName}/meta.json`)).default;
+  (await import(`../../../../../libs/nova-react/src/${docName}/meta.json`)).default;
 const fetchExamplesMetaData = async (docType: string, docName: string): Promise<Record<string, ExampleMetaData>> =>
   (await import(`../../examples/${docType}/${docName}/meta.json`)).default;
 const fetchExamplesIndex = async (docType: string, docName: string): Promise<ExampleIndex[]> =>

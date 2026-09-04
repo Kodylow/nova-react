@@ -1,0 +1,11 @@
+.git
+**/node_modules
+**/build
+**/coverage
+libs/nova-react/dist/*
+!libs/nova-react/dist/package.json
+apps/workshop/src/examples/meta.json
+apps/workshop/public/meta.json
+.env
+.env.*
+*.log

@@ -23,7 +23,7 @@ import { kebabCase } from 'change-case';
 /// Constants:
 const metaDataFilename = 'meta.json';
 const examplesPath = resolve('src/examples');
-const modulePath = resolve('node_modules/@visa/nova-react');
+const modulePath = resolve('../../libs/nova-react/src');
 const statsPath = join(examplesPath, metaDataFilename);
 // Example paths from examples directory
 const examples = globSync(`${examplesPath}/**/*.tsx`, {
@@ -68,11 +68,11 @@ const updateExamplesMetaData = () => {
  */
 const getStats = () => {
   // Count components from package
-  const components = globSync(`${modulePath}/*/index.js`, {
-    ignore: ['**/use-*/index.js', '**/types/index.js'],
+  const components = globSync(`${modulePath}/*/index.tsx`, {
+    ignore: ['**/use-*/index.tsx', '**/types/index.tsx'],
   }).length;
   // Count hooks from package
-  const hooks = globSync(`${modulePath}/use-*/index.js`).length;
+  const hooks = globSync(`${modulePath}/use-*/index.ts`).length;
 
   return {
     components,

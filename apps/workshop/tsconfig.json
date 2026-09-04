@@ -19,6 +19,12 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@visa/nova-react": ["../../libs/nova-react/src/index.ts"],
+      "@visa/nova-react/package.json": ["../../libs/nova-react/package.json"],
+      "@visa/nova-react/*": ["../../libs/nova-react/src/*"]
+    },
 
     /* Linting */
     "strict": true,

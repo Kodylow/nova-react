@@ -15,6 +15,7 @@
  *
  **/
 import react from '@vitejs/plugin-react';
+import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 import svgr from 'vite-plugin-svgr';
 import packageJson from './package.json';
@@ -22,6 +23,19 @@ import packageJson from './package.json';
 // https://vitejs.dev/config/
 export default defineConfig({
   base: packageJson.homepage === '/' ? '' : packageJson.homepage.replace(/\/$/, ''),
+  resolve: {
+    alias: [
+      {
+        find: '@visa/nova-react/package.json',
+        replacement: fileURLToPath(new URL('../../libs/nova-react/package.json', import.meta.url)),
+      },
+      {
+        find: '@visa/nova-react',
+        replacement: fileURLToPath(new URL('../../libs/nova-react/src', import.meta.url)),
+      },
+    ],
+    dedupe: ['react', 'react-dom'],
+  },
   build: {
     outDir: 'build',
   },
@@ -29,9 +43,10 @@ export default defineConfig({
     'import.meta.env.VERSION': JSON.stringify(packageJson.version),
   },
   server: {
-    allowedHosts: true,
+    allowedHosts: ['.replit.dev', '.repl.co'],
     host: '0.0.0.0',
     port: 3000,
+    strictPort: true,
   },
   plugins: [react(), svgr({ include: '**/*.svg' })],
 });

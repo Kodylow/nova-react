@@ -25,7 +25,14 @@ This is the **VISA Product Design System (Nova) React component library** - a pn
 - `libs/nova-react/` - The main React component library (Rollup build)
 - `apps/workshop/` - Documentation and demo application (Vite)
 
-**Stack:** React 19, TypeScript 5.9+, Vitest, ESLint 9, Prettier, pnpm 9.x
+**Stack:** React 19, TypeScript 5.9+, Vitest, ESLint 9, Prettier, pnpm 10.8.0, Node 22.12+
+
+## Fast workshop startup (this fork)
+
+Read `AGENTS.md` first. `bash run.sh` handles runtime/dependency setup and launches
+the workshop at `/react/` on port 3000. After installation, `pnpm start` is the
+short restart path. Vite reads the library source directly; do not build the
+library or run coverage merely to start the workshop.
 
 ## Build/Lint/Test Commands
 
@@ -36,7 +43,9 @@ pnpm install          # Install dependencies
 pnpm build            # Build all workspaces
 pnpm build:lib        # Build only the component library
 pnpm build:docs       # Build only the workshop/docs
-pnpm dev              # Run all in dev mode (parallel)
+pnpm start            # Run the workshop directly from source
+pnpm dev              # Same source-first workshop
+pnpm dev:packages     # Original parallel library-watch + workshop flow
 pnpm dev:lib          # Run library in watch mode
 pnpm dev:docs         # Run workshop dev server
 pnpm lint             # Lint with auto-fix (zero warnings allowed)
