@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
- 
+
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'fs';
 import { globSync } from 'glob';
 import { join, parse, resolve } from 'path';
@@ -43,22 +43,31 @@ const getExampleNames = () => {
 };
 
 const updateExamplesMetaData = () => {
+  const metadataByPath = new Map();
   examples.forEach(examplePath => {
     const parsedExampleFilePath = parse(examplePath);
     const metaDataFilePath = join(parsedExampleFilePath.dir, metaDataFilename);
-    const metaData = existsSync(metaDataFilePath) ? JSON.parse(readFileSync(metaDataFilePath, 'utf-8')) : {};
+    if (!metadataByPath.has(metaDataFilePath)) {
+      const original = existsSync(metaDataFilePath) ? readFileSync(metaDataFilePath, 'utf-8') : '';
+      metadataByPath.set(metaDataFilePath, { original, data: original ? JSON.parse(original) : {} });
+    }
+    const metaData = metadataByPath.get(metaDataFilePath).data;
 
     const exampleId = kebabCase(parsedExampleFilePath.name);
 
     const prevExampleMetaData = metaData[exampleId] || {};
-    
+
     metaData[exampleId] = {
       ...prevExampleMetaData,
       file: parsedExampleFilePath.base,
       id: exampleId,
     };
-
-    writeFileSync(metaDataFilePath, JSON.stringify(metaData, null, 2));
+  });
+  // Many examples share a metadata file. Read/write it once, and don't trigger
+  // needless watcher events when the generated content hasn't changed.
+  metadataByPath.forEach(({ original, data }, path) => {
+    const content = JSON.stringify(data, null, 2);
+    if (content !== original) writeFileSync(path, content);
   });
 };
 
@@ -86,7 +95,10 @@ const main = () => {
   const prevStats = existsSync(statsPath) ? JSON.parse(readFileSync(statsPath, 'utf-8')) : {};
   const stats = getStats();
   const exampleNames = getExampleNames();
-  writeFileSync(statsPath, JSON.stringify({ ...prevStats, ...exampleNames, stats }, null, 2));
+  const content = JSON.stringify({ ...prevStats, ...exampleNames, stats }, null, 2);
+  if (!existsSync(statsPath) || readFileSync(statsPath, 'utf-8') !== content) {
+    writeFileSync(statsPath, content);
+  }
 };
 
 main();

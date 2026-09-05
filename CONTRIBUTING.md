@@ -1,3 +1,6 @@
+> **Just starting this fork? Follow `AGENTS.md` and run `bash run.sh` first.**
+> These contribution guidelines apply before editing code, not as a startup prerequisite.
+
 <!--
  *              © 2025-2026 Visa
  *

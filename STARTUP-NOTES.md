@@ -1,56 +1,44 @@
 # Startup audit
 
-## Instant snapshot preview (current default)
+## Current source-first startup optimization
 
-`bash run.sh` and `npm start` now serve a checked-in, compressed production
-workshop. No dependency installation or compilation is needed to browse examples.
-`bash run.sh --dev` retains the source-first live-reload workflow described below.
+The instant-preview approach was rejected: a snapshot is not a development
+environment. This correction removes those artifacts and restores
+source-based Vite startup and the development Docker image.
 
-The snapshot is 2.61 MiB, plus a roughly 205 KiB source/checksum manifest. Servers
-use only Node 18+ or Python 3 standard libraries and never extract files onto disk.
-When neither runtime exists, `run.sh` still bootstraps Node (requires a downloader).
-The archive checksum is checked at startup. Source freshness is checked separately
-with `pnpm preview:check`; after edits use `pnpm preview:build` and commit `preview/`.
+The optimization is deliberately on orchestration and redundant work:
 
-### Measured clean-copy startup
+- Resolve pnpm 10.8.0 once, not through two separate npm exec calls.
+- After the full frozen-lockfile install, invoke the workshop's normal predev/dev
+  lifecycle directly instead of chaining root start, dev:docs, and workspace scripts.
+- Read/write each example metadata file once rather than once per example.
+- Leave unchanged generated files untouched to avoid spurious watcher events.
+- Preserve source compilation, HMR, all dependencies, and existing validation commands.
 
-Three trials per runtime in the same Ubuntu sandbox, using copies containing
-only the launcher, servers, and snapshot. Each trial had an empty HOME and a
-restricted PATH with no npm, pnpm, git, downloader, or other runtime. No
-node_modules or source tree was present. Node/Python themselves were already
-installed; this is **not** a VM-provisioning or GitHub-download benchmark.
-Filesystem/OS caches were not flushed. Chromium was already launched, but each
-trial used a new browser context with no browser cache.
+### Paired cold-install measurements
 
-| Runtime | HTTP ready (three trials) | Median HTTP ready | Median rendered home |
-| --- | --- | --- | --- |
-| Node 22 | 175 / 156 / 150 ms | 156 ms | 507 ms |
-| Python 3.13 | 251 / 199 / 188 ms | 199 ms | 548 ms |
+Both versions were extracted into new directories with empty HOME, npm and pnpm
+caches, no node_modules or generated build output, and Node hidden from PATH.
+Each trial downloaded a checksum-verified Node runtime and all 992 packages
+(zero reused). Chromium used a fresh browser context. The browser process and VM
+were already running; cloning and VM provisioning are excluded.
 
-For context, the previous fresh-VM run spent about 20 seconds in the successful
-bootstrap alone, downloading Node and all 992 packages. VM provisioning, cloning,
-and orchestration still take time; the preview does not make those disappear.
-Prefer `git clone --depth 1` so historical snapshots do not inflate clone size.
+| Source-based launcher | HTTP ready, trials 1 / 2 | Rendered home, trials 1 / 2 |
+| --- | --- | --- |
+| Original | 22.48 / 19.51 s | 28.67 / 25.18 s |
+| Corrected | 16.26 / 15.54 s | 21.75 / 20.44 s |
 
-### Verification
+That is about 24% less time to HTTP readiness and 22% less time to rendered
+content using the two-trial averages—not a guarantee across machines or networks.
+The candidate also passed live source-edit HMR without a page reload, button
+example/source/API checks, hook source views, and rejection of an arbitrary Host.
+There were no browser page errors.
 
-- Both runtimes rendered the home page, button examples, expanded example source,
-  button API table, useAccordion documentation, and expanded hook source.
-- The accordion actually toggled; deep-link reloads worked; zero browser page errors.
-- HTTP tests cover host validation, traversal rejection, missing assets, MIME types,
-  gzip, disabled gzip, HEAD, rejected writes, strict ports, and corrupt archives.
-- Freshness tests reject changed source and new untracked source files.
-- `npm start` served the snapshot; `bash run.sh --dev` still served Vite.
-- Repository `pnpm prepush` passed: lint, library/docs builds, and all 2,054 existing
-  tests across 162 files. The three standalone preview tests also passed.
-- `pnpm preview:build`, `pnpm preview:check`, and `bash -n run.sh` passed.
-- Docker's preview target was reviewed but not built (Docker unavailable in this VM).
-- Upstream large-bundle warnings remain; they are not startup blockers.
+`pnpm test:startup` tests frozen install, single pnpm resolution, correct argument
+forwarding, stopping on install failure, preserved custom metadata, discovery of
+new examples, and no writes for unchanged metadata.
 
-## Previous source-first startup audit
-
-The following describes the old default (now selected with `--dev`), not the
-zero-install preview.
+## Original source-first audit
 
 ## Removed from the critical path
 
